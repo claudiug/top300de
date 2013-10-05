@@ -1,6 +1,7 @@
 <p>This is the form for the all the stuff!!!!</p>
 
 <%= form_for @search do |f| %>
+<div class="step1">
     <p>
       <%= f.label :keyword, id:"btn" %>
       <%= f.text_field :keyword %>
@@ -23,5 +24,14 @@
       <%= f.collection_check_boxes :category_id, Category.order(:name), :id, :name, include_blank: true %>
     </p>
 
-    <%= f.submit %>
+    <a href="#" title="next">Next</a>
+
+</div>
+</div class="step2">
+    campuri 2
+
+        <%= f.submit %>
+
+</div>
+
 <% end %>
