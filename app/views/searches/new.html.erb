@@ -1,0 +1,27 @@
+<p>This is the form for the all the stuff!!!!</p>
+
+<%= form_for @search do |f| %>
+    <p>
+      <%= f.label :keyword %>
+      <%= f.text_field :keyword %>
+    </p>
+    <p>
+      <%= f.label :person_number %>
+      <%= f.text_field :person_number %>
+    </p>
+    <p>
+      <%= f.label :min_price %>
+      <%= f.text_field :min_price %>
+    </p>
+    <p>
+      <%= f.label :max_price, size:10 %>
+      <%= f.text_field :max_price, size:10 %>
+    </p>
+
+    <p>
+      <%= f.label :category_id %>
+      <%= f.collection_check_boxes :category_id, Category.order(:name), :id, :name, include_blank: true %>
+    </p>
+
+    <%= f.submit %>
+<% end %>
