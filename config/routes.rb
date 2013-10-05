@@ -4,6 +4,7 @@ Top300de::Application.routes.draw do
 
   resources :trips
   resources :default
+  resources :searches
 
 
 end

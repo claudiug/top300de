@@ -2,8 +2,8 @@
 <%= form_tag  trips_path, method: :get, class: "demo" do %>
     <p>
       <%=text_field_tag :search, params[:query]%>
-      <%= button_tag "Search", name: nil %>
+      <%= button_tag "Search", name: nil, id: "btn" %>
     </p>
-    <p><%= link_to "Advanced Search", new_default_path %></p>
+    <p><%= link_to "Advanced Search", new_search_path %></p>
 
 <%end %>
