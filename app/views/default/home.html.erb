@@ -1,17 +1,9 @@
-<h1>Default#home</h1>
-<p>Find me in app/views/default/home.html.erb</p>
 
-<p>here </p>
-
-<h1>Vlad</h1>
-
-<%= form_tag trip_path, method: :get do %>
-
+<%= form_tag  trips_path, method: :get, class: "demo" do %>
     <p>
       <%=text_field_tag :search, params[:query]%>
       <%= button_tag "Search", name: nil %>
     </p>
     <p><%= link_to "Advanced Search", new_default_path %></p>
-
 
 <%end %>
