@@ -1,6 +1,6 @@
 Top300de::Application.routes.draw do
 
-  root "default#home"
+  root "searches#new"
 
   resources :trips
   resources :default
