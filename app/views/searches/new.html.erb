@@ -1,8 +1,15 @@
 <div class="homepageEngine">
+<div class="adPic">
 
-<section id="Search" class="wrapBlock">
+<div class="slogan">Travel like you want
+    <div class="subSlogan">Tell us what are you searching for and we’ll find the best destination for you</div>
+</div>
+
+<section id="Search">
 <%= form_for @search do |f| %>
 <div class="step1">
+
+<!--
     <p>
       <%= f.label :keyword, id:"btn" %>
       <%= f.text_field :keyword %>
@@ -27,16 +34,91 @@
 
     <a href="#" title="next">Next</a>
 
-</div>
-</div class="step2">
-    campuri 2
+-->
 
-        <%= f.submit %>
+<div class="searchBlock">
 
-</div>
+<div class="sbTitle">Persons:</div>
+
+
+
+    <div class="count">
+    <img src="/assets/person.svg" alt="Travelers" width="20" />
+    <input type="text" name="persons" id="persons" value="2">
+        <span class="number">x<span>2</span></span>
+            <span class="add pnav">+</span>
+            <span class="rem pnav">-</span>
+    </div> <!-- .count -->
+
+</div> <!-- .searchBlock -->
+
+<div class="searchBlock options">
+
+<div class="sbTitle">Activities:</div>
+
+    <label class="styled" id="go_bike">
+		<input type="checkbox" name="bikes">
+		<span></span>
+	</label>
+
+    <label class="styled" id="go_hike">
+		<input type="checkbox" name="hike">
+		<span></span>
+	</label>
+
+    <label class="styled" id="go_beach">
+		<input type="checkbox" name="beach">
+		<span></span>
+	</label>
+
+    <label class="styled" id="go_lake">
+		<input type="checkbox" name="lake">
+		<span></span>
+	</label>
+
+    <label class="styled" id="go_castles">
+		<input type="checkbox" name="castles">
+		<span></span>
+	</label>
+
+    <label class="styled" id="go_fun">
+		<input type="checkbox" name="fun">
+		<span></span>
+	</label>
+
+    <label class="styled" id="go_love">
+		<input type="checkbox" name="love">
+		<span></span>
+	</label>
+
+</div> <!-- .searchBlock -->
+
+<div class="searchBlock select-days">
+
+<div class="sbTitle">Days:</div>
+
+    <div class="count">
+        <input type="text" name="days" id="days" value="7" class="tinput">
+            <span class="add pnav">+</span>
+            <span class="rem pnav">-</span>
+    </div> <!-- .count -->
+
+</div> <!-- .searchBlock -->
+
+<div class="searchBlock submit">
+
+    <%= f.submit %>
+
+</div> <!-- .searchBlock -->
+
+</div> <!-- step 1 -->
 
 <% end %>
 
 </section> <!-- #Search -->
 
+
+</div> <!-- .adPic -->
 </div>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

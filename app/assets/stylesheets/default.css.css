@@ -1,0 +1,196 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700,800);
+/* Sizes */
+/* Text */
+/* Colors */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  font-family: Open Sans, sans-serif;
+  line-height: 1.4;
+  font-size: 13px; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background: url(/assets/hbg.jpg);
+  -webkit-font-smoothing: antialiased;
+  padding-top: 54px; }
+
+a {
+  color: #f4f4e6;
+  text-decoration: none; }
+
+.wrapBlock {
+  margin: 0 auto;
+  width: 1000px;
+  display: block; }
+
+.tinput {
+  background: url(/assets/inputbg.png) center 0 repeat-x transparent;
+  border: 0;
+  padding: 5px 10px;
+  font: 23px/1 Open Sans;
+  font-weight: 300;
+  color: white; }
+
+/* Header */
+header {
+  background: url(/assets/tr.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 98; }
+  header * {
+    display: inline; }
+  header nav {
+    float: right; }
+    header nav a {
+      text-transform: uppercase;
+      font-size: 11px;
+      margin-left: 10px; }
+
+.homepageEngine {
+  background: url(/assets/comolake-bg.jpg) center 0 no-repeat; }
+  .homepageEngine .adPic {
+    background: url(/assets/greygov.png) 0 0 repeat-x;
+    height: 100%; }
+
+.slogan {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: -1px;
+  padding-top: 0px; }
+  .slogan .subSlogan {
+    font-size: 24px;
+    width: 35%;
+    margin: 0 auto; }
+
+/* Search engine */
+#Search {
+  background: url(/assets/srchbg.png);
+  position: relative;
+  top: 100px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 960px; }
+  #Search:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  #Search .searchBlock {
+    padding: 10px 40px;
+    float: left; }
+    #Search .searchBlock .sbTitle {
+      font-size: 14px;
+      color: #a2a2a2;
+      padding-bottom: 10px; }
+  #Search #persons {
+    position: absolute;
+    left: -9999px; }
+  #Search .number {
+    color: #666;
+    font-size: 40px;
+    font-weight: 300;
+    vertical-align: middle;
+    line-height: 1; }
+    #Search .number span {
+      margin-left: 5px; }
+  #Search .count {
+    padding-right: 30px;
+    position: relative;
+    float: left;
+    height: 54px; }
+    #Search .count img {
+      vertical-align: middle;
+      margin-right: 10px; }
+  #Search .pnav {
+    overflow: hidden;
+    position: absolute;
+    font-weight: 300;
+    color: white;
+    right: 0;
+    font-size: 35px;
+    top: 12px;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    display: block;
+    line-height: 0.4;
+    cursor: pointer; }
+  #Search .rem {
+    top: auto;
+    bottom: 3px;
+    font-size: 45px; }
+  #Search label.styled {
+    width: 45px;
+    height: 45px;
+    background: #666;
+    margin: 0 12px 0 0; }
+    #Search label.styled.styled-on {
+      background: #999; }
+  #Search .tinput {
+    width: 30px;
+    text-align: right;
+    height: 35px; }
+    #Search .tinput:focus {
+      outline: none;
+      border: 1px solid white;
+      margin-right: -1px;
+      padding-top: 4px;
+      padding-left: 9px;
+      text-align: right; }
+  #Search .select-days .pnav {
+    top: 6px; }
+  #Search .select-days .rem {
+    top: auto;
+    bottom: 6px; }
+
+/* Style label */
+label.styled {
+  line-height: 1;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer; }
+  label.styled input {
+    left: -9999px;
+    position: absolute; }

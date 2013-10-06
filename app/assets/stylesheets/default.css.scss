@@ -2,6 +2,8 @@
 
 body {
   background: url(/assets/hbg.jpg);
+  -webkit-font-smoothing: antialiased;
+  padding-top: 54px;
 }
 
 a {
@@ -13,10 +15,23 @@ a {
   width: $wideBlock;
   display: block;
 }
+.tinput {
+  background: url(/assets/inputbg.png) center 0 repeat-x transparent;
+  border: 0;
+  padding: 5px 10px;
+  font: 23px/1 Open Sans;
+  font-weight: 300;
+  color: white;
+}
 
 /* Header */
 header {
   background: url(/assets/tr.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 98;
 
   * {
     display: inline;
@@ -28,7 +43,7 @@ header {
 
     a {
       text-transform: uppercase;
-      font-size: $smallNote ;
+      font-size: $forUpper ;
       margin-left: 10px;
     }
 
@@ -38,6 +53,27 @@ header {
 
 .homepageEngine {
   background: url(/assets/comolake-bg.jpg) center 0 no-repeat;
+
+  .adPic {
+    background: url(/assets/greygov.png) 0 0 repeat-x;
+    height: 100%;
+  }
+
+}
+.slogan {
+  color: $linkOnBlackHover;
+  font-size: $headlineSize;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing:  -1px;
+  padding-top: 60px;
+
+  .subSlogan {
+    font-size: $subHeadline;
+    width: 35%;
+    margin: 0 auto;
+  }
+
 }
 
 /* Search engine */
@@ -45,5 +81,129 @@ header {
 #Search {
   background: url(/assets/srchbg.png);
   position: relative;
-  top: 200px;
+  top: 100px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 960px;
+
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  .searchBlock {
+    padding: 10px 40px;
+    float: left;
+
+    .sbTitle {
+      font-size: 14px;
+      color: #a2a2a2;
+      padding-bottom: 10px;
+    }
+
+  }
+
+  #persons {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .number {
+    color: #666;
+    font-size: 40px;
+    font-weight: 300;
+    vertical-align: middle;
+    line-height: 1;
+
+    span {
+      margin-left: 5px;
+    }
+  }
+
+  .count {
+    padding-right: 30px;
+    position: relative;
+    float: left;
+    height: 54px;
+
+    img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+    .pnav {
+      overflow: hidden;
+      position: absolute;
+      font-weight: 300;
+      color: white;
+      right: 0;
+      font-size: 35px;
+      top: 12px;
+      text-align: center;
+      width: 25px;
+      height: 25px;
+      display: block;
+      line-height: 0.4;
+      cursor: pointer;
+    }
+    .rem {
+      top: auto;
+      bottom: 3px;
+      font-size: 45px;
+    }
+
+
+
+  label.styled {
+    width: 45px;
+    height: 45px;
+    background: #666;
+    margin: 0 12px 0 0;
+
+    &.styled-on {
+      background: #999;
+    }
+  }
+
+   .tinput {
+     width: 30px;
+     text-align: right;
+     height: 35px;
+
+     &:focus {
+        outline: none;
+        border: 1px solid white;
+        margin-right: -1px;
+        padding-top: 4px;
+       padding-left: 9px;
+       text-align: right;
+     }
+   }
+
+  .select-days {
+    .pnav {
+      top: 6px;
+    }
+    .rem {
+      top: auto;
+      bottom: 6px;
+    }
+  }
+
+}
+
+/* Style label */
+label.styled {
+  line-height: 1;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+
+  input {
+    left: -9999px;
+    position: absolute;
+  }
 }
