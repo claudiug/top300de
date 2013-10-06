@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   font-family: Open Sans, sans-serif;
   line-height: 1.4;
-  font-size: 13px; }
+  font-size: 14px; }
 
 ol, ul {
   list-style: none; }
@@ -97,7 +97,10 @@ header {
       margin-left: 10px; }
 
 .homepageEngine {
-  background: url(/assets/hallstat.jpg) 50% 0 repeat fixed; }
+  background: url(/assets/hallstat.jpg) 50% 0 repeat fixed;
+  -webkit-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.16);
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.16); }
   .homepageEngine .adPic {
     background: url(/assets/greygov.png) 0 0 repeat-x;
     height: 100%; }
@@ -216,3 +219,30 @@ label.styled {
   label.styled input {
     left: -9999px;
     position: absolute; }
+
+.hpFooterBlock {
+  text-align: center;
+  padding: 40px 0; }
+  .hpFooterBlock h1, .hpFooterBlock h3 {
+    font-size: 40px;
+    color: #000;
+    font-weight: 300;
+    letter-spacing: -1px; }
+  .hpFooterBlock h2, .hpFooterBlock h4 {
+    font-size: 20px;
+    font-weight: 300; }
+  .hpFooterBlock p {
+    padding: 20px 0 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.7; }
+
+/* Add usggestions */
+.addSugg h4 {
+  padding-bottom: 30px; }
+.addSugg a {
+  background: white;
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 5px;
+  color: #666; }

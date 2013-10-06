@@ -12,17 +12,12 @@ $(document).ready(function() {
     $('section[data-type="background"]').each(function(){
 
         var $window = $(window);
-
         var $bgobj = $(this); // assigning the object
 
         $(window).scroll(function() {
             var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-
-            // Put together our final background position
             var coords = '50% '+ yPos + 'px';
 
-
-            // Move the background
             $bgobj.css({ backgroundPosition: coords });
         });
     });
@@ -36,7 +31,7 @@ $(document).ready(function() {
 
     $('#scrollPage').click(function() {
         var y = $(window).scrollTop();
-        $('html, body').animate({ scrollTop: y + slideHeight }, 600);
+        $('html, body').animate({ scrollTop: y + slideHeight - 90 }, 600);
 
     })
 
