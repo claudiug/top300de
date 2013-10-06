@@ -1,8 +1,49 @@
-// Place all the styles related to the default controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'constants.css.scss';
 
+body {
+  background: url(/assets/hbg.jpg);
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+}
 .wrapBlock {
   margin: 0 auto;
+  width: $wideBlock;
+  display: block;
+}
 
+/* Header */
+header {
+  background: url(/assets/tr.png);
+
+  * {
+    display: inline;
+  }
+
+  nav {
+
+    float: right;
+
+    a {
+      text-transform: uppercase;
+      font-size: $smallNote ;
+      margin-left: 10px;
+    }
+
+  }
+
+}
+
+.homepageEngine {
+  background: url(/assets/comolake-bg.jpg) center 0 no-repeat;
+}
+
+/* Search engine */
+
+#Search {
+  background: url(/assets/srchbg.png);
+  position: relative;
+  top: 200px;
 }
