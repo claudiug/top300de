@@ -2,24 +2,51 @@
  * Created by vladmihai on 10/5/13.
  */
 
-
 $(document).ready(function() {
-    resizeAd();
+
+    var slideHeight = $(window).height() - $('header').height();
+
+    resizeAd(slideHeight);
     setupLabel();
+
+    $('section[data-type="background"]').each(function(){
+
+        var $window = $(window);
+
+        var $bgobj = $(this); // assigning the object
+
+        $(window).scroll(function() {
+            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+
+            // Put together our final background position
+            var coords = '50% '+ yPos + 'px';
+
+
+            // Move the background
+            $bgobj.css({ backgroundPosition: coords });
+        });
+    });
 
     $('.options .styled').click(function () {
         setupLabel();
         $(this).click(clearSelection);
     });
 
+
+
+    $('#scrollPage').click(function() {
+        var y = $(window).scrollTop();
+        $('html, body').animate({ scrollTop: y + slideHeight }, 600);
+
+    })
+
     $(window).resize(function() {
-        resizeAd();
+        resizeAd(slideHeight);
     });
 
 });
 
-function resizeAd() {
-    var slideHeight = $(window).height() - $('header').height();
+function resizeAd(slideHeight) {
     $('.homepageEngine').height(slideHeight);
 }
 
