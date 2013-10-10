@@ -1,0 +1,14 @@
+<p>Login</p>
+<%= form_for :login, method: "POST" do |f| %>
+    <p>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+    </p>
+    <p>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+    </p>
+
+    <%= f.submit("Login") %>
+
+<% end %>
