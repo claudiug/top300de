@@ -5,6 +5,9 @@ class Admin::DashboardController < ApplicationController
 
 
   def index
-
+    @category_count ||= Category.count
+    count = Hotel.count
+    @hotels_count ||= count
+    @feedback_count ||= Feedback.count
   end
 end
