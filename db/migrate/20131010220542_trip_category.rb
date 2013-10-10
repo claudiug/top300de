@@ -1,7 +1,7 @@
 class TripCategory < ActiveRecord::Migration
   def change
 
-    create_table :trips_categories do |t|
+    create_table :categories_trips do |t|
       t.belongs_to :trip
       t.belongs_to :category
 
