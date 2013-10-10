@@ -20,6 +20,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'better_errors'
 gem 'binding_of_caller'
 gem 'rack-mini-profiler'
+gem 'active_model_serializers'
+
 
 
 # Use jquery as the JavaScript library
