@@ -1,6 +1,10 @@
 class Admin::DashboardController < ApplicationController
   layout "admin"
-  before_action :is_user_admin
+  before_action :request_login
+
+
+
   def index
+
   end
 end
