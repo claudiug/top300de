@@ -14,7 +14,7 @@ class Admin::RestaurantsController < ApplicationController
   def create
    @restaurant = Restaurant.new(restaurant_params)
    if @restaurant.save
-     redirect_to @restaurant, notice: "restaurant created!"
+     redirect_to [:admin, @restaurant], notice: "restaurant created!"
    else
      render :new
    end
@@ -34,7 +34,7 @@ class Admin::RestaurantsController < ApplicationController
     #set_restaurant
     #@restaurant = Restaurant.find(params[:id])
     if @restaurant.update(restaurant_params)
-      redirect_to @restaurant, notice: "restaurant updated!"
+      redirect_to [:admin, @restaurant], notice: "restaurant updated!"
     else
       render :edit
     end

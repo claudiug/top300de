@@ -14,7 +14,7 @@ class Admin::HotelsController < ApplicationController
   def create
    @hotel = Hotel.new(hotel_params)
    if @hotel.save
-     redirect_to @hotel, notice: "hotel created!"
+     redirect_to [:admin, @hotel], notice: "hotel created!"
    else
      render :new
    end
@@ -34,7 +34,7 @@ class Admin::HotelsController < ApplicationController
     #set_hotel
     #@hotel = Hotel.find(params[:id])
     if @hotel.update(hotel_params)
-      redirect_to @hotel, notice: "hotel updated!"
+      redirect_to [:admin, @hotel], notice: "hotel updated!"
     else
       render :new
     end

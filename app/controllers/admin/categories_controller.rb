@@ -15,7 +15,7 @@ class Admin::CategoriesController < ApplicationController
   def create
    @category = Category.new(category_params)
    if @category.save
-     redirect_to @category, notice: "category created!"
+     redirect_to [:admin, @category], notice: "category created!"
    else
      render :new
    end
@@ -37,7 +37,7 @@ class Admin::CategoriesController < ApplicationController
     #set_category
     #@category = Category.find(params[:id])
     if @category.update(category_params)
-      redirect_to @category, notice: "category updated!"
+      redirect_to [:admin, @category], notice: "category updated!"
     else
       render :edit
     end
