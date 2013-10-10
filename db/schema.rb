@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131010182339) do
+ActiveRecord::Schema.define(version: 20131010191336) do
 
   create_table "api_keys", force: true do |t|
     t.string   "key"
@@ -21,6 +21,9 @@ ActiveRecord::Schema.define(version: 20131010182339) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "api_keys", ["key"], name: "index_api_keys_on_key", unique: true
+  add_index "api_keys", ["user_id"], name: "index_api_keys_on_user_id"
 
   create_table "categories", force: true do |t|
     t.string   "name"

@@ -13,7 +13,7 @@ module Api
 
       private
       def restrict_access
-        api_key = ApiKey.find(params[:token])
+        api_key = ApiKey.find(key: params[:key])
       end
     end
 
