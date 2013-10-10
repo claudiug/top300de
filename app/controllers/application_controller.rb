@@ -13,6 +13,7 @@ class ApplicationController < ActionController::Base
   end
 
   def is_user_admin
+    request_login
     unless @current_user.is_admin
       redirect_to root_url
     end
