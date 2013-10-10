@@ -1,0 +1,21 @@
+<h1>Add a trip</h1>
+
+<%= form_for [:admin, @trip] do |f| %>
+    <p>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <% Category.all.each do |category| %>
+        <%= hidden_field_tag("trip[category_ids][]", nil) %>
+        <%= check_box_tag "trip[category_ids][]",
+                          category.id,
+                          @trip.category_ids.include?(category.id),
+                          id: dom_id(category) %>
+          <%= label_tag dom_id(category), category.name %><br>
+    <% end %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>

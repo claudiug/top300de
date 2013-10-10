@@ -12,6 +12,7 @@ Top300de::Application.routes.draw do
     resources :categories
     resources :hotels
     resources :restaurants
+    resources :trips
   end
 
   namespace :api, defaults: {format: 'json'} do
