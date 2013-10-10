@@ -19,6 +19,8 @@ gem 'coffee-rails', '~> 4.0.0'
  gem 'therubyracer', platforms: :ruby
 gem 'better_errors'
 gem 'binding_of_caller'
+gem 'rack-mini-profiler'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
