@@ -4,7 +4,11 @@ class Admin::TripsController < ApplicationController
   before_action :set_trip, only: [:show, :edit, :update, :destroy]
 
   def index
-    @trips = Trip.all
+    if params[:query].present?
+      @trips = Trip.where("name like ?", "%#{params[:query]}%")
+    else
+      @trips = Trip.all
+    end
   end
 
   def new
@@ -52,7 +56,7 @@ class Admin::TripsController < ApplicationController
 
   private
 
-  #IS BETTER TO READ SOME COMMENTS!, JUST LOST 30 MINUTES
+  #category_ids[] is used for get all category ids when submiting a form
   def trip_params
     params.require(:trip).permit(:name, {category_ids: []})
   end
