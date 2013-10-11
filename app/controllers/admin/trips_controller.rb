@@ -8,8 +8,18 @@ class Admin::TripsController < ApplicationController
       @trips = Trip.where("name like ?", "%#{params[:query]}%")
     else
       @trips = Trip.all
+
     end
+    # AR TREBUI SA FOLOSESC API
+    #def load_trips
+    #  @load_trips = Trip.select(:name)
+    #  render json: @load_trips
+    #end
+
+
   end
+
+
 
   def new
     @trip = Trip.new
