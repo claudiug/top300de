@@ -11,10 +11,10 @@ class Admin::TripsController < ApplicationController
 
     end
     # AR TREBUI SA FOLOSESC API
-    #def load_trips
-    #  @load_trips = Trip.select(:name)
-    #  render json: @load_trips
-    #end
+    def load_trips
+      @load_trips = Trip.pluck(:name)
+      render json: @load_trips, root: false
+    end
 
 
   end

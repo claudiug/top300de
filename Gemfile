@@ -19,10 +19,13 @@ gem 'coffee-rails', '~> 4.0.0'
  gem 'therubyracer', platforms: :ruby
 gem 'better_errors'
 gem 'binding_of_caller'
-gem 'rack-mini-profiler'
+#gem 'rack-mini-profiler'
 gem 'active_model_serializers'
 gem 'meta-tags', :require => 'meta_tags'
-gem 'bullet'
+#gem 'bullet'
+#gem 'sunspot_rails'
+#gem "sunspot_solr"
+
 
 
 
