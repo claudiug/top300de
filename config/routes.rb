@@ -5,7 +5,9 @@ Top300de::Application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   resources :users, only:[:new, :create]
-  resources :feedback
+  resources :trips do
+    resources :feedback
+  end
 
   namespace :admin do
     get "dashboard/index"

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131012192310) do
+ActiveRecord::Schema.define(version: 20131012202023) do
 
   create_table "api_keys", force: true do |t|
     t.string   "key"
@@ -45,6 +45,9 @@ ActiveRecord::Schema.define(version: 20131012192310) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "is_active",  default: false
+    t.string   "comment"
+    t.string   "pro"
+    t.string   "contra"
   end
 
   create_table "hotels", force: true do |t|
@@ -52,6 +55,13 @@ ActiveRecord::Schema.define(version: 20131012192310) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "trip_id"
+    t.string   "address"
+    t.integer  "city_id"
+    t.integer  "rating"
+    t.string   "phone_number"
+    t.string   "email"
+    t.string   "web_page"
+    t.boolean  "is_active"
   end
 
   create_table "restaurants", force: true do |t|
@@ -59,6 +69,11 @@ ActiveRecord::Schema.define(version: 20131012192310) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "trip_id"
+    t.string   "address"
+    t.string   "email"
+    t.string   "phone_number"
+    t.boolean  "is_active"
+    t.string   "web_page"
   end
 
   create_table "searches", force: true do |t|
@@ -75,6 +90,10 @@ ActiveRecord::Schema.define(version: 20131012192310) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "city"
+    t.string   "zip_code"
+    t.text     "description"
+    t.boolean  "is_active"
   end
 
   create_table "users", force: true do |t|
