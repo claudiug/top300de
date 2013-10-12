@@ -1,4 +1,4 @@
-<div class="homepageEngine">
+<section class="homepageEngine" data-type="background" data-speed="2">
   <div class="adPic">
 
     <div class="slogan">Travel like you want
@@ -6,6 +6,31 @@
     </div>
 
     <section id="Search">
+      <%= form_for @search do |f| %>
+          <div class="step1">
+
+            <!--
+    <p>
+      <%= f.label :keyword, id:"btn" %>
+      <%= f.text_field :keyword %>
+    </p>
+    <p>
+      <%= f.label :person_number %>
+      <%= f.text_field :person_number %>
+    </p>
+    <p>
+      <%= f.label :min_price %>
+      <%= f.text_field :min_price %>
+    </p>
+    <p>
+      <%= f.label :max_price, size:10 %>
+      <%= f.text_field :max_price, size:10 %>
+    </p>
+
+    <p>
+      <%= f.label :category_id %>
+      <%= f.collection_check_boxes :category_id, Category.order(:name), :id, :name, include_blank: true %>
+    </p>
 
     <a href="#" title="next">Next</a>
 
@@ -82,25 +107,23 @@
 
             <div class="searchBlock submit">
 
+              <%= f.submit %>
 
             </div> <!-- .searchBlock -->
 
-           <!-- step 1 -->
+          </div> <!-- step 1 -->
 
+      <% end %>
 
     </section> <!-- #Search -->
 
-
+    <div class="scrollMore">
+      <img src="/assets/darrow.svg" alt="Scroll for more" width="35" id="scrollPage" />
+    </div>
   </div> <!-- .adPic -->
-</div>
-
-<div class="scrollMore">
-  <img src="/assets/darrow.svg" alt="Scroll for more" width="35" id="scrollPage" />
-</div>
-</div> <!-- .adPic -->
 </section> <!-- .homepageEngine -->
 
-<section class="wideBlock">
+<section class="wideBlock hpFooterBlock">
   <div class="wrapBlock">
     <h1>About our website</h1>
     <h2>Find travel offers according to your activities</h2>
@@ -115,7 +138,7 @@
   </div> <!-- .wrapBlock -->
 </section>
 
-<section class="wideBlock">
+<section class="wideBlock addSugg hpFooterBlock">
   <div class="wrapBlock">
     <h3>Where would you like to travel?</h3>
     <h4>Suggest future destinations</h4>
@@ -149,5 +172,3 @@
   <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 </section>
-
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
