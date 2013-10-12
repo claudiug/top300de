@@ -8,18 +8,13 @@ class Admin::TripsController < ApplicationController
       @trips = Trip.search(params[:query])
     else
       @trips = Trip.all
-
     end
     # AR TREBUI SA FOLOSESC API
     def load_trips
       @load_trips = Trip.pluck(:name)
       render json: @load_trips, root: false
     end
-
-
   end
-
-
 
   def new
     @trip = Trip.new
@@ -37,7 +32,6 @@ class Admin::TripsController < ApplicationController
   def show
     #set_trip
     #@trip = Trip.find(params[:id])
-    render text: params
   end
 
   def edit
@@ -45,7 +39,6 @@ class Admin::TripsController < ApplicationController
     #@trip = Trip.find(params[:id])
   end
 
-  #noinspection RubyArgCount
   def update
     #set_trip
     #@trip = Trip.find(params[:id])
@@ -60,8 +53,7 @@ class Admin::TripsController < ApplicationController
     #set_trip
     #@trip = Trip.find(params[:id])
     @trip.destroy
-    redirect_to admin_trips_path
-
+    redirect_to admin_trips_path, notice: "trip: #{@trip.name} deleted!"
   end
 
   private
