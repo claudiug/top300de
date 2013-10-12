@@ -3,31 +3,4 @@
 </div>
 
 
-<%= form_for [:admin, @trip], html: {class: "form-horizontal"} do |f| %>
-
-  <div class="form-group">
-    <%= f.label :name, class: 'col-lg-1 control-label' %>
-    <div class="col-lg-2">
-      <%= f.text_field :name, class: 'form-control' %>
-    </div>
-  </div>
-     <div class="form-group">
-     <div class="col-lg-offset-1 col-lg-10">
-      <% Category.all.each do |category| %>
-      <div class="checkbox">
-        <%= hidden_field_tag("trip[category_ids][]", nil) %>
-        <%= check_box_tag "trip[category_ids][]",
-                          category.id,
-                          @trip.category_ids.include?(category.id),
-                          id: dom_id(category) %>
-          <%= label_tag dom_id(category), category.name %>
-          </div>
-    <% end %>
-    </div>
-    </div>
-  <div class="form-group">
-    <div class="col-lg-offset-1 col-lg-10">
-      <%= f.submit("Add", class: 'btn btn-primary') %>
-    </div>
-  </div>
-<% end%>
+<%= render "admin/trips/form" %>

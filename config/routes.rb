@@ -13,6 +13,7 @@ Top300de::Application.routes.draw do
     get "dashboard/index"
     resources :categories
     resources :hotels
+    resources :feedback
     resources :restaurants
     resources :trips do
       collection do
