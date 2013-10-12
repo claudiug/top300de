@@ -6,6 +6,24 @@
       <%= f.text_field :name, class: 'form-control' %>
     </div>
   </div>
+    <div class="form-group">
+      <%= f.label :is_active, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-2">
+        <%= f.check_box :is_active, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :description, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-2">
+        <%= f.text_area :description, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :seo, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-2">
+        <%= f.text_field :seo, class: 'form-control' %>
+      </div>
+    </div>
   <div class="form-group">
     <div class="col-lg-offset-1 col-lg-10">
       <%= f.submit("Add", class: 'btn btn-primary') %>

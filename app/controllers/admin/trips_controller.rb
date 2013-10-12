@@ -73,6 +73,9 @@ class Admin::TripsController < ApplicationController
 
   def set_trip
     @trip = Trip.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    flash[:warning] = "Trip #{@trip.name} could not be found"
+    redirect_to admin_trips_path
   end
 
 end

@@ -54,6 +54,9 @@ class Admin::HotelsController < ApplicationController
 
   def set_hotel
     @hotel = Hotel.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    flash[:warning] = "The hotel: #{@hotel.name} could not be found"
+    redirect_to admin_hotels_path
   end
 
 end

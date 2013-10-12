@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131010220542) do
+ActiveRecord::Schema.define(version: 20131012192310) do
 
   create_table "api_keys", force: true do |t|
     t.string   "key"
@@ -29,6 +29,9 @@ ActiveRecord::Schema.define(version: 20131010220542) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_active",   default: true
+    t.text     "seo"
+    t.text     "description"
   end
 
   create_table "categories_trips", force: true do |t|

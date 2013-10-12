@@ -18,6 +18,7 @@ class Admin::CategoriesController < ApplicationController
      redirect_to [:admin, @category], notice: "category created!"
    else
      render :new
+     flash[:warning] = "please fix the errors"
    end
   end
 
@@ -59,6 +60,9 @@ class Admin::CategoriesController < ApplicationController
 
   def set_category
     @category = Category.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    flash[:warning] = "The category that you are looking: #{@category.name} could not be found"
+    redirect_to admin_categories_path
   end
 
 
