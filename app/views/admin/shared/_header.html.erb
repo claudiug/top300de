@@ -1,0 +1,41 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<a class="navbar-brand" href="#">Admin wantatrip</a>
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+
+        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "List all Categories", admin_categories_path %></li>
+                  <li><%= link_to "Add a new Category",new_admin_category_path %></li>
+                </ul>
+        </li>
+
+        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Trips <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "List all Trips", admin_trips_path %></li>
+                  <li><%= link_to "Add a new Trip",new_admin_trip_path %></li>
+                </ul>
+        </li>
+
+        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hotels <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "List all Hotels", admin_hotels_path %></li>
+                  <li><%= link_to "Add a new Hotel",new_admin_hotel_path %></li>
+                </ul>
+        </li>
+
+        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Restaurants <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "List all Restaurants", admin_restaurants_path %></li>
+                  <li><%= link_to "Add a new Restaurant",new_admin_restaurant_path %></li>
+                </ul>
+        </li>
+
+    </ul>
+
+  </div><!-- /.navbar-collapse -->
+</nav>
