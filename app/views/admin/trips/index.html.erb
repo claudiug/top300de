@@ -7,7 +7,7 @@
       </div>
       <div class="form-group">
         <div class="col-lg-10">
-          <%= submit_tag("Add", class: 'btn btn-primary') %>
+          <%= submit_tag("Search for a trip!", class: 'btn btn-primary') %>
         </div>
       </div>
 
@@ -42,7 +42,7 @@
           <%= link_to "Show", admin_trip_path(trip), class: 'btn btn-info' %>
           <%= link_to "Delete", admin_trip_path(trip),
                       method: :delete,
-                      data: {confirm: "are you sure?"},
+                      data: {confirm: "are you sure you want to destroy?"},
                       class: 'btn btn-danger'
           %>
         </td>
