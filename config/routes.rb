@@ -10,11 +10,12 @@ Top300de::Application.routes.draw do
   end
 
   namespace :admin do
-    get "dasboard", to: "dashboard#index"
+    get 'dasboard', to: "dashboard#index"
     resources :categories
     resources :hotels
     resources :feedback
     resources :restaurants
+    resources :paintings
     resources :trips do
       collection do
         get 'load_trips'

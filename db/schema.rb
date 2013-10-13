@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131012202023) do
+ActiveRecord::Schema.define(version: 20131013142057) do
 
   create_table "api_keys", force: true do |t|
     t.string   "key"
@@ -62,6 +62,15 @@ ActiveRecord::Schema.define(version: 20131012202023) do
     t.string   "email"
     t.string   "web_page"
     t.boolean  "is_active"
+  end
+
+  create_table "paintings", force: true do |t|
+    t.string   "name"
+    t.integer  "trip_id"
+    t.boolean  "is_feature"
+    t.boolean  "is_active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "restaurants", force: true do |t|
