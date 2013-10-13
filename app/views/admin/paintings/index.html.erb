@@ -13,6 +13,7 @@
       <p>Is Active:<%= paint.is_active %></p>
       <p>Image Location:<%= paint.image %></p>
       <p>Is feature:<%= paint.is_feature %></p>
+      <%= image_tag paint.image_url(:thumb) %>
     </div>
     <div class="help-block">
       <%= link_to "add a new painting", new_admin_painting_path %>
