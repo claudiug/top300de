@@ -1,1 +1,20 @@
 <h1>List all painting</h1>
+<% @paintings.each do |paint| %>
+    <div class="container">
+      <div class="breadcrumb">
+        <%= link_to "Edit", edit_admin_painting_path(paint), class: "btn btn-primary" %>
+        <%= link_to "Delete", admin_painting_path(paint),
+                    method: :delete,
+                    data: {confirm: "are you sure you want to destroy?"},
+                    class: 'btn btn-danger'
+        %>
+      </div>
+      <p>Name:<%= paint.name %></p>
+      <p>Is Active:<%= paint.is_active %></p>
+      <p>Image Location:<%= paint.image %></p>
+      <p>Is feature:<%= paint.is_feature %></p>
+    </div>
+    <div class="help-block">
+      <%= link_to "add a new painting", new_admin_painting_path %>
+    </div>
+<% end %>

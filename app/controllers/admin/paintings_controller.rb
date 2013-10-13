@@ -58,7 +58,7 @@ class Admin::PaintingsController < ApplicationController
 
   private
   def painting_params
-    params.require(:painting).permit(:name, :trip_id, :is_feature, :is_active)
+    params.require(:painting).permit(:name, :trip_id, :is_feature, :is_active, :image)
   end
 
   def set_painting

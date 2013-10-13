@@ -1,4 +1,25 @@
-<p>profile for <%= @trip.name %></p>
-<% @trip.categories.each do |cate| %>
-    <p>cate.name</p>
-<% end %>
+
+<div class="container">
+  <div class="help-block">
+    <h1>trip page for: <strong><%= @trip.name %></strong></h1>
+  </div>
+
+  <div class="has-error">
+    <% @trip.paintings.each do |paint| %>
+        <%= image_tag paint.image_url(:thumb).to_s %>
+        Name <strong><%= paint.name %></strong><br> |
+        Feature <strong><%= paint.is_feature %></strong><br> |
+       Image Location <strong><%= paint.image %></strong><br> |
+        Is Active <strong><%= paint.is_active %></strong><br>
+        <div class="breadcrumb">
+          <%= link_to "Edit", edit_admin_painting_path(paint), class: "btn btn-primary" %>
+          <%= link_to "Delete", admin_painting_path(paint),
+                      method: :delete,
+                      data: {confirm: "are you sure you want to destroy?"},
+                      class: 'btn btn-danger'
+          %>
+        </div>
+    <% end %>
+  </div>
+
+</div>

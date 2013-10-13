@@ -1,6 +1,6 @@
 class Admin::TripsController < ApplicationController
   layout "admin"
-
+  before_action :request_login
   before_action :set_trip, only: [:show, :edit, :update, :destroy]
 
   def index

@@ -23,6 +23,7 @@ gem 'binding_of_caller'
 gem 'active_model_serializers'
 gem 'meta-tags', :require => 'meta_tags'
 gem 'bootstrap-sass-rails'
+gem 'rmagick', '2.13.2'
 gem "carrierwave"
 
 
