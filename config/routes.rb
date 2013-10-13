@@ -10,7 +10,7 @@ Top300de::Application.routes.draw do
   end
 
   namespace :admin do
-    get "dashboard/index"
+    get "dasboard", to: "dashboard#index"
     resources :categories
     resources :hotels
     resources :feedback
