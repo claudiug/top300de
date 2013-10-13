@@ -22,6 +22,8 @@ gem 'binding_of_caller'
 #gem 'rack-mini-profiler'
 gem 'active_model_serializers'
 gem 'meta-tags', :require => 'meta_tags'
+gem 'bootstrap-sass-rails'
+
 #gem 'bullet'
 #gem 'sunspot_rails'
 #gem "sunspot_solr"
