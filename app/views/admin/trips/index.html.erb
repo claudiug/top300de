@@ -1,56 +1,72 @@
 <div class="page-header">
-  <%= form_tag admin_trips_path, method: :get, class: 'form-horizontal' do  %>
-      <div class="form-group">
-        <div class="col-lg-3">
-          <%= text_field_tag("query", params[:query], id: "trip_search", class: 'form-control')%>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-lg-10">
-          <%= submit_tag("Search for a trip!", class: 'btn btn-primary') %>
-        </div>
-      </div>
+      <%= form_tag admin_trips_path, method: :get, class: 'form-horizontal' do  %>
+          <div class="form-group">
+            <div class="col-lg-3">
+              <%= text_field_tag("query", params[:query], id: "trip_search", class: 'form-control')%>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-10">
+              <%= submit_tag("Search for a trip!", class: 'btn btn-primary') %>
+            </div>
+          </div>
 
-  <% end%>
+      <% end%>
 
-  <h1>List trips</h1>
-</div>
-<table class="table table-bordered table-hover">
-<thead>
-    <tr>
-        <th>#</th>
-        <th>Trip name</th>
-        <th>City</th>
-        <th>Zip Code</th>
-        <th>Description</th>
-        <th>Active?</th>
-        <th>Actions</th>
-    </tr>
-</thead>
-<tbody>
-<% @trips.each do |trip| %>
+      <h1>List trips</h1>
+    </div>
+    <table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Trip name</th>
+            <th>City</th>
+            <th>Zip Code</th>
+            <th>Description</th>
+            <th>Active?</th>
+            <th>Images</th>
+            <th>Actions</th>
+            <th>Categories</th>
+        </tr>
+    </thead>
+    <tbody>
+    <% @trips.each do |trip| %>
 
-    <tr>
-        <td><%= trip.id %></td>
-        <td><%= trip.name %></td>
-        <td><%= trip.city %></td>
-        <td><%= trip.zip_code %></td>
-        <td><%= trip.description %></td>
-      <td><%= trip.is_active ? "Yes" : "No" %></td>
-         <td>
-          <%= link_to "Edit", edit_admin_trip_path(trip), class: 'btn btn-primary' %>
-          <%= link_to "Show", admin_trip_path(trip), class: 'btn btn-info' %>
-          <%= link_to "Delete", admin_trip_path(trip),
-                      method: :delete,
-                      data: {confirm: "are you sure you want to destroy?"},
-                      class: 'btn btn-danger'
-          %>
-        </td>
-    </tr>
+        <tr>
+            <td><%= trip.id %></td>
+            <td><%= trip.name %></td>
+            <td><%= trip.city %></td>
+            <td><%= trip.zip_code %></td>
+            <td><%= trip.description %></td>
+          <td><%= trip.is_active ? "Yes" : "No" %></td>
+          <td><% trip.paintings.each do |p|  %>
+             <%= image_tag p.image_url(:thumb) %>
+            <% end %>
+           </td>
+             <td>
+              <%= link_to "Edit", edit_admin_trip_path(trip), class: 'btn btn-primary' %>
+              <%= link_to "Show", admin_trip_path(trip), class: 'btn btn-info' %>
+              <%= link_to "Delete", admin_trip_path(trip),
+                          method: :delete,
+                          data: {confirm: "are you sure you want to destroy?"},
+                          class: 'btn btn-danger'
+              %>
+            </td>
+          <td>
+            <div class="form-group">
+              <div class="col-lg-offset-1 col-lg-10">
+                <% trip.categories.each do |cate| %>
+                <%= link_to cate.name,  admin_category_path(cate), class: "btn btn-link" %>
+                <% end %>
+              </div>
+            </div>
+          </td>
+        </tr>
 
-<% end %>
-</tbody>
-</table>
+    <% end %>
+    </tbody>
+    </table>
+
 
 
 

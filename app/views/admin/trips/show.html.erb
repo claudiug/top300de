@@ -2,7 +2,16 @@
 <div class="container">
   <div class="help-block">
     <h1>trip page for: <strong><%= @trip.name %></strong></h1>
+    <h2>Is active?: <%= @trip.is_active %></h2>
+    <h3>City: <%= @trip.city %></h3>
+    <p>Description: <%= @trip.description %></p>
+    <strong>Type size:<%= @trip.categories.size %></strong>
   </div>
+  <% @trip.categories.each do |cate| %>
+      <span class="label label-success"> ||
+        <strong><%= cate.name %></strong>
+      </span>
+      <% end %>
 
   <div class="has-error">
     <% @trip.paintings.each do |paint| %>
@@ -21,5 +30,8 @@
         </div>
     <% end %>
   </div>
+  <div class="hero-unit">
+    <%= link_to "add a new image", new_admin_painting_path, class: 'btn btn-primary' %>
 
+  </div>
 </div>

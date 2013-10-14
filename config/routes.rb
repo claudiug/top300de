@@ -19,6 +19,7 @@ Top300de::Application.routes.draw do
     resources :trips do
       collection do
         get 'load_trips'
+        put 'discontinue'
       end
     end
   end

@@ -1,5 +1,5 @@
 
-<%= form_for [:admin, @painting], html: {class: "form-horizontal"} do |f| %>
+<%= form_for [:admin, @painting], multipart:true, html: {class: "form-horizontal"} do |f| %>
     <% if @painting.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@painting.errors.count, "error") %> prohibited this product from being saved:</h2>
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="form-group">
-      <%= f.label :is_feature, class: 'col-lg-1 control-label', multipart:true %>
+      <%= f.label :is_feature, class: 'col-lg-1 control-label'%>
       <div class="col-lg-2">
         <%= f.check_box :is_feature, class: 'form-control' %>
       </div>
@@ -44,8 +44,16 @@
     </div>
 
     <div class="form-group">
+      <%= f.label :trip_id, class: 'col-lg-1 control-label' %><br />
+      <%= f.collection_select :trip_id, Trip.order(:name), :id, :name, include_blank: true,  class: 'form-control' %>
+    </div>
+    <!--<div class="form-group">-->
+      <%= f.label :trip_name, class: 'col-lg-1 control-label' %><br />
+      <!--<%= f.text_field :trip_name, class: 'form-control', id:"trip_search" %>-->
+    <!--</div>-->
+    <div class="form-group">
       <div class="col-lg-offset-1 col-lg-10">
         <%= f.submit("Add a new image", class: 'btn btn-primary') %>
       </div>
     </div>
-<% end%>
+<% end %>

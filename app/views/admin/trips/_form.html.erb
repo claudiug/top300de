@@ -1,4 +1,6 @@
 <%= form_for [:admin, @trip], html: {class: "form-horizontal"} do |f| %>
+
+
     <% if @trip.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@trip.errors.count, "error") %> prohibited this product from being saved:</h2>
@@ -57,6 +59,8 @@
         </div>
       </div>
     </div>
+
+
     <div class="form-group">
       <div class="col-lg-offset-1 col-lg-10">
         <%= f.submit("Add a new trip", class: 'btn btn-primary') %>
