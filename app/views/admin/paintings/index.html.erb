@@ -18,6 +18,53 @@
 </div>
 
 
+<div class="container">
+  <table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Paint Name</th>
+      <th>Trip</th>
+      <th>Is feature</th>
+      <th>Active?</th>
+      <th>Created_at</th>
+      <th>Actions </th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <% @paintings.each do |paint| %>
+
+        <tr>
+          <td><%= paint.id %></td>
+          <td><%= paint.name %></td>
+          <td><%= paint.trip.try(:name) %>
+
+          </td>
+          <td><%= paint.is_feature ? "Yes" : "No"  %></td>
+          <td><%= paint.is_active  ? "Yes" : "No" %></td>
+          <td><%= paint.created_at%></td>
+
+          <td>
+            <%= link_to "Edit", edit_admin_painting_path(paint), class: 'btn btn-primary' %>
+            <%= link_to "Show", admin_painting_path(paint), class: 'btn btn-info' %>
+            <%= link_to "Delete", admin_painting_path(paint),
+                        method: :delete,
+                        data: {confirm: "are you sure you want to destroy?"},
+                        class: 'btn btn-danger'
+            %>
+          </td>
+
+        </tr>
+
+    <% end %>
+    </tbody>
+  </table>
+
+</div>
+
+
+
 <div class="hpFooterBlock">
   <div class="apple_pagination">
     <div class="page_info">
