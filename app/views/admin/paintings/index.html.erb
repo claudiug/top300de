@@ -17,6 +17,15 @@
       <%= image_tag paint.image_url(:thumb) %>
     </div>
     <div class="help-block">
-      <%= link_to "add a new painting", new_admin_painting_path %>
+      <%= link_to "add a new painting", new_admin_painting_path, class: 'btn btn-link' %>
     </div>
 <% end %>
+
+<div class="hpFooterBlock">
+  <div class="apple_pagination">
+    <div class="page_info">
+      <%= page_entries_info @paintings %>
+    </div>
+    <%= will_paginate @paintings, :container => false%>
+  </div>
+</div>

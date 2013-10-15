@@ -25,6 +25,7 @@ gem 'meta-tags', :require => 'meta_tags'
 gem 'bootstrap-sass-rails'
 gem 'rmagick', '2.13.2'
 gem "carrierwave"
+gem 'will_paginate'
 
 
 #gem 'bullet'

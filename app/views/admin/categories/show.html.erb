@@ -2,3 +2,7 @@
   <h1>Category page</h1>
 </div>
 <%= @category.name%>
+
+<% @category.trips.each do |trip| %>
+    <%= link_to trip.name, admin_trip_path(trip),  class: "btn btn-link"  %>
+<% end %>
