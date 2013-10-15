@@ -24,6 +24,7 @@
     <tr>
       <th>#</th>
       <th>Paint Name</th>
+      <th>Preview</th>
       <th>Trip</th>
       <th>Is feature</th>
       <th>Active?</th>
@@ -38,12 +39,13 @@
         <tr>
           <td><%= paint.id %></td>
           <td><%= paint.name %></td>
+          <td><%= image_tag paint.image_url(:small).to_s %></td>
           <td><%= paint.trip.try(:name) %>
 
           </td>
           <td><%= paint.is_feature ? "Yes" : "No"  %></td>
           <td><%= paint.is_active  ? "Yes" : "No" %></td>
-          <td><%= paint.created_at%></td>
+          <td><%= paint.created_at.to_formatted_s(:long)%></td>
 
           <td>
             <%= link_to "Edit", edit_admin_painting_path(paint), class: 'btn btn-primary' %>
