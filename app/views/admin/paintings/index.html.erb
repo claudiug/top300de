@@ -1,25 +1,22 @@
 <h1>List all painting</h1>
-<% @paintings.each do |paint| %>
-    <div class="container">
-      <div class="breadcrumb">
-        <%= link_to "Edit", edit_admin_painting_path(paint), class: "btn btn-primary" %>
-        <%= link_to "Delete", admin_painting_path(paint),
-                    method: :delete,
-                    data: {confirm: "are you sure you want to destroy?"},
-                    class: 'btn btn-danger'
-        %>
-        <%= link_to paint.trip.try(:name), admin_trip_path(paint.trip), class: 'btn btn-primary' %>
+<p>search</p>
+
+<div class="container">
+  <%= form_tag admin_paintings_path, method: :get, class: "form-vertical" do  %>
+
+      <div class="form-group">
+        <div class="col-lg-2">
+          <%= text_field_tag :search, params[:search], class: 'form-control' %>
+        </div>
       </div>
-      <p>Name:<%= paint.name %></p>
-      <p>Is Active:<%= paint.is_active %></p>
-      <p>Image Location:<%= paint.image %></p>
-      <p>Is feature:<%= paint.is_feature %></p>
-      <%= image_tag paint.image_url(:thumb) %>
-    </div>
-    <div class="help-block">
-      <%= link_to "add a new painting", new_admin_painting_path, class: 'btn btn-link' %>
-    </div>
-<% end %>
+      <div class="form-group">
+        <div class="col-lg-2">
+          <%= submit_tag "search", class: 'btn btn-info' %>
+        </div>
+      </div>
+  <% end %>
+</div>
+
 
 <div class="hpFooterBlock">
   <div class="apple_pagination">

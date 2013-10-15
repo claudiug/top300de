@@ -9,4 +9,12 @@ class Painting < ActiveRecord::Base
   def trip_name=(name)
     self.trip = Trip.find_by(name: name) if name.present?
   end
+
+  def self.search(search)
+    if search
+      where('name LIKE ?', "%#{search}%")
+    else
+      order("name").limit(10)
+    end
+  end
 end

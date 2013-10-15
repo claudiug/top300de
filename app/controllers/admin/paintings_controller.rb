@@ -4,7 +4,8 @@ class Admin::PaintingsController < ApplicationController
   before_action :set_painting, only: [:show, :edit, :update, :destroy]
 
   def index
-    @paintings = Painting.paginate(:page => params[:page], :per_page => 5)
+    #@paintings = Painting.paginate(page: params[:page], per_page:  5)
+    @paintings = Painting.search(params[:search]).paginate(page: params[:page], per_page: 5)
   end
 
   def new
