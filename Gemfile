@@ -28,6 +28,7 @@ gem "carrierwave"
 gem 'will_paginate'
 
 
+
 #gem 'bullet'
 #gem 'sunspot_rails'
 #gem "sunspot_solr"
