@@ -44,13 +44,11 @@
     </div>
 
     <div class="form-group">
-      <%= f.label :trip_id, class: 'col-lg-1 control-label' %><br />
+      <%= f.label :trip_id, class: 'col-lg-1 control-label' %>
       <%= f.collection_select :trip_id, Trip.order(:name), :id, :name, include_blank: true,  class: 'form-control' %>
     </div>
-    <!--<div class="form-group">-->
-      <%= f.label :trip_name, class: 'col-lg-1 control-label' %><br />
-      <!--<%= f.text_field :trip_name, class: 'form-control', id:"trip_search" %>-->
-    <!--</div>-->
+
+
     <div class="form-group">
       <div class="col-lg-offset-1 col-lg-10">
         <%= f.submit("Add a new image", class: 'btn btn-primary') %>

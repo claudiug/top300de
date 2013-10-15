@@ -27,6 +27,9 @@ gem 'rmagick', '2.13.2'
 gem "carrierwave"
 gem 'will_paginate'
 gem 'geocoder'
+gem 'jquery-ui-rails'
+
+
 
 
 
