@@ -1,7 +1,7 @@
 @import 'constants.css.scss';
 
 body {
-  background: url(/assets/hbg.jpg);
+  background: image-url("hbg.jpg");
   -webkit-font-smoothing: antialiased;
   padding-top: 54px;
 }
@@ -16,7 +16,7 @@ a {
   display: block;
 }
 .tinput {
-  background: url(/assets/inputbg.png) center 0 repeat-x transparent;
+  background: image-url("inputbg.png") center 0 repeat-x transparent;
   border: 0;
   padding: 5px 10px;
   font: 23px/1 Open Sans;
@@ -26,7 +26,7 @@ a {
 
 /* Header */
 header {
-  background: url(/assets/tr.png);
+  background: image-url("tr.png");
   position: fixed;
   top: 0;
   left: 0;
@@ -70,13 +70,13 @@ header {
 }
 
 .homepageEngine {
-  background: url(/assets/hallstat.jpg) 50% 0 repeat fixed;
+  background: image-url("hallstat.jpg") 50% 0 repeat fixed;
   -webkit-box-shadow: 3px 4px 5px rgba(0,0,0,.16);
   -moz-box-shadow: 3px 4px 5px rgba(0,0,0,.16);
   box-shadow: 3px 4px 5px rgba(0,0,0,.16);
 
   .adPic {
-    background: url(/assets/greygov.png) 0 0 repeat-x;
+    background: image-url("greygov.png") 0 0 repeat-x;
     height: 100%;
   }
 
@@ -115,7 +115,7 @@ header {
 /* Search engine */
 
 #Search {
-  background: url(/assets/srchbg.png);
+  background: image-url("srchbg.png");
   position: relative;
   top: 130px;
   padding: 20px;
