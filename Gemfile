@@ -29,7 +29,6 @@ gem 'will_paginate'
 gem 'geocoder'
 gem 'jquery-ui-rails'
 gem  "pg"
-#on linux remote the version!!!!
 
 
 #gem 'bullet'

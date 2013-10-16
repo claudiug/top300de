@@ -19,11 +19,11 @@ class Admin::TripsController < ApplicationController
 
   def new
     @trip = Trip.new
+    @trip.paintings.build
   end
 
   def create
     @trip = Trip.new(trip_params)
-    @image = @trip.paintings.build
     if @trip.save
       redirect_to [:admin, @trip], notice: "trip created!"
     else
@@ -63,7 +63,8 @@ class Admin::TripsController < ApplicationController
 
   #category_ids[] is used for get all category ids when submiting a form
   def trip_params
-    params.require(:trip).permit(:name,:city,:zip_code, :description, :is_active, {category_ids: []})
+    params.require(:trip).permit(:name,:city,:zip_code, :description, :is_active,
+                                 {category_ids: []},paintings_attributes: [:name, :is_feature, :is_active, :image])
   end
 
   def set_trip
