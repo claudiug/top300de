@@ -14,8 +14,10 @@
 
 
               <div class="count">
-                <img src="/assets/person.svg" alt="Travelers" width="20" />
-                <input type="text" name="persons" id="persons" value="2">
+                <%= image_tag "person.svg", alt:"Travelers", width: "20" %>
+                <!--<input type="text" name="persons" id="persons" value="2">-->
+                <%= text_field_tag("persons", 2) %>
+
                 <span class="number">x<span>2</span></span>
                 <span class="add pnav">+</span>
                 <span class="rem pnav">-</span>
@@ -28,37 +30,49 @@
               <div class="sbTitle">Activities:</div>
 
               <label class="styled" id="go_bike">
-                <input type="checkbox" name="bikes">
+                <!--<input type="checkbox" name="bikes">-->
+                <%= check_box_tag("bikes", params[:go_bike], false, id:"go_bikes") %>
                 <span></span>
               </label>
 
               <label class="styled" id="go_hike">
-                <input type="checkbox" name="hike">
+                <!--<input type="checkbox" name="hike">-->
+                <%= check_box_tag("hike", params[:go_hike], false, id:"go_hike") %>
+
                 <span></span>
               </label>
 
               <label class="styled" id="go_beach">
-                <input type="checkbox" name="beach">
+                <!--<input type="checkbox" name="beach">-->
+                <%= check_box_tag("beach", params[:go_beach], false, id:"go_beach") %>
+
                 <span></span>
               </label>
 
               <label class="styled" id="go_lake">
-                <input type="checkbox" name="lake">
+                <!--<input type="checkbox" name="lake">-->
+                <%= check_box_tag("lake", params[:go_lake], false, id:"go_lake") %>
+
                 <span></span>
               </label>
 
               <label class="styled" id="go_castles">
-                <input type="checkbox" name="castles">
+                <!--<input type="checkbox" name="castles">-->
+                <%= check_box_tag("castles", params[:go_castle], false, id:"go_castle") %>
+
                 <span></span>
               </label>
 
               <label class="styled" id="go_fun">
-                <input type="checkbox" name="fun">
+                <!--<input type="checkbox" name="fun">-->
+                <%= check_box_tag("fun", params[:go_fun], false, id:"go_fun") %>
                 <span></span>
               </label>
 
               <label class="styled" id="go_love">
-                <input type="checkbox" name="love">
+                <!--<input type="checkbox" name="love">-->
+                <%= check_box_tag("love", params[:go_love], false, id:"go_love") %>
+
                 <span></span>
               </label>
 
@@ -69,7 +83,8 @@
               <div class="sbTitle">Days:</div>
 
               <div class="count">
-                <input type="text" name="days" id="days" value="7" class="tinput">
+                <!--<input type="text" name="days" id="days" value="7" class="tinput">-->
+                <%= text_field_tag("days", "7", class:"tinput") %>
                 <span class="add pnav">+</span>
                 <span class="rem pnav">-</span>
               </div> <!-- .count -->
@@ -86,7 +101,9 @@
     </div> <!-- #Search -->
 
     <div class="scrollMore">
-      <img src="/assets/darrow.svg" alt="Scroll for more" width="35" id="scrollPage" />
+      <!--<img src="/assets/darrow.svg" alt="Scroll for more" width="35" id="scrollPage" />-->
+      <%= image_tag "darrow.svg", alt:"Scroll for more", width: "20", id: "scollPage" %>
+
     </div>
 </div>
 </section>
