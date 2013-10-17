@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131013160934) do
+ActiveRecord::Schema.define(version: 20131016222619) do
 
   create_table "api_keys", force: true do |t|
     t.string   "key"
@@ -37,6 +37,13 @@ ActiveRecord::Schema.define(version: 20131013160934) do
   create_table "categories_trips", force: true do |t|
     t.integer "trip_id"
     t.integer "category_id"
+  end
+
+  create_table "dashboards", force: true do |t|
+    t.string   "name"
+    t.string   "info"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "feedbacks", force: true do |t|
