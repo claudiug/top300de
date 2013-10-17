@@ -16,7 +16,7 @@
               <div class="count">
                 <%= image_tag "person.svg", alt:"Travelers", width: "20" %>
                 <!--<input type="text" name="persons" id="persons" value="2">-->
-                <%= text_field_tag("persons", 2) %>
+                <%= text_field_tag("persons", 2, params[:person]) %>
 
                 <span class="number">x<span>2</span></span>
                 <span class="add pnav">+</span>
@@ -84,7 +84,7 @@
 
               <div class="count">
                 <!--<input type="text" name="days" id="days" value="7" class="tinput">-->
-                <%= text_field_tag("days", "7", class:"tinput") %>
+                <%= text_field_tag("days", "7") %>
                 <span class="add pnav">+</span>
                 <span class="rem pnav">-</span>
               </div> <!-- .count -->
