@@ -17,9 +17,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
  gem 'therubyracer', platforms: :ruby
-gem 'better_errors'
-gem 'binding_of_caller'
-#gem 'rack-mini-profiler'
+
 gem 'active_model_serializers'
 gem 'meta-tags', :require => 'meta_tags'
 gem 'bootstrap-sass-rails'
@@ -36,6 +34,15 @@ gem  "pg"
 #gem "sunspot_solr"
 
 
+
+group :development do
+gem 'better_errors'
+gem 'binding_of_caller'
+#gem 'rack-mini-profiler'
+gem 'quiet_assets'
+gem 'xray-rails'
+
+end
 
 
 
