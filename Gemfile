@@ -27,6 +27,8 @@ gem 'will_paginate'
 gem 'geocoder'
 gem 'jquery-ui-rails'
 gem  "pg"
+gem 'forecast_io'
+
 
 
 #gem 'bullet'
