@@ -3,5 +3,11 @@
 </div>
 
 
+<%= form_tag admin_dashboard_path, method: :get do  %>
+    <%= text_field_tag "latitude", params[:latitude] %>
+    <%= text_field_tag "longitude", params[:longitude] %>
+    <%= submit_tag("search for temps") %>
+<% end %>
 
 
+<%= debug @forecast %>
