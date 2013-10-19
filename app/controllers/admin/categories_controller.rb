@@ -58,7 +58,7 @@ end
   private
 
   def category_params
-    params.require(:category).permit(:name)
+    params.require(:category).permit(:name, :description, :seo, :is_active)
   end
 
   def set_category
