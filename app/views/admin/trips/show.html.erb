@@ -15,7 +15,7 @@
 
   <div class="has-error">
     <% @trip.paintings.each do |paint| %>
-        <%= image_tag paint.image_url(:thumb).to_s %>
+        <%= image_tag paint.image_url().to_s %>
         Name <strong><%= paint.name %></strong><br> |
         Feature <strong><%= paint.is_feature %></strong><br> |
        Image Location <strong><%= paint.image %></strong><br> |
