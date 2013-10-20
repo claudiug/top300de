@@ -1,0 +1,76 @@
+@import 'constants.css.scss';
+
+.search-results {
+  padding-top: 15px;
+
+  h1 {
+    font-weight: 300;
+    font-size: $smallNote;
+    color: $titleGrey;
+    paddding: 5px 0 0;
+    line-height: 1;
+  }
+
+  .content-col {
+    .head {
+      padding-bottom: 20px;
+
+    }
+    .title {
+      color: #b8b8b8;
+    }
+  }
+
+}
+.filter-col {
+  width: 190px;
+}
+.featured-trip {
+  .trip-image {
+    height: 200px;
+    display: block;
+    /* @include background-image(linear-gradient(to bottom, #000, rgba(0,0,0,0)));
+    background-color: rgba(0,0,0,0);
+    background-image: -webkit-linear-gradient(top, #000, rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(top, #000, rgba(0,0,0,0));
+    background-image: -o-linear-gradient(top, #000, rgba(0,0,0,0));
+    background-image: linear-gradient(to bottom, #000, rgba(0,0,0,0));
+     */
+    position: relative;
+
+    span {
+      color: $linkOnBlackHover;
+      font-size: $featTitleSize;
+      font-weight:  700;
+      padding: 15px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, .35);
+    }
+
+  }
+  .desc {
+    width: 615px;
+    border-right: 1px solid #efefef;
+    padding-right: 15px;
+  }
+  .stand-by {
+    margin-left: 635px;
+  }
+}
+.trip-tent {
+  padding: 15px;
+  font-size: $textSize;
+  line-height: 1.5;
+  color: $textColor;
+  overflow: hidden;
+}
+
+#trip-list {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}

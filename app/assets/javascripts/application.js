@@ -17,4 +17,6 @@
 //= require raphael
 //= require morris
 //= require twitter/bootstrap
+//= require jquery.wookmark.js
+//= require common
 //= require_tree .

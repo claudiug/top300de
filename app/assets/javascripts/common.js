@@ -39,6 +39,23 @@ $(document).ready(function() {
         resizeAd(slideHeight);
     });
 
+    // List
+    $('.trip-item').wookmark({
+        align: 'left',
+        autoResize: false,
+        comparator: null,
+        container: $('#trip-list'),
+        direction: undefined,
+        ignoreInactiveItems: true,
+        //itemWidth: 255,
+        fillEmptySpace: true,
+        flexibleWidth: 0,
+        offset: 11,
+        onLayoutChanged: undefined,
+        outerOffset: 0,
+        resizeDelay: 50
+    });
+
 });
 
 function resizeAd(slideHeight) {

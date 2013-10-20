@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700,800);
+/* @import "compass/css3/box-shadow"; */
+
 
 /* Sizes */
 $wideBlock: 1000px;
@@ -6,7 +8,10 @@ $wideBlock: 1000px;
 /* Text */
 $smallNote: 10px;
 $forUpper: 11px;
-$textSize: 14px;
+$textSize: 12px;
+$tileTitle: 14px;
+$featTitleSize: 16px;
+$head: 18px;
 $subHeadline: 24px;
 $headlineSize: 60px;
 
@@ -14,6 +19,10 @@ $headlineSize: 60px;
 $link: #f4f4e6;
 $linkOnBlackHover: white;
 $backGreen: #96ae22;
+$titleGrey: #6a6a6a;
+$textColor: #848484;
+
+/* Fonts */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -58,4 +67,232 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+
+
+::selection {
+  background-color: #539bff;
+  color: white;
+}
+
+body {
+  background: image-url("hbg.jpg");
+  -webkit-font-smoothing: antialiased;
+  padding-top: 54px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+.wrapBlock {
+  margin: 0 auto;
+  width: $wideBlock;
+  display: block;
+}
+.tinput {
+  background: image-url("inputbg.png") center 0 repeat-x transparent;
+  border: 0;
+  padding: 5px 10px;
+  font: 23px/1 Open Sans;
+  font-weight: 300;
+  color: $linkOnBlackHover;
+}
+/* Titles */
+.head {
+  font-size: $head;
+  color: $titleGrey;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+.box {
+  .title {
+    font-weight: 700;
+    font-size: $smallNote;
+    color: $titleGrey;
+    padding-bottom: 20px;
+  }
+}
+/* Positioning */
+.fly-left {
+  float: left;
+}
+.fly-right {
+  float: right;
+}
+.stand-by {
+  float: none;
+  margin-left: 210px;
+}
+/* Header */
+header {
+  background: image-url("tr.png");
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 98;
+  height: 54px;
+
+  * {
+    display: inline;
+  }
+
+  .Logo {
+    font-size: 24px;
+    background: rgba(255, 255, 255, .1);
+    float: left;
+    margin-top: -25px;
+
+    a {
+      display: block;
+      padding: 5px 11px;
+      color: $linkOnBlackHover;
+
+      span {
+        color: #a5be2a;
+      }
+
+    }
+  }
+
+  nav {
+    float: right;
+    margin-top: 3px;
+
+    a {
+      text-transform: uppercase;
+      font-size: $forUpper ;
+      margin-left: 10px;
+      color: $linkOnBlackHover;
+    }
+
+  }
+
+}
+
+/* input */
+.input {
+  background: white;
+  border: 1px solid #d1d1d1;
+  border-bottom: 1px solid #afafaf;
+  padding: 7px 10px;
+  font-size: 14px;
+  font-family: Open Sans;
+  font-size: $tileTitle;
+  color: $titleGrey;
+
+  &.size1 {
+    width: 200px;
+  }
+  &.size2 {
+    width: 90%;
+  }
+  &.map {
+    background: image-url("map-pin.svg") 8px 50% no-repeat white;
+    text-indent: 21px;
+  }
+}
+
+/* common box */
+.box {
+  margin-bottom: 20px;
+}
+.trip-box {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(90,90,90,.2);
+  /* @include box-shadow(0 2px 5px rgba(90,90,90,.2)); */
+  margin-bottom: 20px;
+}
+.trip-item {
+  width: 255px;
+  background: #f8f8f8;
+
+  a {
+
+    .more {
+      background: rgba(45, 124, 127, .70);
+      background-image: image-url("observe.svg");
+      background-position: 50% 30px;
+      background-repeat: no-repeat;
+      padding-top: 60px;
+      color: #fff;
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+      border-radius: 50% 50%;
+      display: block;
+
+      font-size: 11px;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      margin-top: -50px;
+      left: 50%;
+      margin-left: -50px;
+      z-index: 90;
+
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 10.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+
+    }
+
+    span {
+      display: block;
+    }
+
+    img {
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 10.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      .more {
+        opacity: 1;
+      }
+
+      img {
+        opacity: .7;
+      }
+
+    }
+  }
+
+  img, a {
+    display: block;
+  }
+  .trip-image {
+    position: relative;
+    min-height: 100px;
+    background: black;
+  }
+
+  .trip-title {
+    padding: 15px 15px 0;
+    font-weight: 400;
+    font-size: $head;
+
+    /* @include background-image(linear-gradient(to top, #000, rgba(0,0,0,0)));
+    background-color: rgba(16,19,22,0);
+    background-image: -webkit-linear-gradient(bottom, #181818, rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(bottom, #181818, rgba(0,0,0,0));
+    background-image: -o-linear-gradient(bottom, #181818, rgba(0,0,0,0));
+    background-image: linear-gradient(to top, #181818, rgba(0,0,0,0));      */
+
+  }
+
+  .meta {
+    background: #eee;
+    margin: 15px -15px -15px;
+    padding: 10px 15px;
+  }
 }
