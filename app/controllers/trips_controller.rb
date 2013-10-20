@@ -1,7 +1,11 @@
 class TripsController < ApplicationController
 
   def index
-    @result = params[:search]
+
+  end
+
+  def show
+
   end
 
 end

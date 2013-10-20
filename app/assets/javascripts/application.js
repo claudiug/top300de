@@ -14,8 +14,6 @@
 //= require jquery_ujs
 //= require jquery.ui.all
 //= require turbolinks
-//= require raphael
-//= require morris
 //= require twitter/bootstrap
 //= require jquery.wookmark.js
 //= require common

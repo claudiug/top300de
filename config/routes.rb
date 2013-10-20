@@ -1,13 +1,11 @@
 Top300de::Application.routes.draw do
 
   root "default#home"
-  get "users/index"
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   resources :users, only:[:new, :create]
-  resources :trips do
-    resources :feedback
-  end
+  resources :trips, only:[:index, :show]
+
 
   namespace :admin do
     get 'dashboard', to: "dashboard#index"
