@@ -73,9 +73,11 @@ class Admin::PaintingsController < ApplicationController
     redirect_to admin_paintings_path
   end
 
-  # TODO is possible to just write an array and avoid the query even is cached
+
   def sort_column
-    if Painting.column_names.include?(params[:sort]) then
+    #Painting.column_names
+    columns = %w['name is_feature is_active image']
+    if columns.include?(params[:sort]) then
       params[:sort]
     else
       "name"

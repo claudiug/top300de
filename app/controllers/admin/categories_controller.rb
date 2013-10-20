@@ -64,7 +64,7 @@ end
   def set_category
     @category = Category.find(params[:id])
   rescue ActiveRecord::RecordNotFound
-    flash[:warning] = "The category that you are looking: #{@category.name} could not be found"
+    flash[:warning] = "The category that you are looking could not be found"
     redirect_to admin_categories_path
   end
 

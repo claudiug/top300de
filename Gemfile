@@ -43,7 +43,7 @@ gem 'binding_of_caller'
 #gem 'rack-mini-profiler'
 gem 'quiet_assets'
 #gem 'xray-rails'
-gem 'puma'
+#gem 'puma'
 
 
 end
