@@ -1,11 +1,14 @@
 Top300de::Application.routes.draw do
 
-  root "default#home"
-  get '/login', to: 'sessions#new'
-  post '/login', to: 'sessions#create'
-  resources :users, only:[:new, :create]
-  resources :trips, only:[:index, :show]
-
+  scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
+    root "default#home"
+    get '/login', to: 'sessions#new'
+    post '/login', to: 'sessions#create'
+    resources :users, only:[:new, :create]
+    resources :trips, only:[:index, :show]
+  end
+  get '*path', to: redirect("/#{I18n.default_locale}/%{path}"), constraints: lambda { |req| !req.path.starts_with? "/#{I18n.default_locale}/" }
+  get '', to: redirect("/#{I18n.default_locale}")
 
   namespace :admin do
     get 'dashboard', to: "dashboard#index"

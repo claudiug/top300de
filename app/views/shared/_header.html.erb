@@ -17,7 +17,10 @@
 
                     <div class="languageSelector">
                         <span class="currentLanguage langEn"></span>
-                            <a href="#" title="Sprache Deutch?">DE</a>
+                            <!--<a href="#" title="Sprache Deutch?">DE</a>-->
+                            <!--<a href="#" title="Sprache Deutch?">EN</a>-->
+                      <%= link_to_unless_current "DE", locale: "de" %>
+                      <%= link_to_unless_current "EN", locale: "en" %>
                     </div>
 
                 </nav>
