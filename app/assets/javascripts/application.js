@@ -16,5 +16,7 @@
 //= require turbolinks
 //= require twitter/bootstrap
 //= require common
+//= require ckeditor/init
+
 //= require chosen-jquery
 //= require_tree .
