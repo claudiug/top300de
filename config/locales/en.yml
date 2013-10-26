@@ -1,4 +1,4 @@
-en-GB:
+en:
   date:
     abbr_day_names:
     - Sun
@@ -203,3 +203,8 @@ en-GB:
   activerecord:
     errors:
       <<: *errors
+
+  default:
+    home:
+      slogan: "Travel like you want"
+      subslogan: "Tell us what are you searching for and we’ll find the best destination for you"
