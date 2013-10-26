@@ -2,9 +2,11 @@ class Admin::RestaurantsController < ApplicationController
   layout "admin"
   before_action :request_login
   before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
+  helper_method :sort_direction, :sort_column
+
 
   def index
-   @restaurants = Restaurant.page(params[:page]).per_page(5)
+   @restaurants = Restaurant.order(sort_column + ' ' + sort_direction).page(params[:page]).per_page(5)
   end
 
   def new
@@ -50,7 +52,22 @@ class Admin::RestaurantsController < ApplicationController
   rescue ActiveRecord::RecordNotFound
     flash[:warning] = "The restaurant #{params[:id]} could not be found"
     redirect_to admin_restaurants_path
+  end
 
+  def sort_column
+    if Restaurant.column_names.include?(params[:sort]) then
+      params[:sort]
+    else
+      "name"
+    end
+  end
+
+  def sort_direction
+    if %w[asc desc].include?(params[:direction]) then
+      params[:direction]
+    else
+      "asc"
+    end
   end
 
 end

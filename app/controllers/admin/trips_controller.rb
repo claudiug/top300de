@@ -2,9 +2,11 @@ class Admin::TripsController < ApplicationController
   layout "admin"
   before_action :request_login
   before_action :set_trip, only: [:show, :edit, :update, :destroy]
+  helper_method :sort_direction, :sort_column
+
 
   def index
-      @trips = Trip.order("id DESC").page(params[:page]).per_page(5)
+      @trips = Trip.order(sort_column + ' ' + sort_direction).page(params[:page]).per_page(5)
   end
 
 
@@ -57,6 +59,22 @@ class Admin::TripsController < ApplicationController
   rescue ActiveRecord::RecordNotFound
     flash[:warning] = "Trip #{params[:id]} could not be found"
     redirect_to admin_trips_path
+  end
+
+  def sort_column
+    if Trip.column_names.include?(params[:sort]) then
+      params[:sort]
+    else
+      "name"
+    end
+  end
+
+  def sort_direction
+    if %w[asc desc].include?(params[:direction]) then
+      params[:direction]
+    else
+      "asc"
+    end
   end
 
 end

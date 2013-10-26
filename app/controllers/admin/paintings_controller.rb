@@ -5,7 +5,7 @@ class Admin::PaintingsController < ApplicationController
   helper_method :sort_direction, :sort_column
 
   def index
-    @paintings = Painting.search(params[:search]).
+    @paintings = Painting.search(params[:query]).
         order(sort_column + ' ' + sort_direction).
         page(params[:page]).per_page(5)
 
@@ -66,9 +66,7 @@ class Admin::PaintingsController < ApplicationController
 
 
   def sort_column
-    #Painting.column_names
-    columns = %w['name is_feature is_active image']
-    if columns.include?(params[:sort]) then
+    if Painting.column_names.include?(params[:sort]) then
       params[:sort]
     else
       "name"
