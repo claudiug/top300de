@@ -33,14 +33,24 @@ gem 'forecast_io'
 gem 'chosen-rails'
 gem 'compass-rails', github: 'Compass/compass-rails'
 
+group :development, :test do
+  gem 'quiet_assets'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem "faker", "~> 1.1.2"
+  gem "capybara", "~> 2.1.0"
+  gem "database_cleaner", "~> 1.0.1"
+  gem "launchy", "~> 2.3.0"
+  gem "selenium-webdriver", "~> 2.35.1"
+end
+
 #gem 'bullet'
 #gem 'sunspot_rails'
 #gem "sunspot_solr"
 
-gem 'better_errors'
-gem 'binding_of_caller'
+
 #gem 'rack-mini-profiler'
-gem 'quiet_assets'
+
 #gem 'xray-rails'
 #gem 'puma'
 
