@@ -1,6 +1,6 @@
 Top300de::Application.routes.draw do
 
-  scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
+  scope ":locale", locale: /en|de/ do
     root "default#home"
     get '/login', to: 'sessions#new'
     post '/login', to: 'sessions#create'
