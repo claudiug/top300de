@@ -4,7 +4,7 @@ class Admin::RestaurantsController < ApplicationController
   before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
 
   def index
-   @restaurants = Restaurant.all
+   @restaurants = Restaurant.limit(10)
   end
 
   def new
@@ -21,18 +21,12 @@ class Admin::RestaurantsController < ApplicationController
   end
 
   def show
-    #set_restaurant
-    #@restaurant = Restaurant.find(params[:id])
   end
 
   def edit
-    #set_restaurant
-    #@restaurant = Restaurant.find(params[:id])
   end
 
   def update
-    #set_restaurant
-    #@restaurant = Restaurant.find(params[:id])
     if @restaurant.update(restaurant_params)
       redirect_to [:admin, @restaurant], notice: "restaurant updated!"
     else
@@ -42,8 +36,6 @@ class Admin::RestaurantsController < ApplicationController
   end
 
   def destroy
-    #set_restaurant
-    #@restaurant = Restaurant.find(params[:id])
     @restaurant.destroy
     redirect_to admin_restaurants_path
   end

@@ -6,7 +6,7 @@ class Admin::FeedbackController < ApplicationController
 
 
   def index
-    @feedbacks = Feedback.all
+    @feedbacks = Feedback.order(:name).limit 10
   end
 
   def new
@@ -24,18 +24,12 @@ class Admin::FeedbackController < ApplicationController
   end
 
   def show
-    #set_feedback
-    #@feedback = Feedback.find(params[:id])
   end
 
   def edit
-    #set_feedback
-    #@feedback = Feedback.find(params[:id])
   end
 
   def update
-    #set_feedback
-    #@feedback = Feedback.find(params[:id])
     if @feedback.update(feedback_params)
       redirect_to [:admin, @feedback], notice: "update done!"
     else
@@ -45,8 +39,6 @@ class Admin::FeedbackController < ApplicationController
   end
 
   def destroy
-    #set_feedback
-    #@feedback = Feedback.find(params[:id])
     @feedback.destroy
     redirect_to admin_feedback_index_path, notice:  "feedback was deleted!"
   end

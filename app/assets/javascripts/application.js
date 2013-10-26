@@ -15,6 +15,6 @@
 //= require jquery.ui.all
 //= require turbolinks
 //= require twitter/bootstrap
-//= require jquery.wookmark.js
 //= require common
+//= require chosen-jquery
 //= require_tree .

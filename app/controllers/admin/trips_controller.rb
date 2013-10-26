@@ -32,18 +32,14 @@ class Admin::TripsController < ApplicationController
   end
 
   def show
-    #set_trip
-    #@trip = Trip.find(params[:id])
+
   end
 
   def edit
-    #set_trip
-    #@trip = Trip.find(params[:id])
+
   end
 
   def update
-    #set_trip
-    #@trip = Trip.find(params[:id])
     if @trip.update(trip_params)
        redirect_to [:admin, @trip], notice: "trip updated!"
     else
@@ -51,12 +47,10 @@ class Admin::TripsController < ApplicationController
     end
   end
 
-  #noinspection RailsChecklist01
   def destroy
-    #set_trip
-    #@trip = Trip.find(params[:id])
+
     @trip.destroy
-    redirect_to admin_trips_path, notice: "trip: #{@trip.name} deleted!"
+    redirect_to admin_trips_path, notice: "trip deleted!"
   end
 
   private

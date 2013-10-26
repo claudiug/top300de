@@ -4,7 +4,7 @@ class Admin::HotelsController < ApplicationController
   before_action :set_hotel, only: [:show, :edit, :update, :destroy]
 
   def index
-    @hotels = Hotel.all
+    @hotels = Hotel.order(:name).limit 10
   end
 
   def new
@@ -21,18 +21,12 @@ class Admin::HotelsController < ApplicationController
   end
 
   def show
-  #set_hotel
-   #@hotel = Hotel.find(params[:id])
   end
 
   def edit
-    #set_hotel
-    #@hotel = Hotel.find(params[:id])
   end
 
   def update
-    #set_hotel
-    #@hotel = Hotel.find(params[:id])
     if @hotel.update(hotel_params)
       redirect_to [:admin, @hotel], notice: "hotel updated!"
     else
@@ -41,8 +35,6 @@ class Admin::HotelsController < ApplicationController
   end
 
   def destroy
-    #set_hotel
-    #@hotel = Hotel.find(params[:id])
     @hotel.destroy
     redirect_to admin_hotels_path
   end

@@ -24,32 +24,25 @@ gem 'bootstrap-sass-rails'
 gem 'rmagick', '2.13.2'
 gem "carrierwave"
 gem 'will_paginate'
+gem 'quiet_assets'
+gem "ckeditor"
 gem 'geocoder'
 gem 'jquery-ui-rails'
 # gem  "pg"
 gem 'forecast_io'
-
-
+gem 'chosen-rails'
+gem 'compass-rails', github: 'Compass/compass-rails'
 
 #gem 'bullet'
 #gem 'sunspot_rails'
 #gem "sunspot_solr"
 
-
-
-group :development do
 gem 'better_errors'
 gem 'binding_of_caller'
 #gem 'rack-mini-profiler'
 gem 'quiet_assets'
 #gem 'xray-rails'
 #gem 'puma'
-
-
-end
-
-
-
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -60,11 +53,6 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
 
 # Use ActiveModel has_secure_password
  gem 'bcrypt-ruby', '~> 3.0.0'

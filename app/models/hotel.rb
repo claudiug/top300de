@@ -1,4 +1,5 @@
 class Hotel < ActiveRecord::Base
+
   belongs_to :trip
 
   validates :slug, presence: true, uniqueness: true

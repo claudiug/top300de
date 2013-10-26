@@ -5,7 +5,6 @@ class Admin::PaintingsController < ApplicationController
   helper_method :sort_direction, :sort_column
 
   def index
-    #@paintings = Painting.paginate(page: params[:page], per_page:  5)
     @paintings = Painting.search(params[:search]).
         order(sort_column + ' ' + sort_direction).
         paginate(page: params[:page], per_page: 5)
@@ -27,22 +26,16 @@ class Admin::PaintingsController < ApplicationController
   end
 
   def show
-    #set_painting
-    #@painting = Painting.find(params[:id])
   end
 
 
 
   def edit
-    #set_painting
-    #@painting = Painting.find(params[:id])
   end
 
   def update
-    #set_painting
-    #@painting = Painting.find(params[:id])
     if @painting.update(painting_params)
-      redirect_to [:admin, @painting], notice: "painting: #{@painting.name} was updated!"
+      redirect_to [:admin, @painting], notice: "painting: was updated!"
     else
       render :edit
       flash[:warning] = "please fix the errors"
@@ -51,8 +44,6 @@ class Admin::PaintingsController < ApplicationController
   end
 
   def destroy
-    #set_painting
-    #@painting = Painting.find(params[:id])
     @painting.destroy
     redirect_to admin_paintings_path
     flash[:notice] = "painting was deleted!"
@@ -69,7 +60,7 @@ class Admin::PaintingsController < ApplicationController
   def set_painting
     @painting = Painting.find(params[:id])
   rescue ActiveRecord::RecordNotFound
-    flash[:warning] = "the painting: #{@painting.name} could not be found"
+    flash[:warning] = "the painting could not be found"
     redirect_to admin_paintings_path
   end
 

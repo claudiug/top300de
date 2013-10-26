@@ -45,7 +45,8 @@
 
     <div class="form-group">
       <%= f.label :trip_id, class: 'col-lg-1 control-label' %>
-      <%= f.collection_select :trip_id, Trip.order(:name), :id, :name, include_blank: true,  class: 'form-control' %>
+      <%= f.collection_select :trip_id, Trip.order(:name), :id, :name, {}, class: 'form-control' %>
+
     </div>
 
 

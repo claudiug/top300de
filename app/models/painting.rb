@@ -2,6 +2,11 @@ class Painting < ActiveRecord::Base
   belongs_to :trip
   mount_uploader :image, ImageUploader
 
+
+  validates :image, presence: true
+  validates :name, presence: true
+
+
   def trip_name
     trip.try(:name)
   end
