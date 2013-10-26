@@ -7,6 +7,8 @@
 
     <div id="Search">
 
+
+            <!--
             <div class="searchBlock">
 
               <div class="sbTitle">Persons:</div>
@@ -15,84 +17,80 @@
 
               <div class="count">
                 <%= image_tag "person.svg", alt:"Travelers", width: "20" %>
-                <!--<input type="text" name="persons" id="persons" value="2">-->
                 <%= text_field_tag("persons", 2) %>
 
                 <span class="number">x<span>2</span></span>
                 <span class="add pnav">+</span>
                 <span class="rem pnav">-</span>
-              </div> <!-- .count -->
+              </div>
 
-            </div> <!-- .searchBlock -->
+            </div>  -->
 
             <div class="searchBlock options">
 
-              <div class="sbTitle">Activities:</div>
-
-              <label class="styled" id="go_bike">
-                <!--<input type="checkbox" name="bikes">-->
-                <%= check_box_tag("bikes", params[:go_bike], false, id:"go_bikes") %>
-                <span></span>
-              </label>
-
               <label class="styled" id="go_hike">
-                <!--<input type="checkbox" name="hike">-->
-                <%= check_box_tag("hike", params[:go_hike], false, id:"go_hike") %>
-
-                <span></span>
+                <!--<input type="checkbox" name="bikes">-->
+                <%= check_box_tag("go_hike", params[:go_hike], false, id:"go_hike") %>
+                <span><span>Hiking</span></span>
               </label>
 
-              <label class="styled" id="go_beach">
-                <!--<input type="checkbox" name="beach">-->
-                <%= check_box_tag("beach", params[:go_beach], false, id:"go_beach") %>
+              <label class="styled" id="go_mountain">
+                <i id="linked"></i>
+                <!--<input type="checkbox" name="hike">-->
+                <%= check_box_tag("mountains", params[:go_mountain], false, id:"go_mountain") %>
 
-                <span></span>
+                <span><span>Mountains</span></span>
               </label>
 
               <label class="styled" id="go_lake">
-                <!--<input type="checkbox" name="lake">-->
-                <%= check_box_tag("lake", params[:go_lake], false, id:"go_lake") %>
+                <!--<input type="checkbox" name="beach">-->
+                <%= check_box_tag("lakes", params[:go_lake], false, id:"go_lake") %>
 
-                <span></span>
+                <span><span>Lakes, sea, waterfalls</span></span>
               </label>
 
-              <label class="styled" id="go_castles">
+              <label class="styled" id="go_castle">
                 <!--<input type="checkbox" name="castles">-->
                 <%= check_box_tag("castles", params[:go_castle], false, id:"go_castle") %>
 
-                <span></span>
+                <span><span>Castles</span></span>
               </label>
 
-              <label class="styled" id="go_fun">
+              <label class="styled" id="go_events">
+                <!--<input type="checkbox" name="lake">-->
+                <%= check_box_tag("events", params[:go_events], false, id:"go_events") %>
+
+                <span><span>Festivals and Events</span></span>
+              </label>
+
+              <label class="styled" id="go_city">
                 <!--<input type="checkbox" name="fun">-->
-                <%= check_box_tag("fun", params[:go_fun], false, id:"go_fun") %>
-                <span></span>
+                <%= check_box_tag("city", params[:go_city], false, id:"go_city") %>
+                <span><span>Cities</span></span>
               </label>
 
-              <label class="styled" id="go_love">
-                <!--<input type="checkbox" name="love">-->
-                <%= check_box_tag("love", params[:go_love], false, id:"go_love") %>
-
-                <span></span>
+              <label class="styled" id="go_landscape">
+                <!--<input type="checkbox" name="fun">-->
+                <%= check_box_tag("landscape", params[:go_landscape], false, id:"go_landscape") %>
+                <span><span>Sightseeing</span></span>
               </label>
 
             </div> <!-- .searchBlock -->
 
             <div class="searchBlock select-days">
 
-              <div class="sbTitle">Days:</div>
+              <div class="sbTitle">Leaving from:</div>
 
-              <div class="count">
+              <label id="where_from">
                 <!--<input type="text" name="days" id="days" value="7" class="tinput">-->
-                <%= text_field_tag("days", "7", class:"tinput") %>
-                <span class="add pnav">+</span>
-                <span class="rem pnav">-</span>
-              </div> <!-- .count -->
+                <%= text_field_tag("days", "Berlin", class:"tinput") %>
+                <small>Drop your location here and you'll get travel times and more</small>
+              </label>
 
             </div> <!-- .searchBlock -->
 
             <div class="searchBlock submit">
-
+              <%= button_tag("", class: "submit-go") %>
 
             </div> <!-- .searchBlock -->
 
@@ -100,12 +98,180 @@
 
     </div> <!-- #Search -->
 
-    <div class="scrollMore">
-      <!--<img src="/assets/darrow.svg" alt="Scroll for more" width="35" id="scrollPage" />-->
-      <%= image_tag "darrow.svg", alt:"Scroll for more", width: "20", id: "scrollPage" %>
 
-    </div>
 </div>
+    <div class="scrollMore">
+      <%= image_tag "darrow.svg", alt:"Scroll for more", width: "20", id: "scrollPage" %>
+    </div>
+</section>
+
+
+<section class="wideBlock hpFooterBlock">
+  <div class="wrapBlock">
+    <h1>Popular destinations</h1>
+     <div class="box">
+                      <div class="box-content">
+
+                        <div id="trip-list">
+
+                          <article class="trip-item trip-box">
+                            <a href="#" title="Title">
+              <span class="trip-image">
+
+                <span class="more">More</span>
+
+                <img src="/assets/samples/pic1.jpg" alt="ALT" height="309" />
+
+              </span>  <!-- .trip-mage -->
+
+              <span class="trip-title">
+                Koenigssee Lake
+              </span> <!-- .trip-title -->
+
+            <span class="trip-tent">
+              <span class="desc">
+                The Bastei Bridge is a sandstone walking bridge connecting.
+              </span> <!-- .desc .fly-left -->
+
+              <span class="meta">
+                trip meta data
+              </span> <!-- .meta stand-by -->
+
+            </span> <!-- .trip-tent -->
+                            </a>
+                          </article>  <!-- .trip-item -->
+
+                          <article class="trip-item trip-box">
+                            <a href="#" title="Title">
+              <span class="trip-image">
+                <span class="more">More</span>
+                <img src="/assets/samples/pic2.jpg" alt="ALT" height="419" />
+
+              </span>  <!-- .trip-mage -->
+
+              <span class="trip-title">
+                Neuschwanstein Castle
+              </span> <!-- .trip-title -->
+
+            <span class="trip-tent">
+              <span class="desc">
+                The Bastei Bridge is a sandstone walking bridge connecting.
+              </span> <!-- .desc .fly-left -->
+
+              <span class="meta">
+                trip meta data
+              </span> <!-- .meta stand-by -->
+
+            </span> <!-- .trip-tent -->
+                            </a>
+                          </article>  <!-- .trip-item -->
+
+                          <article class="trip-item trip-box">
+                            <a href="#" title="Title">
+              <span class="trip-image">
+                <span class="more">More</span>
+                <img src="/assets/samples/pic3.jpg" alt="ALT" height="349" />
+
+              </span>  <!-- .trip-mage -->
+
+              <span class="trip-title">
+                Frankfurt am Main
+              </span> <!-- .trip-title -->
+
+            <span class="trip-tent">
+              <span class="desc">
+                The Bastei Bridge is a sandstone walking bridge connecting.
+              </span> <!-- .desc .fly-left -->
+
+              <span class="meta">
+                trip meta data
+              </span> <!-- .meta stand-by -->
+
+            </span> <!-- .trip-tent -->
+                            </a>
+                          </article>  <!-- .trip-item -->
+
+
+                          <article class="trip-item trip-box">
+                            <a href="#" title="Title">
+              <span class="trip-image">
+                <span class="more">More</span>
+                <img src="/assets/samples/pic4.jpg" alt="ALT" height="278" />
+
+              </span>  <!-- .trip-mage -->
+
+              <span class="trip-title">
+                Aachen Cathedral
+              </span> <!-- .trip-title -->
+
+            <span class="trip-tent">
+              <span class="desc">
+                The Bastei Bridge is a sandstone walking bridge connecting.
+              </span> <!-- .desc .fly-left -->
+
+              <span class="meta">
+                trip meta data
+              </span> <!-- .meta stand-by -->
+
+            </span> <!-- .trip-tent -->
+                            </a>
+                          </article>  <!-- .trip-item -->
+
+                          <article class="trip-item trip-box">
+                            <a href="#" title="Title">
+              <span class="trip-image">
+                <span class="more">More</span>
+                <img src="/assets/samples/pic5.jpg" alt="ALT" height="388" />
+
+              </span>  <!-- .trip-mage -->
+
+              <span class="trip-title">
+                Rugen Island
+              </span> <!-- .trip-title -->
+
+            <span class="trip-tent">
+              <span class="desc">
+                The Bastei Bridge is a sandstone walking bridge connecting.
+              </span> <!-- .desc .fly-left -->
+
+              <span class="meta">
+                trip meta data
+              </span> <!-- .meta stand-by -->
+
+            </span> <!-- .trip-tent -->
+                            </a>
+                          </article>  <!-- .trip-item -->
+
+                          <article class="trip-item trip-box">
+                            <a href="#" title="Title">
+              <span class="trip-image">
+                <span class="more">More</span>
+                <img src="/assets/samples/pic6.jpg" alt="ALT" height="309" />
+
+              </span>  <!-- .trip-mage -->
+
+              <span class="trip-title">
+                Munich
+              </span> <!-- .trip-title -->
+
+            <span class="trip-tent">
+              <span class="desc">
+                The Bastei Bridge is a sandstone walking bridge connecting.
+              </span> <!-- .desc .fly-left -->
+
+              <span class="meta">
+                trip meta data
+              </span> <!-- .meta stand-by -->
+
+            </span> <!-- .trip-tent -->
+                            </a>
+                          </article>  <!-- .trip-item -->
+
+                        </div> <!-- trip-list -->
+
+                      </div> <!-- .box-content -->
+                    </div> <!-- .box -->
+    </div> <!-- .wrapBlock -->
 </section>
 
 

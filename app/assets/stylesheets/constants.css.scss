@@ -77,7 +77,8 @@ table {
 }
 
 body {
-  background: image-url("hbg.jpg");
+  /* background: image-url("hbg.jpg"); */
+  background: #eef1f3;
   -webkit-font-smoothing: antialiased;
   padding-top: 54px;
 }
@@ -91,14 +92,7 @@ a {
   width: $wideBlock;
   display: block;
 }
-.tinput {
-  background: image-url("inputbg.png") center 0 repeat-x transparent;
-  border: 0;
-  padding: 5px 10px;
-  font: 23px/1 Open Sans;
-  font-weight: 300;
-  color: $linkOnBlackHover;
-}
+
 /* Titles */
 .head {
   font-size: $head;
@@ -133,7 +127,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 98;
-  height: 54px;
+  height: 43px;
 
   * {
     display: inline;
@@ -143,7 +137,7 @@ header {
     font-size: 24px;
     background: rgba(255, 255, 255, .1);
     float: left;
-    margin-top: -25px;
+    margin-top: 0;
 
     a {
       display: block;
@@ -159,7 +153,7 @@ header {
 
   nav {
     float: right;
-    margin-top: 3px;
+    margin-top: 14px;
 
     a {
       text-transform: uppercase;
@@ -182,6 +176,7 @@ header {
   font-family: Open Sans;
   font-size: $tileTitle;
   color: $titleGrey;
+  border-radius: 3px;
 
   &.size1 {
     width: 200px;
@@ -194,7 +189,20 @@ header {
     text-indent: 21px;
   }
 }
-
+.submit-go {
+  border: 0;
+  border-bottom: 1px solid #030300;
+  border-radius: 3px;
+  font-size: 16px;
+  background: #00A1D9 image-url("search.png") center 50% no-repeat;
+  padding: 13px 40px;
+  border: 0;
+  margin: 30px 0 0;
+  color: white;
+  font-weight: 600;
+  min-width: 280px;
+  min-height: 50px;
+}
 /* common box */
 .box {
   margin-bottom: 20px;

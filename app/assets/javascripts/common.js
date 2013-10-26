@@ -4,10 +4,8 @@
 
 $(document).ready(function() {
 
-    var slideHeight = $(window).height() - $('header').height();
-
-    resizeAd(slideHeight);
     setupLabel();
+
 
     $('section[data-type="background"]').each(function(){
 
@@ -22,12 +20,19 @@ $(document).ready(function() {
         });
     });
 
-    $('.options .styled').click(function () {
+    $('.options .styled').bind("click", function () {
         setupLabel();
-        $(this).click(clearSelection);
     });
 
-
+    $('.options #go_hike').bind("click", function() {
+        if($('input#go_hike').is(':checked')) {
+            $('input#go_mountain').attr("checked","checked");
+            setupLabel();
+            $('#linked').fadeIn(300).fadeOut(300).fadeIn(300);
+        } else {
+            $('#linked').fadeOut(300);
+        }
+    });
 
     $('#scrollPage').click(function() {
         var y = $(window).scrollTop();
@@ -57,10 +62,6 @@ $(document).ready(function() {
     });
 
 });
-
-function resizeAd(slideHeight) {
-    $('.homepageEngine').height(slideHeight);
-}
 
 function setupLabel() {
     if ($('.styled').length) {
