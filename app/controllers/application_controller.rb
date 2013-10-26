@@ -8,10 +8,7 @@ class ApplicationController < ActionController::Base
   private
 
   def set_locale
-    unless controller_path.include? "admin"
       I18n.locale = params[:locale] if params[:locale].present?
-    end
-
 
     #other way:
     # current_user.locale  set this in db
