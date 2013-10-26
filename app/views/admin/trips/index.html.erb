@@ -1,17 +1,5 @@
 <div class="page-header">
-      <%= form_tag admin_trips_path, method: :get, class: 'form-horizontal' do  %>
-          <div class="form-group">
-            <div class="col-lg-3">
-              <%= text_field_tag("query", params[:query], id: "trip_search", class: 'form-control')%>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-lg-10">
-              <%= submit_tag("Search for a trip!", class: 'btn btn-primary') %>
-            </div>
-          </div>
 
-      <% end%>
 
       <h1>List trips</h1>
     </div>
@@ -62,10 +50,17 @@
             </div>
           </td>
         </tr>
-
     <% end %>
     </tbody>
     </table>
+<div class="row">
+  <div class="apple_pagination">
+        <div class="page_info">
+            <%= page_entries_info @trips %>
+        </div>
+  <%= will_paginate @trips, :container => false %>
+   </div>
+</div>
 
 
 

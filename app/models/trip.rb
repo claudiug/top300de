@@ -18,7 +18,11 @@ class Trip < ActiveRecord::Base
   before_validation :make_name_titlecase
 
   def self.search(query)
-    where("name like ?", "%#{query}%")
+    if query
+      where("name like ?", "%#{query}%")
+    else
+      order(:name).limit(10)
+    end
   end
 
   def to_param

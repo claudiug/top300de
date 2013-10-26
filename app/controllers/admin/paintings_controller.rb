@@ -7,7 +7,7 @@ class Admin::PaintingsController < ApplicationController
   def index
     @paintings = Painting.search(params[:search]).
         order(sort_column + ' ' + sort_direction).
-        paginate(page: params[:page], per_page: 5)
+        page(params[:page]).per_page(5)
 
   end
 

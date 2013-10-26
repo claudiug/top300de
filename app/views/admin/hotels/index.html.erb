@@ -4,3 +4,12 @@
 <%= @hotels.each do |hotel| %>
     <p>hotel.name</p>
 <% end%>
+
+<div class="row">
+  <div class="apple_pagination">
+    <div class="page_info">
+      <%= page_entries_info @hotels %>
+    </div>
+    <%= will_paginate @hotels, :container => false %>
+  </div>
+</div>

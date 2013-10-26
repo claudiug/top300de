@@ -4,3 +4,12 @@
 <% @categories.each do |category| %>
     <p><%= category.name %></p>
 <% end%>
+
+<div class="row">
+  <div class="apple_pagination">
+    <div class="page_info">
+      <%= page_entries_info @categories %>
+    </div>
+    <%= will_paginate @categories, :container => false %>
+  </div>
+</div>

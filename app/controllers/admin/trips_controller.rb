@@ -4,16 +4,7 @@ class Admin::TripsController < ApplicationController
   before_action :set_trip, only: [:show, :edit, :update, :destroy]
 
   def index
-    if params[:query].present?
-      @trips = Trip.search(params[:query])
-    else
-      @trips = Trip.all
-    end
-    # AR TREBUI SA FOLOSESC API
-    def load_trips
-      @load_trips = Trip.pluck(:name)
-      render json: @load_trips, root: false
-    end
+      @trips = Trip.order("id DESC").page(params[:page]).per_page(5)
   end
 
 

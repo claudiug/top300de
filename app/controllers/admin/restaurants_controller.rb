@@ -4,7 +4,7 @@ class Admin::RestaurantsController < ApplicationController
   before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
 
   def index
-   @restaurants = Restaurant.limit(10)
+   @restaurants = Restaurant.page(params[:page]).per_page(5)
   end
 
   def new

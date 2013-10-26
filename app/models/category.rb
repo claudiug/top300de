@@ -13,7 +13,14 @@ class Category < ActiveRecord::Base
     joins(:trips).where("trips.name = ?", "#{query}")
   end
 
+  def self.search(query)
+    if query
+      where("name like ?", "#%{query}%")
+    else
+      order(:name).limit(10)
+    end
 
+  end
   def to_param
     slug
   end

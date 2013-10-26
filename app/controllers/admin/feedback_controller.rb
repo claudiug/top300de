@@ -6,7 +6,7 @@ class Admin::FeedbackController < ApplicationController
 
 
   def index
-    @feedbacks = Feedback.order(:name).limit 10
+    @feedbacks = Feedback.page(params[:page]).per_page(5)
   end
 
   def new

@@ -1,6 +1,6 @@
 class Painting < ActiveRecord::Base
   belongs_to :trip
-  #
+
    mount_uploader :image, ImageUploader
 
   validates :image, presence: true
@@ -15,11 +15,11 @@ class Painting < ActiveRecord::Base
     self.trip = Trip.find_by(name: name) if name.present?
   end
 
-  def self.search(search)
-    if search
-      where('name LIKE ?', "%#{search}%")
+  def self.search(query)
+    if query
+      where('name like ?', "%#{query}%")
     else
-      order("name").limit(10)
+      order(:name).limit(10)
     end
   end
 end

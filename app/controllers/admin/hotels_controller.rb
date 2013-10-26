@@ -4,7 +4,7 @@ class Admin::HotelsController < ApplicationController
   before_action :set_hotel, only: [:show, :edit, :update, :destroy]
 
   def index
-    @hotels = Hotel.order(:name).limit 10
+    @hotels = Hotel.page(params[:page]).per_page(5)
   end
 
   def new
