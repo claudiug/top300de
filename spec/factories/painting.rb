@@ -3,6 +3,6 @@ FactoryGirl.define do
     name "paint me"
     is_feature true
     is_active false
-    image "description"
+    image "image"
   end
 end

@@ -1,7 +1,7 @@
 class Painting < ActiveRecord::Base
   belongs_to :trip
-  mount_uploader :image, ImageUploader
-
+  #
+   mount_uploader :image, ImageUploader
 
   validates :image, presence: true
   validates :name, presence: true
