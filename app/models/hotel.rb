@@ -9,6 +9,7 @@ class Hotel < ActiveRecord::Base
   validates :email, presence: true
   validates :web_page, presence: true
   validates :is_active, presence: true
+  validates :address, presence: true
 
   before_validation :generate_slug
   before_validation :make_name_titlecase
