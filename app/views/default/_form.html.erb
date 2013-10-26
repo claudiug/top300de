@@ -1,0 +1,89 @@
+<section class="homepageEngine" data-type="background" data-speed="2">
+  <div class="adPic">
+
+    <div class="slogan"><%= t "default.home.slogan" %>
+      <div class="subSlogan"><%= t "default.home.subslogan" %></div>
+    </div>
+
+
+
+    <%= form_tag trips_path, method: :get do %>
+        <div id="Search">
+          <div class="searchBlock options">
+
+            <label class="styled" id="go_hike">
+              <!--<input type="checkbox" name="bikes">-->
+              <%= check_box_tag("go_hike", params[:go_hike], false, id:"go_hike") %>
+              <span><span>Hiking</span></span>
+            </label>
+
+            <label class="styled" id="go_mountain">
+              <i id="linked"></i>
+              <!--<input type="checkbox" name="hike">-->
+              <%= check_box_tag("mountains", params[:go_mountain], false, id:"go_mountain") %>
+
+              <span><span>Mountains</span></span>
+            </label>
+
+            <label class="styled" id="go_lake">
+              <!--<input type="checkbox" name="beach">-->
+              <%= check_box_tag("lakes", params[:go_lake], false, id:"go_lake") %>
+
+              <span><span>Lakes, sea, waterfalls</span></span>
+            </label>
+
+            <label class="styled" id="go_castle">
+              <!--<input type="checkbox" name="castles">-->
+              <%= check_box_tag("castles", params[:go_castle], false, id:"go_castle") %>
+
+              <span><span>Castles</span></span>
+            </label>
+
+            <label class="styled" id="go_events">
+              <!--<input type="checkbox" name="lake">-->
+              <%= check_box_tag("events", params[:go_events], false, id:"go_events") %>
+
+              <span><span>Festivals and Events</span></span>
+            </label>
+
+            <label class="styled" id="go_city">
+              <!--<input type="checkbox" name="fun">-->
+              <%= check_box_tag("city", params[:go_city], false, id:"go_city") %>
+              <span><span>Cities</span></span>
+            </label>
+
+            <label class="styled" id="go_landscape">
+              <!--<input type="checkbox" name="fun">-->
+              <%= check_box_tag("landscape", params[:go_landscape], false, id:"go_landscape") %>
+              <span><span>Sightseeing</span></span>
+            </label>
+
+          </div> <!-- .searchBlock -->
+
+          <div class="searchBlock select-days">
+
+            <div class="sbTitle">Leaving from:</div>
+
+            <label id="where_from">
+              <!--<input type="text" name="days" id="days" value="7" class="tinput">-->
+              <%= text_field_tag("days", "", class:"tinput", placeholder:"your city name here") %>
+              <small>Drop your location here and you'll get travel times and more</small>
+            </label>
+
+          </div> <!-- .searchBlock -->
+
+          <div class="searchBlock submit">
+            <%= submit_tag("", class: "submit-go") %>
+
+          </div> <!-- .searchBlock -->
+
+        </div>
+
+
+        </div> <!-- #Search -->
+    <% end %>
+
+    <div class="scrollMore">
+      <%= image_tag "darrow.svg", alt:"Scroll for more", width: "20", id: "scrollPage" %>
+    </div>
+    </section>
