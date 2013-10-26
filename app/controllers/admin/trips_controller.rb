@@ -64,13 +64,13 @@ class Admin::TripsController < ApplicationController
   #category_ids[] is used for get all category ids when submiting a form
   def trip_params
     params.require(:trip).permit(:name,:city,:zip_code, :description, :is_active,
-                                 {category_ids: []},paintings_attributes: [:name, :is_feature, :is_active, :image])
+                                 {category_ids: []}, paintings_attributes: [:name, :is_feature, :is_active, :image])
   end
 
   def set_trip
-    @trip = Trip.find(params[:id])
+    @trip = Trip.find_by(slug: params[:id])
   rescue ActiveRecord::RecordNotFound
-    flash[:warning] = "Trip #{@trip.name} could not be found"
+    flash[:warning] = "Trip #{params[:id]} could not be found"
     redirect_to admin_trips_path
   end
 

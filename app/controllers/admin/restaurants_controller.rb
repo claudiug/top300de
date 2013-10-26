@@ -54,9 +54,9 @@ class Admin::RestaurantsController < ApplicationController
   end
 
   def set_restaurant
-    @restaurant = Restaurant.find(params[:id])
+    @restaurant = Restaurant.find_by(slug: params[:id])
   rescue ActiveRecord::RecordNotFound
-    flash[:warning] = "The restaurant: #{@restaurant.name} could not be found"
+    flash[:warning] = "The restaurant #{params[:id]} could not be found"
     redirect_to admin_restaurants_path
 
   end
