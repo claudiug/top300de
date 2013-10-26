@@ -9,7 +9,6 @@ class ApplicationController < ActionController::Base
 
   def set_locale
       I18n.locale = params[:locale] if params[:locale].present?
-
     #other way:
     # current_user.locale  set this in db
     # request.subdomain  select a subdomain
@@ -22,7 +21,6 @@ class ApplicationController < ActionController::Base
   end
 
 
-
   def request_login
     if current_user.nil?
       flash[:error] = "must be login"
@@ -30,21 +28,11 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  #TODO refactor this!!!!
-  #def is_user_admin
-  #  try(request_login)
-  #  unless @current_user.try(:is_admin)
-  #    redirect_to root_url
-  #  end
-  #end
 
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
 
-  #def admins_only(&block)
-  #  block.call if current_user.try(:is_admin)
-  #end
 
   helper_method :request_login
 

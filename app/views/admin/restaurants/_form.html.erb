@@ -1,14 +1,6 @@
 <%= form_for [:admin, @restaurant], html: {class: "form-horizontal"} do |f| %>
-    <% if @restaurant.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@resturant.errors.count, "error") %> prohibited this product from being saved:</h2>
-          <ul>
-            <% @restaurant.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-          </ul>
-        </div>
-    <% end %>
+
+    <%= render "admin/restaurants/error" %>
 
   <div class="form-group">
     <%= f.label :name, class: 'col-lg-1 control-label' %>
