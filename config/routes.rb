@@ -7,9 +7,9 @@ Top300de::Application.routes.draw do
     resources :users, only:[:new, :create]
     resources :trips, only:[:index, :show]
   end
-  get '*path', to: redirect("/#{I18n.default_locale}/%{path}"), constraints: lambda { |req| !req.path.starts_with? "/#{I18n.default_locale}/" }
+  #get '*path', to: redirect("/#{I18n.default_locale}/%{path}"), constraints: lambda { |req| !req.path.starts_with? "/#{I18n.default_locale}/" }
   get '', to: redirect("/#{I18n.default_locale}")
-  scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
+
     namespace :admin do
       get 'dashboard', to: "dashboard#index"
       resources :categories
@@ -24,7 +24,7 @@ Top300de::Application.routes.draw do
         end
       end
     end
-  end
+
 
   namespace :api, defaults: {format: 'json'} do
     namespace :v1 do
