@@ -6,6 +6,7 @@ $(document).ready(function() {
 
     setupLabel();
 
+    var slideHeight = $('.homepageEngine').height();
 
     $('section[data-type="background"]').each(function(){
 
