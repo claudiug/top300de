@@ -46,12 +46,12 @@ class Admin::CategoriesController < ApplicationController
   end
 
 
-def destroy
-  #set_category
-  #@category = Category.find(params[:id])
-  @category.destroy
-  redirect_to admin_categories_path
-end
+  def destroy
+    #set_category
+    #@category = Category.find(params[:id])
+    @category.destroy
+    redirect_to admin_categories_path
+  end
 
 
 
@@ -62,7 +62,7 @@ end
   end
 
   def set_category
-    @category = Category.find(params[:id])
+    @category = Category.find_by(slug: params[:id])
   rescue ActiveRecord::RecordNotFound
     flash[:warning] = "The category that you are looking could not be found"
     redirect_to admin_categories_path

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131016222619) do
+ActiveRecord::Schema.define(version: 20131026120257) do
 
   create_table "api_keys", force: true do |t|
     t.string   "key"
@@ -32,7 +32,10 @@ ActiveRecord::Schema.define(version: 20131016222619) do
     t.boolean  "is_active",   default: true
     t.text     "seo"
     t.text     "description"
+    t.string   "slug"
   end
+
+  add_index "categories", ["slug"], name: "index_categories_on_slug"
 
   create_table "categories_trips", force: true do |t|
     t.integer "trip_id"
@@ -69,7 +72,10 @@ ActiveRecord::Schema.define(version: 20131016222619) do
     t.string   "email"
     t.string   "web_page"
     t.boolean  "is_active"
+    t.string   "slug"
   end
+
+  add_index "hotels", ["slug"], name: "index_hotels_on_slug"
 
   create_table "paintings", force: true do |t|
     t.string   "name"
@@ -91,7 +97,10 @@ ActiveRecord::Schema.define(version: 20131016222619) do
     t.string   "phone_number"
     t.boolean  "is_active"
     t.string   "web_page"
+    t.string   "slug"
   end
+
+  add_index "restaurants", ["slug"], name: "index_restaurants_on_slug"
 
   create_table "searches", force: true do |t|
     t.string   "keyword"
@@ -111,7 +120,10 @@ ActiveRecord::Schema.define(version: 20131016222619) do
     t.string   "zip_code"
     t.text     "description"
     t.boolean  "is_active"
+    t.string   "slug"
   end
+
+  add_index "trips", ["slug"], name: "index_trips_on_slug"
 
   create_table "users", force: true do |t|
     t.string   "name"

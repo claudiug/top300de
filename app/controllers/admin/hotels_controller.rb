@@ -49,11 +49,12 @@ class Admin::HotelsController < ApplicationController
 
   private
   def hotel_params
-
+    params.require(:hotel).permit(:name, :address, :trip_id, :city_id, :rating, :phone_number, :email, :web_page,
+                                  :is_active, :slug)
   end
 
   def set_hotel
-    @hotel = Hotel.find(params[:id])
+    @hotel = Hotel.find_by(slug: params[:id])
   rescue ActiveRecord::RecordNotFound
     flash[:warning] = "The hotel: #{@hotel.name} could not be found"
     redirect_to admin_hotels_path
