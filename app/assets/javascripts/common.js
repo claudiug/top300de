@@ -45,7 +45,7 @@ $(document).ready(function() {
     });
 
     // List
-    $('.trip-item').wookmark({
+    $('.trip-item, #hp-trips .trip-item').wookmark({
         align: 'left',
         autoResize: false,
         comparator: null,

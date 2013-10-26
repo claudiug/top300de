@@ -83,7 +83,7 @@
 
               <label id="where_from">
                 <!--<input type="text" name="days" id="days" value="7" class="tinput">-->
-                <%= text_field_tag("days", "Berlin", class:"tinput") %>
+                <%= text_field_tag("days", "", class:"tinput", placeholder:"your city name here") %>
                 <small>Drop your location here and you'll get travel times and more</small>
               </label>
 
@@ -109,7 +109,7 @@
 <section class="wideBlock hpFooterBlock">
   <div class="wrapBlock">
     <h1>Popular destinations</h1>
-     <div class="box">
+     <div class="box" id="hp-trips">
                       <div class="box-content">
 
                         <div id="trip-list">

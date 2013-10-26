@@ -213,6 +213,14 @@ header {
   /* @include box-shadow(0 2px 5px rgba(90,90,90,.2)); */
   margin-bottom: 20px;
 }
+#hp-trips {
+  padding-top: 40px;
+
+  .trip-item {
+    width: 325px;
+  }
+}
+
 .trip-item {
   width: 255px;
   background: #f8f8f8;
@@ -259,6 +267,7 @@ header {
       -o-transition: all 0.3s ease-in-out;
       -ms-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
+      margin: 0 auto;
     }
 
     &:hover {

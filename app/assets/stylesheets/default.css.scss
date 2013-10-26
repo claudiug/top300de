@@ -42,7 +42,7 @@ body.homepage {
   text-align: center;
   font-weight: 300;
   letter-spacing:  -1px;
-  padding-top: 90px;
+  padding-top: 80px;
 
   .subSlogan {
     font-size: $subHeadline;
@@ -58,7 +58,7 @@ body.homepage {
   /* background: image-url("srchbg.png"); */
   position: relative;
   text-align: center;
-  top: 20px;
+  top: 30px;
   padding: 20px 0;
   width: 100%;
 
@@ -137,7 +137,6 @@ body.homepage {
     font-size: 11px;
     padding: 7px 0 0;
     color: white;
-    opacity: .5;
     width: 85%;
     margin: 0 auto;
   }
@@ -254,15 +253,44 @@ body.homepage {
   }
 
    .tinput {
-     width: 280px;
-     text-align: left;
+     width: 265px;
      text-align: center;
-     background: image-url("map-pin.png") 10px 50% no-repeat transparent;
+     background: image-url("map-pin.png") 10px 44% no-repeat transparent;
      border: 1px solid transparent;
      border-bottom-color: white;
      font: 23px/1 Open Sans;
-     padding: 8px 10px;
+     padding: 8px 10px 8px 35px;
      color: white;
+
+     .phc {
+       font-weight: 300;
+       color: white;
+       opacity: .5;
+     }
+
+     &::-webkit-input-placeholder {
+       font-weight: 300;
+       color: white;
+       opacity: .5;
+     }
+
+     &:-moz-placeholder {
+       font-weight: 300;
+       color: white;
+       opacity: .5;
+     }
+
+     &::-moz-placeholder {
+       font-weight: 300;
+       color: white;
+       opacity: .5;
+     }
+
+     &:-ms-input-placeholder {
+       font-weight: 300;
+       color: white;
+       opacity: .5;
+     }
 
      &:focus {
         outline: none;
