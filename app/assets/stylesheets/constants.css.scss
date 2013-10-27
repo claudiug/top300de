@@ -103,7 +103,8 @@ table {
 body {
   /* background: image-url("hbg.jpg"); */
   /* background: #eef1f3; */
-  background: #fafbfc;
+  /* background: #fafbfc; */
+  background: white;
   -webkit-font-smoothing: antialiased;
   padding-top: 54px;
 }
@@ -160,7 +161,7 @@ header {
 
   .Logo {
     font-size: 24px;
-    background: rgba(255, 255, 255, .1);
+    /* background: rgba(255, 255, 255, .1); */
     float: left;
     margin-top: 0;
 
@@ -196,7 +197,7 @@ header {
   background: white;
   border: 0;
   outline: none;
-  border-bottom: 1px solid #afafaf;
+  border-bottom: 1px solid #ddd;
   padding: 7px 10px;
   font-size: 14px;
   font-family: Open Sans;
@@ -338,16 +339,21 @@ header {
   }
 
   .trip-title {
-    padding: 15px 15px 0;
+    color: white;
+    z-index: 9000;
+    position: relative;
+    margin-top: -55px;
+    padding: 15px;
+
     font-weight: 400;
     font-size: $head;
 
-    /* @include background-image(linear-gradient(to top, #000, rgba(0,0,0,0)));
+    /* @include background-image(linear-gradient(to top, #000, rgba(0,0,0,0))); */
     background-color: rgba(16,19,22,0);
     background-image: -webkit-linear-gradient(bottom, #181818, rgba(0,0,0,0));
     background-image: -moz-linear-gradient(bottom, #181818, rgba(0,0,0,0));
     background-image: -o-linear-gradient(bottom, #181818, rgba(0,0,0,0));
-    background-image: linear-gradient(to top, #181818, rgba(0,0,0,0));       */
+    background-image: linear-gradient(to top, #181818, rgba(0,0,0,0));
 
   }
 
@@ -355,5 +361,13 @@ header {
     background: #eee;
     margin: 15px -15px -15px;
     padding: 10px 15px;
+    display: none;
   }
+}
+
+.leftcol-break {
+  border-radius: 5px;
+  margin: 0 -15px 15px;
+  padding: 15px;
+  background: #eef1f3;
 }

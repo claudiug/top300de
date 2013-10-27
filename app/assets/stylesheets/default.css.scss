@@ -5,6 +5,16 @@ body.homepage {
 }
 .homepage header {
   background: rgba(0, 0, 0, .3);
+
+  .wrapBlock {
+    padding: 0 20px;
+    width: 100%;
+
+    .Logo a {
+      padding: 5px 0;
+    }
+
+  }
 }
 
 .homepageEngine {
