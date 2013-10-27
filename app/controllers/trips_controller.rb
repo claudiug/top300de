@@ -1,7 +1,11 @@
 class TripsController < ApplicationController
 
   def index
-    # render text:params.to_json
+    if params[:category].nil?
+      @trips = Trip.all
+    else
+      @trips = Trip.joins(:categories).where(categories:{name: params[:category].keys})
+    end
   end
 
   def show
@@ -9,4 +13,3 @@ class TripsController < ApplicationController
   end
 
 end
-#Trip.joins(:categories).where(categories:{name: ["Go Hike", "go_hike"]}).count

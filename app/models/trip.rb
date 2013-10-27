@@ -17,6 +17,10 @@ class Trip < ActiveRecord::Base
   before_validation :generate_slug
   before_validation :make_name_titlecase
 
+  scope :is_active, -> {where(is_active: true)}
+  scope :is_inactive, -> {where(is_active: false)}
+  default_scope {is_active}
+
   def self.search(query)
     if query
       where("name like ?", "%#{query}%")
