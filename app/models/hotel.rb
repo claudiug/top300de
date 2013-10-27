@@ -35,4 +35,18 @@ class Hotel < ActiveRecord::Base
     self.name = name.titlecase
   end
 
+  def hotel_by_date(start_date, end_date)
+    where("created_at >= :start_date and create_ar <= :end_date", {start_date:start_date, end_date:end_date})
+  end
+
+
+  def self.get_trips_with_name(name)
+    if name
+      joins(:trip).where(trips: {name: name})
+    else
+      Hotel.none
+    end
+
+  end
+
 end

@@ -33,6 +33,17 @@ class Category < ActiveRecord::Base
     self.name = name.titlecase
   end
 
+  def get_categories
+     trips.find(get_trips_ids)
+  end
+
+  private
+  def get_trips_ids
+      trip_ids
+  end
+
+
+
 
 
 end
