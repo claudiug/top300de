@@ -1,7 +1,7 @@
 class TripsController < ApplicationController
 
   def index
-    render text:params.to_json
+    # render text:params.to_json
   end
 
   def show
