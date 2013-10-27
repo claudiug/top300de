@@ -20,7 +20,33 @@ $backGreen: #96ae22;
 $titleGrey: #6a6a6a;
 $textColor: #848484;
 
+/* Icons */
+$hike: #1ABC9C;
+  $hike_rgba: rgba(26,188,156,1);
+$mountain: #7199cc;
+  $mountain_rgba: rgba(113,153,204,1);
+$lakes: #3498db;
+  $lakes_rgba: rgba(52,152,219,1);
+$castles: #cc8267;
+  $castles_rgba: rgba(204,130,103,1);
+$festivals: #F1C40F;
+  $festivals_rgba: rgba(241,196,15,1);
+$cities: #2cadc7;
+  $cities_rgba: rgba(44,173,199,1);
+$sightseeing: #cfc8c0;
+  $sightseeing_rgba: rgba(207,200,192,1);
+
 /* Fonts */
+
+.icons {
+  font-family: 'Flat-UI-Icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -76,7 +102,8 @@ table {
 
 body {
   /* background: image-url("hbg.jpg"); */
-  background: #eef1f3;
+  /* background: #eef1f3; */
+  background: #fafbfc;
   -webkit-font-smoothing: antialiased;
   padding-top: 54px;
 }
@@ -101,7 +128,7 @@ a {
 .box {
   .title {
     font-weight: 700;
-    font-size: $smallNote;
+    font-size: $textSize;
     color: $titleGrey;
     padding-bottom: 20px;
   }
@@ -167,7 +194,8 @@ header {
 /* input */
 .input {
   background: white;
-  border: 1px solid #d1d1d1;
+  border: 0;
+  outline: none;
   border-bottom: 1px solid #afafaf;
   padding: 7px 10px;
   font-size: 14px;
@@ -180,10 +208,10 @@ header {
     width: 200px;
   }
   &.size2 {
-    width: 90%;
+    width: 99%;
   }
   &.map {
-    background: image-url("map-pin.svg") 8px 50% no-repeat white;
+    background: image-url("map-pin.svg") 8px 50% no-repeat transparent;
     text-indent: 21px;
   }
 }
@@ -223,7 +251,7 @@ header {
 }
 .trip-box {
   background-color: #fff;
-  box-shadow: 0 2px 5px rgba(90,90,90,.2);
+  box-shadow: 0 2px 0 rgba(90,90,90,.2);
   /* @include box-shadow(0 2px 5px rgba(90,90,90,.2)); */
   margin-bottom: 20px;
   border-radius: 3px;

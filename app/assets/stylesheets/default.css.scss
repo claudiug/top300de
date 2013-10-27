@@ -25,7 +25,7 @@ body.homepage {
     bottom: 0;
     padding-bottom: 15px;
     left: 0;
-    width:100%;
+    width: 100%;
     cursor: pointer;
     opacity: .3;
     text-align: center;
@@ -228,25 +228,25 @@ body.homepage {
       transition: background-color 0.2s ease-out;
 
       &#go_hike {
-        background-color: #77C4D2;
+        background-color: $hike;
       }
       &#go_mountain {
-        background-color: #04BFBF;
+        background-color: $mountain;
       }
       &#go_lake {
-        background-color: #00A1D9;
+        background-color: $lakes;
       }
       &#go_events {
-        background-color: #FFB800;
+        background-color: $festivals;
       }
       &#go_castle {
-        background-color: #C77966;
+        background-color: $castles;
       }
       &#go_city {
-        background-color: #7E827A;
+        background-color: $cities;
       }
       &#go_landscape {
-        background-color: #CC5497;
+        background-color: $sightseeing;
       }
 
     }
@@ -314,7 +314,6 @@ body.homepage {
 /* Style label */
 label.styled {
   line-height: 1;
-  overflow: hidden;
   display: inline-block;
   cursor: pointer;
 

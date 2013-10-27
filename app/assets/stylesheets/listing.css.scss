@@ -2,6 +2,8 @@
 
 .search-results {
   padding-top: 0;
+  border-top: 45px solid #eef1f3;
+  margin-top: -11px !important;
 
   h1 {
     font-weight: 300;
@@ -10,15 +12,15 @@
     paddding: 5px 0 0;
     line-height: 1;
     position: absolute;
-    right: 0;
-    top: 10px;
+    right: 20px;
+    top: 6px;
   }
 
   .content-col {
     .head {
-      padding-bottom: 10px;
+      padding-bottom: 30px;
       position: relative;
-
+      color: #3F3F3F;
     }
     .title {
       color: #b8b8b8;
@@ -27,10 +29,18 @@
 
 }
 .filter-col {
-  background: rgba(255,255,255, .8);
   width: 190px;
   padding: 15px;
-  margin-top: -15px;
+  margin-top: -50px;
+
+  .head {
+    padding-bottom: 30px;
+    color: #3F3F3F;
+  }
+
+}
+.filter-col + .content-col {
+  margin-top: -34px;
 }
 .featured-trip {
   .trip-image {
@@ -86,14 +96,14 @@
   label {
     display: block;
     font-weight: 300;
-    padding: 10px 0;
+    padding: 7px 0;
     margin: 0 0 4px;
 
     > i {
       background-image: image-url("var/trip-sprite.svg");
       background-repeat: no-repeat;
-      width: 22px;
-      height: 22px;
+      width: 20px;
+      height: 20px;
       display: inline-block;
       vertical-align: middle;
     }
@@ -102,91 +112,133 @@
       padding-top: 3px;
       padding-left: 10px;
       display: inline-block;
-      color: #030300;
+      color: #666;
 
     }
 
+    &#go_hike i {
+      background-position: 0 1px;
+    }
     &#go_mountain i {
-      background-position: 0 -37px;
+      background-position: 0 -32px;
     }
     &#go_lake i {
-      background-position: 0 -72px;
+      background-position: 0 -63px;
     }
     &#go_events i {
-      background-position: 0 -180px;
+      background-position: 0 -160px;
     }
     &#go_castle i {
-      background-position: 0 -104px;
+      background-position: 0 -92px;
     }
     &#go_city i {
-      background-position: 0 -142px;
+      background-position: 0 -125px;
     }
     &#go_landscape i {
-      background-position: 0 -222px;
+      background-position: 0 -198px;
+    }
+
+    &#by_car i {
+      background-position: 0 -238px;
+    }
+    &#by_bike i {
+      background-position: 0 -276px;
+    }
+    &#by_train i {
+      background-position: 0 -316px;
+    }
+    &#by_bus i {
+      background-position: 0 -356px;
     }
 
     &.styled-on {
-      margin-left: -40px;
-      margin-right: -15px;
-      padding-left: 40px;
-      font-weight: 400;
-      position: relative;
+      border-radius: 5px;
+        position: relative;
+      margin-left: -10px;
+      margin-right: -10px;
+      padding-left: 10px;
+
+      i + span {
+        color: #111;
+      }
 
       &:before {
-        @extend .icon;
-        top: 12px;
+        @extend .icons;
+        background: rgba(255, 255, 255, 0.8);
+        top: 9px;
         position: absolute;
         content: "\e00b";
-        font-size: 14px;
+        color: #ccc;
+        font-size: 8px;
         display: block;
         width: 18px;
         height: 18px;
-        left: 0;
+        left: -19px;
         border-radius: 50%;
-        padding: 2px 4px;
+        padding: 5px;
       }
 
       &#go_hike {
+        /* background: $hike_rgba; */
         &:before {
-          background: #77C4D2;
+          /* background: $hike; */
         }
-        i { background-position: -28px 0; }
+        i { background-position: -25px 1px; }
       }
       &#go_mountain {
+        /* background: $mountain_rgba; */
         &:before {
-          background: #04BFBF;
+          /* background: $mountain; */
         }
-        i { background-position: -28px -37px; }
+        i { background-position: -25px -32px; }
       }
       &#go_lake {
+        /* background: $lakes_rgba; */
         &:before {
-          background: #00A1D9;
+          /* background: $lakes; */
         }
-        i { background-position: -28px -72px; }
+        i { background-position: -25px -63px; }
       }
       &#go_events {
+        /* background: $festivals_rgba; */
         &:before {
-          background: #FFB800;
+          /* background: $festivals; */
         }
-        i { background-position: -28px -180px; }
+        i { background-position: -25px -160px; }
       }
       &#go_castle {
+        /* background: $castles_rgba; */
         &:before {
-          background: #C77966;
+          /* background: $castles; */
         }
-        i { background-position: -28px -104px; }
+        i { background-position: -25px -92px; }
       }
       &#go_city {
+        /* background: $cities_rgba; */
         &:before {
-          background: #7E827A;
+          /* background: $cities; */
         }
-        i { background-position: -28px -142px; }
+        i { background-position: -25px -125px; }
       }
       &#go_landscape {
+        /* background: $sightseeing_rgba; */
         &:before {
-          background: #CC5497;
+          /* background: $sightseeing; */
         }
-        i { background-position: -28px -222px; }
+        i { background-position: -25px -198px; }
+      }
+
+      &#by_car i {
+        background-position: -25px -238px;
+      }
+      &#by_bike i {
+        background-position: -25px -276px;
+      }
+      &#by_train i {
+        background-position: -25px -316px;
+      }
+      &#by_bus i {
+        background-position: -25px -356px;
       }
 
     }
