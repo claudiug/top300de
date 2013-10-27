@@ -3,8 +3,6 @@ class Painting < ActiveRecord::Base
 
    mount_uploader :image, ImageUploader
 
-  validates :image, presence: true
-  validates :name, presence: true
 
 
   def trip_name

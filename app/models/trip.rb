@@ -41,6 +41,18 @@ class Trip < ActiveRecord::Base
     hotels.count
   end
 
+  def trip_result
+    @result ||= find_trips
+  end
+
+  private
+
+
+  def find_trips
+
+  end
+
+
 
 
 end
