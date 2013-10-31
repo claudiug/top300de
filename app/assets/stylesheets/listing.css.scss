@@ -1,9 +1,7 @@
 @import 'constants.css.scss';
 
 .search-results {
-  padding-top: 0;
-  border-top: 45px solid #eef1f3;
-  margin-top: -11px !important;
+  padding-top: 5px;
 
   h1 {
     font-weight: 300;
@@ -12,13 +10,13 @@
     paddding: 5px 0 0;
     line-height: 1;
     position: absolute;
-    right: 20px;
-    top: 6px;
+    right: 0;
+    top: 10px;
   }
 
   .content-col {
     .head {
-      padding-bottom: 30px;
+      padding-bottom: 20px;
       position: relative;
       color: #3F3F3F;
     }
@@ -30,18 +28,15 @@
 }
 .filter-col {
   width: 190px;
-  padding: 15px;
-  margin-top: -50px;
+  padding: 0 15px;
 
   .head {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     color: #3F3F3F;
   }
 
 }
-.filter-col + .content-col {
-  margin-top: -34px;
-}
+
 .featured-trip {
   .trip-image {
     height: 200px;
@@ -164,18 +159,24 @@
 
       &:before {
         @extend .icons;
-        background: rgba(255, 255, 255, 0.8);
+        /* background: rgba(0, 0, 0, 0.2); */
+        background: #2ECC71;
         top: 9px;
         position: absolute;
-        content: "\e00b";
-        color: #ccc;
+        content: "\e00a";
+        color: #fff;
         font-size: 8px;
         display: block;
         width: 18px;
         height: 18px;
-        left: -19px;
+        left: -13px;
         border-radius: 50%;
         padding: 5px;
+
+      }
+
+      &:hover:before {
+        content: "\e00b";
       }
 
       &#go_hike {
