@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131026120257) do
+ActiveRecord::Schema.define(version: 20131031222939) do
 
   create_table "api_keys", force: true do |t|
     t.string   "key"
@@ -121,6 +121,8 @@ ActiveRecord::Schema.define(version: 20131026120257) do
     t.text     "description"
     t.boolean  "is_active"
     t.string   "slug"
+    t.float    "latitude"
+    t.float    "longitude"
   end
 
   add_index "trips", ["slug"], name: "index_trips_on_slug"
