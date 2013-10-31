@@ -58,6 +58,10 @@ class Trip < ActiveRecord::Base
 
 
 
+  def get_weather(trip)
+    Weather.new(trip).get_weather
+  end
+
 
 
 end

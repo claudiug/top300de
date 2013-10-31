@@ -4,7 +4,7 @@ class Weather
     @trip = trip
   end
 
-  def get_weather(trip)
-    [] #TODO
+  def get_weather
+    forecast ||= ForecastIO.forecast(@trip.latitude, @trip.longitude, params: { units: 'si', exclude: 'minutely,daily,flags,alerts'})
   end
 end

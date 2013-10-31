@@ -9,7 +9,8 @@ class TripsController < ApplicationController
   end
 
   def show
-
+    @trip = Trip.find_by(slug: params[:id])
+    @weather = @trip.get_weather(@trip)
   end
 
 end
