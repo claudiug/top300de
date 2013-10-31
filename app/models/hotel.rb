@@ -42,7 +42,7 @@ class Hotel < ActiveRecord::Base
 
   def self.get_trips_with_name(name)
     if name
-      joins(:trip).where(trips: {name: name})
+      joins(:trip).where(trips: {name: "#{name}"})
     else
       Hotel.none
     end

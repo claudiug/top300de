@@ -1,5 +1,6 @@
 <div class="box">
   <div class="title">Other destinations</div>
+  <% Trip.get_top_ten.each do |trip| %>
 
   <div class="box-content">
 
@@ -17,65 +18,19 @@
 
               <span class="trip-title">
                 Koenigssee Lake
+                <%= trip.name %>
+
               </span> <!-- .trip-title -->
 
             <span class="trip-tent">
               <span class="desc">
                 The Bastei Bridge is a sandstone walking bridge connecting.
+                <%= trip.description %>
               </span> <!-- .desc .fly-left -->
 
               <span class="meta">
                 trip meta data
-              </span> <!-- .meta stand-by -->
-
-            </span> <!-- .trip-tent -->
-        </a>
-      </article>  <!-- .trip-item -->
-
-      <article class="trip-item trip-box">
-        <a href="#" title="Title">
-              <span class="trip-image">
-                <span class="more">More</span>
-                <img src="/assets/samples/pic2.jpg" alt="ALT" height="419" />
-
-              </span>  <!-- .trip-mage -->
-
-              <span class="trip-title">
-                Neuschwanstein Castle
-              </span> <!-- .trip-title -->
-
-            <span class="trip-tent">
-              <span class="desc">
-                The Bastei Bridge is a sandstone walking bridge connecting.
-              </span> <!-- .desc .fly-left -->
-
-              <span class="meta">
-                trip meta data
-              </span> <!-- .meta stand-by -->
-
-            </span> <!-- .trip-tent -->
-        </a>
-      </article>  <!-- .trip-item -->
-
-      <article class="trip-item trip-box">
-        <a href="#" title="Title">
-              <span class="trip-image">
-                <span class="more">More</span>
-                <img src="/assets/samples/pic3.jpg" alt="ALT" height="349" />
-
-              </span>  <!-- .trip-mage -->
-
-              <span class="trip-title">
-                Frankfurt am Main
-              </span> <!-- .trip-title -->
-
-            <span class="trip-tent">
-              <span class="desc">
-                The Bastei Bridge is a sandstone walking bridge connecting.
-              </span> <!-- .desc .fly-left -->
-
-              <span class="meta">
-                trip meta data
+                <%= trip.id %>
               </span> <!-- .meta stand-by -->
 
             </span> <!-- .trip-tent -->
@@ -83,82 +38,9 @@
       </article>  <!-- .trip-item -->
 
 
-      <article class="trip-item trip-box">
-        <a href="#" title="Title">
-              <span class="trip-image">
-                <span class="more">More</span>
-                <img src="/assets/samples/pic4.jpg" alt="ALT" height="278" />
-
-              </span>  <!-- .trip-mage -->
-
-              <span class="trip-title">
-                Aachen Cathedral
-              </span> <!-- .trip-title -->
-
-            <span class="trip-tent">
-              <span class="desc">
-                The Bastei Bridge is a sandstone walking bridge connecting.
-              </span> <!-- .desc .fly-left -->
-
-              <span class="meta">
-                trip meta data
-              </span> <!-- .meta stand-by -->
-
-            </span> <!-- .trip-tent -->
-        </a>
-      </article>  <!-- .trip-item -->
-
-      <article class="trip-item trip-box">
-        <a href="#" title="Title">
-              <span class="trip-image">
-                <span class="more">More</span>
-                <img src="/assets/samples/pic5.jpg" alt="ALT" height="388" />
-
-              </span>  <!-- .trip-mage -->
-
-              <span class="trip-title">
-                Rugen Island
-              </span> <!-- .trip-title -->
-
-            <span class="trip-tent">
-              <span class="desc">
-                The Bastei Bridge is a sandstone walking bridge connecting.
-              </span> <!-- .desc .fly-left -->
-
-              <span class="meta">
-                trip meta data
-              </span> <!-- .meta stand-by -->
-
-            </span> <!-- .trip-tent -->
-        </a>
-      </article>  <!-- .trip-item -->
-
-      <article class="trip-item trip-box">
-        <a href="#" title="Title">
-              <span class="trip-image">
-                <span class="more">More</span>
-                <img src="/assets/samples/pic6.jpg" alt="ALT" height="309" />
-
-              </span>  <!-- .trip-mage -->
-
-              <span class="trip-title">
-                Munich
-              </span> <!-- .trip-title -->
-
-            <span class="trip-tent">
-              <span class="desc">
-                The Bastei Bridge is a sandstone walking bridge connecting.
-              </span> <!-- .desc .fly-left -->
-
-              <span class="meta">
-                trip meta data
-              </span> <!-- .meta stand-by -->
-
-            </span> <!-- .trip-tent -->
-        </a>
-      </article>  <!-- .trip-item -->
 
     </div> <!-- trip-list -->
 
   </div> <!-- .box-content -->
 </div> <!-- .box -->
+<% end %>

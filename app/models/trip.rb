@@ -5,7 +5,6 @@ class Trip < ActiveRecord::Base
   has_many :paintings
   has_and_belongs_to_many :categories
   accepts_nested_attributes_for :paintings
-  has_many :hotels
 
   validates :slug, presence: true, uniqueness: true
   validates :name, presence: true
@@ -19,7 +18,7 @@ class Trip < ActiveRecord::Base
 
   scope :is_active, -> {where(is_active: true)}
   scope :is_inactive, -> {where(is_active: false)}
-  default_scope {is_active}
+  #default_scope {is_active}
 
   def self.search(query)
     if query
@@ -45,16 +44,10 @@ class Trip < ActiveRecord::Base
     hotels.count
   end
 
-  def trip_result
-    @result ||= find_trips
+  def self.get_top_ten
+    order(:name).limit(10)
   end
 
-  private
-
-
-  def find_trips
-
-  end
 
 
 

@@ -1,3 +1,4 @@
+<% @trips.each do |trip_result| %>
 <div class="box featured-trip">
   <div class="title">Top destination</div>
 
@@ -6,6 +7,7 @@
     <a href="#" title="#" class="trip-image">
 
               <span class="trip-title">
+                <%= trip_result.title %>
                 Bastei bridge
               </span> <!-- .trip-title -->
 
@@ -15,6 +17,7 @@
 
     <div class="trip-tent">
       <div class="desc fly-left">
+        <%= trip_result.description %>
         The Bastei Bridge is a sandstone walking bridge connecting rocky peaks above the Elbe River in Germany.
         The bridge is located in the Saxon Switzerland National Park in the Elbe Sandstone Mountains, very close
         to Saxon Switzerland. Known for its unusual, even bizarre rock formations, it is a mountainous region
@@ -29,3 +32,4 @@
 
   </div> <!-- .box-content -->
 </div> <!-- .box -->
+<% end %>
