@@ -31,6 +31,10 @@ class Trip < ActiveRecord::Base
     end
   end
 
+  def self.top_ten
+    order(:name).limit(10)
+  end
+
   def to_param
     slug
   end
