@@ -16,6 +16,8 @@ class Feedback < ActiveRecord::Base
 
 
   def self.count_feedback_by_email(email)
-    Feedback.where(:email => email).count
+    if email.present?
+      Feedback.where(email: email).count
+    end
   end
 end

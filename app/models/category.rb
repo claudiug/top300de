@@ -6,7 +6,7 @@ class Category < ActiveRecord::Base
   validates :description, presence: true
   validates :seo, presence: true
   validates :slug, presence: true, uniqueness: true
-  #before_validation :make_name_titlecase
+  before_validation :make_name_titlecase
   before_validation :generate_slug
 
   def self.search_for_trips(query)
@@ -30,7 +30,7 @@ class Category < ActiveRecord::Base
   end
 
   def make_name_titlecase
-    self.name = name.titlecase
+    self.name = name.try(titlecase)
   end
 
   def get_categories

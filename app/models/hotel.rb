@@ -36,7 +36,7 @@ class Hotel < ActiveRecord::Base
   end
 
   def hotel_by_date(start_date, end_date)
-    where("created_at >= :start_date and create_ar <= :end_date", {start_date:start_date, end_date:end_date})
+    where("created_at >= :start_date and created_at <= :end_date", {start_date:start_date, end_date:end_date})
   end
 
 
