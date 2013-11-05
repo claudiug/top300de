@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131031222939) do
+ActiveRecord::Schema.define(version: 20131105124514) do
+
+  create_table "accounts", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "api_keys", force: true do |t|
     t.string   "key"
@@ -76,6 +82,22 @@ ActiveRecord::Schema.define(version: 20131031222939) do
   end
 
   add_index "hotels", ["slug"], name: "index_hotels_on_slug"
+
+  create_table "mailboxes", force: true do |t|
+    t.string   "name"
+    t.integer  "account_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "messages", force: true do |t|
+    t.string   "name"
+    t.string   "content"
+    t.string   "from"
+    t.integer  "mailbox_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "paintings", force: true do |t|
     t.string   "name"
