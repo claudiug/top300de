@@ -12,4 +12,6 @@ class Mailbox < ActiveRecord::Base
      messages.where(from: "#{user}").size
   end
 
+
+
 end
