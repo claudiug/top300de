@@ -3,10 +3,10 @@ class TripsController < ApplicationController
 
 
   def index
-    if params[:category].nil?
-      @trips = Trip.top_ten
+    if params[:category].present?
+      @trips = Trip.joins(:categories).where(categories: {name: params[:category].keys})
     else
-      @trips = Trip.joins(:categories).where(categories:{name: params[:category].keys})
+      @trips = Trip.top_ten
     end
   end
 
