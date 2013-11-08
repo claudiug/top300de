@@ -8,8 +8,8 @@ gem 'therubyracer', platforms: :ruby
 gem 'active_model_serializers'
 gem 'meta-tags', :require => 'meta_tags'
 gem 'bootstrap-sass-rails'
-gem 'rmagick', '2.13.2'
-gem "carrierwave"
+#gem 'rmagick', '2.13.2'
+#gem "carrierwave"
 gem 'will_paginate'
 gem 'quiet_assets'
 gem "ckeditor"

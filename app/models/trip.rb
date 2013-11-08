@@ -61,6 +61,10 @@ class Trip < ActiveRecord::Base
   # save it
   #
 
+  def self.feature_trips
+    where(is_feature: true).limit(6)
+  end
+
 
 
   def self.get_weather(trip)
