@@ -4,7 +4,7 @@ class Hotel < ActiveRecord::Base
 
   validates :slug, presence: true, uniqueness: true
   validates :name, presence: true, uniqueness: true
-  validates :rating, presence: true
+  validates :rating, presence: true, numericality: {only_integer: true}
   validates :phone_number, presence: true
   validates :email, presence: true
   validates :web_page, presence: true
