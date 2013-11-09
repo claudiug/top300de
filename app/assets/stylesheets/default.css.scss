@@ -47,15 +47,16 @@ body.homepage {
 
 }
 .slogan {
+  font-family: $light;
   color: $linkOnBlackHover;
   font-size: $headlineSize;
   text-align: center;
-  font-weight: 300;
   letter-spacing:  -1px;
   padding-top: 80px;
 
   .subSlogan {
     font-size: $subHeadline;
+    font-family: $thin;
     width: 100%;
     margin: 0 auto 15px;
   }
@@ -142,7 +143,7 @@ body.homepage {
     }
 
   small {
-    font-weight: 400;
+    font-family: $light;
     display: block;
     font-size: 11px;
     padding: 7px 0 0;
@@ -370,4 +371,12 @@ label.styled {
     margin: 5px;
     color: #666;
   }
+}
+
+/* Footer */
+#Footer {
+  clear: both;
+  background: #eef1f3;
+  padding: 20px;
+  overflow: hidden;
 }
