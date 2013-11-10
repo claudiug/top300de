@@ -52,6 +52,20 @@ $(document).ready(function() {
     });
      */
 
+    /* Side nav */
+    $('.side_nav a').each(function() {
+        $(this).click(function() {
+
+            var target = $(this).attr('rel');
+
+            $('.side_nav a').removeClass('selected');
+            $(this).addClass('selected');
+
+            $('html,body').animate({scrollTop: $("#" + target).offset().top - 80},'slow');
+            return false;
+        });
+    });
+
     /* this is the gallery grid style */
     $('.trip-item, #hp-trips .trip-item').wookmark({
         align: 'left',

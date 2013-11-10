@@ -1,5 +1,73 @@
 /* @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700,800); */
 
+/* Color pallete  */
+TURQUOISE { color: #1ABC9C }
+GREEN SEA { color: #16A085 }
+EMERALD { color: #2ECC71 }
+NEPHRITIS { color: #27AE60 }
+PETER RIVER { color: #3498DB }
+BELIZE HOLE { color: #2980B9 }
+AMETHYST { color: #9B59B6 }
+WISTERIA { color: #8E44AD }
+WET ASPHALT { color: #34495E }
+MIDNIGHT BLUE { color: #2C3E50 }
+SUN FLOWER { color: #F1C40F }
+ORANGE { color: #F39C12 }
+CARROT { color: #E67E22 }
+PUMPKIN  { color: #D35400 }
+ALIZARIN { color: #E74C3C }
+POMEGRANATE { color: #C0392B }
+CLOUDS { color: #ECF0F1 }
+SILVER { color: #BDC3C7 }
+CONCRETE { color: #95A5A6 }
+ASBESTOS { color: #7F8C8D }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::selection {
+  background-color: #539bff;
+  color: white;
+}
+
 /* Sizes */
 $wideBlock: 1000px;
 
@@ -11,6 +79,7 @@ $tileTitle: 14px;
 $featTitleSize: 16px;
 $head: 17px;
 $subHeadline: 24px;
+$h1: 32px;
 $headlineSize: 60px;
 
 /* Colors */
@@ -43,10 +112,21 @@ $bold: 'bariol_boldbold';
 $thin: 'bariolthin';
 $light: 'bariol_lightlight';
 
+.trip-sprite {
+  background-image: image-url("var/trip-types.png");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $regular;
 }
-
+h1 {
+  font-size: $h1;
+}
 .icons {
   font-family: 'Flat-UI-Icons';
   speak: none;
@@ -57,56 +137,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   -webkit-font-smoothing: antialiased;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-
-::selection {
-  background-color: #539bff;
-  color: white;
-}
-
 body {
-  background: #f8f8f8;
+  background: rgba(101, 150, 212, 0.05);
   -webkit-font-smoothing: antialiased;
   padding-top: 54px;
   font-family: $regular;
@@ -117,6 +149,9 @@ body {
 a {
   color: #333;
   text-decoration: none;
+}
+a:hover, a:focus {
+  color: #2980b9;
 }
 .wrapBlock {
   margin: 0 auto;
@@ -168,8 +203,7 @@ a {
 /* Header */
 header {
   /* background: image-url("tr.png"); */
-  background: #30353A; /* #47D9BF #F2D03B #00A1D9 #003056 */
-  box-shadow: 0 1px 25px rgba(26,68,110,.5);
+  background: #2c3e50; /* #47D9BF #F2D03B #00A1D9 #003056 */
   position: fixed;
   top: 0;
   left: 0;
@@ -190,12 +224,12 @@ header {
     a {
       display: block;
       font-family: $bold;
-      padding: 5px 11px;
+      padding: 5px 11px 5px 0;
       color: $linkOnBlackHover;
       text-decoration: none;
 
       span {
-        color: #a5be2a;
+        color: #2ECC71;
       }
 
     }
@@ -326,7 +360,7 @@ header {
   background-color: #fff;
   box-shadow: 0 2px 3px rgba(90,90,90,.2);
   /* @include box-shadow(0 2px 5px rgba(90,90,90,.2)); */
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-radius: 3px;
   overflow: hidden;
 }
@@ -544,7 +578,21 @@ header {
 
 }
 
-
+.with-pointer:after {
+  content: " ";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 9px solid white;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  left: 19px;
+  top: -17px;
+  margin-left: 10px;
+  z-index: 9800000;
+}
 
 
 

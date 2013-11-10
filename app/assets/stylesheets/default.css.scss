@@ -4,7 +4,8 @@ body.homepage {
   padding-top: 0;
 }
 .homepage header {
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
 
   .wrapBlock {
     padding: 0 20px;
@@ -18,7 +19,7 @@ body.homepage {
 }
 
 .homepageEngine {
-  background: image-url("comolake-bg.jpg") 50% 0 repeat fixed;
+  background: image-url("k.jpg") 50% 0 repeat fixed;
   background-size: cover;
   max-height: 830px;
   min-height: 750px;
@@ -163,7 +164,7 @@ body.homepage {
 
     border-radius: 5px;
     display: inline-block;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.6);
     width: 90px;
     height: 90px;
     opacity: .9;
@@ -540,5 +541,167 @@ label.styled {
     }
 
   }
+
+}
+
+
+/* Trip page */
+.trip-page {
+  padding-top: 5px;
+
+  .title {
+
+    div * {
+      display: inline-block;
+    }
+
+    &:before {
+      font-size: 25px;
+      padding-right: 5px;
+      color: #6e7e8d;
+      opacity: .7;
+    }
+
+    h1 {
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: $featTitleSize;
+      font-family: $light;
+      margin: 0 10px;
+      position: relative;
+      top: -2px;
+
+      span {
+        vertical-align: top;
+        top: 0;
+        opacity: .7;
+        @extend .trip-sprite;
+      }
+
+      &.distance {
+        span {
+          background-position: 0 -233px;
+
+        }
+      }
+      &.time {
+        span {
+          background-position: 0 -393px;
+        }
+      }
+    }
+
+  }
+  .trip-data {
+    padding-top: 25px;
+
+    .filter-col {
+
+
+      .about-city {
+        padding-top: 10px;
+
+        span {
+          font-size: 14px;
+          padding-bottom: 20px;
+          display: block;
+
+
+          &:before {
+
+            @extend .trip-sprite;
+            width: 24px;
+            height: 24px;
+            content: " ";
+            margin-right: 8px;
+            position: relative;
+            top: -1px;
+            opacity: .7;
+          }
+
+          &.capital:before {
+            background-position: 0 -568px;
+          }
+          &.area:before {
+            background-position: 0 -436px;
+            top: -2px;
+          }
+          &.population:before {
+            background-position: 0 -482px;
+          }
+          &.local-time:before {
+            background-position: 0 -522px;
+          }
+        }
+      }
+
+      .avatar {
+        margin: -5px -15px;
+        width: 190px;
+        overflow: hidden;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+      }
+
+      .box {
+        box-shadow: 0 1px 2px rgba(90, 90, 90, 0.1)
+      }
+
+      a {
+        margin: 0 -15px;
+        display: block;
+        font-size: 14px;
+        padding: 10px 15px;
+        position: relative;
+        font-family: $regular;
+
+        &:hover {
+          text-decoration: none;
+        }
+        &:after {
+          position: absolute;
+          content: ">";
+          right: 15px;
+        }
+        &.selected {
+          background: #3498DB;
+          color: white;
+          border-radius: 0;
+          font-family: $bold;
+        }
+
+      }
+    }
+
+  }
+
+
+  .trip-block {
+    overflow: hidden;
+    position: relative;
+
+    .scroller {
+      position: relative;
+    }
+
+    h2 {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+
+    .trip-section {
+      padding: 20px;
+    }
+
+  }
+
+
+
 
 }
