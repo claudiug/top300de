@@ -40,11 +40,11 @@ class Trip < ActiveRecord::Base
   end
 
   def generate_slug
-    self.slug = name.parameterize
+    self.slug = name.try.(:parameterize)
   end
 
   def make_name_titlecase
-    self.name = name.titlecase
+    self.name = name.try(:titlecase)
   end
 
   def no_of_hotels
