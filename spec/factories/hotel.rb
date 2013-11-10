@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :hotel do
     name "feedback"
-    rating "4"
+    rating 4
     address "this is adress "
     phone_number "55514564"
     email "email@example.net"

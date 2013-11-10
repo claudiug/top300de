@@ -12,7 +12,7 @@ describe "Hotel" do
     expect(build(:hotel, address:nil)).to have(1).errors_on(:address)
   end
   it "is invalid without rating" do
-    expect(build(:hotel, rating:nil)).to have(1).errors_on(:rating)
+    expect(build(:hotel, rating:nil)).to have(2).errors_on(:rating)
   end
   it "is invalid without phone_number" do
     expect(build(:hotel, phone_number:nil)).to have(1).errors_on(:phone_number)
@@ -33,7 +33,7 @@ describe "Hotel" do
     expect(hotel).to have(1).errors_on(:name)
   end
   it 'must have the name titlecase' do
-    hotel=create(:category, name:"demo")
+    hotel=create(:hotel, name:"demo")
     expect(hotel.name).to eq "demo".titlecase
   end
 

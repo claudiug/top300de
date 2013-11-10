@@ -28,11 +28,11 @@ class Hotel < ActiveRecord::Base
   end
 
   def generate_slug
-    self.slug= name.parameterize
+    self.slug= name.try(:parameterize)
   end
 
   def make_name_titlecase
-    self.name = name.titlecase
+    self.name = name.try(:titlecase)
   end
 
   def hotel_by_date(start_date, end_date)
