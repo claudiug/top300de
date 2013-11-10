@@ -6,6 +6,5 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-10.times do |f|
-Trip.create(name: "demo#{f}")
-end
+Trip.create!(name:"Berlin wall1", city: "Berlin",description:"some stuff here",
+             zip_code: 10367, is_active:true, is_feature:true)
