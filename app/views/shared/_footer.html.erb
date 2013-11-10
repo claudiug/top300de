@@ -1,43 +1,53 @@
 <footer id="Footer">
   <div class="wrapBlock">
-    <div class="fly-left">
-    <div class="row">
 
-          <a href="#" title="#">About</a>
-          <a href="#" title="#">Join us</a>
-          <a href="#" title="#">Contact us</a>
-          <a href="#" title="#">Terms & conditions</a>
+      <div class="fcol newsletter-box">
+        <h3>Sign-up for news. No spam, no ads, just travel.</h3>
 
-    </div>
-    <div class="row">
-      Follow us on:
 
-      <a href="#" title="Facebook">Facebook</a>
-      <a href="#" title="Twitter">Twitter</a>
-      <a href="#" title="Google +">Google +</a>
-      <a href="#" title="Pinterest">Pinterest</a>
-      <a href="#" title="RSS">RSS</a>
-    </div>
+            <div class="input flashy center-block iblock">
+            <input name="name" type="text" class="input" placeholder="@ who?" size="70" />
 
-    <div class="row">
-      &copy; 2013 Wantatrip - All rights reserved.
-    </div> <!-- .row -->
-    </div> <!-- .fly-left -->
+                <div class="switcher">
+                  <span class="icons">Preferences <span id="result"></span></span>
+                  <div class="selector">
+                      <label><input type="checkbox" /> English</label>
+                      <label><input type="checkbox" /> Deutsch</label>
+                  </div>
+                </div>
 
-    <div class="fly-right">
+                <button class="icons fui-check button lb" type="submit">Subscribe</button>
+          </div> <!-- .input flashy -->
 
-      <div class="row">
-        <h3>Sign-up for news</h3>
-        <input name="name" type="text" />
-        <p>
-          <label><input type="checkbox" /> English</label></p>
-        <p>
-          <label><input type="checkbox" /> Deutch</label></p>
       </div>
 
-    </div> <!-- .fly-right -->
+
+
+      <div class="fcol center">
+        <a href="#" title="#">About</a> &nbsp;&bull;&nbsp;
+        <a href="#" title="#">Join us</a> &nbsp;&bull;&nbsp;
+        <a href="#" title="#">Contact us</a> &nbsp;&bull;&nbsp;
+        <a href="#" title="#">Terms & conditions</a> &nbsp;&bull;&nbsp;
+        <a href="#" title="Privacy Policy">Privacy Policy</a>  &nbsp;&bull;&nbsp;
+        <a href="#" title="Sitemap">Sitemap</a>
+
+      </div>
+
+      <div class="fcol center socials">
+
+        <a href="#" title="Facebook" class="fb">Facebook</a>
+        <a href="#" title="Twitter" class="tw">Twitter</a>
+        <a href="#" title="Google +" class="g">Google +</a>
+        <a href="#" title="Pinterest" class="pin">Pinterest</a>
+        <a href="#" title="RSS" class="rss">RSS</a>
+      </div>
+
+      <div class="center copy">
+        &copy; 2013 Wantatrip - All rights reserved.
+      </div> <!-- .row -->
 
   </div> <!-- .wrapBlock -->
+
 </footer>
 
-<div><%= debug(params) if Rails.env.development? %> <!-- Draga Claudiu, acesta este un mesaj de la Mos Craciun, ce-ai vrea sa primesti anul acesta? --></div>
+<div class="debug-console"><%= debug(params) if Rails.env.development? %> <!-- Draga Claudiu, acesta este un mesaj de la Mos Craciun, ce-ai vrea sa primesti anul acesta? --></div>

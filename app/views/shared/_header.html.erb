@@ -3,13 +3,12 @@
         <div class="wrapBlock">
 
             <div class="Logo">
-                <a href="#" title="Homepage">want<span>a</span><strong>trip</strong></a>
+                <a href="/" title="Wantatrip">want<span>a</span><strong>trip</strong></a>
             </div>
 
                 <nav id="topRightNav">
                     <a href="#" title="About">About</a>
-                    <a href="#" title="Destinations">Destinations</a>
-                    <a href="#" title="Add destination">Add destination</a>
+                    <a href="#" title="Contribute" class="modal-trigger">Contribute</a>
 
                     <div class="languageSelector">
                         <span class="currentLanguage langEn"></span>
@@ -17,6 +16,19 @@
                             <!--<a href="#" title="Sprache Deutch?">EN</a>-->
                       <%= link_to_unless_current "DE", locale: "de" %>
                       <%= link_to_unless_current "EN", locale: "en" %>
+                    </div>
+
+
+                    <div class="wat-modal">
+                      <div class="title">
+                        Suggest a destination
+
+                        <div class="icons fui-cross close"></div>
+
+                      </div>
+
+                      <p>Urmeaza</p>
+
                     </div>
 
                 </nav>

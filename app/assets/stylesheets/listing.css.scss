@@ -4,7 +4,6 @@
   padding-top: 5px;
 
   h1 {
-    font-weight: 300;
     font-size: $smallNote;
     color: $titleGrey;
     paddding: 5px 0 0;
@@ -16,7 +15,7 @@
 
   .content-col {
     .head {
-      padding-bottom: 20px;
+      padding-bottom: 15px;
       position: relative;
     }
     .title {
@@ -28,9 +27,32 @@
 .filter-col {
   width: 190px;
   padding: 0 15px;
+  margin-bottom: 20px;
 
   .head {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+  }
+  .addSugg {
+    span {
+      margin: 5px 0 6px;
+      text-align: center;
+    }
+
+    .add-new {
+      margin: 4px 0 0;
+      display:  block;
+    }
+    .new-dest {
+      margin: 0;
+      left: 0;
+
+      input {
+        width: 105px;
+      }
+      .fui-plus:before {
+        padding: 0;
+      }
+    }
   }
 
 }
@@ -106,6 +128,7 @@
       padding-left: 10px;
       display: inline-block;
       color: #666;
+      font-size: 14px;
 
     }
 
@@ -153,6 +176,7 @@
 
       i + span {
         color: #111;
+        font-size: 14px;
       }
 
       &:before {

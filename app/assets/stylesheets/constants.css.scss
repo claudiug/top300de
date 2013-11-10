@@ -38,10 +38,14 @@ $sightseeing: #cfc8c0;
 
 /* Fonts */
 
-$regular: bariol_regularregular, Helvetica, Arial, sans-serif;
-$bold: bariol_boldbold, Helvetica, Arial, sans-serif;
-$thin: bariolthin, Helvetica, Arial, sans-serif;
-$light: bariol_lightlight, Helvetica, Arial, sans-serif;
+$regular: 'bariol_regularregular';
+$bold: 'bariol_boldbold';
+$thin: 'bariolthin';
+$light: 'bariol_lightlight';
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $regular;
+}
 
 .icons {
   font-family: 'Flat-UI-Icons';
@@ -77,11 +81,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-body {
-  font-family: $regular;
-  line-height: 1.4;
-  font-size: $textSize;
-}
+
 ol, ul {
     list-style: none;
 }
@@ -106,12 +106,12 @@ table {
 }
 
 body {
-  /* background: image-url("hbg.jpg"); */
-  /* background: #eef1f3; */
-  /* background: #fafbfc; */
   background: #f8f8f8;
   -webkit-font-smoothing: antialiased;
   padding-top: 54px;
+  font-family: $regular;
+  line-height: 1.4;
+  font-size: $textSize;
 }
 
 a {
@@ -127,7 +127,7 @@ a {
 /* Titles */
 .head {
   font-size: $head;
-  font-family: $thin;
+  font-family: $light;
   color: $titleGrey;
   padding-bottom: 10px;
 }
@@ -139,12 +139,27 @@ a {
     padding-bottom: 10px;
   }
 }
+.subtitle {
+  padding-bottom: 35px;
+  font-family: $light;
+  padding-top: 5px;
+  font-size: 20px;
+}
 /* Positioning */
 .fly-left {
   float: left;
 }
 .fly-right {
   float: right;
+}
+.center-block {
+  margin: 0 auto;
+}
+.center {
+  text-align: center;
+}
+.iblock {
+  display: inline-block;
 }
 .stand-by {
   float: none;
@@ -174,8 +189,10 @@ header {
 
     a {
       display: block;
+      font-family: $bold;
       padding: 5px 11px;
       color: $linkOnBlackHover;
+      text-decoration: none;
 
       span {
         color: #a5be2a;
@@ -187,11 +204,36 @@ header {
   nav {
     float: right;
     margin-top: 14px;
+    position: relative;
 
     a {
       font-size: $forUpper;
       margin-left: 10px;
       color: rgb(185, 198, 207);
+      padding: 5px;
+
+      &:hover {
+        text-decoration: none;
+        color: white;
+      }
+      &.selected {
+        border-radius: 3px;
+        background: white;
+        color: #2E383C;
+      }
+      &.selected:after {
+        content: " ";
+        display: block;
+        background: white;
+        width: 11px;
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        margin-left: 8px;
+        top: 14px;
+        z-index: 9880000;
+      }
+
     }
 
   }
@@ -221,19 +263,43 @@ header {
     background: image-url("map-pin.svg") 8px 50% no-repeat transparent;
     text-indent: 21px;
   }
+  &.flashy {
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(90, 90, 90, 0.1);
+    padding: 8px 14px;
+    color: #333;
+    border: 0;
+  }
 }
+
+.button {
+  border: 0;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: white;
+  outline: none;
+
+  &.lg {
+    background: #47d9bf;
+  }
+  &.lb {
+    background: #00A1D9;
+  }
+
+}
+
 .submit-go {
   outline: none;
   border: 0;
   border-bottom: 1px solid #030300;
   border-radius: 3px;
-  font-size: 16px;
+  font-size: 20px;
   background: #00A1D9 center 50% no-repeat;
   padding: 13px 40px;
   border: 0;
   margin: 30px 0 0;
   color: white;
-  font-weight: $bold;
+  font-family: $bold;
   min-width: 280px;
   min-height: 50px;
   -webkit-box-shadow: 0 5px #115a93;
@@ -341,17 +407,17 @@ header {
   .trip-image {
     position: relative;
     min-height: 100px;
-    background: black;
+    background: white;
   }
 
   .trip-title {
     color: white;
     z-index: 9000;
     position: relative;
-    margin-top: -55px;
+    margin-top: -53px;
     padding: 15px;
 
-    font-weight: 400;
+    font-family: $bold;
     font-size: $head;
 
     /* @include background-image(linear-gradient(to top, #000, rgba(0,0,0,0))); */
@@ -375,9 +441,149 @@ header {
   border-radius: 5px;
   margin: 0 -15px 15px;
   padding: 15px 15px 0;
-  background: #eef1f3;
+  background: #fff;
 
   .box-content {
     padding-bottom: 15px;
   }
 }
+
+.table {
+  display: table;
+  width: 100%;
+
+  .col {
+    display:  table-cell;
+  }
+
+}
+
+/* Socials */
+.socials a {
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+  text-indent: -9999px;
+  background: url(/assets/socials.png);
+  display: inline-block;
+  width: 28px;
+  height: 31px;
+
+  &.fb {
+
+    &:hover {
+      background-position: -28px 0;
+    }
+
+  }
+  &.tw {
+    background-position: 0 -32px;
+
+    &:hover {
+      background-position: -28px -32px;
+    }
+
+  }
+  &.g {
+    background-position: 0 -64px;
+
+    &:hover {
+      background-position: -28px -64px;
+    }
+
+  }
+  &.pin {
+    background-position: 0 -95px;
+
+    &:hover {
+      background-position: -28px -95px;
+    }
+
+  }
+  &.rss {
+    background-position: 0 -127px;
+
+    &:hover {
+      background-position: -28px -127px;
+    }
+
+  }
+}
+
+.wat-modal {
+  opacity: 0;
+  margin-left: -260px;
+  left: 50%;
+  top: 15px;
+  z-index: 900102;
+  position: absolute;
+  width: 290px;
+  padding: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.14);
+  -moz-box-shadow: 0 5px 5px rgba(0,0,0,.14);
+  box-shadow: 0 5px 5px rgba(0,0,0,.14);
+  display: block;
+  font-size: 12px;
+
+  .title {
+    font-family: $bold;
+    display: block;
+    font-size: 14px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .close {
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* Debug console - to be removed */
+
+.debug-console {
+  position: fixed;
+  background: rgba(0, 0, 0, .8);
+  padding: 20px;
+  width: 200px;
+  height: auto;
+  max-height: 50%;
+  overflow: auto;
+  opacity: .2;
+  color: white;
+  top: 100px;
+  left: -180px;
+  z-index: 980800000;
+  border-radius: 0 5px 5px 0;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
+  pre {
+    background: none;
+    border: 0;
+    color: white;
+
+  }
+
+}
+.debug-console:hover {
+  opacity: .9;
+  left: 0;
+}
+
+
