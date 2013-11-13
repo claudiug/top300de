@@ -26,14 +26,14 @@ class Category < ActiveRecord::Base
   end
 
   def generate_slug
-    self.slug=name.parameterize
+    self.slug=name.try(:parameterize)
   end
 
   def make_name_titlecase
-    self.name = name.try(titlecase)
+    self.name = name.try(:titlecase)
   end
 
-  def get_categories
+  def get_trips
      trips.find(get_trips_ids)
   end
 

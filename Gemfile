@@ -8,8 +8,8 @@ gem 'therubyracer', platforms: :ruby
 gem 'active_model_serializers'
 gem 'meta-tags', :require => 'meta_tags'
 gem 'bootstrap-sass-rails'
-gem 'rmagick', '2.13.2'
-gem "carrierwave"
+#gem 'rmagick', '2.13.2'
+#gem "carrierwave"
 gem 'will_paginate'
 gem 'quiet_assets'
 gem "ckeditor"
@@ -18,7 +18,7 @@ gem 'jquery-ui-rails'
 # gem  "pg"
 gem 'forecast_io'
 gem 'chosen-rails'
-# gem 'compass-rails', github: 'Compass/compass-rails'
+gem 'compass-rails', github: 'Compass/compass-rails'
 group :development, :test do
   gem "rspec-rails", "~> 2.14.0"
   gem "factory_girl_rails", "~> 4.2.1"

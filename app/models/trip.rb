@@ -40,11 +40,11 @@ class Trip < ActiveRecord::Base
   end
 
   def generate_slug
-    self.slug = name.parameterize
+    self.slug = name.try(:parameterize)
   end
 
   def make_name_titlecase
-    self.name = name.titlecase
+    self.name = name.try(:titlecase)
   end
 
   def no_of_hotels
@@ -61,11 +61,18 @@ class Trip < ActiveRecord::Base
   # save it
   #
 
+  def self.feature_trips
+    where(is_feature: true).limit(6)
+    #TODO add random
+  end
+
 
 
   def self.get_weather(trip)
     Weather.new(trip).get_weather
   end
+
+
 
 
 

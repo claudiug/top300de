@@ -1,5 +1,4 @@
 class TripsController < ApplicationController
-  include ActiveModel::Serializers::JSON
 
 
   def index

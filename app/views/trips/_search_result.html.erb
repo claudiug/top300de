@@ -1,33 +1,29 @@
 <% @trips.each do |trip_result| %>
-<div class="box featured-trip">
-  <div class="box-content trip-box">
+    <div class="box featured-trip">
+      <div class="box-content trip-box">
+        <h2>
+        <a href="#" title="#" class="trip-image">
 
-    <a href="#" title="#" class="trip-image">
+         <span class="trip-title">
+             <%= trip_result.try(:title) %>
+             Bastei bridge
+          </span> <!-- .trip-title -->
+          <img src="/assets/samples/pic0.jpg" alt="ALT" />
 
-              <span class="trip-title">
-                <%= trip_result.title %>
-                Bastei bridge
-              </span> <!-- .trip-title -->
+        </a>  <!-- .trip-mage -->
+        </h2>
+        <div class="trip-tent">
+          <div class="desc fly-left">
 
-      <img src="/assets/samples/pic0.jpg" alt="ALT" height="200" />
+            <span>The Bastei Bridge is a sandstone walking bridge connecting rocky peaks above the Elbe River in Germany.
+            The bridge is located in the Saxon Switzerland National Park in the Elbe Sandstone Mountains</span>
 
-    </a>  <!-- .trip-mage -->
+            <%= trip_result.try(:description) %>
+            <div class="meta stand-by">
+            </div> <!-- .meta stand-by -->
 
-    <div class="trip-tent">
-      <div class="desc fly-left">
-        <%= trip_result.description %>
-        The Bastei Bridge is a sandstone walking bridge connecting rocky peaks above the Elbe River in Germany.
-        The bridge is located in the Saxon Switzerland National Park in the Elbe Sandstone Mountains, very close
-        to Saxon Switzerland. Known for its unusual, even bizarre rock formations, it is a mountainous region
-        sought after over the years by artists, sports and nature enthusiasts.
-      </div> <!-- .desc .fly-left -->
+          </div> <!-- .trip-tent -->
 
-      <div class="meta stand-by">
-        trip meta data
-      </div> <!-- .meta stand-by -->
-
-    </div> <!-- .trip-tent -->
-
-  </div> <!-- .box-content -->
-</div> <!-- .box -->
+        </div> <!-- .box-content -->
+      </div> <!-- .box -->
 <% end %>
