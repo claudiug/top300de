@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131108190623) do
+ActiveRecord::Schema.define(version: 20131113121253) do
 
   create_table "accounts", force: true do |t|
     t.string   "name"
@@ -41,6 +41,8 @@ ActiveRecord::Schema.define(version: 20131108190623) do
     t.string   "slug"
   end
 
+  add_index "categories", ["name"], name: "category_name", unique: true
+  add_index "categories", ["slug"], name: "category_slug", unique: true
   add_index "categories", ["slug"], name: "index_categories_on_slug"
 
   create_table "categories_trips", force: true do |t|
@@ -81,7 +83,10 @@ ActiveRecord::Schema.define(version: 20131108190623) do
     t.string   "slug"
   end
 
+  add_index "hotels", ["name"], name: "hotel_name", unique: true
+  add_index "hotels", ["slug"], name: "hotel_slug", unique: true
   add_index "hotels", ["slug"], name: "index_hotels_on_slug"
+  add_index "hotels", ["trip_id"], name: "hotel_trip_id", unique: true
 
   create_table "mailboxes", force: true do |t|
     t.string   "name"
@@ -123,7 +128,10 @@ ActiveRecord::Schema.define(version: 20131108190623) do
     t.string   "slug"
   end
 
+  add_index "restaurants", ["name"], name: "restaurant_name", unique: true
   add_index "restaurants", ["slug"], name: "index_restaurants_on_slug"
+  add_index "restaurants", ["slug"], name: "restaurant_slug", unique: true
+  add_index "restaurants", ["trip_id"], name: "restaurant_trip_id"
 
   create_table "searches", force: true do |t|
     t.string   "keyword"
@@ -149,6 +157,9 @@ ActiveRecord::Schema.define(version: 20131108190623) do
     t.boolean  "is_feature",  default: false
   end
 
+  add_index "trips", ["latitude"], name: "trip_lat"
+  add_index "trips", ["longitude"], name: "trip_lgn"
+  add_index "trips", ["name"], name: "trip_name", unique: true
   add_index "trips", ["slug"], name: "index_trips_on_slug"
 
   create_table "users", force: true do |t|
