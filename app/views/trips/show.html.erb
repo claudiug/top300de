@@ -71,6 +71,16 @@
         <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
         <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
         <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
+        <%= @weather[:currently][:summary] %>
+        <% @weather[:daily][:data].each do |v| %>
+            <% date = Date.strptime("#{v["time"]}", "%s") %>
+            <p>Day <%= date.day %>, Month: <%= date.month %></p>
+            <p><strong>Summary: <%= v["summary"] %></strong></p>
+            <div>
+              <p>Temperature min: <%= v["temperatureMin"] %></p>
+              <p>Temperature max: <%= v["temperatureMax"] %></p>
+            </div>
+        <% end %>
         --------------------------------
       </div>
 
