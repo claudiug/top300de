@@ -5,7 +5,7 @@ class Weather
   end
 
   def get_weather
-    forecast ||= ForecastIO.forecast(@trip.latitude, @trip.longitude,
+    ForecastIO.forecast(@trip.latitude, @trip.longitude,
                                      params: { units: 'si',
                                      exclude: 'minutely,flags,alerts,hourly'})
   end

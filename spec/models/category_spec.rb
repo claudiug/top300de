@@ -36,7 +36,7 @@ end
     expect(category).to have(1).errors_on(:slug)
   end
   it 'is valid with name titlecase' do
-    cat=create(:category, name:"demo")
+    cat = create(:category, name:"demo")
     expect(cat.name).to eq "demo".titlecase
   end
 
