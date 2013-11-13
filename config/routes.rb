@@ -1,5 +1,6 @@
 Top300de::Application.routes.draw do
 
+
   scope ":locale", locale: /en|de/ do
     root "default#home"
     get '/login', to: 'sessions#new'
