@@ -6,6 +6,7 @@ class Feedback < ActiveRecord::Base
   validates :pro, presence: true
   validates :contra, presence: true
 
+
   def self.search(query)
     if query
       where("name like ?", "%#{query}%")

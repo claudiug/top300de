@@ -55,11 +55,7 @@ class Trip < ActiveRecord::Base
     order(:name).limit(10)
   end
 
-  #after validation
-  # get the trip object
-  # use geocoder to create lat and long
-  # save it
-  #
+
 
   def self.feature_trips
     where(is_feature: true).limit(6)

@@ -154,7 +154,6 @@ ActiveRecord::Schema.define(version: 20131113121253) do
     t.string   "slug"
     t.float    "latitude"
     t.float    "longitude"
-    t.boolean  "is_feature",  default: false
   end
 
   add_index "trips", ["latitude"], name: "trip_lat"
