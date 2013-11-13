@@ -1,6 +1,13 @@
 <div class="wrapBlock search-results">
+  <h1>Distance here</h1>
+  <% @trips.each do |dist| %>
+      <p>
+        <%= dist.distance_to("Berlin") %>
+      </p>
+  <% end %>
 
 <%= render 'refine_suggestion' %>
+
 
   <section class="content-col stand-by">
     <div class="head">Results
@@ -11,7 +18,6 @@
     <%= render 'others_suggestion' %>
 
   </section>
-
 
 
 
