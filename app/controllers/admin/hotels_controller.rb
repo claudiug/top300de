@@ -55,7 +55,7 @@ class Admin::HotelsController < ApplicationController
   end
 
   def sort_column
-    if Hotel.column_names.include?(params[:sort]) then
+    if Hotel.column_names.include?(params[:sort])
       params[:sort]
     else
       "name"
@@ -63,7 +63,7 @@ class Admin::HotelsController < ApplicationController
   end
 
   def sort_direction
-    if %w[asc desc].include?(params[:direction]) then
+    if %w[asc desc].include?(params[:direction])
       params[:direction]
     else
       "asc"

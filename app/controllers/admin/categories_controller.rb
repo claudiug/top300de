@@ -62,7 +62,7 @@ end
 
 
 def sort_column
-  if Category.column_names.include?(params[:sort]) then
+  if Category.column_names.include?(params[:sort])
     params[:sort]
   else
     "name"
@@ -70,7 +70,7 @@ def sort_column
 end
 
 def sort_direction
-  if %w[asc desc].include?(params[:direction]) then
+  if %w[asc desc].include?(params[:direction])
     params[:direction]
   else
     "asc"

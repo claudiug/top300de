@@ -66,7 +66,7 @@ class Admin::PaintingsController < ApplicationController
 
 
   def sort_column
-    if Painting.column_names.include?(params[:sort]) then
+    if Painting.column_names.include?(params[:sort])
       params[:sort]
     else
       "name"
@@ -74,7 +74,7 @@ class Admin::PaintingsController < ApplicationController
   end
 
   def sort_direction
-    if %w[asc desc].include?(params[:direction]) then
+    if %w[asc desc].include?(params[:direction])
       params[:direction]
     else
       "asc"

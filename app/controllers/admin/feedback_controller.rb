@@ -60,7 +60,7 @@ class Admin::FeedbackController < ApplicationController
 
 
   def sort_column
-    if Feedback.column_names.include?(params[:sort]) then
+    if Feedback.column_names.include?(params[:sort])
       params[:sort]
     else
       "name"
@@ -68,7 +68,7 @@ class Admin::FeedbackController < ApplicationController
   end
 
   def sort_direction
-    if %w[asc desc].include?(params[:direction]) then
+    if %w[asc desc].include?(params[:direction])
       params[:direction]
     else
       "asc"

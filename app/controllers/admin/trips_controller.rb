@@ -63,7 +63,7 @@ class Admin::TripsController < ApplicationController
   end
 
   def sort_column
-    if Trip.column_names.include?(params[:sort]) then
+    if Trip.column_names.include?(params[:sort])
       params[:sort]
     else
       "name"
@@ -71,7 +71,7 @@ class Admin::TripsController < ApplicationController
   end
 
   def sort_direction
-    if %w[asc desc].include?(params[:direction]) then
+    if %w[asc desc].include?(params[:direction])
       params[:direction]
     else
       "asc"
