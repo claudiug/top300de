@@ -8,7 +8,6 @@ Top300de::Application.routes.draw do
     resources :users, only:[:new, :create]
     resources :trips, only:[:index, :show]
   end
-  #get '*path', to: redirect("/#{I18n.default_locale}/%{path}"), constraints: lambda { |req| !req.path.starts_with? "/#{I18n.default_locale}/" }
   get '', to: redirect("/#{I18n.default_locale}")
 
     namespace :admin do
