@@ -8,3 +8,4 @@
 
 Trip.create!(name:"Berlin wall1", city: "Berlin",description:"some stuff here",
              zip_code: 10367, is_active:true, is_feature:true)
+
