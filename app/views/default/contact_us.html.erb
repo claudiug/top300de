@@ -1,0 +1,6 @@
+<%= form_tag contact_path, method: [:get, :post] do %>
+    <%= text_field_tag :name, params[:name] %>
+    <%= text_field_tag :email, params[:email] %>
+    <%= text_area_tag :content, params[:content] %>
+    <%= submit_tag %>
+<% end %>

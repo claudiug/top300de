@@ -1,5 +1,7 @@
 Top300de::Application.routes.draw do
 
+  get '/contact', to: 'default#contact_us'
+  post '/contact', to: 'default#contact_us'
 
   scope ":locale", locale: /en|de/ do
     root "default#home"

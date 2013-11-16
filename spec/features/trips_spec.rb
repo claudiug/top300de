@@ -8,6 +8,7 @@ feature 'Trips' do
     click_button 'Show me'
     expect(page).to have_content 'Result'
 
+
   end
 
 end
