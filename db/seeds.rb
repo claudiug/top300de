@@ -5,7 +5,18 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
-Trip.create!(name:"Berlin wall1", city: "Berlin",description:"some stuff here",
-             zip_code: 10367, is_active:true, is_feature:true)
+file = File.open('./lib/data/save_files.txt', 'r')
+data = Array.new
+file.each do |f|
+  data.push(f)
+end
+data.delete_if{|x| x == ""}
+data.each do |info|
+  Trip.create!(name: info,
+              city:info,
+              description: "some stuff here",
+              zip_code: 1234,
+              is_active: true,
+              is_feature: true)
+end
 
