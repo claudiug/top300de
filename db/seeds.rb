@@ -20,3 +20,6 @@ data.each do |info|
               is_feature: true)
 end
 
+#If you want to add some categories to a trip, you can use
+# rails console, then grab a trip
+#EX Trip.last.categories = "name"

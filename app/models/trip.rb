@@ -6,7 +6,9 @@ class Trip < ActiveRecord::Base
   has_one :daily
   has_and_belongs_to_many :categories
   accepts_nested_attributes_for :paintings
+
   geocoded_by :name
+
   validates :slug, presence: true, uniqueness: true
   validates :name, presence: true
   validates :city, presence: true
