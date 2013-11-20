@@ -70,7 +70,9 @@ class Trip < ActiveRecord::Base
     Weather.new(trip).get_weather
   end
 
-
+  def self.get_random_feature
+    where(is_feature: true).rand()
+  end
 
 
 
