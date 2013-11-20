@@ -9,7 +9,7 @@ class TripsController < ApplicationController
         @trips = Trip.top_ten
       end
     end
-
+    @trips = Trip.top_ten
   end
 
   def show

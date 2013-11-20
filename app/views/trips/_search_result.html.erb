@@ -5,7 +5,7 @@
         <a href="#" title="#" class="trip-image">
 
          <span class="trip-title">
-             <%= trip_result.try(:title) %>
+             <%= trip_result.try(:name) %>
              Bastei bridge
           </span> <!-- .trip-title -->
           <img src="/assets/samples/pic0.jpg" alt="ALT" />
@@ -18,7 +18,8 @@
             <span>The Bastei Bridge is a sandstone walking bridge connecting rocky peaks above the Elbe River in Germany.
             The bridge is located in the Saxon Switzerland National Park in the Elbe Sandstone Mountains</span>
 
-            <%= trip_result.try(:description) %>
+            <%= trip_result.try(:latitude) %>
+            <%= trip_result.try(:longitude) %>
             <div class="meta stand-by">
             </div> <!-- .meta stand-by -->
 
