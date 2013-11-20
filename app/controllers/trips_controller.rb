@@ -2,11 +2,14 @@ class TripsController < ApplicationController
 
 
   def index
-    if params[:category].present?
-      @trips = Trip.joins(:categories).where(categories: {name: params[:category].keys})
-    else
-      @trips = Trip.top_ten
+    if params[:location].present?
+      if params[:category].present?
+        @trips = Trip.joins(:categories).where(categories: {name: params[:category].keys})
+      else
+        @trips = Trip.top_ten
+      end
     end
+
   end
 
   def show
