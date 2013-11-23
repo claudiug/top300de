@@ -71,7 +71,7 @@ class Trip < ActiveRecord::Base
   end
 
   def self.get_random_feature
-    where(is_feature: true).rand()
+    where(is_feature: true).rand(1)
   end
 
 
