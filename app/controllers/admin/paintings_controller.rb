@@ -1,6 +1,6 @@
 class Admin::PaintingsController < ApplicationController
   layout "admin"
-  before_action :request_login
+
   before_action :set_painting, only: [:show, :edit, :update, :destroy]
   helper_method :sort_direction, :sort_column
 
@@ -28,8 +28,6 @@ class Admin::PaintingsController < ApplicationController
   def show
   end
 
-
-
   def edit
   end
 
@@ -39,7 +37,6 @@ class Admin::PaintingsController < ApplicationController
     else
       render :edit
       flash[:warning] = "please fix the errors"
-
     end
   end
 
@@ -49,10 +46,8 @@ class Admin::PaintingsController < ApplicationController
     flash[:notice] = "painting was deleted!"
   end
 
-
-
-
   private
+
   def painting_params
     params.require(:painting).permit(:name, :trip_id, :is_feature, :is_active, :image, :remote_image_url, :trip_name)
   end
@@ -63,7 +58,6 @@ class Admin::PaintingsController < ApplicationController
     flash[:warning] = "the painting could not be found"
     redirect_to admin_paintings_path
   end
-
 
   def sort_column
     if Painting.column_names.include?(params[:sort])
@@ -80,5 +74,4 @@ class Admin::PaintingsController < ApplicationController
       "asc"
     end
   end
-
 end

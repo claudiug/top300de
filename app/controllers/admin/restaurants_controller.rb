@@ -1,9 +1,8 @@
 class Admin::RestaurantsController < ApplicationController
   layout "admin"
-  before_action :request_login
+
   before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
   helper_method :sort_direction, :sort_column
-
 
   def index
    @restaurants = Restaurant.order(sort_column + ' ' + sort_direction).page(params[:page]).per_page(5)
@@ -34,7 +33,6 @@ class Admin::RestaurantsController < ApplicationController
     else
       render :edit
     end
-
   end
 
   def destroy
@@ -43,6 +41,7 @@ class Admin::RestaurantsController < ApplicationController
   end
 
   private
+
   def restaurant_params
     params.require(:restaurant).permit(:name, :address, :email,:phone_number, :is_active, :web_page)
   end
@@ -69,5 +68,4 @@ class Admin::RestaurantsController < ApplicationController
       "asc"
     end
   end
-
 end

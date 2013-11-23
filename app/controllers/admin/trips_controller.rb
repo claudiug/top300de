@@ -1,14 +1,12 @@
 class Admin::TripsController < ApplicationController
   layout "admin"
-  before_action :request_login
+
   before_action :set_trip, only: [:show, :edit, :update, :destroy]
   helper_method :sort_direction, :sort_column
-
 
   def index
       @trips = Trip.order(sort_column + ' ' + sort_direction).page(params[:page]).per_page(5)
   end
-
 
   def new
     @trip = Trip.new
@@ -25,11 +23,9 @@ class Admin::TripsController < ApplicationController
   end
 
   def show
-
   end
 
   def edit
-
   end
 
   def update
@@ -41,7 +37,6 @@ class Admin::TripsController < ApplicationController
   end
 
   def destroy
-
     @trip.destroy
     redirect_to admin_trips_path, notice: "trip deleted!"
   end
@@ -77,5 +72,4 @@ class Admin::TripsController < ApplicationController
       "asc"
     end
   end
-
 end

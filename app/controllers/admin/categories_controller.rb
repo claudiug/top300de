@@ -1,10 +1,7 @@
 class Admin::CategoriesController < ApplicationController
   layout "admin"
-  before_action :request_login
   before_action :set_category, only: [:show, :update, :edit, :destroy]
   helper_method :sort_direction, :sort_column
-
-
 
   def index
     @categories = Category.order(sort_column + ' ' + sort_direction).page(params[:page]).per_page(5)
@@ -40,12 +37,10 @@ class Admin::CategoriesController < ApplicationController
   end
 end
 
-
 def destroy
   @category.destroy
   redirect_to admin_categories_path
 end
-
 
 private
 
@@ -59,7 +54,6 @@ rescue ActiveRecord::RecordNotFound
   flash[:warning] = "The category that you are looking could not be found"
   redirect_to admin_categories_path
 end
-
 
 def sort_column
   if Category.column_names.include?(params[:sort])

@@ -1,11 +1,8 @@
 class Admin::FeedbackController < ApplicationController
   layout 'admin'
-  before_action :request_login
+
   before_action :set_feedback, only: [:edit, :show, :update, :destroy]
   helper_method :sort_direction, :sort_column
-
-
-
 
   def index
     @feedbacks = Feedback.page(params[:page]).per_page(5)
@@ -58,7 +55,6 @@ class Admin::FeedbackController < ApplicationController
     redirect_to admin_feedback_index_path
   end
 
-
   def sort_column
     if Feedback.column_names.include?(params[:sort])
       params[:sort]
@@ -74,6 +70,4 @@ class Admin::FeedbackController < ApplicationController
       "asc"
     end
   end
-
-
 end
