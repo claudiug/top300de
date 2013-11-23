@@ -3,8 +3,6 @@ class Painting < ActiveRecord::Base
 
    mount_uploader :image, ImageUploader
 
-
-
   def trip_name
     trip.try(:name)
   end

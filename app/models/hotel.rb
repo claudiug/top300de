@@ -1,5 +1,4 @@
 class Hotel < ActiveRecord::Base
-
   belongs_to :trip
 
   validates :slug, presence: true, uniqueness: true
@@ -13,7 +12,6 @@ class Hotel < ActiveRecord::Base
 
   before_validation :generate_slug
   before_validation :make_name_titlecase
-
 
   def self.search(query)
     if query
@@ -39,14 +37,11 @@ class Hotel < ActiveRecord::Base
     where("created_at >= :start_date and created_at <= :end_date", {start_date:start_date, end_date:end_date})
   end
 
-
   def self.get_trips_with_name(name)
     if name
       joins(:trip).where(trips: {name: "#{name}"})
     else
       Hotel.none
     end
-
   end
-
 end

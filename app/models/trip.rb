@@ -57,14 +57,10 @@ class Trip < ActiveRecord::Base
     order(:name).limit(10)
   end
 
-
-
   def self.feature_trips
     where(is_feature: true).limit(6)
     #TODO add random
   end
-
-
 
   def self.get_weather(trip)
     Weather.new(trip).get_weather
@@ -73,7 +69,4 @@ class Trip < ActiveRecord::Base
   def self.get_random_feature
     where(is_feature: true).rand(1)
   end
-
-
-
 end

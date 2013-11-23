@@ -1,11 +1,12 @@
 class Category < ActiveRecord::Base
-
   has_and_belongs_to_many :trips
+
   validates :name, presence: true, uniqueness: true
   validates :is_active, presence: true
   validates :description, presence: true
   validates :seo, presence: true
   validates :slug, presence: true, uniqueness: true
+
   before_validation :make_name_titlecase
   before_validation :generate_slug
 
@@ -19,7 +20,6 @@ class Category < ActiveRecord::Base
     else
       order(:name).limit(10)
     end
-
   end
   def to_param
     slug
@@ -41,9 +41,4 @@ class Category < ActiveRecord::Base
   def get_trips_ids
       trip_ids
   end
-
-
-
-
-
 end

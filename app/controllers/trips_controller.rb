@@ -1,6 +1,4 @@
 class TripsController < ApplicationController
-
-
   def index
     if params[:location].present?
       if params[:category].present?
