@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131113121253) do
+ActiveRecord::Schema.define(version: 20131124190524) do
 
   create_table "accounts", force: true do |t|
     t.string   "name"
@@ -155,6 +155,7 @@ ActiveRecord::Schema.define(version: 20131113121253) do
     t.float    "latitude"
     t.float    "longitude"
     t.boolean  "is_feature",  default: false
+    t.boolean  "popular"
   end
 
   add_index "trips", ["latitude"], name: "trip_lat"

@@ -1,6 +1,9 @@
 <section class="wideBlock hpFooterBlock popular-destinations">
   <div class="wrapBlock">
-    <h1>Popular destinations</h1>
+    <% Trip.popular_trips.each do |trip| %>
+        <h1>Popular destinations</h1>
+          <%= trip.name %>
+  <% end %>
     <div class="box" id="hp-trips">
       <div class="box-content">
 

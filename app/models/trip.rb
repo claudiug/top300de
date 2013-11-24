@@ -69,4 +69,8 @@ class Trip < ActiveRecord::Base
   def self.get_random_feature
     where(is_feature: true).rand(1)
   end
+
+  def self.popular_trips
+    where(popular: true)
+  end
 end
