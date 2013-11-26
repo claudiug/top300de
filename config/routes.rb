@@ -5,7 +5,7 @@ Top300de::Application.routes.draw do
   post '/login', to: 'sessions#create'
 
   scope ":locale", locale: /en|de/ do
-    root "default#home"
+    root "default#landing"
     resources :users, only:[:new, :create]
     resources :trips, only:[:index, :show]
   end

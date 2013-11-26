@@ -15,4 +15,8 @@ class TripsController < ApplicationController
     @weather = Trip.get_weather(@trip)
   end
 
+  def calculate_distance
+    #TODO calculate distance use google api and make it helper method
+  end
+
 end
