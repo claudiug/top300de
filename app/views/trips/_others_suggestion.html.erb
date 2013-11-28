@@ -1,11 +1,12 @@
 <div class="box">
-  <div class="title">Other destinations</div>
-  <% Trip.feature_trips do |trip| %>
+  <!-- <div class="title">Other destinations</div> -->
+
 
   <div class="box-content">
 
     <div id="trip-list">
 
+      <% @trips.each do |trip_result| %>
       <article class="trip-item trip-box">
         <a href="#" title="Title">
               <span class="trip-image">
@@ -17,30 +18,27 @@
               </span>  <!-- .trip-mage -->
 
               <span class="trip-title">
-                Koenigssee Lake
-                <%= trip.name %>
+                <%= trip_result.try(:name) %>
 
               </span> <!-- .trip-title -->
 
             <span class="trip-tent">
               <span class="desc">
-                The Bastei Bridge is a sandstone walking bridge connecting.
-                <%= trip.description %>
+                <%= trip_result.try(:latitude) %>
+                <%= trip_result.try(:longitude) %>
               </span> <!-- .desc .fly-left -->
 
               <span class="meta">
-                trip meta data
-                <%= trip.id %>
+
               </span> <!-- .meta stand-by -->
 
             </span> <!-- .trip-tent -->
         </a>
       </article>  <!-- .trip-item -->
-
+      <% end %>
 
 
     </div> <!-- trip-list -->
 
   </div> <!-- .box-content -->
 </div> <!-- .box -->
-<% end %>
