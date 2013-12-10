@@ -27,7 +27,5 @@ class TripsController < ApplicationController
       else
          MapsGoogleDistance.get_distance_by_car(from, where)
     end
-
   end
-
 end

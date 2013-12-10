@@ -1,6 +1,5 @@
 require 'httparty'
 class MapsGoogleDistance
-
   #100 elements per query.
   #100 elements per 10 seconds.
   #2 500 elements per 24 hour period.
@@ -14,6 +13,7 @@ class MapsGoogleDistance
 
   BASE_CITY = 'Berlin'
   BASE_DESTINATION = 'Hamburg'
+
   def self.get_distance_by_walking(from, destination)
     value = []
     from = BASE_CITY if from.nil?
@@ -67,6 +67,4 @@ class MapsGoogleDistance
       value << distance
     end
   end
-
 end
-p MapsGoogleDistance.get_distance_by_walking('Berlin', 'Hamburg')
