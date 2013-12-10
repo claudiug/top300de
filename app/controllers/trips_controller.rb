@@ -1,4 +1,5 @@
 class TripsController < ApplicationController
+  helper_method :calculate_distance
   def index
     if params[:location].present?
       if params[:category].present?
@@ -15,8 +16,18 @@ class TripsController < ApplicationController
     @weather = Trip.get_weather(@trip)
   end
 
-  def calculate_distance
-    #TODO calculate distance use google api and make it helper method
+  def calculate_distance(type, from, where)
+    case type
+      when 'TRAIN'
+         MapsGoogleDistance.get_distance_by_walking(from, where)
+      when 'AIR'
+        MapsGoogleDistance.get_distance_by_bike(from, where)
+      when 'CAR'
+        MapsGoogleDistance.get_distance_by_car(from, where)
+      else
+         MapsGoogleDistance.get_distance_by_car(from, where)
+    end
+
   end
 
 end
