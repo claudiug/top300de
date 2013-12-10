@@ -18,6 +18,7 @@ gem 'jquery-ui-rails'
 # gem  "pg"
 gem 'forecast_io'
 gem 'chosen-rails'
+gem 'httparty'
 # gem 'compass-rails', github: 'Compass/compass-rails'
 group :development, :test do
   gem "rspec-rails", "~> 2.14.0"
