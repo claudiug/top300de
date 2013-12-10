@@ -29,6 +29,7 @@ class MapsGoogleDistance
       time =  result['rows'][0]['elements'][0]['duration']['text']
       value << time
       value << distance
+      value
     end
   end
 
@@ -47,6 +48,7 @@ class MapsGoogleDistance
       time =  result['rows'][0]['elements'][0]['duration']['text']
       value << time
       value << distance
+      value
     end
   end
 
@@ -65,6 +67,7 @@ class MapsGoogleDistance
       time =  result['rows'][0]['elements'][0]['duration']['text']
       value << time
       value << distance
+      value
     end
   end
 end
