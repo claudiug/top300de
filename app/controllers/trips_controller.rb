@@ -18,9 +18,9 @@ class TripsController < ApplicationController
 
   def calculate_distance(type, from, where)
     case type
-      when 'TRAIN'
+      when 'WALKING'
          MapsGoogleDistance.get_distance_by_walking(from, where)
-      when 'AIR'
+      when 'BIKE'
         MapsGoogleDistance.get_distance_by_bike(from, where)
       when 'CAR'
         MapsGoogleDistance.get_distance_by_car(from, where)
