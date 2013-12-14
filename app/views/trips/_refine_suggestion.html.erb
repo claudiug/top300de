@@ -12,8 +12,8 @@
 
     <div class="box-content">
       <div class="trip-with trip-type options">
-        <label class="styled" id="by_car">
-          <input id="by_car" name="by_car" type="checkbox">
+        <label class="styled styled-on" id="by_car">
+          <input id="by_car" name="by_car" type="checkbox" checked="checked">
           <i></i><span>By car</span>
         </label>
 
@@ -22,15 +22,11 @@
           <i></i><span>By bicycle</span>
         </label>
 
-        <label class="styled" id="by_train">
-          <input id="by_train" name="by_train" type="checkbox">
+        <label class="styled disabled" id="by_train">
+          <input id="by_train" name="by_train" disabled="disabled" type="checkbox">
           <i></i><span>By train</span>
         </label>
 
-        <label class="styled" id="by_bus">
-          <input id="by_bus" name="by_bus" type="checkbox">
-          <i></i><span>By buses</span>
-        </label>
 
       </div>
     </div> <!-- .box-content -->
@@ -40,12 +36,38 @@
     <div class="box-content">
       <div class="trip-with trip-type options">
 
-        <label class="styled" id="by_car">
-          <input id="by_car" name="by_car" type="checkbox">
-          <i></i><span>By car</span>
-        </label>
+        <div id="distance-slider">
+
+        </div>
+        <input id="distance-filter" name="distance-filter" class="distance-filter" readonly="readonly" />
+
+
+        <script type="text/javascript">
+            /* Distance slider */
+            $(document).ready(function() {
+
+            var startRange = 87;
+            var stopRange = 761;
+
+            $("#distance-slider").slider({
+                range: "max",
+                value: stopRange,
+                min: startRange,
+                max: stopRange,
+                slide: function(event, ui) {
+                    $("#distance-filter").val(ui.value + " Km");
+                }
+            });
+
+                $("#distance-filter").val(stopRange + " Km");
+
+            });
+        </script>
 
       </div>
+
+      <input class="submit-go rsize" name="filter" type="submit" value="Filter">
+
     </div> <!-- .box-content -->
   </div> <!-- .box -->
 
@@ -93,6 +115,9 @@
           <i></i><span>Sightseeing</span>
         </label>
       </div>
+
+      <input class="submit-go rsize" name="filter" type="submit" value="Filter">
+
     </div>
   </div> <!-- .box -->
 

@@ -162,7 +162,7 @@ a:hover, a:focus {
 /* Titles */
 .head {
   font-size: $head;
-  font-family: $light;
+  font-family: $regular;
   color: $titleGrey;
   padding-bottom: 10px;
 }
@@ -208,7 +208,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 98;
+  z-index: 985;
   height: 43px;
 
   * {
@@ -263,7 +263,7 @@ header {
         height: 20px;
         position: absolute;
         left: 50%;
-        margin-left: 8px;
+        margin-left: 45px;
         top: 14px;
         z-index: 9880000;
       }
@@ -279,13 +279,17 @@ header {
   background: white;
   border: 0;
   outline: none;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #DBDBDB;
   padding: 7px 10px;
   font-size: 14px;
   font-family: $regular;
   font-size: $tileTitle;
   color: $titleGrey;
   border-radius: 3px;
+
+  &:focus {
+    border-color: #2c3e50;
+  }
 
   &.size1 {
     width: 200px;
@@ -350,6 +354,50 @@ header {
   &.loading {
      background-image: image-url("loading.gif");
   }
+  &.rsize {
+    font-family: $regular;
+    color: #666;
+    min-width: 0;
+    padding: 5px 25px;
+    font-size: 15px;
+    min-height: 0;
+    background: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border: 1px solid #bbb;
+    margin-top: 15px;
+
+    &:hover {
+    }
+
+    &:active {
+      position: relative;
+      top: 1px;
+      border-color: #333;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+
+  }
+
+  &.rsmaller {
+    width: 99%;
+    min-width: 0;
+    padding: 5px 10px;
+    min-height: 0;
+    position: relative;
+    margin-top: 0px;
+    font-size: 17px;
+    margin-bottom: 15px;
+
+    &:active {
+      position: relative;
+      top: 3px;
+    }
+
+  }
 
 }
 /* common box */
@@ -395,7 +443,7 @@ header {
       text-align: center;
       position: absolute;
       top: 50%;
-      margin-top: -50px;
+      margin-top: -150px;
       left: 50%;
       margin-left: -50px;
       z-index: 90;
@@ -419,6 +467,7 @@ header {
       -ms-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       margin: 0 auto;
+      width: 255px;
     }
 
     &:hover {
@@ -433,7 +482,16 @@ header {
       }
 
     }
+
+    &:hover {
+      .trip-tent {
+        height: 200px;
+      }
+    }
+
   }
+
+
 
   img, a {
     display: block;
@@ -445,29 +503,60 @@ header {
   }
 
   .trip-title {
-    color: white;
+    color: black;
     z-index: 9000;
     position: relative;
-    margin-top: -53px;
-    padding: 15px;
+    margin-top: 0;
+    padding: 0 0 10px;
+    line-height: 1.2;
 
     font-family: $bold;
     font-size: $head;
 
-    /* @include background-image(linear-gradient(to top, #000, rgba(0,0,0,0))); */
+    /* @include background-image(linear-gradient(to top, #000, rgba(0,0,0,0)));
     background-color: rgba(16,19,22,0);
     background-image: -webkit-linear-gradient(bottom, #181818, rgba(0,0,0,0));
     background-image: -moz-linear-gradient(bottom, #181818, rgba(0,0,0,0));
     background-image: -o-linear-gradient(bottom, #181818, rgba(0,0,0,0));
     background-image: linear-gradient(to top, #181818, rgba(0,0,0,0));
-
+    */
   }
 
   .meta {
-    background: #eee;
-    margin: 15px -15px -15px;
-    padding: 10px 15px;
-    display: none;
+    border-radius: 50%;
+    margin: 0;
+    padding: 8px 0 0;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+
+    .distance {
+
+      i {
+        background-image: url(/assets/var/trip-types.png);
+        background-repeat: no-repeat;
+        width: 23px;
+        height: 20px;
+        display: block;
+        vertical-align: middle;
+        margin: 0 auto 3px;
+      }
+
+      &.car-distance {
+        i {
+          background-position: 0 -233px;
+        }
+      }
+      &.bike-distance {
+        i {
+          background-position: 0 -270px;
+        }
+      }
+    }
   }
 }
 
@@ -476,6 +565,7 @@ header {
   margin: 0 -15px 15px;
   padding: 15px 15px 0;
   background: #fff;
+  box-shadow: 0 1px 2px rgba(90, 90, 90, 0.1);
 
   .box-content {
     padding-bottom: 15px;
@@ -545,7 +635,7 @@ header {
 
 .wat-modal {
   opacity: 0;
-  margin-left: -260px;
+  margin-left: -223px;
   left: 50%;
   top: 15px;
   z-index: 900102;
@@ -566,8 +656,19 @@ header {
     font-family: $bold;
     display: block;
     font-size: 14px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     position: relative;
+  }
+  p {
+    display: block;
+    font-size: 13px;
+    padding-bottom: 15px;
+
+    small {
+      color: #999;
+      padding: 0 5px;
+    }
+
   }
   .close {
     font-size: 12px;
@@ -632,6 +733,24 @@ header {
 .debug-console:hover {
   opacity: .9;
   left: 0;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 980;
+  opacity: .8;
+  left: 0;
+  top: 0;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
 

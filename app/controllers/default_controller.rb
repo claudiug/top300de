@@ -4,9 +4,9 @@ class DefaultController < ApplicationController
   def home
   end
 
-  def landing
+#  def landing
 
-  end
+#  end
 
   def contact_us
     name = params[:name] if params[:name].present?

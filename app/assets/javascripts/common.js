@@ -74,7 +74,7 @@ $(document).ready(function() {
         container: $('#trip-list'),
         direction: undefined,
         ignoreInactiveItems: true,
-        //itemWidth: 255,
+        itemWidth: 255,
         fillEmptySpace: true,
         flexibleWidth: 0,
         offset: 11,
@@ -116,9 +116,12 @@ $(document).ready(function() {
         if ($(this).hasClass("selected") ) {
             $(this).removeClass('selected');
             $('.wat-modal').animate({top:'15px', opacity:'0'}, 80);
+            $('.overlay').fadeOut(200);
+
         } else {
 
             $(this).addClass('selected');
+            $('.overlay').fadeIn(200);
             $('.wat-modal').animate({top:'26px', opacity:'1'}, 80);
 
         }

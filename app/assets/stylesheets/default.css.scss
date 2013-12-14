@@ -384,21 +384,19 @@ label.styled {
       -o-transition: background .2s ease-in;
       transition: background .2s ease-in;
       box-shadow: 0 1px 3px rgba(71, 217, 191, .3);
+      background: #47d9bf;
+      padding-left: 30px;
+      color: white;
+      text-align: left;
     }
     &.danke:after {
       font-family: 'Flat-UI-Icons';
       color: white;
       font-size: 11px;
-      background: #47d9bf;
-      content: "\e00a  Got it!";
+      content: "\e00a";
       position: absolute;
-      height: 100%;
-      width: 100%;
-      left: 0;
-      top: 0;
-      padding-top: 9px;
-      background: #47d9bf;
-      border-radius: 4px;
+      left: 9px;
+      top: 11px;
     }
   }
   .suggestions-set {
