@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :http_auth, if: -> {request.path.include?("admin")}
   before_action :set_locale
+  helper_method :get_location
 
   private
 
@@ -20,23 +21,17 @@ class ApplicationController < ActionController::Base
     {locale: I18n.locale}
   end
 
-  #unused!
-  #def request_login
-  #  if current_user.nil?
-  #    flash[:error] = "must be login"
-  #    redirect_to root_url
-  #  end
-  #end
-
-  #def current_user
-  #  @current_user ||= User.find(session[:user_id]) if session[:user_id]
-  #end
-
   def http_auth
     authenticate_or_request_with_http_basic do |username, password|
       username == "trip" && password == "futurama"
     end
   end
 
-  #helper_method :request_login
+  def get_location(loc)
+    if loc.present?
+      loc
+    else
+      'Berlin'
+    end
+  end
 end

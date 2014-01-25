@@ -71,5 +71,3 @@ def sort_direction
   end
 end
 
-
-

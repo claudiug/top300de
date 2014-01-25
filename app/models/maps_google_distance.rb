@@ -18,14 +18,14 @@ class MapsGoogleDistance
     value = []
     from = BASE_CITY if from.nil?
     destination = BASE_CITY if destination.nil?
-    response = HTTParty.get(BASE_URL +
+    response ||= HTTParty.get(BASE_URL +
                                 from +
                                 '&destinations='+ destination +
                                 '&mode=' + DISTANCE_BY_WALKING +
                                 '&sensor='+SENSOR )
     if response.code == 200
       result = JSON(response.body)
-      distance = result['rows'][0]['elements'][0]['distance']['text']
+      distance ||= result['rows'][0]['elements'][0]['distance']['text']
       time =  result['rows'][0]['elements'][0]['duration']['text']
       value << time
       value << distance
@@ -56,7 +56,7 @@ class MapsGoogleDistance
     value = []
     from = BASE_CITY if from.nil?
     destination = BASE_CITY if destination.nil?
-    response = HTTParty.get(BASE_URL +
+    response ||= HTTParty.get(BASE_URL +
                                 from +
                                 '&destinations='+ destination +
                                 '&mode=' + DISTANCE_BY_BIKE +

@@ -1,4 +1,2 @@
 class FeedbackController < ApplicationController
-
-
 end

@@ -1,5 +1,4 @@
 class Trip < ActiveRecord::Base
-
   has_many :hotels
   has_many :restaurants
   has_many :paintings
@@ -15,7 +14,6 @@ class Trip < ActiveRecord::Base
   validates :zip_code, presence: true
   validates :description, presence: true
   validates :is_active, presence: true
-
 
   before_validation :generate_slug
   before_validation :make_name_titlecase

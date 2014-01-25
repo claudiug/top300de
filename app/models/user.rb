@@ -6,7 +6,6 @@ class User < ActiveRecord::Base
   validates :email, presence: true, uniqueness: true
   validates :password, length: {within: 5..100}
 
-
   def self.count_admin_user
     where(is_admin: true).count
   end

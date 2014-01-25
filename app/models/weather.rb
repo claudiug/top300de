@@ -1,5 +1,4 @@
 class Weather
-
   def initialize(trip)
     @trip = trip
   end
