@@ -2,6 +2,20 @@
  * Created by vladmihai on 10/5/13.
  */
 
+//blocksit define
+$(window).load( function() {
+    $('#trip-list').BlocksIt({
+        numOfCol: 3,
+        offsetX: 8,
+        offsetY: 8,
+        blockElement: 'article'
+    });
+});
+
+
+
+
+
 $(document).ready(function() {
 
     /* let's make the input elements nicer :) */
@@ -66,22 +80,7 @@ $(document).ready(function() {
         });
     });
 
-    /* this is the gallery grid style */
-    $('.trip-item, #hp-trips .trip-item').wookmark({
-        align: 'left',
-        autoResize: false,
-        comparator: null,
-        container: $('#trip-list'),
-        direction: undefined,
-        ignoreInactiveItems: true,
-        itemWidth: 255,
-        fillEmptySpace: true,
-        flexibleWidth: 0,
-        offset: 11,
-        onLayoutChanged: undefined,
-        outerOffset: 0,
-        resizeDelay: 50
-    });
+
 
     /* suggestion engine */
     $('.addSugg span').click(function() {
