@@ -4,7 +4,7 @@
 
 //blocksit define
 $(window).load( function() {
-    $('#trip-list').BlocksIt({
+    $('#trip-list, #trip-list-second').BlocksIt({
         numOfCol: 3,
         offsetX: 8,
         offsetY: 8,
@@ -17,6 +17,10 @@ $(window).load( function() {
 
 
 $(document).ready(function() {
+
+    $.validate({
+        form : '#feedback-form',
+    });
 
     /* let's make the input elements nicer :) */
     setupLabel();
@@ -110,28 +114,15 @@ $(document).ready(function() {
     });
 
     /* Animate modals */
-    $('.modal-trigger').click(function() {
+    $('#show-feedback').click(function() {
 
-        if ($(this).hasClass("selected") ) {
-            $(this).removeClass('selected');
-            $('.wat-modal').animate({top:'15px', opacity:'0'}, 80);
-            $('.overlay').fadeOut(200);
-
-        } else {
-
-            $(this).addClass('selected');
-            $('.overlay').fadeIn(200);
-            $('.wat-modal').animate({top:'26px', opacity:'1'}, 80);
-
-        }
+        showModals(this, $('#wat-feedback'));
         return false;
     });
 
     /* Hide events */
     $('div.close').click(function() {
-        $('.modal-trigger').removeClass('selected');
-        $('.overlay').fadeOut(60);
-        $('.wat-modal').animate({top:'15px', opacity:'0'}, 80);
+        hideModals($(this).parent('div').parent('.wat-modal'));
     })
 
 
@@ -172,3 +163,27 @@ $(function() {
     });
 
 });
+
+function showModals(el, target) {
+    /* Animate modals */
+
+        if ($(el).hasClass("selected") ) {
+            $(el).removeClass('selected');
+            $(target).animate({top:'15px', opacity:'0'}, 80).hide();
+            $('.overlay').fadeOut(200);
+
+        } else {
+
+            $(el).addClass('selected');
+            $('.overlay').fadeIn(200);
+            $(target).show().animate({top:'26px', opacity:'1'}, 80);
+
+        }
+        return false;
+}
+function hideModals(target) {
+    /* Hide events */
+        $('.modal-trigger').removeClass('selected');
+        $('.overlay').fadeOut(60);
+        $(target).animate({top:'15px', opacity:'0'}, 80).hide();
+}

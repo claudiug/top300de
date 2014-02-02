@@ -288,7 +288,7 @@ header {
   border-radius: 3px;
 
   &:focus {
-    border-color: #2c3e50;
+    border-color: #2ECC71;
   }
 
   &.size1 {
@@ -366,7 +366,7 @@ header {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     border: 1px solid #bbb;
-    margin-top: 15px;
+    margin-top: 0;
 
     &:hover {
     }
@@ -391,6 +391,29 @@ header {
     margin-top: 0px;
     font-size: 17px;
     margin-bottom: 15px;
+
+    &.faded {
+      font-family: "bariol_regularregular";
+      width: 45%;
+      min-width: 0;
+      padding: 3px 5px;
+      min-height: 0;
+      position: relative;
+      margin-top: 0px;
+      font-size: 13px;
+      margin-bottom: 15px;
+      -webkit-box-shadow: 0 5px #8D8D8D;
+      -moz-box-shadow: 0 5px #8D8D8D;
+      box-shadow: 0 5px #8D8D8D;
+      background: #C2C2C2;
+
+      &:active {
+        -webkit-box-shadow: 0 2px #8D8D8D;
+        -moz-box-shadow: 0 2px #8D8D8D;
+        box-shadow: 0 2px #8D8D8D;
+      }
+
+    }
 
     &:active {
       position: relative;
@@ -569,6 +592,7 @@ header {
 }
 
 .leftcol-break {
+  position: relative;
   border-radius: 5px;
   margin: 0 -15px 15px;
   padding: 15px 15px 0;
@@ -643,6 +667,7 @@ header {
 
 .wat-modal {
   opacity: 0;
+  display: none;
   margin-left: -223px;
   left: 50%;
   top: 15px;
@@ -657,8 +682,38 @@ header {
   -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.14);
   -moz-box-shadow: 0 5px 5px rgba(0,0,0,.14);
   box-shadow: 0 5px 5px rgba(0,0,0,.14);
-  display: block;
   font-size: 12px;
+
+    /* No location modal */
+    &.no-location-modal {
+      margin: 0;
+      opacity: 1;
+      top: 39px;
+      background: #2ECC71;
+      left: 185px;
+      width: 195px;
+      box-shadow: 0 1px 2px rgba(90, 90, 90, 0.1);
+      padding-bottom: 10px;
+      color: white;
+
+      &:after {
+        right: 100%;
+        top: 12px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-right-color: #2ECC71;
+        border-width: 7px;
+      }
+
+      .title {
+        color: white;
+      }
+
+    }
 
   .title {
     font-family: $bold;

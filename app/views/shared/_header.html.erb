@@ -9,7 +9,7 @@
                 <nav id="topRightNav">
                     <a href="#" title="Destinations">Destinations</a>
                     <a href="#" title="About">About</a>
-                    <a href="#" title="Feedback" class="modal-trigger">Feedback</a>
+                    <a href="#" title="Feedback" class="modal-trigger" id="show-feedback">Feedback</a>
 
                     <div class="languageSelector">
                         <span class="currentLanguage langEn"></span>
@@ -20,7 +20,7 @@
                     </div>
 
 
-                    <div class="wat-modal">
+                    <div class="wat-modal" id="wat-feedback">
                       <div class="title">
                         Feedback
 
@@ -32,14 +32,14 @@
                       <br />
                       <span>"Wantatrip Team"</span>
                       </p>
-
-                      <p><input type="text" name="your_name" class="input size2" placeholder="Your name (*)" /></p>
-                      <p><input type="text" name="your_name" class="input size2" placeholder="Your email" />
-                        <small>Enter in case your message requires an answer</small>
-                      </p>
-                      <p><textarea cols="5" rows="4" class="input size2" name="message"></textarea></p>
-                      <input class="submit-go rsmaller" name="commit" type="submit" value="Submit">
-
+                      <form action="" method="GET" id="feedback-form">
+                          <p><input type="text" name="your_name" class="input size2" placeholder="Your name (*)" /></p>
+                          <p><input type="text" name="your_name" class="input size2" placeholder="Your email" />
+                            <small>Enter in case your message requires an answer</small>
+                          </p>
+                          <p><textarea cols="5" rows="4" class="input size2" name="message" data-validation="required" data-validation-error-msg="Please enter your feedback" ></textarea></p>
+                          <input class="submit-go rsmaller" name="commit" type="submit" value="Submit">
+                      </form>
                     </div>
 
                 </nav>

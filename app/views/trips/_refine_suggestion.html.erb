@@ -4,21 +4,35 @@
     <div class="title">From</div>
 
     <div class="box-content">
-      <input type="text" value="Berlin" class="input size2 map" />
+      <input type="text" class="input size2 map" id="wat-from-location" value="Weingarten" />
 
     </div> <!-- .box-content -->
 
-    <div class="title">I prefer to travel with:</div>
+    <!-- if no departure location selected -->
+    <div class="wat-modal no-location-modal" id="wat-no-location">
 
-    <div class="box-content">
+      <div class="title">
+        Tip!
+        <div class="icons fui-cross close"></div>
+      </div>
+
+      <p>Type in your departure location (ex: Berlin) and you will get travel distances and duration.
+      </p>
+
+    </div> <!-- .wat-modal no-location-modal -->
+
+    <div class="box-content" id="wat-transport">
+
+      <div class="title">I prefer to travel with:</div>
+
       <div class="trip-with trip-type options">
-        <label class="styled styled-on" id="by_car">
-          <input id="by_car" name="by_car" type="checkbox" checked="checked">
+        <label class="styled" id="by_car">
+          <input id="by_car" name="by_car" type="checkbox">
           <i></i><span>By car</span>
         </label>
 
-        <label class="styled" id="by_bike">
-          <input id="by_bike" name="by_bike" type="checkbox">
+        <label class="styled disabled" id="by_bike">
+          <input id="by_bike" name="by_bike" type="checkbox" disabled="disabled">
           <i></i><span>By bicycle</span>
         </label>
 
@@ -31,11 +45,12 @@
       </div>
     </div> <!-- .box-content -->
 
-    <div class="title">Distance from home:</div>
+    <!-- <div class="title">Distance from home:</div> -->
 
     <div class="box-content">
       <div class="trip-with trip-type options">
 
+        <!--
         <div id="distance-slider">
 
         </div>
@@ -63,10 +78,10 @@
 
             });
         </script>
-
+        -->
       </div>
 
-      <input class="submit-go rsize" name="filter" type="submit" value="Filter">
+      <input class="submit-go rsmaller faded" name="filter" type="submit" value="Filter">
 
     </div> <!-- .box-content -->
   </div> <!-- .box -->
@@ -75,7 +90,7 @@
   <div class="box">
     <div class="title">Refine destination</div>
 
-    <div class="box-content">
+    <div class="box-content trip-refine">
       <div class="trip-type options">
         <label class="styled" id="go_hike">
           <input id="go_hike" name="go_hike" type="checkbox">
@@ -116,7 +131,7 @@
         </label>
       </div>
 
-      <input class="submit-go rsize" name="filter" type="submit" value="Filter">
+      <input class="submit-go rsmaller faded" name="filter" type="submit" value="Filter">
 
     </div>
   </div> <!-- .box -->
@@ -125,3 +140,14 @@
 
 
 </section>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    if( !$('#wat-from-location').val() ) {
+        $('#wat-from-location').focus();
+        $('#wat-transport').hide();
+        $('#wat-no-location').show();
+
+    }
+})
+</script>
