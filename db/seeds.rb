@@ -5,21 +5,32 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-file = File.open('./lib/data/save_files.txt', 'r')
-data = Array.new
-file.each do |f|
-  data.push(f.strip!)
-end
-data.delete_if{|x| x == ""}
-data.each do |info|
-  Trip.create(name: info,
-              city:"info",
-              description: "some stuff here",
-              zip_code: 1234,
-              is_active: true,
-              is_feature: true)
-end
+#file = File.open('./lib/data/save_files.txt', 'r')
+#data = Array.new
+#file.each do |f|
+#  data.push(f.strip!)
+#end
+#data.delete_if{|x| x == ""}
+#data.each do |info|
+#   Trip.create(name: info,
+#               city:"info",
+#               description: "some stuff here",
+#               zip_code: 1234,
+#               is_active: true,
+#               is_feature: true)
+# end
 
+
+50.times do |trip|
+  Trip.create(
+    name: "name_#{trip}",
+    slug: "slug#{trip}",
+    city: "Berlin",
+    zip_code: 10198,
+    description: 'this huge text for seo is here',
+    is_active: true
+    )
+end
 #If you want to add some categories to a trip, you can use
 # rails console, then grab a trip
 #EX Trip.last.categories = "name"
