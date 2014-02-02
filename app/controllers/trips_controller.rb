@@ -3,6 +3,7 @@ class TripsController < ApplicationController
   def index
     if params[:location].present?
       if params[:category].present?
+        #TODO list by location km and show at the button trips from that city
         @trips = Trip.joins(:categories).where(categories: {name: params[:category].keys})
       else
         @trips = Trip.top_ten
