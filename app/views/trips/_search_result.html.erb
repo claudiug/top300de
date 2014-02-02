@@ -1,27 +1,35 @@
+<!-- <div class="title">Other destinations</div> -->
 <% @trips.each do |trip| %>
-    <div class="box featured-trip">
-      <div class="box-content trip-box">
-        <h2>
-        <a href="#" title="#" class="trip-image">
-         <span class="trip-title">
-            Time: <%= calculate_distance('CAR', get_location(params[:location]), trip.city).first %>,
-            Distance: <%= calculate_distance('CAR', get_location(params[:location]), trip.city).last %>
-          </span> <!-- .trip-title -->
+  <article class="trip-item trip-box">
+    <a href="#" title="<%=trip.name%>">
+      <span class="trip-image">
 
+        <span class="more">More</span>
 
-        </a>  <!-- .trip-mage -->
-        </h2>
-        <div class="trip-tent">
-          <div class="desc fly-left">
-          <%=trip.name%>
-            <span></span>
+        <%=image_tag("samples/pic3.jpg", width: '255', height: '419', alt: "Edit Entry") %>
 
-            <div class="meta stand-by">
-              <%=trip.description%>
-            </div> <!-- .meta stand-by -->
-            </div>
-          </div> <!-- .trip-tent -->
+      </span>  <!-- .trip-mage -->
 
-        </div> <!-- .box-content -->
-      </div> <!-- .box -->
+    <span class="trip-tent">
+
+      <span class="trip-title">
+        <%=trip.name%>
+
+      </span> <!-- .trip-title -->
+
+      <span class="desc">
+
+      </span> <!-- .desc .fly-left -->
+
+      <span class="meta">
+          <span class="distance car-distance">
+            <i></i>
+            <%= calculate_distance('CAR', get_location(params[:location]), trip.city).last %><br />
+            <%= calculate_distance('CAR', get_location(params[:location]), trip.city).first %>
+          </span>
+      </span> <!-- .meta stand-by -->
+
+    </span> <!-- .trip-tent -->
+    </a>
+  </article>  <!-- .trip-item -->
 <% end %>
