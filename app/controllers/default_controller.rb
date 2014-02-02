@@ -1,10 +1,10 @@
 class DefaultController < ApplicationController
   layout "homepage"
 
-  def home
+  def about
   end
 
-  def join_us
+  def sitemap
   end
 
   def term

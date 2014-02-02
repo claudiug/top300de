@@ -1,8 +1,9 @@
 Top300de::Application.routes.draw do
-  get '/contact', to: 'default#contact_us'
-  post '/contact', to: 'default#contact_us'
   get '/register', to: 'sessions#new'
   post '/login', to: 'sessions#create'
+
+  get '/about', to: 'default#about'
+  get '/sitemap', to: 'default#sitemap'
 
   scope ":locale", locale: /en|de/ do
     root "default#home"
