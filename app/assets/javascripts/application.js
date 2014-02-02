@@ -16,6 +16,7 @@
 //= require jquery.ui.slider
 //= require turbolinks
 //= require twitter/bootstrap
+//= require form-validator/jquery.form-validator.min.js
 //= require common
 //= require ckeditor/init
 

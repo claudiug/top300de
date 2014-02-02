@@ -18,6 +18,10 @@ $(window).load( function() {
 
 $(document).ready(function() {
 
+    $.validate({
+        form : '#feedback-form',
+    });
+
     /* let's make the input elements nicer :) */
     setupLabel();
 
