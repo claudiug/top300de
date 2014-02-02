@@ -128,10 +128,10 @@ $(document).ready(function() {
     });
 
     /* Hide events */
-    $('.rb_overlayer, .rb_req_audit .cross_close').click(function() {
-        $('.rb_top_audit').removeClass('selected');
-        $('.rb_overlayer').fadeOut(60);
-        $('.rb_req_audit').animate({top:'50px', opacity:'0'}, 160);
+    $('div.close').click(function() {
+        $('.modal-trigger').removeClass('selected');
+        $('.overlay').fadeOut(60);
+        $('.wat-modal').animate({top:'15px', opacity:'0'}, 80);
     })
 
 

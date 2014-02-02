@@ -414,10 +414,18 @@ header {
 }
 #hp-trips {
   padding-top: 40px;
+  width: 820px;
+  margin: 0 auto;
+  padding-left: 15px;
 
+  .trip-tent {
+    padding-right: 20px;
+  }
+  /*
   .trip-item {
     width: 325px;
   }
+  */
 }
 
 .trip-item {

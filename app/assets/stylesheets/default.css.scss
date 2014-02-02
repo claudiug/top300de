@@ -362,6 +362,37 @@ label.styled {
 /* Add usggestions */
 .addSugg {
 
+  &.homepageSugg {
+    margin-bottom: -40px;
+    padding: 80px 0;
+    background: image-url("destinations-wall.jpg") 50% 0 repeat fixed;
+    color: white;
+
+    h3 {
+      color: white;
+    }
+        span {
+          border: 1px solid white;
+          background: none;
+          color: white;
+          margin-bottom: 13px;
+
+          &.danke {
+            border-color: #47d9bf;
+            padding-right: 10px;
+          }
+      }
+    .add-new {
+      color: white;
+
+      &:hover {
+        color: $sightseeing;
+      }
+
+    }
+
+  }
+
   span, .new-dest {
     font-size: $tileTitle;
     background: white;
