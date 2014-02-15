@@ -27,7 +27,7 @@
     slug: "slug#{trip}",
     city: "Berlin",
     zip_code: 10198,
-    description: 'this huge text for seo is here',
+    description: 'Lorem is active or not. ',
     is_active: true
     )
 end
