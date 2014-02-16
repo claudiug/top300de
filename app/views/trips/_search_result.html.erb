@@ -6,10 +6,7 @@
       <span class="trip-image">
 
         <span class="more">More</span>
-
-        <%unless trip.paintings.nil?%>
-        <%= image_tag(trip.paintings.first.image.url(:resized).to_s) %>
-        <%end%>
+        <%= image_tag(trip.paintings.first.image.url(:resized).to_s) unless trip.paintings.first.blank? %>
       </span>  <!-- .trip-mage -->
 
     <span class="trip-tent">
