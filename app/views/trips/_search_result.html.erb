@@ -7,8 +7,8 @@
 
         <span class="more">More</span>
 
-        <%if trip.paintings%>
-        <%=image_tag(trip.paintings.first.image.url(:resized).to_s) %>
+        <%unless trip.paintings.nil?%>
+        <%= image_tag(trip.paintings.first.image.url(:resized).to_s) %>
         <%end%>
       </span>  <!-- .trip-mage -->
 
