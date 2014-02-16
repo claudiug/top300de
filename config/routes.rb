@@ -4,6 +4,7 @@ Top300de::Application.routes.draw do
 
   get '/about', to: 'default#about'
   get '/privacy', to: 'default#privacy'
+  get '/terms', to: 'default#term'
   get '/sitemap', to: 'default#sitemap'
 
   scope ":locale", locale: /en|de/ do

@@ -8,8 +8,16 @@
 </head>
 <body class="wat-static">
 
-<%= render 'shared/header' %>
-<%= yield %>
+<div id="wat-wrap">
+  <div id="wat-main">
+  <%= render 'shared/header' %>
+  <%= yield %>
+  </div>
+</div>
+
+<div id="wat-footer">
 <%= render 'shared/footer' %>
+</div>
+
 </body>
 </html>
