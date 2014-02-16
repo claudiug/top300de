@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20131124190524) do
     t.datetime "updated_at"
   end
 
-  add_index "api_keys", ["key"], name: "index_api_keys_on_key", unique: true
-  add_index "api_keys", ["user_id"], name: "index_api_keys_on_user_id"
+  add_index "api_keys", ["key"], name: "index_api_keys_on_key", unique: true, using: :btree
+  add_index "api_keys", ["user_id"], name: "index_api_keys_on_user_id", using: :btree
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -41,9 +41,9 @@ ActiveRecord::Schema.define(version: 20131124190524) do
     t.string   "slug"
   end
 
-  add_index "categories", ["name"], name: "category_name", unique: true
-  add_index "categories", ["slug"], name: "category_slug", unique: true
-  add_index "categories", ["slug"], name: "index_categories_on_slug"
+  add_index "categories", ["name"], name: "category_name", unique: true, using: :btree
+  add_index "categories", ["slug"], name: "category_slug", unique: true, using: :btree
+  add_index "categories", ["slug"], name: "index_categories_on_slug", using: :btree
 
   create_table "categories_trips", force: true do |t|
     t.integer "trip_id"
@@ -83,10 +83,10 @@ ActiveRecord::Schema.define(version: 20131124190524) do
     t.string   "slug"
   end
 
-  add_index "hotels", ["name"], name: "hotel_name", unique: true
-  add_index "hotels", ["slug"], name: "hotel_slug", unique: true
-  add_index "hotels", ["slug"], name: "index_hotels_on_slug"
-  add_index "hotels", ["trip_id"], name: "hotel_trip_id", unique: true
+  add_index "hotels", ["name"], name: "hotel_name", unique: true, using: :btree
+  add_index "hotels", ["slug"], name: "hotel_slug", unique: true, using: :btree
+  add_index "hotels", ["slug"], name: "index_hotels_on_slug", using: :btree
+  add_index "hotels", ["trip_id"], name: "hotel_trip_id", unique: true, using: :btree
 
   create_table "mailboxes", force: true do |t|
     t.string   "name"
@@ -128,17 +128,17 @@ ActiveRecord::Schema.define(version: 20131124190524) do
     t.string   "slug"
   end
 
-  add_index "restaurants", ["name"], name: "restaurant_name", unique: true
-  add_index "restaurants", ["slug"], name: "index_restaurants_on_slug"
-  add_index "restaurants", ["slug"], name: "restaurant_slug", unique: true
-  add_index "restaurants", ["trip_id"], name: "restaurant_trip_id"
+  add_index "restaurants", ["name"], name: "restaurant_name", unique: true, using: :btree
+  add_index "restaurants", ["slug"], name: "index_restaurants_on_slug", using: :btree
+  add_index "restaurants", ["slug"], name: "restaurant_slug", unique: true, using: :btree
+  add_index "restaurants", ["trip_id"], name: "restaurant_trip_id", using: :btree
 
   create_table "searches", force: true do |t|
     t.string   "keyword"
     t.integer  "person_number"
     t.integer  "category_id"
-    t.decimal  "min_price"
-    t.decimal  "max_price"
+    t.decimal  "min_price",     precision: 10, scale: 0
+    t.decimal  "max_price",     precision: 10, scale: 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -158,10 +158,10 @@ ActiveRecord::Schema.define(version: 20131124190524) do
     t.boolean  "popular"
   end
 
-  add_index "trips", ["latitude"], name: "trip_lat"
-  add_index "trips", ["longitude"], name: "trip_lgn"
-  add_index "trips", ["name"], name: "trip_name", unique: true
-  add_index "trips", ["slug"], name: "index_trips_on_slug"
+  add_index "trips", ["latitude"], name: "trip_lat", using: :btree
+  add_index "trips", ["longitude"], name: "trip_lgn", using: :btree
+  add_index "trips", ["name"], name: "trip_name", unique: true, using: :btree
+  add_index "trips", ["slug"], name: "index_trips_on_slug", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "name"
@@ -172,6 +172,6 @@ ActiveRecord::Schema.define(version: 20131124190524) do
     t.boolean  "is_admin",        default: false
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
 end
