@@ -3,6 +3,7 @@ Top300de::Application.routes.draw do
   post '/login', to: 'sessions#create'
 
   get '/about', to: 'default#about'
+  get '/privacy', to: 'default#privacy'
   get '/sitemap', to: 'default#sitemap'
 
   scope ":locale", locale: /en|de/ do
