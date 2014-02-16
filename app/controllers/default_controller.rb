@@ -1,5 +1,5 @@
 class DefaultController < ApplicationController
-  layout "homepage"
+  layout "static"
 
   def about
   end

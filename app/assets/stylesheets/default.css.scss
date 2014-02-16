@@ -1,20 +1,23 @@
 @import 'constants.css.scss';
 
-body.homepage {
+body.homepage,
+body.wat-static {
   padding-top: 0;
 }
-.homepage header {
+.homepage header,
+.wat-static header {
   background: rgba(0, 0, 0, .5);
   position: absolute;
-
-  .wrapBlock {
-    padding: 0 20px;
-    width: 100%;
 
     .Logo a {
       padding: 5px 0;
     }
 
+}
+.homepage header {
+  .wrapBlock {
+    padding: 0 20px;
+    width: 100%;
   }
 }
 
@@ -365,7 +368,6 @@ label.styled {
   &.homepageSugg {
     margin-bottom: -40px;
     padding: 80px 0;
-    background: image-url("destinations-wall.jpg") 50% 0 repeat fixed;
     color: white;
 
     h3 {
@@ -734,3 +736,65 @@ label.styled {
 
 
 }
+
+/* Covers */
+.collage {
+  background: image-url("destinations-wall.jpg") 50% 0 repeat fixed;
+}
+
+/* Static pages */
+.staticHead {
+  padding: 70px 0;
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+  position: relative;
+
+  h1 {
+    font-size: 64px;
+  }
+  .subtitle {
+    font-size: 24px;
+    padding-top: 0;
+  }
+}
+
+.static-content {
+  text-align: left;
+}
+
+/* Tabs */
+
+
+.tab-switch {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  li {
+    display: inline-block;
+  }
+  a {
+    display: inline-block;
+    padding: 15px 0;
+    background: rgba(73, 73, 73, 0.8);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    min-width: 250px;
+
+    &:hover {
+      color: white;
+      background: rgba(0, 0, 0, 0.8);
+      text-decoration: none;
+    }
+    &.active {
+      background: #f7fafc;
+      color: black;
+    }
+  }
+
+}
+

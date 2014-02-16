@@ -10,6 +10,7 @@ $(window).load( function() {
         offsetY: 8,
         blockElement: 'article'
     });
+
 });
 
 
@@ -17,6 +18,27 @@ $(window).load( function() {
 
 
 $(document).ready(function() {
+
+    /* The tabs */
+
+    $('#tab-switch li a:not(:first)').addClass('inactive');
+
+    $('.tab-content').hide();
+    $('.tab-content:first').show();
+
+    $('#tab-switch li a').click(function(){
+
+        var t = $(this).attr('id');
+
+        if($(this).hasClass('inactive')){
+
+            $('#tab-switch li a').addClass('inactive');
+            $(this).removeClass('inactive');
+
+            $('.tab-content').hide();
+            $('#' + t).show();
+        }
+    });
 
     $.validate({
         form : '#feedback-form',
