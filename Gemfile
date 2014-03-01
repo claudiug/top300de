@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails', '4.0.0'
-gem 'sqlite3'
+#gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -15,7 +15,8 @@ gem 'will_paginate'
 gem "ckeditor"
 gem 'geocoder'
 gem 'jquery-ui-rails'
-# gem  "pg"
+gem 'rails_12factor'
+gem  "pg"
 gem 'forecast_io'
 gem 'chosen-rails'
 gem 'httparty'
@@ -37,4 +38,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bcrypt-ruby', '~> 3.0.0'
-gem 'thin'
+gem 'foreman'
+gem 'puma'
+ruby "2.1.1"
+
