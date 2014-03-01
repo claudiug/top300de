@@ -161,6 +161,34 @@ p {
   width: $wideBlock;
   display: block;
 }
+/* Fix it */
+html, body {
+  height: 100%;
+}
+
+#wat-wrap {
+  min-height: 100%;
+}
+
+#wat-main {
+  overflow: auto;
+  padding-bottom: 343px;
+}
+
+#wat-footer {
+  position: relative;
+  margin-top: -303px;
+  height: 303px;
+  clear: both;
+}
+
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+}
 
 /* Titles */
 .head {

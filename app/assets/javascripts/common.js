@@ -13,31 +13,19 @@ $(window).load( function() {
 
 });
 
-
-
-
-
 $(document).ready(function() {
 
-    /* The tabs */
 
-    $('#tab-switch li a:not(:first)').addClass('inactive');
+    $(".tab-content").not(":first").hide();
+    $("#tab-switch li:first").addClass("active").show();
 
-    $('.tab-content').hide();
-    $('.tab-content:first').show();
+    $("#tab-switch li").click(function() {
+        $("#tab-switch li.active").removeClass("active");
+        $(this).addClass("active");
+        $(".tab-content").hide();
+        $($('a',this).attr("href")).show();
 
-    $('#tab-switch li a').click(function(){
-
-        var t = $(this).attr('id');
-
-        if($(this).hasClass('inactive')){
-
-            $('#tab-switch li a').addClass('inactive');
-            $(this).removeClass('inactive');
-
-            $('.tab-content').hide();
-            $('#' + t).show();
-        }
+        return false;
     });
 
     $.validate({

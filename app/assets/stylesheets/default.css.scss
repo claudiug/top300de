@@ -490,7 +490,6 @@ label.styled {
   background: #eef1f3;
   padding: 40px 20px;
   overflow: hidden;
-  margin-top: 40px;
   font-size: 14px;
 
   h3 {
@@ -761,6 +760,13 @@ label.styled {
 
 .static-content {
   text-align: left;
+  padding-bottom: 50px;
+
+  h2 {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+
 }
 
 /* Tabs */
@@ -775,6 +781,12 @@ label.styled {
 
   li {
     display: inline-block;
+
+    &.active a {
+      background: #f7fafc;
+      color: black;
+    }
+
   }
   a {
     display: inline-block;
@@ -786,14 +798,9 @@ label.styled {
     min-width: 250px;
 
     &:hover {
-      color: white;
-      background: rgba(0, 0, 0, 0.8);
-      text-decoration: none;
+      text-decoration: underline;
     }
-    &.active {
-      background: #f7fafc;
-      color: black;
-    }
+
   }
 
 }
