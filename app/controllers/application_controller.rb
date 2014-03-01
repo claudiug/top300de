@@ -26,12 +26,4 @@ class ApplicationController < ActionController::Base
       username == "trip" && password == "futurama"
     end
   end
-
-  def get_location(loc)
-    if loc.present?
-      loc
-    else
-      'Berlin'
-    end
-  end
 end
