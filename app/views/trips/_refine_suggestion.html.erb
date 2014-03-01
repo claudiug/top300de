@@ -1,10 +1,12 @@
 <section class="filter-col fly-left">
+  <%= form_tag trips_path, method: :get do %>
   <div class="head">Refine search</div>
   <div class="box leftcol-break">
     <div class="title">From</div>
 
     <div class="box-content">
-      <input type="text" class="input size2 map" id="wat-from-location" value= <%= params[:location] %> />
+      <!-- <input type="text" class="input size2 map" id="wat-from-location" value= <%= params[:location] %> /> -->
+      <%= text_field_tag("location", params[:location], value:params[:location], class:"input size2 map", placeholder:"your city name here") %>
 
     </div> <!-- .box-content -->
 
@@ -93,40 +95,40 @@
     <div class="box-content trip-refine">
       <div class="trip-type options">
         <label class="styled" id="go_hike">
-          <input id="go_hike" name="go_hike" type="checkbox">
+          <%= check_box_tag("category[hike]", (params[:category]), false, id:"go_hike") %>
           <i></i><span>Hiking</span>
         </label>
 
         <label class="styled" id="go_mountain">
-          <input id="go_mountain" name="mountains" type="checkbox">
+          <%= check_box_tag("category[mountain]", (params[:category]), false, id:"go_mountain") %>
           <i></i><span>Mountains</span>
         </label>
 
         <label class="styled" id="go_lake">
-          <input id="go_lake" name="lakes" type="checkbox">
+          <%= check_box_tag("category[lake]", (params[:category]), false, id:"go_lake") %>
 
           <i></i><span>Lakes, sea, waterfalls</span>
         </label>
 
         <label class="styled" id="go_castle">
-          <input id="go_castle" name="castles" type="checkbox">
+          <%= check_box_tag("category[castle]",(params[:category]), false, id:"go_castle") %>
 
           <i></i><span>Castles</span>
         </label>
 
         <label class="styled" id="go_events">
-          <input id="go_events" name="events" type="checkbox">
+          <%= check_box_tag("category[event]", (params[:category]), false, id:"go_events") %>
 
           <i></i><span>Festivals and Events</span>
         </label>
 
         <label class="styled" id="go_city">
-          <input id="go_city" name="city" type="checkbox">
+          <%= check_box_tag("category[city]", (params[:category]), false, id:"go_city") %>
           <i></i><span>Cities</span>
         </label>
 
         <label class="styled" id="go_landscape">
-          <input id="go_landscape" name="landscape" type="checkbox">
+          <%= check_box_tag("category[landscape]", (params[:category]), false, id:"go_landscape") %>
           <i></i><span>Sightseeing</span>
         </label>
       </div>
@@ -138,7 +140,7 @@
 
   <%= render 'suggestions' %>
 
-
+  <% end %>
 </section>
 
 <script type="text/javascript">
