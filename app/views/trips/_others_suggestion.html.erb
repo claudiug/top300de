@@ -5,9 +5,7 @@
       <span class="trip-image">
 
         <span class="more">More</span>
-
-        <%=image_tag("samples/pic2.jpg", width: '255', height: '419', alt: "Edit Entry") %>
-
+      <%= image_tag(trip_result.paintings.first.image.url(:resized).to_s) unless trip.paintings.first.blank? %>
       </span>  <!-- .trip-mage -->
 
     <span class="trip-tent">
