@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f1705e-f9e0-4d73-ae1d-520bc8d183fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" afterPath="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
     </list>
     <ignored path="top300de.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="constants.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="857" column="0" selection-start="15776" selection-end="15776" vertical-scroll-proportion="-13.76" vertical-offset="12167" max-vertical-offset="13020">
+            <state line="288" column="0" selection-start="5256" selection-end="5256" vertical-scroll-proportion="0.4796163" vertical-offset="3920" max-vertical-offset="12645">
               <folding />
             </state>
           </provider>
@@ -95,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_refine_suggestion.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_refine_suggestion.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="85" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.46229914" vertical-offset="91" max-vertical-offset="2400">
+            <state line="31" column="85" selection-start="1193" selection-end="1193" vertical-scroll-proportion="17.469387" vertical-offset="1321" max-vertical-offset="2400">
               <folding />
             </state>
           </provider>
@@ -150,13 +150,13 @@
         <option value="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss" />
         <option value="$PROJECT_DIR$/app/views/trips/_others_suggestion.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/common.js" />
         <option value="$PROJECT_DIR$/app/views/trips/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/trips/_search_result.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/homepage.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
       </list>
     </option>
   </component>
@@ -938,13 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="857" column="0" selection-start="15776" selection-end="15776" vertical-scroll-proportion="-13.76" vertical-offset="12167" max-vertical-offset="13020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trips/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.24103832" vertical-offset="0" max-vertical-offset="809">
@@ -1033,7 +1026,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="85" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.46229914" vertical-offset="91" max-vertical-offset="2400">
+        <state line="31" column="85" selection-start="1193" selection-end="1193" vertical-scroll-proportion="17.469387" vertical-offset="1321" max-vertical-offset="2400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="288" column="0" selection-start="5256" selection-end="5256" vertical-scroll-proportion="0.4796163" vertical-offset="3920" max-vertical-offset="12645">
           <folding />
         </state>
       </provider>
