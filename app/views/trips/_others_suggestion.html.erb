@@ -1,11 +1,13 @@
 <!-- <div class="title">Other destinations</div> -->
 <% @trips.each do |trip_result| %>
 <article class="trip-item trip-box">
-   <%=link_to( trip_result.name, trip_path(:trip_result)) %>
+<a href="<%=trip_path(:trip_result) %>" title="<%= trip_result.try(:name) %>">
       <span class="trip-image">
 
         <span class="more">More</span>
-      <%= image_tag(trip_result.paintings.first.image.url(:resized).to_s) unless trip_result.paintings.first.blank? %>
+
+        <%= image_tag(trip_result.paintings.first.image.url(:resized).to_s) unless trip_result.paintings.first.blank? %>
+
       </span>  <!-- .trip-mage -->
 
     <span class="trip-tent">
