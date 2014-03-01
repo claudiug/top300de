@@ -598,7 +598,8 @@ header {
     .distance {
 
       display: inline-block;
-      width: 40%;
+      width: auto;
+      padding-right: 25px;
 
       i {
         background-image: url(/assets/var/trip-types.png);
@@ -621,6 +622,11 @@ header {
         }
       }
     }
+
+    .distance + .distance {
+      padding-right: 0;
+    }
+
   }
 }
 
