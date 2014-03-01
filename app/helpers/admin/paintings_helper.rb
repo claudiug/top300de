@@ -1,4 +1,2 @@
 module Admin::PaintingsHelper
-
-
 end

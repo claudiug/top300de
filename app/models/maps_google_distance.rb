@@ -14,25 +14,6 @@ class MapsGoogleDistance
   BASE_CITY = 'Berlin'
   BASE_DESTINATION = 'Hamburg'
 
-  def self.get_distance_by_walking(from, destination)
-    value = []
-    from = BASE_CITY if from.nil?
-    destination = BASE_CITY if destination.nil?
-    response ||= HTTParty.get(BASE_URL +
-                                from +
-                                '&destinations='+ destination +
-                                '&mode=' + DISTANCE_BY_WALKING +
-                                '&sensor='+SENSOR )
-    if response.code == 200
-      result = JSON(response.body)
-      distance ||= result['rows'][0]['elements'][0]['distance']['text']
-      time =  result['rows'][0]['elements'][0]['duration']['text']
-      value << time
-      value << distance
-      value
-    end
-  end
-
   def self.get_distance_by_car(from, destination)
     value = []
     from = BASE_CITY if from.nil?
@@ -41,25 +22,6 @@ class MapsGoogleDistance
                                 from +
                                 '&destinations='+ destination +
                                 '&mode=' + DISTANCE_BY_CAR +
-                                '&sensor='+SENSOR )
-    if response.code == 200
-      result = JSON(response.body)
-      distance = result['rows'][0]['elements'][0]['distance']['text']
-      time =  result['rows'][0]['elements'][0]['duration']['text']
-      value << time
-      value << distance
-      value
-    end
-  end
-
-  def self.get_distance_by_bike(from, destination)
-    value = []
-    from = BASE_CITY if from.nil?
-    destination = BASE_CITY if destination.nil?
-    response ||= HTTParty.get(BASE_URL +
-                                from +
-                                '&destinations='+ destination +
-                                '&mode=' + DISTANCE_BY_BIKE +
                                 '&sensor='+SENSOR )
     if response.code == 200
       result = JSON(response.body)

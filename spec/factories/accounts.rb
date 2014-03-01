@@ -3,6 +3,5 @@
 FactoryGirl.define do
   factory :account do
     name "Claudiu"
-
   end
 end
