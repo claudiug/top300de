@@ -585,37 +585,39 @@ header {
   }
 
   .meta {
-    border-radius: 50%;
     margin: 0;
-    padding: 8px 0 0;
+    padding: 12px 15px 0;
+    border-top: 1px solid #eee;
     display: block;
     position: absolute;
-    right: 5px;
-    top: 10px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    text-align:  left;
 
     .distance {
+
+      display: inline-block;
+      width: 40%;
 
       i {
         background-image: url(/assets/var/trip-types.png);
         background-repeat: no-repeat;
         width: 23px;
         height: 20px;
-        display: block;
+        display: inline-block;
         vertical-align: middle;
         margin: 0 auto 3px;
       }
 
       &.car-distance {
         i {
-          background-position: 0 -233px;
+          background-position: -50px 1px;
         }
       }
-      &.bike-distance {
+      &.time {
         i {
-          background-position: 0 -270px;
+          background-position: -50px -20px;
         }
       }
     }

@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="1644478525">
-    <data-source source="LOCAL" name="Rails top300de: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="8b471189-1845-45be-952e-e71725eff328">
+    <data-source source="LOCAL" name="Rails top300de: production" uuid="8b471189-1845-45be-952e-e71725eff328">
+      <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\claudiu\RubymineProjects\top300de\db\production.sqlite3</jdbc-url>
       <libraries />
     </data-source>
-    <data-source source="LOCAL" name="Rails top300de: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="8770f7fb-299e-4c94-a0f9-2af9e0f6f87f">
+    <data-source source="LOCAL" name="Rails top300de: test" uuid="8770f7fb-299e-4c94-a0f9-2af9e0f6f87f">
+      <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
       <libraries />
     </data-source>
-    <data-source source="LOCAL" name="Rails top300de: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="088986d6-44ed-4437-ad34-a2790e2bc6a4">
+    <data-source source="LOCAL" name="Rails top300de: development" uuid="088986d6-44ed-4437-ad34-a2790e2bc6a4">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
       <libraries />
     </data-source>
   </component>
