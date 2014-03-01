@@ -145,11 +145,10 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
-    if( !$('#wat-from-location').val() ) {
-        $('#wat-from-location').focus();
+    if( !$('#location').val() ) {
+        $(this).focus();
         $('#wat-transport').hide();
         $('#wat-no-location').show();
-
     }
 })
 </script>
