@@ -37,13 +37,14 @@
         </div> <!-- .box-content -->
       </div> <!-- .box -->
 
+      <!--
       <div class="about-city">
         <span class="capital">Capital of Germany</span>
         <span class="area"> 891.8 km²</span>
         <span class="population"> 3.502 million</span>
         <span class="local-time"> Now: 8:35 PM</span>
-      </div> <!-- .about-city -->
-
+      </div>
+      -->
     </section>
 
     <section class="trip-block stand-by" id="trip-holder">
@@ -66,19 +67,17 @@
 
       <div class="trip-section" id="activities">
         <h2>Things to do</h2>
-        <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
-        <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
-        <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
+         Nuthin'
         --------------------------------
       </div>
 
       <div class="trip-section" id="weather">
         <h2>Weather</h2>
-        <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
-        <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
-        <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
         <%= @weather[:currently][:summary] %>
+        <ul>
+
         <% @weather[:daily][:data].each do |v| %>
+            <li style="display: inline-block; width: 20%; vertical-align: top; padding: 0 20px 20px;">
             <% date = Date.strptime("#{v["time"]}", "%s") %>
             <p>Day <%= date.day %>, Month: <%= date.month %></p>
             <p><strong>Summary: <%= v["summary"] %></strong></p>
@@ -86,16 +85,16 @@
               <p>Temperature min: <%= v["temperatureMin"] %></p>
               <p>Temperature max: <%= v["temperatureMax"] %></p>
             </div>
+            </li>
         <% end %>
+        </ul>
         --------------------------------
       </div>
 
       <div class="trip-section" id="directions">
-        <h2>Directions</h2>
-        <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
-        <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
-        <p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></p>
-        --------------------------------
+        <h2>Map</h2>
+            <div id="map_canvas"></div>
+
       </div>
       </div> <!-- .scroller -->
     </section>
@@ -104,3 +103,26 @@
 
   </div> <!-- .wrapBlock -->
 </div> <!-- .trip-page -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+    function initialize() {
+        var latlng = new google.maps.LatLng(44.462888, 26.058465);
+        var settings = {
+            zoom: 18,
+            center: latlng,
+            mapTypeControl: true,
+            mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+            navigationControl: true,
+            navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+            mapTypeId: google.maps.MapTypeId.ROADMAP};
+        var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        google.maps.event.addListener(companyMarker, 'click', function() {
+            infowindow.open(map,companyMarker);
+        });
+    }
+</script>
