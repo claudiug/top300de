@@ -40,5 +40,5 @@ gem 'jbuilder', '~> 1.2'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'foreman'
 gem 'puma'
-#ruby "2.1.1"
+
 
