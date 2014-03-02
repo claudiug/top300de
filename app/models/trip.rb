@@ -69,6 +69,6 @@ class Trip < ActiveRecord::Base
   end
 
   def self.popular_trips
-    where(popular: true)
+    order("RANDOM()").where(popular: true).limit(9)
   end
 end
