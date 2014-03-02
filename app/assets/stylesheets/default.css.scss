@@ -22,7 +22,7 @@ body.wat-static {
 }
 
 .homepageEngine {
-  background: image-url("k.jpg") 50% 0 repeat fixed;
+  background: image-url("w.jpg") 50% 0 repeat fixed;
   background-size: cover;
   max-height: 830px;
   min-height: 750px;
@@ -62,7 +62,7 @@ body.wat-static {
     font-size: $subHeadline;
     font-family: $light;
     width: 100%;
-    margin: 0 auto 15px;
+    margin: 0 auto 25px;
     line-height: 1;
   }
 
@@ -167,7 +167,7 @@ body.wat-static {
 
     border-radius: 5px;
     display: inline-block;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.85);
     width: 90px;
     height: 90px;
     opacity: .9;

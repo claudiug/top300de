@@ -2,7 +2,7 @@
 <% @trips.each do |trip| %>
 
   <article class="trip-item trip-box">
-    <a href="<%=trip_path(trip)%>" title="<%=trip.name%>">
+    <a href="<%=trip_path(trip)%>" title="<%=trip.name%>" class="trip-card">
       <span class="trip-image">
 
         <span class="more">More</span>
@@ -16,10 +16,11 @@
 
       </span> <!-- .trip-title -->
 
-      <span class="desc">
-
-        <%=h truncate(trip.description, :length => 80) %>
+      <span class="desc trip-desc-card">
+        <%=h truncate(trip.description, :length => 170) %>
       </span> <!-- .desc .fly-left -->
+
+      <div class="fader"></div>
 
       <span class="meta">
           <span class="distance car-distance">

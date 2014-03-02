@@ -26,9 +26,11 @@
                 <%= trip.name %>
               </span> <!-- .trip-title -->
 
-              <span class="desc">
-                <%= trip.description %>
-              </span> <!-- .desc .fly-left -->
+              <span class="desc trip-desc-card">
+                <%=h truncate(trip.description, :length => 170) %>
+              </span> <!-- .desc -->
+
+              <div class="fader"></div>
 
             </span> <!-- .trip-tent -->
             </a>

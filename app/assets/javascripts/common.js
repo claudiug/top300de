@@ -29,6 +29,9 @@ $(document).ready(function() {
         return false;
     });
 
+    /* Animate description in card */
+
+
     $.validate({
         form : '#feedback-form',
     });

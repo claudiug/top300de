@@ -111,11 +111,23 @@
   z-index: 99;
   background: white;
 }
-
+.popular-destinations {
+  .trip-item {
+    a {
+      padding-bottom: 95px;
+    }
+   .trip-tent {
+      padding: 15px;
+   }
+    .fader {
+      bottom: 3px;
+    }
+  }
+}
 .trip-list-block {
   position: relative;
   padding: 0;
-  margin: 0;
+  margin: -8px 0 0;
   height: auto;
 }
 
