@@ -11,6 +11,7 @@ $(window).load( function() {
         blockElement: 'article'
     });
 
+    initialize();
 });
 
 $(document).ready(function() {

@@ -2,31 +2,29 @@
 <%= @weather %>
 
 -->
-
-
 <div class="trip-page">
 
   <div class="wrapBlock">
 
   <div class="title">
     <div class="wrapBlock">
-        <h1>Berlin</h1>
+        <h1><%=@trip.name%></h1>
         <span class="distance">
-          <span></span>335km away</span>
+          <span></span><%= calculate_distance('CAR', params[:location], trip.city).last unless params[:location].blank? %></span>
         <span class="time">
-           <span></span>2h 35m
+           <span></span><%= calculate_distance('CAR', params[:location], trip.city).first unless params[:location].blank? %>
         </span>
     </div>
   </div> <!-- .title -->
 
   <div class="trip-data">
 
-    <section class="filter-col fly-left with-pointer">
+    <section class="filter-col fly-left">
       <div class="box leftcol-break">
 
         <div class="avatar">
-          <img src="/assets/samples/pic3.jpg" alt="ALT" height="349" />
-          <div class="more-images">View 10 images</div>
+          <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
+          <div class="more-images">+ 10</div>
         </div>
 
         <div class="box-content side_nav">
@@ -37,30 +35,26 @@
         </div> <!-- .box-content -->
       </div> <!-- .box -->
 
-      <!--
+
       <div class="about-city">
+        <span class="weather">Now: <%= @weather[:currently][:summary] %></span>
+        <!--
         <span class="capital">Capital of Germany</span>
         <span class="area"> 891.8 km²</span>
         <span class="population"> 3.502 million</span>
         <span class="local-time"> Now: 8:35 PM</span>
+        -->
       </div>
-      -->
+
     </section>
 
     <section class="trip-block stand-by" id="trip-holder">
       <div class="scroller">
       <div class="trip-section" id="about">
-        <h2>About Berlin</h2>
+        <h2>About <%=@trip.name%></h2>
             <div class="section-content">
-                Lorem ipsum
               <p>
-
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu condimentum leo. Nunc et commodo enim. Proin vel faucibus erat. In volutpat libero arcu, nec aliquet est aliquam in. Curabitur euismod aliquet lectus. Pellentesque quam odio, placerat at auctor vitae, facilisis in dui. Nam blandit sapien a feugiat convallis. Fusce nec quam at est sodales luctus in sodales metus. Curabitur suscipit libero non fermentum mattis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et tincidunt erat, vitae euismod mi. Proin nec volutpat leo. Curabitur rhoncus semper leo, in congue neque sollicitudin id. Integer condimentum tellus eu velit volutpat, sed elementum enim ullamcorper. Donec vel nisl in est egestas iaculis.
-                <br />
-                Aliquam sed urna lacinia, feugiat nisl sit amet, eleifend augue. Nunc vitae nisi suscipit, varius libero sed, imperdiet diam. Donec volutpat mauris et nisl viverra sodales. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris tincidunt libero accumsan, malesuada purus ut, interdum sem. Nullam pellentesque tincidunt ultricies. Nulla justo libero, malesuada ut arcu congue, accumsan malesuada augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas mauris et ipsum luctus, vel malesuada felis interdum.
-
-
+                <%=@trip.description%>
               </p>
             </div>
       </div>
@@ -71,9 +65,7 @@
         --------------------------------
       </div>
 
-      <div class="trip-section" id="weather">
-        <h2>Weather</h2>
-        <%= @weather[:currently][:summary] %>
+        <!--
         <ul>
 
         <% @weather[:daily][:data].each do |v| %>
@@ -88,8 +80,8 @@
             </li>
         <% end %>
         </ul>
-        --------------------------------
-      </div>
+
+        -->
 
       <div class="trip-section" id="directions">
         <h2>Map</h2>
@@ -104,9 +96,10 @@
   </div> <!-- .wrapBlock -->
 </div> <!-- .trip-page -->
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
 <script type="text/javascript">
     function initialize() {
-        var latlng = new google.maps.LatLng(44.462888, 26.058465);
+        var latlng = new google.maps.LatLng(<%= @trip.latitude %>, <%= @trip.longitude %>);
         var settings = {
             zoom: 18,
             center: latlng,

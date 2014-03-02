@@ -17,7 +17,8 @@
       </span> <!-- .trip-title -->
 
       <span class="desc">
-        <%=trip.description%>
+
+        <%=h truncate(trip.description, :length => 80) %>
       </span> <!-- .desc .fly-left -->
 
       <span class="meta">
