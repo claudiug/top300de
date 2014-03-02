@@ -229,7 +229,7 @@ body:before {
 }
 .stand-by {
   float: none;
-  margin-left: 210px;
+  margin-left: 190px;
 }
 /* Header */
 header {
@@ -858,6 +858,31 @@ header {
 }
 
 #map_canvas {
-  width: 790px;
+  width: 750px;
   height: 280px;
+}
+
+/* Pagination */
+.trips-pagination {
+
+  padding: 20px 0;
+  text-align: right;
+
+  .pag {
+    padding: 7px 15px;
+    box-shadow: 0 2px 3px rgba(90, 90, 90, 0.2);
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 5px;
+    color: #999;
+  }
+  a:hover {
+    background: #fff;
+    text-decoration: none;
+  }
+  span {
+    color: #333;
+    font-family: "bariol_boldbold";
+    background-color: #fff;
+  }
 }

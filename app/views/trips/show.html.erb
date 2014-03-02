@@ -14,6 +14,9 @@
         <span class="time">
            <span></span><%= calculate_distance('CAR', params[:location], trip.city).first unless params[:location].blank? %>
         </span>
+        <span class="weather">
+           <span></span>Now: <%= @weather[:currently][:summary] %>
+        </span>
     </div>
   </div> <!-- .title -->
 
@@ -37,7 +40,6 @@
 
 
       <div class="about-city">
-        <span class="weather">Now: <%= @weather[:currently][:summary] %></span>
         <!--
         <span class="capital">Capital of Germany</span>
         <span class="area"> 891.8 km²</span>
