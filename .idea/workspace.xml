@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f1705e-f9e0-4d73-ae1d-520bc8d183fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
     </list>
     <ignored path="top300de.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="constants.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="288" column="0" selection-start="5256" selection-end="5256" vertical-scroll-proportion="0.4796163" vertical-offset="3920" max-vertical-offset="12645">
+            <state line="269" column="17" selection-start="4910" selection-end="4910" vertical-scroll-proportion="-4.7916665" vertical-offset="3920" max-vertical-offset="12645">
               <folding />
             </state>
           </provider>
@@ -113,10 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="default.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="618" column="12" selection-start="10358" selection-end="10360" vertical-scroll-proportion="-5.54" vertical-offset="8993" max-vertical-offset="12195">
+            <state line="273" column="45" selection-start="4998" selection-end="4998" vertical-scroll-proportion="0.4616307" vertical-offset="3710" max-vertical-offset="12375">
               <folding />
             </state>
           </provider>
@@ -142,7 +142,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/views/shared/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/default/_footer.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
         <option value="$PROJECT_DIR$/app/views/default/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/default/_popular_destination.html.erb" />
         <option value="$PROJECT_DIR$/app/views/trips/index.html.erb" />
@@ -157,6 +156,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
       </list>
     </option>
   </component>
@@ -945,13 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="618" column="12" selection-start="10358" selection-end="10360" vertical-scroll-proportion="-5.54" vertical-offset="8993" max-vertical-offset="12195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/default/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="53" selection-start="225" selection-end="225" vertical-scroll-proportion="0.16687268" vertical-offset="0" max-vertical-offset="809">
@@ -1033,7 +1026,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="288" column="0" selection-start="5256" selection-end="5256" vertical-scroll-proportion="0.4796163" vertical-offset="3920" max-vertical-offset="12645">
+        <state line="269" column="17" selection-start="4910" selection-end="4910" vertical-scroll-proportion="-4.7916665" vertical-offset="3920" max-vertical-offset="12645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="273" column="45" selection-start="4998" selection-end="4998" vertical-scroll-proportion="0.4616307" vertical-offset="3710" max-vertical-offset="12375">
           <folding />
         </state>
       </provider>

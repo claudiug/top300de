@@ -271,7 +271,7 @@ body.wat-static {
      background: image-url("map-pin.png") 10px 44% no-repeat transparent;
      border: 1px solid transparent;
      border-bottom-color: white;
-     font: 23px/1 Open Sans;
+     font: 23px/1 "bariol_regularregular";   
      padding: 8px 10px 8px 35px;
      color: white;
 
@@ -671,10 +671,22 @@ label.styled {
         margin: -5px -15px;
         width: 190px;
         overflow: hidden;
+        position: relative;
 
         img {
           max-width: 100%;
           height: auto;
+        }
+
+        .more-images {
+          color: white;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 15px;
+          background: rgba(0,0,0, .5);
+          width: 100%;
+          font-weight: bold;
         }
 
       }
@@ -721,12 +733,12 @@ label.styled {
     }
 
     h2 {
-      font-size: 20px;
+      font-size: 24px;
       padding-bottom: 10px;
     }
 
     .trip-section {
-      padding: 20px;
+      padding: 10px 20px 20px;
     }
 
   }
