@@ -116,7 +116,7 @@
       <file leaf-file-name="default.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="273" column="45" selection-start="4998" selection-end="4998" vertical-scroll-proportion="0.4616307" vertical-offset="3710" max-vertical-offset="12375">
+            <state line="273" column="42" selection-start="4995" selection-end="4995" vertical-scroll-proportion="0.42565948" vertical-offset="3740" max-vertical-offset="12375">
               <folding />
             </state>
           </provider>
@@ -1033,7 +1033,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="273" column="45" selection-start="4998" selection-end="4998" vertical-scroll-proportion="0.4616307" vertical-offset="3710" max-vertical-offset="12375">
+        <state line="273" column="42" selection-start="4995" selection-end="4995" vertical-scroll-proportion="0.42565948" vertical-offset="3740" max-vertical-offset="12375">
           <folding />
         </state>
       </provider>
