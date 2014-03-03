@@ -59,6 +59,28 @@
                 <%=@trip.description%>
               </p>
             </div>
+
+        <div id="galleries">
+          <h2>Photos from <%=@trip.name%></h2>
+          <ul>
+            <li>
+              <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
+            </li>
+            <li>
+              <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
+            </li>
+            <li>
+              <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
+            </li>
+            <li>
+              <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
+            </li>
+            <li>
+              <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
+            </li>
+          </ul>
+        </div>
+
       </div>
 
       <div class="trip-section" id="activities">
@@ -66,28 +88,6 @@
          Nuthin'
         --------------------------------
       </div>
-
-        <div class="trip-section" id="galleries">
-          <h2>Photos from <%=@trip.name%></h2>
-          <ul>
-            <li>
-                <a href="#" title="#"><img src="" alt="" /></a>
-            </li>
-            <li>
-              <a href="#" title="#"><img src="" alt="" /></a>
-            </li>
-            <li>
-              <a href="#" title="#"><img src="" alt="" /></a>
-            </li>
-            <li>
-              <a href="#" title="#"><img src="" alt="" /></a>
-            </li>
-            <li>
-              <a href="#" title="#"><img src="" alt="" /></a>
-            </li>
-          </ul>
-          --------------------------------
-        </div>
 
         <!--
         <ul>
