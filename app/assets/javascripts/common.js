@@ -12,6 +12,7 @@ $(window).load( function() {
     });
 
     initialize();
+
 });
 
 $(document).ready(function() {
