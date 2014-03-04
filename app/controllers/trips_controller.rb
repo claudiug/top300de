@@ -2,6 +2,20 @@ class TripsController < ApplicationController
   helper_method :calculate_distance
   def index
     if params[:location].present?
+      flash[:loc] = params[:location]
+      if params[:category].present?
+#TODO list by location km and show at the button trips from that city
+        @trips = Trip.joins(:categories).where(categories: {name: params[:category].keys}).
+            page(params[:page]).per_page(2)
+      else
+        @trips = Trip.top_ten.
+            page(params[:page]).per_page(2)
+      end
+    end
+    @trips = Trip.top_ten.
+        page(params[:page]).per_page(2)
+
+    if params[:location].present?
       if params[:category].present?
         #TODO list by location km and show at the button trips from that city
         @trips = Trip.joins(:categories).where(categories: {name: params[:category].keys})
