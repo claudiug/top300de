@@ -33,7 +33,9 @@ group :development, :test do
   gem "launchy", "~> 2.3.0"
   gem "selenium-webdriver", "~> 2.35.1"
 end
-
+group :production do
+  gem 'shelly-dependencies'
+end
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
