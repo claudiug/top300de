@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails', '4.0.0'
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -16,7 +16,7 @@ gem "ckeditor"
 gem 'geocoder'
 gem 'jquery-ui-rails'
 gem 'rails_12factor'
-#gem  "pg"
+gem  "pg"
 gem 'forecast_io'
 gem 'chosen-rails'
 gem 'httparty'
