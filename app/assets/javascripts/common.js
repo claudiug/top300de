@@ -99,6 +99,10 @@ $(document).ready(function() {
         });
     });
 
+    $("#left-trip-filters").pin({
+        containerSelector: ".trip-data"
+    });
+
 
 
     /* suggestion engine */

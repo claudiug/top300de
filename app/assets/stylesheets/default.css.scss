@@ -167,8 +167,8 @@ body.wat-static {
     border-radius: 5px;
     display: inline-block;
     background-color: rgba(0,0,0,.85);
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     opacity: .9;
     margin: 0 10px 35px;
     background-position: 50% 26%;
@@ -179,7 +179,7 @@ body.wat-static {
     span {
       line-height: 1.3;
       text-align: center;
-      width: 90px;
+      width: 110px;
       color: white;
       display: block;
       font-size: 11px;
@@ -192,7 +192,7 @@ body.wat-static {
         top: 0;
         position: relative;
         display: table-cell;
-        width: 90px;
+        width: 110px;
         height: 28px;
         vertical-align: middle;
       }
@@ -630,6 +630,7 @@ label.styled {
   }
   .trip-data {
     padding-top: 25px;
+    position: relative;
 
     .filter-col {
       margin-top: 15px;
@@ -738,6 +739,14 @@ label.styled {
     border-radius: 3px;
     margin-bottom: 30px;
 
+    &:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
     .scroller {
       position: relative;
     }
@@ -752,6 +761,9 @@ label.styled {
 
       h2 {
         font-family: bariol_boldbold;
+      }
+      &#directions {
+        position: relative;
       }
     }
 
@@ -840,12 +852,7 @@ label.styled {
 }
 
 
-#directions-panel {
-  height: 400px;
-  float: right;
-  width: 390px;
-  overflow: auto;
-}
+
 
 #map-canvas {
   margin-right: 400px;
@@ -860,22 +867,16 @@ label.styled {
   box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
   display: none;
 }
-
-@media print {
-  #map-canvas {
-    height: 500px;
-    margin: 0;
-  }
-
-  #directions-panel {
-    float: none;
-    width: auto;
-  }
-}
 #map-canvas {
-  height: 400px;
+
+  width: 750px;
+  height: 250px;
   margin: 0px;
-  padding: 0px
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.pin-wrapper {
+  position: absolute;
 }
 #panel {
   position: absolute;
@@ -886,4 +887,40 @@ label.styled {
   background-color: #fff;
   padding: 5px;
   border: 1px solid #999;
+}
+/* Directions */
+#directions-panel {
+  height: 600px;
+  width: 750px;
+  overflow: auto;
+
+
+  .adp-step,
+  .adp-substep,
+  .adp-placemark {
+    border: 0;
+    background: 0;
+    padding: 15px;
+    font-size: 16px;
+    color: #666;
+  }
+  .adp-substep {
+    border-top: 1px dotted #eee;
+  }
+  .adp b,
+  .adp-list b {
+    color: #333;
+  }
+
+}
+
+#galleries {
+  ul {
+    li {
+      display: inline-block;
+      img {
+        width: 120px;
+      }
+    }
+  }
 }
