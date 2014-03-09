@@ -12,7 +12,7 @@
     <span class="trip-tent">
 
       <span class="trip-title">
-        <%=trip.name%>
+        <%=trip.name %>
 
       </span> <!-- .trip-title -->
 
@@ -38,17 +38,13 @@
     </span> <!-- .trip-tent -->
     </a>
   </article>  <!-- .trip-item -->
-
-
-
 <% end %>
-<!--
+
 <div class="hpFooterBlock">
   <div class="apple_pagination">
     <div class="page_info">
-      <%# = page_entries_info @trips %>
+      <%= page_entries_info @trips %>
     </div>
-    <%# = will_paginate @trips, :container => false%>
+    <%= will_paginate @trips, container: false %>
   </div>
 </div>
--->
