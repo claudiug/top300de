@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails', '4.0.0'
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -9,14 +9,13 @@ gem 'active_model_serializers'
 gem 'meta-tags', :require => 'meta_tags'
 gem 'bootstrap-sass-rails'
 #gem 'rmagick', '2.13.2'
-gem "mini_magick"
-gem "carrierwave"
+gem 'mini_magick'
+gem 'carrierwave'
 gem 'will_paginate'
-gem "ckeditor"
+gem 'ckeditor'
 gem 'geocoder'
 gem 'jquery-ui-rails'
 gem 'rails_12factor'
-# gem  "pg"
 gem 'forecast_io'
 gem 'chosen-rails'
 gem 'httparty'
@@ -35,6 +34,7 @@ group :development, :test do
 end
 group :production do
   gem 'shelly-dependencies'
+  gem 'pg'
 end
 gem 'jquery-rails'
 # gem 'turbolinks'
