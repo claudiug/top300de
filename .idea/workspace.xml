@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f1705e-f9e0-4d73-ae1d-520bc8d183fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/jquery.pin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/default/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/default/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trips/_search_result.html.erb" afterPath="$PROJECT_DIR$/app/views/trips/_search_result.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/common.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trips/index.html.erb" afterPath="$PROJECT_DIR$/app/views/trips/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trips/show.html.erb" afterPath="$PROJECT_DIR$/app/views/trips/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/trips_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/trips_controller.rb" />
     </list>
     <ignored path="top300de.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +46,7 @@
       <file leaf-file-name="trips_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/trips_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="16" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+            <state line="16" column="16" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -78,7 +73,7 @@
       <file leaf-file-name="_search_result.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/trips/_search_result.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="9" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.782767" vertical-offset="0" max-vertical-offset="824">
+            <state line="40" column="0" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.7281553" vertical-offset="0" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
@@ -123,8 +118,16 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/trips/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="31" selection-start="1357" selection-end="1357" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="2505">
-              <folding />
+            <state line="32" column="31" selection-start="1338" selection-end="1338" vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="2460">
+              <folding>
+                <marker date="1394391125000" expanded="true" signature="3175:3678" placeholder="do ... end" />
+                <marker date="1394391125000" expanded="true" signature="4373:4799" placeholder="{...}" />
+                <marker date="1394391125000" expanded="true" signature="4466:4565" placeholder="{&quot;zoom&quot;: 7...}" />
+                <marker date="1394391125000" expanded="true" signature="4826:5312" placeholder="{...}" />
+                <marker date="1394391125000" expanded="true" signature="4966:5089" placeholder="{...}" />
+                <marker date="1394391125000" expanded="true" signature="5159:5304" placeholder="{...}" />
+                <marker date="1394391125000" expanded="true" signature="5220:5294" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1168,7 +1171,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/trips_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="16" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+        <state line="16" column="16" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
           <folding />
         </state>
       </provider>
@@ -1196,8 +1199,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trips/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="31" selection-start="1357" selection-end="1357" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="2505">
-          <folding />
+        <state line="32" column="31" selection-start="1338" selection-end="1338" vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="2460">
+          <folding>
+            <marker date="1394391125000" expanded="true" signature="3175:3678" placeholder="do ... end" />
+            <marker date="1394391125000" expanded="true" signature="4373:4799" placeholder="{...}" />
+            <marker date="1394391125000" expanded="true" signature="4466:4565" placeholder="{&quot;zoom&quot;: 7...}" />
+            <marker date="1394391125000" expanded="true" signature="4826:5312" placeholder="{...}" />
+            <marker date="1394391125000" expanded="true" signature="4966:5089" placeholder="{...}" />
+            <marker date="1394391125000" expanded="true" signature="5159:5304" placeholder="{...}" />
+            <marker date="1394391125000" expanded="true" signature="5220:5294" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1217,7 +1228,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trips/_search_result.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="9" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.782767" vertical-offset="0" max-vertical-offset="824">
+        <state line="40" column="0" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.7281553" vertical-offset="0" max-vertical-offset="885">
           <folding />
         </state>
       </provider>

@@ -1,21 +1,17 @@
-<!-- <%= debug(params) %>
-<%= @weather %>
-
--->
 <div class="trip-page">
 
   <div class="wrapBlock">
 
   <div class="title">
     <div class="wrapBlock">
-        <h1><%=@trip.name%></h1>
+        <h1><%=@trip.name %></h1>
         <span class="distance">
-          <span></span><%= calculate_distance('CAR', params[:location], trip.city).last unless params[:location].blank? %></span>
+          <span></span><%= calculate_distance('CAR', session[:location], @trip.city).last unless session[:location].blank? %></span>
         <span class="time">
-           <span></span><%= calculate_distance('CAR', params[:location], trip.city).first unless params[:location].blank? %>
+           <span></span><%= calculate_distance('CAR', session[:location], @trip.city).first unless session[:location].blank? %>
         </span>
         <span class="weather">
-           <span></span>Now: <%= @weather[:currently][:summary] %>
+           <span></span>Now: <%= @weather[:currently][:summary] unless @weather.nil? %>
         </span>
     </div>
   </div> <!-- .title -->
