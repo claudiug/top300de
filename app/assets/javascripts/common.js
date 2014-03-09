@@ -103,8 +103,6 @@ $(document).ready(function() {
         containerSelector: ".trip-data"
     });
 
-
-
     /* suggestion engine */
     $('.addSugg span').click(function() {
        $(this).toggleClass('danke');
@@ -115,6 +113,10 @@ $(document).ready(function() {
     });
     $('#sd').click(function() {
         $('#new-dest').fadeOut(50);
+    });
+
+    $('input#location').keyup(function() {
+        $('#wat-no-location').fadeOut(80);
     });
 
     $('#get-suggestion').click(function() {
@@ -134,8 +136,19 @@ $(document).ready(function() {
 
     /* Animate modals */
     $('#show-feedback').click(function() {
+        showModals(this, $('#wat-feedback'), true);
+        return false;
+    });
 
-        showModals(this, $('#wat-feedback'));
+    $('#show-menu').click(function() {
+        showModals(this, $('#wat-menu'), false);
+        if($(this).hasClass('fui-cross')) {
+            $(this).removeClass('fui-cross');
+            $(this).addClass('fui-list');
+        } else {
+            $(this).removeClass('fui-list');
+            $(this).addClass('fui-cross');
+        }
         return false;
     });
 
@@ -211,19 +224,20 @@ $(function() {
 
 });
 
-function showModals(el, target) {
+function showModals(el, target, overlay) {
     /* Animate modals */
 
         if ($(el).hasClass("selected") ) {
             $(el).removeClass('selected');
-            $(target).animate({top:'15px', opacity:'0'}, 80).hide();
+            $(target).animate({top:'35px', opacity:'0'}, 80).hide();
             $('.overlay').fadeOut(200);
 
         } else {
-
+            $('.wat-modal').animate({opacity:'0'}, 80).hide();
+            $('.overlay').fadeOut(200);
             $(el).addClass('selected');
-            $('.overlay').fadeIn(200);
-            $(target).show().animate({top:'26px', opacity:'1'}, 80);
+            if(overlay == true) { $('.overlay').fadeIn(200); }
+            $(target).show().animate({top:'46px', opacity:'1'}, 80);
 
         }
         return false;
@@ -232,5 +246,5 @@ function hideModals(target) {
     /* Hide events */
         $('.modal-trigger').removeClass('selected');
         $('.overlay').fadeOut(60);
-        $(target).animate({top:'15px', opacity:'0'}, 80).hide();
+        $(target).animate({top:'35px', opacity:'0'}, 80).hide();
 }

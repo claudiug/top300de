@@ -7,10 +7,10 @@ class TripsController < ApplicationController
       if params[:category].present?
         @trips = Trip.joins(:categories).where(categories: {name: params[:category].keys}).page(params[:page]).per_page(5)
       else
-        @trips = Trip.top_ten.page(params[:page]).per_page(5)
+        @trips = Trip.top_ten.page(params[:page]).per_page(2)
       end
     end
-      @trips = Trip.top_ten.page(params[:page]).per_page(5)
+      @trips = Trip.top_ten.page(params[:page]).per_page(2)
   end
 
   def show

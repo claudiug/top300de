@@ -1,6 +1,4 @@
 <div class="wrapBlock search-results">
-  <h1>Distance here</h1>
-
 <%= render 'refine_suggestion' %>
 
   <section class="content-col stand-by push-right">
@@ -22,6 +20,7 @@
     </div> <!-- .box -->
 
   </section>
-
+  <div class="trips-pagination">
+    <%= will_paginate @trips, container: false %>
+  </div>
 </div> <!-- .wrapBlock search-results -->
-

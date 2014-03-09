@@ -201,3 +201,8 @@ de:
   activerecord:
     errors:
       <<: *errors
+
+  default:
+    home:
+      slogan: "Das is ein sehr gut website"
+      subslogan: "Click hier und click go bitte"

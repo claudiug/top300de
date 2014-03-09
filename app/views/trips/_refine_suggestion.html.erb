@@ -6,7 +6,7 @@
 
     <div class="box-content">
       <!-- <input type="text" class="input size2 map" id="wat-from-location" value= <%= params[:location] %> /> -->
-      <%= text_field_tag("location", params[:location], value:params[:location], class:"input size2 map", placeholder:"your city name here") %>
+      <%= text_field_tag("location", params[:location], :autocomplete => :off, value:params[:location], class:"input size2 map", placeholder:"your city name here") %>
 
     </div> <!-- .box-content -->
 

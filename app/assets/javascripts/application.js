@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require jquery.ui.autocomplete
 //= require jquery.ui.slider
-//= require turbolinks
+
 //= require twitter/bootstrap
 //= require form-validator/jquery.form-validator.min.js
 //= require common
