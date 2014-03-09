@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f1705e-f9e0-4d73-ae1d-520bc8d183fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/top300de.iml" afterPath="$PROJECT_DIR$/.idea/top300de.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/default/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/default/_form.html.erb" />
     </list>
     <ignored path="top300de.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +30,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="14" selection-start="385" selection-end="385" vertical-scroll-proportion="0.24110219" vertical-offset="0" max-vertical-offset="871">
+            <state line="14" column="14" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/default/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="179" selection-start="2679" selection-end="2679" vertical-scroll-proportion="0.63069546" vertical-offset="509" max-vertical-offset="1410">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,7 +94,6 @@
         <option value="$PROJECT_DIR$/app/views/trips/_search_result.html.erb" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/config/locales/de.yml" />
-        <option value="$PROJECT_DIR$/app/views/default/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/homepage.html.erb" />
         <option value="$PROJECT_DIR$/app/views/trips/index.html.erb" />
@@ -98,6 +104,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/default/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -1108,13 +1115,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/default/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="30" selection-start="2690" selection-end="2690" vertical-scroll-proportion="-43.75" vertical-offset="0" max-vertical-offset="1380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
@@ -1222,8 +1222,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="385" selection-end="385" vertical-scroll-proportion="0.24110219" vertical-offset="0" max-vertical-offset="871">
+        <state line="14" column="14" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/default/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="179" selection-start="2679" selection-end="2679" vertical-scroll-proportion="0.63069546" vertical-offset="509" max-vertical-offset="1410">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
