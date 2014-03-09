@@ -2,6 +2,7 @@ class TripsController < ApplicationController
   helper_method :calculate_distance
   def index
     if params[:location].present?
+      @location = session[:location] = params[:location] if params[:location]
       flash[:loc] = params[:location]
       if params[:category].present?
         @trips = Trip.joins(:categories).where(categories: {name: params[:category].keys}).page(params[:page]).per_page(5)
