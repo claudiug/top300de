@@ -58,25 +58,14 @@
 
         <div id="galleries">
           <h2>Photos from <%=@trip.name%></h2>
-          <ul>
-            <li>
-              <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
-            </li>
-            <li>
-              <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
-            </li>
-            <li>
-              <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
-            </li>
-            <li>
-              <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
-            </li>
-            <li>
-              <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
-            </li>
-          </ul>
+          <% @trip.paintings.each do |paint| %>
+            <ul>
+              <li>
+                <%= image_tag paint.image.url %>
+              </li>
+            </ul>
+          <% end %>
         </div>
-
       </div>
 
       <div class="trip-section" id="activities">
@@ -85,24 +74,8 @@
         --------------------------------
       </div>
 
-        <!--
+
         <ul>
-
-        <% @weather[:daily][:data].each do |v| %>
-            <li style="display: inline-block; width: 20%; vertical-align: top; padding: 0 20px 20px;">
-            <% date = Date.strptime("#{v["time"]}", "%s") %>
-            <p>Day <%= date.day %>, Month: <%= date.month %></p>
-            <p><strong>Summary: <%= v["summary"] %></strong></p>
-            <div>
-              <p>Temperature min: <%= v["temperatureMin"] %></p>
-              <p>Temperature max: <%= v["temperatureMax"] %></p>
-            </div>
-            </li>
-        <% end %>
-        </ul>
-
-        -->
-
       <div class="trip-section" id="directions">
 
         <h2>Map</h2>
