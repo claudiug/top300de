@@ -1,5 +1,7 @@
+require 'will_paginate/array' 
 class TripsController < ApplicationController
   helper_method :calculate_distance
+
   def index
     if params[:location].present?
       @location = session[:location] = params[:location] if params[:location]
@@ -10,8 +12,10 @@ class TripsController < ApplicationController
         @trips = Trip.top_ten.page(params[:page]).per_page(2)
       end
     end
-      @trips = Trip.top_ten.page(params[:page]).per_page(2)
-  end
+    categories = Category.where(name: params[:category].keys.map(&:humanize))
+    trip_ids = categories.map{|cat| cat.trips.map(&:id)}.flatten.uniq
+    @trips  = Trip.find(trip_ids).paginate(:page => 1, :per_page => 2)
+   end
 
   def show
     @trip = Trip.find_by(slug: params[:id])
@@ -30,4 +34,5 @@ class TripsController < ApplicationController
          MapsGoogleDistance.get_distance_by_car(from, where)
     end
   end
+
 end
