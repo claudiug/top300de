@@ -184,9 +184,8 @@ $(document).ready(function() {
         });
 
     });
-
-
 });
+
 
 function setupLabel() {
     if ($('.styled').length) {

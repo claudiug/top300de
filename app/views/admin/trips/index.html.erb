@@ -26,8 +26,8 @@
             <td><%= trip.city %></td>
             <td><%= trip.zip_code %></td>
             <td><%= trip.description %></td>
-          <td><%= trip.is_active ? "Yes" : "No" %></td>
-
+            <td><%= trip.is_active ? "Yes" : "No" %></td>
+            <td> </td>
              <td>
               <%= link_to "Edit", edit_admin_trip_path(trip), class: 'btn btn-primary' %>
               <%= link_to "Show", admin_trip_path(trip), class: 'btn btn-info' %>

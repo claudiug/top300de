@@ -91,44 +91,51 @@
 
   <div class="box">
     <div class="title">Refine destination</div>
-
     <div class="box-content trip-refine">
       <div class="trip-type options">
-        <label class="styled" id="go_hike">
-          <%= check_box_tag("category[hike]", (params[:category]), false, id:"go_hike") %>
+        <% a = params[:category] %>
+        <% hike_check = (a.keys.include?'hike') ? true : false %>
+       <label class= "styled" id="go_hike">
+          <%= check_box_tag("category[hike]", (params[:category]), hike_check, id:"go_hike") %>
           <i></i><span>Hiking</span>
         </label>
 
         <label class="styled" id="go_mountain">
-          <%= check_box_tag("category[mountain]", (params[:category]), false, id:"go_mountain") %>
+          <% mountain_check = (a.keys.include?'mountain') ? true : false %>
+          <%= check_box_tag("category[mountain]", (params[:category]), mountain_check, id:"go_mountain") %>
           <i></i><span>Mountains</span>
         </label>
 
         <label class="styled" id="go_lake">
-          <%= check_box_tag("category[lake]", (params[:category]), false, id:"go_lake") %>
+          <% lake_check = (a.keys.include?'lake') ? true : false %>
+          <%= check_box_tag("category[lake]", (params[:category]), lake_check, id:"go_lake") %>
 
           <i></i><span>Lakes, sea, waterfalls</span>
         </label>
 
         <label class="styled" id="go_castle">
-          <%= check_box_tag("category[castle]",(params[:category]), false, id:"go_castle") %>
+          <% castle_check = (a.keys.include?'castle') ? true : false %>
+          <%= check_box_tag("category[castle]",(params[:category]), castle_check, id:"go_castle") %>
 
           <i></i><span>Castles</span>
         </label>
 
         <label class="styled" id="go_events">
-          <%= check_box_tag("category[event]", (params[:category]), false, id:"go_events") %>
+          <% event_check = (a.keys.include?'event') ? true : false %>
+          <%= check_box_tag("category[event]", (params[:category]), event_check, id:"go_events") %>
 
           <i></i><span>Festivals and Events</span>
         </label>
 
         <label class="styled" id="go_city">
-          <%= check_box_tag("category[city]", (params[:category]), false, id:"go_city") %>
+          <% city_check = (a.keys.include?'city') ? true : false %>
+          <%= check_box_tag("category[city]", (params[:category]), city_check, id:"go_city") %>
           <i></i><span>Cities</span>
         </label>
 
         <label class="styled" id="go_landscape">
-          <%= check_box_tag("category[landscape]", (params[:category]), false, id:"go_landscape") %>
+          <% landscape_check = (a.keys.include?'landscape') ? true : false %>
+          <%= check_box_tag("category[landscape]", (params[:category]), landscape_check, id:"go_landscape") %>
           <i></i><span>Sightseeing</span>
         </label>
       </div>
