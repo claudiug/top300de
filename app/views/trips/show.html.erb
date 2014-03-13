@@ -1,10 +1,18 @@
 <div class="trip-page">
 
-  <div class="wrapBlock">
+<div id="galleries">
 
   <div class="title">
     <div class="wrapBlock">
-        <h1><%=@trip.name %></h1>
+
+
+      <div class="avatar">
+        <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
+        <div class="more-images">+ 10</div>
+      </div>
+
+
+      <h1><%=@trip.name %></h1>
         <span class="distance">
           <span></span><%= calculate_distance('CAR', session[:location], @trip.city).last unless session[:location].blank? %></span>
         <span class="time">
@@ -16,15 +24,28 @@
     </div>
   </div> <!-- .title -->
 
-  <div class="trip-data">
+  <!--
+  <ul>
+  <% @trip.paintings.each do |paint| %>
+
+        <li>
+          <%= image_tag paint.image.url %>
+        </li>
+
+  <% end %>
+  </ul>
+  -->
+</div>
+
+
+  <div class="trip-wrap">
+
+
+
+  <div class="trip-data wrapBlock">
 
     <section class="filter-col fly-left" id="left-trip-filters">
       <div class="box leftcol-break">
-
-        <div class="avatar">
-          <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
-          <div class="more-images">+ 10</div>
-        </div>
 
         <div class="box-content side_nav">
           <a href="javascript:;" title="About" class="selected" rel="about"><span>About</span></a>
@@ -46,38 +67,30 @@
     <section class="trip-block stand-by" id="trip-holder">
       <div class="scroller">
       <div class="trip-section" id="about">
-        <h2>About <%=@trip.name%></h2>
+        <h2>About</h2>
             <div class="section-content">
               <p>
                 <%=@trip.description%>
               </p>
             </div>
 
-        <div id="galleries">
-          <h2>Photos from <%=@trip.name%></h2>
-          <% @trip.paintings.each do |paint| %>
-            <ul>
-              <li>
-                <%= image_tag paint.image.url %>
-              </li>
-            </ul>
-          <% end %>
-        </div>
-      </div>
-
-       <div class="trip-section" id="directions">
-
-        <h2>Map</h2>
-        <div id="map-canvas"></div>
 
       </div>
+
       </div> <!-- .scroller -->
     </section>
 
   </div> <!-- .trip-data -->
 
   </div> <!-- .wrapBlock -->
+  <div class="trip-section" id="directions">
+
+    <!-- <h2>Map</h2> -->
+    <div id="map-canvas"></div>
+
+  </div>
 </div> <!-- .trip-page -->
+
 <input id="start" value="Weingarten" style="display: none" />
 <input id="end" value="Berlin" style="display: none" />
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
