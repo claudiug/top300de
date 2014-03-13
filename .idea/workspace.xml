@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f1705e-f9e0-4d73-ae1d-520bc8d183fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/tutorial-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/tutorial-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/tutorial-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/default/home.html.erb" afterPath="$PROJECT_DIR$/app/views/default/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="top300de.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,7 +79,7 @@
       <file leaf-file-name="default.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1037" column="26" selection-start="17168" selection-end="17168" vertical-scroll-proportion="0.71590906" vertical-offset="15177" max-vertical-offset="15735">
+            <state line="396" column="21" selection-start="7105" selection-end="7105" vertical-scroll-proportion="0.47916666" vertical-offset="5687" max-vertical-offset="15750">
               <folding />
             </state>
           </provider>
@@ -112,7 +106,7 @@
       <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/default/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="506" selection-end="506" vertical-scroll-proportion="-5.125" vertical-offset="147" max-vertical-offset="870">
+            <state line="52" column="10" selection-start="1721" selection-end="1721" vertical-scroll-proportion="-20.75" vertical-offset="282" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -1225,14 +1219,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/default/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="506" selection-end="506" vertical-scroll-proportion="-5.125" vertical-offset="147" max-vertical-offset="870">
+        <state line="52" column="10" selection-start="1721" selection-end="1721" vertical-scroll-proportion="-20.75" vertical-offset="282" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1037" column="26" selection-start="17168" selection-end="17168" vertical-scroll-proportion="0.71590906" vertical-offset="15177" max-vertical-offset="15735">
+        <state line="396" column="21" selection-start="7105" selection-end="7105" vertical-scroll-proportion="0.47916666" vertical-offset="5687" max-vertical-offset="15750">
           <folding />
         </state>
       </provider>
