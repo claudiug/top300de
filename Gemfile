@@ -17,6 +17,7 @@ gem 'geocoder'
 # gem 'sqlite3'
 gem 'jquery-ui-rails'
 gem 'rails_12factor'
+
 gem 'forecast_io'
 gem 'chosen-rails'
 gem 'httparty'

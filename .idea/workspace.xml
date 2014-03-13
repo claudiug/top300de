@@ -2,15 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f1705e-f9e0-4d73-ae1d-520bc8d183fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.dev.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.dev.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/default/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/default/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" afterPath="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/maps_google_distance.rb" afterPath="$PROJECT_DIR$/app/models/maps_google_distance.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/trips_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/trips_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/date.dev.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/date.dev.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/date.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/date.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/file.dev.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/file.dev.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/file.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/file.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/fonts.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/fonts.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/form-test.html" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/form-test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/gallery.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/gallery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/icon-font.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/icon-font.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/jquery.form-validator.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/jquery.form-validator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/jquery.form-validator.min.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/jquery.form-validator.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/location.dev.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/location.dev.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/location.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/location.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/qunit.html" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/qunit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/security.dev.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/security.dev.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/security.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/security.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/sweden.dev.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/sweden.dev.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/sweden.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/sweden.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/uk.dev.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/uk.dev.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/uk.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/uk.js" />
     </list>
     <ignored path="top300de.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,19 +109,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/default/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1979" selection-end="1979" vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="1320">
+            <state line="49" column="0" selection-start="1980" selection-end="1980" vertical-scroll-proportion="0.40834847" vertical-offset="510" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_refine_suggestion.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_refine_suggestion.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="0" selection-start="4620" selection-end="4620" vertical-scroll-proportion="0.292196" vertical-offset="1864" max-vertical-offset="2415">
+            <state line="135" column="0" selection-start="4620" selection-end="4620" vertical-scroll-proportion="-41.708332" vertical-offset="1024" max-vertical-offset="2415">
               <folding />
             </state>
           </provider>
@@ -109,8 +171,8 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/default/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/default/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -829,7 +891,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="222" y="86" width="1619" height="942" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17529039" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -842,7 +904,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22174181" sideWeight="0.67053854" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22174181" sideWeight="0.67053854" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1162,16 +1224,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/default/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1979" selection-end="1979" vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="1320">
+        <state line="135" column="0" selection-start="4620" selection-end="4620" vertical-scroll-proportion="-41.708332" vertical-offset="1024" max-vertical-offset="2415">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/default/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="0" selection-start="4620" selection-end="4620" vertical-scroll-proportion="0.292196" vertical-offset="1864" max-vertical-offset="2415">
+        <state line="49" column="0" selection-start="1980" selection-end="1980" vertical-scroll-proportion="0.40834847" vertical-offset="510" max-vertical-offset="1320">
           <folding />
         </state>
       </provider>
