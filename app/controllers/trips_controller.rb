@@ -6,15 +6,15 @@ class TripsController < ApplicationController
     if params[:location].present?
       @location = session[:location] = params[:location] if params[:location]
       flash[:loc] = params[:location]
-      if params[:category].present?
-        @trips = Trip.joins(:categories).where(categories: {name: params[:category].keys}).page(params[:page]).per_page(5)
+   end
+   if params[:category].present?
+        categories = Category.where(name: params[:category].keys.map(&:humanize)) 
+        trip_ids = categories.map{|cat| cat.trips.map(&:id)}.flatten.uniq
+        @trips  = Trip.find(trip_ids).paginate(:page => 1, :per_page => 5)
+       # @trips = Trip.joins(:categories).where(categories: {name: params[:category].keys}).page(params[:page]).per_page(5)
       else
-        @trips = Trip.top_ten.page(params[:page]).per_page(2)
+        @trips = Trip.top_ten.page(params[:page]).per_page(5)
       end
-    end
-    categories = Category.where(name: params[:category].keys.map(&:humanize))
-    trip_ids = categories.map{|cat| cat.trips.map(&:id)}.flatten.uniq
-    @trips  = Trip.find(trip_ids).paginate(:page => 1, :per_page => 2)
    end
 
   def show

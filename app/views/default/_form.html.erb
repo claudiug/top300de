@@ -8,51 +8,49 @@
           <div class="searchBlock options">
 
             <label class="styled" id="go_hike">
-              <%= check_box_tag("category[hike]", (params[:category]), false, id:"go_hike") %>
+              <%= check_box_tag("category[hiking]", (params[:category]), false, id:"go_hike") %>
               <span><span>Hiking</span></span>
             </label>
 
             <label class="styled" id="go_mountain">
               <i id="linked"></i>
               <!--<input type="checkbox" name="hike">-->
-              <%= check_box_tag("category[mountain]", (params[:category]), false, id:"go_mountain") %>
+              <%= check_box_tag("category[mountains]", (params[:category]), false, id:"go_mountain") %>
 
               <span><span>Mountains</span></span>
             </label>
 
             <label class="styled" id="go_lake">
               <!--<input type="checkbox" name="beach">-->
-              <%= check_box_tag("category[lake]", (params[:category]), false, id:"go_lake") %>
+              <%= check_box_tag("category[waters]", (params[:category]), false, id:"go_lake") %>
 
               <span><span>Waters</span></span>
             </label>
 
             <label class="styled" id="go_castle">
               <!--<input type="checkbox" name="castles">-->
-              <%= check_box_tag("category[castle]",(params[:category]), false, id:"go_castle") %>
+              <%= check_box_tag("category[castles]",(params[:category]), false, id:"go_castle") %>
 
               <span><span>Castles</span></span>
             </label>
 
             <label class="styled" id="go_events">
               <!--<input type="checkbox" name="lake">-->
-              <%= check_box_tag("category[event]", (params[:category]), false, id:"go_events") %>
+              <%= check_box_tag("category[events]", (params[:category]), false, id:"go_events") %>
 
               <span><span>Events</span></span>
             </label>
 
             <label class="styled" id="go_city">
               <!--<input type="checkbox" name="fun">-->
-              <%= check_box_tag("category[city]", (params[:category]), false, id:"go_city") %>
+              <%= check_box_tag("category[cities]", (params[:category]), false, id:"go_city") %>
               <span><span>Cities</span></span>
             </label>
 
-            <!--
-            <label class="styled" id="go_landscape">
+         <!--    <label class="styled" id="go_landscape">
               <%= check_box_tag("category[landscape]", (params[:category]), false, id:"go_landscape") %>
               <span><span>Sightseeing</span></span>
-            </label>
-            -->
+            </label> -->
 
           </div> <!-- .searchBlock -->
 
