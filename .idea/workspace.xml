@@ -2,77 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f1705e-f9e0-4d73-ae1d-520bc8d183fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.eot" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.ttf" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.woff" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.dev.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.dev.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.svg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/trips/._search_result.html.erb.swp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/default/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/default/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/default/_popular_destination.html.erb" afterPath="$PROJECT_DIR$/app/views/default/_popular_destination.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" afterPath="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_bold-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_light-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_regular_italic-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/bariol_thin-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/date.dev.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/date.dev.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/date.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/date.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/file.dev.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/file.dev.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/file.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/file.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/fonts.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/fonts.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/form-test.html" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/form-test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/gallery.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/gallery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/icon-font.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/icon-font.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/jquery.form-validator.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/jquery.form-validator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/jquery.form-validator.min.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/jquery.form-validator.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-black-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bold-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-bolditalic-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-italic-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-light-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.svg" afterPath="$PROJECT_DIR$/app/assets/fonts/lato/lato-regular-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/location.dev.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/location.dev.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/location.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/location.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/qunit.html" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/qunit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/security.dev.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/security.dev.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/security.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/security.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/sweden.dev.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/sweden.dev.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/sweden.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/sweden.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/uk.dev.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/uk.dev.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/uk.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/form-validator/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trips/_search_result.html.erb" afterPath="$PROJECT_DIR$/app/views/trips/_search_result.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/default/home.html.erb" afterPath="$PROJECT_DIR$/app/views/default/home.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trips/show.html.erb" afterPath="$PROJECT_DIR$/app/views/trips/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/top300de.iml" afterPath="$PROJECT_DIR$/.idea/top300de.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="top300de.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,28 +47,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="2" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="795">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="314" column="2" selection-start="5510" selection-end="5532" vertical-scroll-proportion="-5.6666665" vertical-offset="4574" max-vertical-offset="14610">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="15" selection-start="120" selection-end="212" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+            <state line="9" column="16" selection-start="121" selection-end="217" vertical-scroll-proportion="0.24456522" vertical-offset="0" max-vertical-offset="552">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/default/_form.html.erb">
+      <file leaf-file-name="listing.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1980" selection-end="1980" vertical-scroll-proportion="0.40834847" vertical-offset="510" max-vertical-offset="1320">
+            <state line="8" column="7" selection-start="134" selection-end="134" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="5265">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_refine_suggestion.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb">
+      <file leaf-file-name="_popular_destination.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/default/_popular_destination.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="0" selection-start="4620" selection-end="4620" vertical-scroll-proportion="-41.708332" vertical-offset="1024" max-vertical-offset="2415">
+            <state line="0" column="0" selection-start="0" selection-end="805" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/default/about.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="7" selection-start="78" selection-end="80" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="900">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/default/home.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="10" selection-start="398" selection-end="398" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="960" column="13" selection-start="17418" selection-end="17418" vertical-scroll-proportion="-16.458334" vertical-offset="14005" max-vertical-offset="14625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/trips/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="480">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_search_result.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/trips/_search_result.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="70" selection-start="1357" selection-end="1357" vertical-scroll-proportion="-18.0" vertical-offset="213" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
@@ -145,34 +155,34 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/shared/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/default/_footer.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/default/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/trips/_others_suggestion.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/trips/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/trips_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/trip.rb" />
-        <option value="$PROJECT_DIR$/app/views/default/_popular_destination.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss" />
         <option value="$PROJECT_DIR$/config/deploy/shelly/before_migrate" />
-        <option value="$PROJECT_DIR$/app/views/trips/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/trips_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/static.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/trips/_search_result.html.erb" />
-        <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/config/locales/de.yml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/homepage.html.erb" />
         <option value="$PROJECT_DIR$/app/views/trips/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/common.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/default/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
+        <option value="$PROJECT_DIR$/config/locales/en.yml" />
+        <option value="$PROJECT_DIR$/app/views/shared/_footer.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/trips/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/default/_popular_destination.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/default/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/trips/_search_result.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
@@ -329,6 +339,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="locales" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="top300de" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="top300de" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -506,131 +530,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="top300de" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="top300de" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="concerns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="top300de" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="top300de" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="top300de" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="top300de" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="top300de" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="top300de" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="top300de" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="top300de" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="top300de" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="top300de" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -937,40 +841,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/deploy/shelly/before_migrate">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="36" selection-start="58" selection-end="58" vertical-scroll-proportion="0.017221585" vertical-offset="0" max-vertical-offset="871" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/default/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="53" selection-start="225" selection-end="225" vertical-scroll-proportion="0.16383494" vertical-offset="0" max-vertical-offset="824">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="3" selection-start="1763" selection-end="1763" vertical-scroll-proportion="0.0" vertical-offset="4441" max-vertical-offset="5265">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="871" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="871" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/default_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="871" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/trips_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="871" />
@@ -1054,7 +924,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="848" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="848">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/trips_controller.rb">
@@ -1076,17 +948,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/static.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="75" selection-start="245" selection-end="249" vertical-scroll-proportion="0.091019414" vertical-offset="0" max-vertical-offset="824" />
+        <state line="5" column="75" selection-start="245" selection-end="249" vertical-scroll-proportion="0.091019414" vertical-offset="0" max-vertical-offset="824">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="75" selection-start="245" selection-end="249" vertical-scroll-proportion="0.091019414" vertical-offset="0" max-vertical-offset="824" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="0" selection-start="4852" selection-end="4980" vertical-scroll-proportion="0.0" vertical-offset="2392" max-vertical-offset="3240">
+        <state line="5" column="75" selection-start="245" selection-end="249" vertical-scroll-proportion="0.091019414" vertical-offset="0" max-vertical-offset="824">
           <folding />
         </state>
       </provider>
@@ -1103,23 +972,6 @@
         <state line="16" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/trips/_search_result.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1252" selection-end="1252" vertical-scroll-proportion="-28.125" vertical-offset="0" max-vertical-offset="765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/trips/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/homepage.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="360" />
-      </provider>
-    </entry>
     <entry file="file:///Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/helpers/url_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="380" column="20" selection-start="18077" selection-end="18077" vertical-scroll-proportion="0.0" vertical-offset="5212" max-vertical-offset="9600" />
@@ -1132,12 +984,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/icon-font.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="9" selection-start="993" selection-end="1001" vertical-scroll-proportion="-30.625" vertical-offset="0" max-vertical-offset="1770" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="92" selection-start="429" selection-end="429" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="810" />
+        <state line="49" column="9" selection-start="993" selection-end="1001" vertical-scroll-proportion="-30.625" vertical-offset="0" max-vertical-offset="1770">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/common.js">
@@ -1145,20 +994,6 @@
         <state line="146" column="20" selection-start="3809" selection-end="3809" vertical-scroll-proportion="0.0" vertical-offset="1837" max-vertical-offset="3825">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="562" column="22" selection-start="11269" selection-end="11269" vertical-scroll-proportion="-6.25" vertical-offset="8280" max-vertical-offset="14340">
-          <folding>
-            <element signature="e#669#1512#2" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="735" column="14" selection-start="14586" selection-end="14586" vertical-scroll-proportion="0.36211032" vertical-offset="10723" max-vertical-offset="14130" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
@@ -1203,37 +1038,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="2" selection-start="403" selection-end="403" vertical-scroll-proportion="0.07826087" vertical-offset="195" max-vertical-offset="795">
+        <state line="26" column="0" selection-start="972" selection-end="972" vertical-scroll-proportion="-11.083333" vertical-offset="124" max-vertical-offset="2385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="68" selection-start="154" selection-end="154" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="208" column="43" selection-start="4916" selection-end="4916" vertical-scroll-proportion="0.0" vertical-offset="2688" max-vertical-offset="3240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_footer.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="88" selection-start="557" selection-end="557" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="960">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trips/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="31" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.13611615" vertical-offset="405" max-vertical-offset="2055">
+        <state line="50" column="17" selection-start="1861" selection-end="1861" vertical-scroll-proportion="-14.375" vertical-offset="405" max-vertical-offset="1650">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/homepage.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="15" selection-start="120" selection-end="212" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="0" selection-start="4620" selection-end="4620" vertical-scroll-proportion="-41.708332" vertical-offset="1024" max-vertical-offset="2415">
+        <state line="15" column="0" selection-start="385" selection-end="385" vertical-scroll-proportion="0.42613637" vertical-offset="0" max-vertical-offset="528">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/default/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1980" selection-end="1980" vertical-scroll-proportion="0.40834847" vertical-offset="510" max-vertical-offset="1320">
+        <state line="66" column="39" selection-start="2493" selection-end="2493" vertical-scroll-proportion="-41.25" vertical-offset="0" max-vertical-offset="1320">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/default/about.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="7" selection-start="78" selection-end="80" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="7" selection-start="134" selection-end="134" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="5265">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/default/contribute.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/trips/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/default/_popular_destination.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="805" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/default/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="10" selection-start="398" selection-end="398" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="314" column="2" selection-start="5510" selection-end="5532" vertical-scroll-proportion="-5.6666665" vertical-offset="4574" max-vertical-offset="14610">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/trips/_search_result.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="70" selection-start="1357" selection-end="1357" vertical-scroll-proportion="-18.0" vertical-offset="213" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="960" column="13" selection-start="17418" selection-end="17418" vertical-scroll-proportion="-16.458334" vertical-offset="14005" max-vertical-offset="14625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="2" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="16" selection-start="121" selection-end="217" vertical-scroll-proportion="0.24456522" vertical-offset="0" max-vertical-offset="552">
           <folding />
         </state>
       </provider>

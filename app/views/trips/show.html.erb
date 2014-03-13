@@ -27,21 +27,18 @@
         </div>
 
         <div class="box-content side_nav">
-          <a href="javascript:;" title="Title" class="selected" rel="about"><span>About</span></a>
-          <a href="javascript:;" title="Things to do" rel="activities"><span>Things to do</span></a>
-          <a href="javascript:;" title="Title" rel="weather"><span>Weather</span></a>
-          <a href="javascript:;" title="Title" rel="directions"><span>Directions</span></a>
+          <a href="javascript:;" title="About" class="selected" rel="about"><span>About</span></a>
+          <a href="javascript:;" title="Gallery" rel="activities"><span>Gallery</span></a>
+          <a href="javascript:;" title="Map" rel="directions"><span>Map</span></a>
         </div> <!-- .box-content -->
       </div> <!-- .box -->
 
 
       <div class="about-city">
-        <!--
         <span class="capital">Capital of Germany</span>
         <span class="area"> 891.8 km²</span>
         <span class="population"> 3.502 million</span>
         <span class="local-time"> Now: 8:35 PM</span>
-        -->
       </div>
 
     </section>
@@ -68,19 +65,10 @@
         </div>
       </div>
 
-      <div class="trip-section" id="activities">
-        <h2>Things to do</h2>
-         Nuthin'
-        --------------------------------
-      </div>
-
-
-        <ul>
-      <div class="trip-section" id="directions">
+       <div class="trip-section" id="directions">
 
         <h2>Map</h2>
         <div id="map-canvas"></div>
-        <div id="directions-panel"></div>
 
       </div>
       </div> <!-- .scroller -->
@@ -112,20 +100,5 @@
 
     }
 
-    function calcRoute() {
-        var start = document.getElementById('start').value;
-        var end = document.getElementById('end').value;
-        var request = {
-            origin: start,
-            destination: end,
-            travelMode: google.maps.TravelMode.DRIVING
-        };
-        directionsService.route(request, function(response, status) {
-            if (status == google.maps.DirectionsStatus.OK) {
-                directionsDisplay.setDirections(response);
-            }
-        });
-    }
     google.maps.event.addDomListener(window, 'load', initialize);
-    google.maps.event.addDomListener(window, 'load', calcRoute);
 </script>

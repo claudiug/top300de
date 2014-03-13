@@ -14,7 +14,6 @@ gem 'carrierwave'
 gem 'will_paginate'
 gem 'ckeditor'
 gem 'geocoder'
-# gem 'sqlite3'
 gem 'jquery-ui-rails'
 gem 'rails_12factor'
 
