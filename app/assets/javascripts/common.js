@@ -184,6 +184,7 @@ $(document).ready(function() {
                 //only report if we got Good Stuff
                 if(city != '' && state != '') {
                     $("#location").val(city);
+                    $("#det-location").text(city);
                 }
             }
         });
