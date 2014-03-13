@@ -25,8 +25,13 @@ class MapsGoogleDistance
                                 '&sensor='+SENSOR )
     if response.code == 200
       result = JSON(response.body)
-      distance = result['rows'][0]['elements'][0]['distance']['text']
-      time =  result['rows'][0]['elements'][0]['duration']['text']
+      distance = 0
+      time = 0
+      if result['rows'][0]['elements'][0]['distance']
+       distance = result['rows'][0]['elements'][0]['distance']['text'] 
+       time =  result['rows'][0]['elements'][0]['duration']['text']
+      end
+      
       value << time
       value << distance
       value
