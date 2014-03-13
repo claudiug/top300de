@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f1705e-f9e0-4d73-ae1d-520bc8d183fe" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/common.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/default/home.html.erb" afterPath="$PROJECT_DIR$/app/views/default/home.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="top300de.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,7 +81,7 @@
       <file leaf-file-name="default.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="396" column="21" selection-start="7105" selection-end="7105" vertical-scroll-proportion="0.47916666" vertical-offset="5687" max-vertical-offset="15750">
+            <state line="1022" column="22" selection-start="16884" selection-end="16884" vertical-scroll-proportion="0.11931818" vertical-offset="15267" max-vertical-offset="16095">
               <folding />
             </state>
           </provider>
@@ -97,7 +99,7 @@
       <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="20" selection-start="3809" selection-end="3809" vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="3810">
+            <state line="81" column="19" selection-start="2037" selection-end="2040" vertical-scroll-proportion="0.0" vertical-offset="924" max-vertical-offset="3885">
               <folding />
             </state>
           </provider>
@@ -106,7 +108,7 @@
       <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/default/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="10" selection-start="1721" selection-end="1721" vertical-scroll-proportion="-20.75" vertical-offset="282" max-vertical-offset="930">
+            <state line="36" column="70" selection-start="1395" selection-end="1395" vertical-scroll-proportion="-11.875" vertical-offset="255" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -151,7 +153,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/homepage.html.erb" />
         <option value="$PROJECT_DIR$/app/views/trips/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/common.js" />
         <option value="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" />
         <option value="$PROJECT_DIR$/app/views/default/_form.html.erb" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
@@ -166,6 +167,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
         <option value="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/default/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/common.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
       </list>
     </option>
@@ -1196,13 +1198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="20" selection-start="3809" selection-end="3809" vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="3810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trips/_search_result.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="106" selection-start="302" selection-end="400" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="810">
@@ -1217,16 +1212,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="19" selection-start="2037" selection-end="2040" vertical-scroll-proportion="0.0" vertical-offset="924" max-vertical-offset="3885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/default/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="10" selection-start="1721" selection-end="1721" vertical-scroll-proportion="-20.75" vertical-offset="282" max-vertical-offset="930">
+        <state line="36" column="70" selection-start="1395" selection-end="1395" vertical-scroll-proportion="-11.875" vertical-offset="255" max-vertical-offset="975">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="396" column="21" selection-start="7105" selection-end="7105" vertical-scroll-proportion="0.47916666" vertical-offset="5687" max-vertical-offset="15750">
+        <state line="1022" column="22" selection-start="16884" selection-end="16884" vertical-scroll-proportion="0.11931818" vertical-offset="15267" max-vertical-offset="16095">
           <folding />
         </state>
       </provider>
