@@ -2,7 +2,7 @@
 <%= render 'refine_suggestion' %>
 
   <section class="content-col stand-by push-right">
-    <div class="head">Results
+    <div class="head">Results  
       <h1>Trips to Berlin, Bastei Bridge and Munchen by car and train</h1>
     </div>
 
@@ -11,15 +11,11 @@
       <div class="box-content">
 
         <div id="trip-list" class="trip-list-block">
-
             <%= render 'search_result' %>
-
         </div> <!-- trip-list -->
-
-        <div class="trips-pagination" >
-          <%= will_paginate @trips, container: false %>
-        </div>
-
+      <div class="trips-pagination" >
+        <%= will_paginate @trips, container: false %>
+       </div>
       </div> <!-- .box-content -->
     </div> <!-- .box -->
 

@@ -16,7 +16,7 @@ gem "ckeditor"
 gem 'geocoder'
 gem 'jquery-ui-rails'
 gem 'rails_12factor'
-# gem  "pg"
+#gem  "pg"
 gem 'forecast_io'
 gem 'chosen-rails'
 gem 'httparty'

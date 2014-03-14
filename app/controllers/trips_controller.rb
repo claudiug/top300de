@@ -8,10 +8,9 @@ class TripsController < ApplicationController
       flash[:loc] = params[:location]
    end
    if params[:category].present?
-        categories = Category.where(name: params[:category].keys.map(&:humanize)) 
+        categories = Category.where(name: params[:category].keys.map(&:humanize))
         trip_ids = categories.map{|cat| cat.trips.map(&:id)}.flatten.uniq
-        @trips  = Trip.find(trip_ids).paginate(:page => 1, :per_page => 5)
-       # @trips = Trip.joins(:categories).where(categories: {name: params[:category].keys}).page(params[:page]).per_page(5)
+        @trips  = Trip.find(trip_ids).paginate(:page => params[:page], :per_page => 5)
       else
         @trips = Trip.top_ten.page(params[:page]).per_page(5)
       end
