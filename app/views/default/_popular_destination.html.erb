@@ -1,44 +1,31 @@
-<section class="wideBlock hpFooterBlock popular-destinations">
-  <div class="wrapBlock">
+<div id="trip-list" class="trip-list-block">
 
-    <h1>Popular destinations</h1>
+  <% Trip.popular_trips.each do |trip| %>
 
-    <div class="box" id="hp-trips">
-      <div class="box-content">
+  <article class="trip-item trip-box">
+    <a href="<%=trip_path(trip)%>" title="<%= trip.name %>">
+      <span class="trip-image">
 
-        <div id="trip-list" class="trip-list-block">
+        <span class="more">More</span>
 
-          <% Trip.popular_trips.each do |trip| %>
+        <%= image_tag(trip.paintings.first.image.url(:resized).to_s) unless trip.paintings.first.blank? %>
 
-          <article class="trip-item trip-box">
-            <a href="<%=trip_path(trip)%>" title="<%= trip.name %>">
-              <span class="trip-image">
+      </span>  <!-- .trip-mage -->
 
-                <span class="more">More</span>
+    <span class="trip-tent">
 
-                <%= image_tag(trip.paintings.first.image.url(:resized).to_s) unless trip.paintings.first.blank? %>
+      <span class="trip-title">
+        <%= trip.name %>
+      </span> <!-- .trip-title -->
 
-              </span>  <!-- .trip-mage -->
+      <span class="desc trip-desc-card">
+        <%=h truncate(trip.description, :length => 170) %>
+      </span> <!-- .desc -->
 
-            <span class="trip-tent">
+      <div class="fader"></div>
 
-              <span class="trip-title">
-                <%= trip.name %>
-              </span> <!-- .trip-title -->
-
-              <span class="desc trip-desc-card">
-                <%=h truncate(trip.description, :length => 170) %>
-              </span> <!-- .desc -->
-
-              <div class="fader"></div>
-
-            </span> <!-- .trip-tent -->
-            </a>
-          </article>  <!-- .trip-item -->
-          <% end %>
-         </div> <!-- trip-list -->
-
-      </div> <!-- .box-content -->
-    </div> <!-- .box -->
-  </div> <!-- .wrapBlock -->
-</section>
+    </span> <!-- .trip-tent -->
+    </a>
+  </article>  <!-- .trip-item -->
+  <% end %>
+ </div> <!-- trip-list -->

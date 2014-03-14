@@ -155,6 +155,7 @@ a:hover, a:focus {
 }
 p {
   font-size: 15px;
+  line-height: 1.65;
 }
 .wrapBlock {
   margin: 0 auto;
@@ -271,6 +272,21 @@ header {
     float: right;
     margin-top: 14px;
 
+    &#topLeftNav {
+      float: left;
+
+      .wat-modal {
+        left: 103px;
+        right: auto;
+
+        &:after {
+          right: auto;
+          left: 22px;
+        }
+      }
+
+    }
+
     a {
       font-size: $forUpper;
       font-family: $bold;
@@ -313,15 +329,25 @@ header {
     width: 99%;
   }
   &.map {
-    background: image-url("map-pin.svg") 8px 50% no-repeat transparent;
-    text-indent: 21px;
+
+    background: image-url("map-pin.svg") 0 50% no-repeat transparent;
+    text-indent: 13px;
+    color: #B6B6B6;
+    border: 1px solid white;
+    cursor: pointer;
+
+    &:focus {
+      color: #6a6a6a;
+      cursor: text;
+    }
+
   }
   &.flashy {
     border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(90, 90, 90, 0.1);
+    box-shadow: 0 1px 3px rgba(224, 224, 224, 0.3);
     padding: 8px 14px;
     color: #333;
-    border: 0;
+    border: 1px solid #E0E0E0;
   }
 }
 
@@ -347,7 +373,7 @@ header {
   border-bottom: 1px solid #030300;
   border-radius: 3px;
   font-size: 20px;
-  background: #00A1D9 center 50% no-repeat;
+  background: #1abc9c;
   padding: 13px 40px;
   border: 0;
   margin: 30px 0 0;
@@ -355,10 +381,27 @@ header {
   font-family: $bold;
   min-width: 280px;
   min-height: 50px;
-  -webkit-box-shadow: 0 5px #115a93;
-  -moz-box-shadow: 0 5px #115a93;
-  box-shadow: 0 5px #115a93;
+  -webkit-box-shadow: 0 5px #0EA284;
+  -moz-box-shadow: 0 5px #0EA284;
+  box-shadow: 0 5px #0EA284;
 
+  /*
+  outline: none;
+  border-bottom: 1px solid #030300;
+  border-radius: 3px;
+  font-size: 20px;
+  background: rgba(255,255,255, .25);
+  padding: 13px 40px;
+  border: 2px solid white;
+  margin: 30px 0 0;
+  color: white;
+  font-family: "bariol_boldbold";
+  min-width: 280px;
+  min-height: 50px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: 0 5px #0EA284;
+  box-shadow: none;
+  */
   &:active {
     margin-top: 34px;
     -webkit-box-shadow: 0 2px #115a93;
@@ -414,18 +457,18 @@ header {
       padding: 3px 5px;
       min-height: 0;
       position: relative;
-      margin-top: 0px;
       font-size: 13px;
-      margin-bottom: 15px;
-      -webkit-box-shadow: 0 5px #8D8D8D;
-      -moz-box-shadow: 0 5px #8D8D8D;
-      box-shadow: 0 5px #8D8D8D;
-      background: #C2C2C2;
+      margin-bottom: 3px;
+      margin-top: 10px;
+      color: rgb(83, 83, 83);
+      background: #fff;
+      border: 1px solid #ddd;
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
 
       &:active {
-        -webkit-box-shadow: 0 2px #8D8D8D;
-        -moz-box-shadow: 0 2px #8D8D8D;
-        box-shadow: 0 2px #8D8D8D;
+        border: 1px solid #ccc;
       }
 
     }
@@ -651,6 +694,11 @@ header {
 
   .box-content {
     padding-bottom: 15px;
+    &.location-from {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -717,7 +765,7 @@ header {
 .wat-modal {
   opacity: 0;
   display: none;
-  right: 86px;
+  right: 36px;
   top: 35px;
   z-index: 900102;
   position: absolute;
@@ -886,7 +934,7 @@ header {
   position: fixed;
   height: 100%;
   width: 100%;
-  z-index: 980;
+  z-index: 986;
   opacity: .8;
   left: 0;
   top: 0;

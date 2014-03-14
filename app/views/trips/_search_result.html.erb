@@ -41,6 +41,9 @@
   </article>  <!-- .trip-item -->
    <% end %>
 <% else %>
-    <h5 class="category_not_selected">  No trip found for the selected category. </h5>
+    <div class="empty">No trip found for the selected category. <br />Have a look at the popular destinations instead or try another search.</div>
+
+    <%= render "default/popular_destination" %>
+
 <% end %>
 

@@ -3,47 +3,83 @@
         <div class="wrapBlock">
 
             <div class="Logo">
-                <a href="/" title="Wantatrip">want<span>a</span><strong>trip</strong></a>
+                <a href="/" title="Wantatrip">want<span>a</span>trip</a>
             </div>
+
+          <nav id="topLeftNav" class="point-left">
+            <a href="javascript:;" title="More" id="show-menu" class="icons fui-list"></a>
+
+            <div class="popup-menu wat-modal" id="wat-menu">
+              <ul>
+                <li><a href="/about" title="About">About</a></li>
+                <li><a href="#" title="Bookmark this website">Bookmark this website</a></li>
+                <li class="wat-separator">Change language</li>
+                <li><%= link_to_unless_current "DE", locale: "de" %></li>
+                <li><%= link_to_unless_current "EN", locale: "en" %></li>
+              </ul>
+            </div>
+
+          </nav>
 
                 <nav id="topRightNav">
 
-                    <a href="javascript:;" title="Feedback" class="" id="show-feedback">Feedback</a>
-                    <a href="javascript:;" title="More" id="show-menu" class="icons fui-list"></a>
-
-                    <div class="popup-menu wat-modal" id="wat-menu">
-                        <ul>
-                          <li><a href="/about" title="About">About</a></li>
-                          <li><a href="#" title="Bookmark this website">Bookmark this website</a></li>
-                          <li class="wat-separator">Change language</li>
-                          <li><%= link_to_unless_current "DE", locale: "de" %></li>
-                          <li><%= link_to_unless_current "EN", locale: "en" %></li>
-                        </ul>
-                    </div>
+                    <a href="javascript:;" title="Feedback" class="icons fui-heart" id="show-feedback">&nbsp;&nbsp;Feedback</a>
 
                 </nav>
-
-          <div class="wat-modal" id="wat-feedback">
-            <div class="title">
-              Feedback
-
-              <div class="icons fui-cross close"></div>
-
-            </div>
-
-            <p>Let us know what you think. Feel free to send feedback about improvements, suggestions or website problems. We appreciate it.
-              <br />
-              <span>"Wantatrip Team"</span>
-            </p>
-            <form action="" method="GET" id="feedback-form">
-              <p><input type="text" name="your_name" class="input size2" placeholder="Your email" />
-                <small>Enter in case your message requires an answer</small>
-              </p>
-              <p><textarea cols="5" rows="4" class="input size2" name="message" data-validation="required" data-validation-error-msg="Please enter your feedback" ></textarea></p>
-              <input class="submit-go rsmaller" name="commit" type="submit" value="Submit">
-            </form>
-          </div> <!-- .feedback -->
 
         </div>
 
 </header>
+
+<div class="wat-modal" id="wat-feedback">
+<script>
+    UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/bCCOnYhsCUftXEYY1nYQ.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+    UserVoice.push(['set', {
+        accent_color: '#47d9bf',
+        trigger_color: 'white',
+        trigger_background_color: '#448dd6',
+        screenshot_enabled: false,
+    }]);
+    UserVoice.push(['identify', {
+        email:      'john.doe@example.com', // User’s email address
+        //name:       'John Doe', // User’s real name
+        //created_at: 1364406966, // Unix timestamp for the date the user signed up
+        //id:         123, // Optional: Unique id of the user (if set, this should not change)
+        //type:       'Owner', // Optional: segment your users by type
+        //account: {
+        //  id:           123, // Optional: associate multiple users with a single account
+        //  name:         'Acme, Co.', // Account name
+        //  created_at:   1364406966, // Unix timestamp for the date the account was created
+        //  monthly_rate: 9.99, // Decimal; monthly rate of the account
+        //  ltv:          1495.00, // Decimal; lifetime value of the account
+        //  plan:         'Enhanced' // Plan name for the account
+        //}
+    }]);
+
+    UserVoice.push(['addTrigger', '#show-feedback', { mode: 'contact' }]);
+    UserVoice.push(['autoprompt', {}]);
+</script>
+</div>
+
+<!--
+<div class="wat-modal" id="wat-feedback">
+  <div class="title">
+    Feedback
+
+    <div class="icons fui-cross close"></div>
+
+  </div>
+
+  <p>Let us know what you think. Feel free to send feedback about improvements, suggestions or website problems. We appreciate it.
+    <br />
+    <span>"Wantatrip Team"</span>
+  </p>
+  <form action="" method="GET" id="feedback-form">
+    <p><input type="text" name="your_name" class="input size2" placeholder="Your email" />
+      <small>Enter in case your message requires an answer</small>
+    </p>
+    <p><textarea cols="5" rows="4" class="input size2" name="message" data-validation="required" data-validation-error-msg="Please enter your feedback" ></textarea></p>
+    <input class="submit-go rsmaller" name="commit" type="submit" value="Submit">
+  </form>
+</div> .feedback -->

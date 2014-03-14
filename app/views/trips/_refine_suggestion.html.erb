@@ -2,9 +2,9 @@
   <%= form_tag trips_path, method: :get do %>
   <div class="head">Refine search</div>
   <div class="box leftcol-break">
-    <div class="title">From</div>
+    <div class="title">Leaving from:</div>
 
-    <div class="box-content">
+    <div class="box-content location-from">
       <!-- <input type="text" class="input size2 map" id="wat-from-location" value= <%= params[:location] %> /> -->
       <%= text_field_tag("location", params[:location], :autocomplete => :off, value:params[:location], class:"input size2 map", placeholder:"your city name here") %>
 
@@ -24,8 +24,6 @@
     </div> <!-- .wat-modal no-location-modal -->
 
     <div class="box-content" id="wat-transport">
-
-      <div class="title">I prefer to travel with:</div>
 
       <div class="trip-with trip-type options">
         <label class="styled styled-on" id="by_car">
@@ -47,12 +45,12 @@
       </div>
     </div> <!-- .box-content -->
 
-    <!-- <div class="title">Distance from home:</div> -->
+    <div class="title">Distance from home:</div>
 
     <div class="box-content">
       <div class="trip-with trip-type options">
 
-        <!--
+
         <div id="distance-slider">
 
         </div>
@@ -63,8 +61,8 @@
             /* Distance slider */
             $(document).ready(function() {
 
-            var startRange = 87;
-            var stopRange = 761;
+            var startRange = 0;
+            var stopRange = 200;
 
             $("#distance-slider").slider({
                 range: "max",
@@ -80,7 +78,7 @@
 
             });
         </script>
-        -->
+
       </div>
 
       <input class="submit-go rsmaller faded" name="filter" type="submit" value="Filter">
@@ -133,13 +131,11 @@
           <i></i><span>Cities</span>
         </label>
       </div>
-
       <input class="submit-go rsmaller faded" name="filter" type="submit" value="Filter">
-
     </div>
   </div> <!-- .box -->
+  
   <%= render 'suggestions' %>
-
   <% end %>
 </section>
 

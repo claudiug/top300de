@@ -1,7 +1,7 @@
 <section class="homepageEngine" data-type="background" data-speed="2">
   <div class="adPic">
     <div class="slogan"><%= t "default.home.slogan" %>
-      <div class="subSlogan"><%= t "default.home.subslogan" %></div>
+      <!-- <div class="subSlogan"><%= t "default.home.subslogan" %></div> -->
     </div>
     <%= form_tag trips_path, method: :get do %>
         <div id="Search">
@@ -46,11 +46,6 @@
               <span><span>Cities</span></span>
             </label>
 
-         <!--    <label class="styled" id="go_landscape">
-              <%= check_box_tag("category[landscape]", (params[:category]), false, id:"go_landscape") %>
-              <span><span>Sightseeing</span></span>
-            </label> -->
-
           </div> <!-- .searchBlock -->
 
           <!--
@@ -60,14 +55,16 @@
 
             <label id="where_from">
 
-              <%= text_field_tag("location", params[:location], class:"tinput", placeholder:"your city name here") %>
+
             </label>
 
           </div>  -->
 
-          <div class="searchBlock submit">
-            <%= submit_tag("Go", class: "submit-go") %>
+          <div style="position: fixed; left: -9999px; top: -9999px;"> <%= text_field_tag("location", params[:location], class:"tinput", placeholder:"your city name here") %></div>
 
+          <div class="searchBlock submit">
+            <%= submit_tag("Find places", class: "submit-go") %>
+                <!-- <div class="determined-location">Determined location: <em id="det-location"></em></div> -->
           </div> <!-- .searchBlock -->
 
         </div>

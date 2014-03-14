@@ -6,7 +6,7 @@
   h1 {
     font-size: $smallNote;
     color: $titleGrey;
-    paddding: 5px 0 0;
+    padding: 0 24px 0;
     line-height: 1;
     position: absolute;
     right: 0;
@@ -57,7 +57,7 @@
   }
   .trip-refine {
     .trip-type {
-      padding-bottom: 15px;
+      padding-bottom: 5px;
     }
   }
 

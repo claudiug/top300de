@@ -79,6 +79,11 @@ $(document).ready(function() {
 
     })
 
+    $("a[href='#top']").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
     /* changes the slide height on resize
     $(window).resize(function() {
         resizeAd(slideHeight);
@@ -134,12 +139,12 @@ $(document).ready(function() {
 
     });
 
-    /* Animate modals */
+    /* Animate modals
     $('#show-feedback').click(function() {
         showModals(this, $('#wat-feedback'), true);
         return false;
     });
-
+     */
     $('#show-menu').click(function() {
         showModals(this, $('#wat-menu'), false);
         if($(this).hasClass('fui-cross')) {
@@ -179,6 +184,7 @@ $(document).ready(function() {
                 //only report if we got Good Stuff
                 if(city != '' && state != '') {
                     $("#location").val(city);
+                    $("#det-location").text(city);
                 }
             }
         });
