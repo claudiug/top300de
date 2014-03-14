@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="82f1705e-f9e0-4d73-ae1d-520bc8d183fe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/top300de.iml" afterPath="$PROJECT_DIR$/.idea/top300de.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="top300de.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +33,7 @@
       <file leaf-file-name="_footer.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_footer.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="21" selection-start="1631" selection-end="1631" vertical-scroll-proportion="1.0315986" vertical-offset="0" max-vertical-offset="795">
+            <state line="42" column="0" selection-start="1924" selection-end="1924" vertical-scroll-proportion="1.1710037" vertical-offset="0" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -811,11 +809,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/mailbox.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="871" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="871">
@@ -1066,7 +1059,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="112" selection-start="2631" selection-end="2631" vertical-scroll-proportion="-12.375" vertical-offset="708" max-vertical-offset="1320">
           <folding>
-            <marker date="1394818436000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1394818602000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1148,9 +1141,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="21" selection-start="1631" selection-end="1631" vertical-scroll-proportion="1.0315986" vertical-offset="0" max-vertical-offset="795">
+        <state line="42" column="0" selection-start="1924" selection-end="1924" vertical-scroll-proportion="1.1710037" vertical-offset="0" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
