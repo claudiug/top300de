@@ -24,17 +24,6 @@
     </div>
   </div> <!-- .title -->
 
-  <!--
-  <ul>
-  <% @trip.paintings.each do |paint| %>
-
-        <li>
-          <%= image_tag paint.image.url %>
-        </li>
-
-  <% end %>
-  </ul>
-  -->
 </div>
 
 
@@ -76,6 +65,22 @@
 
 
       </div>
+
+        <div class="trip-section" id="photo-gallery">
+          <h2>Images</h2>
+          <div class="section-content">
+            <ul>
+              <% @trip.paintings.each do |paint| %>
+
+                  <li>
+                    <%= image_tag paint.image.url %>
+                  </li>
+
+              <% end %>
+            </ul>
+          </div>
+
+        </div>
 
       </div> <!-- .scroller -->
     </section>

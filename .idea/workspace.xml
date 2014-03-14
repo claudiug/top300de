@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f1705e-f9e0-4d73-ae1d-520bc8d183fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trips/show.html.erb" afterPath="$PROJECT_DIR$/app/views/trips/show.html.erb" />
     </list>
     <ignored path="top300de.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,10 +30,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_footer.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_footer.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_footer.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1924" selection-end="1924" vertical-scroll-proportion="1.1710037" vertical-offset="0" max-vertical-offset="735">
+            <state line="42" column="0" selection-start="1924" selection-end="1924" vertical-scroll-proportion="-26.25" vertical-offset="0" max-vertical-offset="735">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/trips/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="420">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/trips/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="0" selection-start="2341" selection-end="2341" vertical-scroll-proportion="0.70780396" vertical-offset="855" max-vertical-offset="1920">
               <folding />
             </state>
           </provider>
@@ -75,7 +93,6 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/config/deploy/shelly/before_migrate" />
-        <option value="$PROJECT_DIR$/app/views/trips/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/default/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/default/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/common.js" />
@@ -85,6 +102,7 @@
         <option value="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_footer.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/trips/show.html.erb" />
       </list>
     </option>
   </component>
@@ -982,13 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/trips/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/default/_popular_destination.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="805" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
@@ -1007,16 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="4" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/trips/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="25" selection-start="2305" selection-end="2305" vertical-scroll-proportion="-7.625" vertical-offset="1122" max-vertical-offset="1845">
-          <folding>
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1150,7 +1151,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1924" selection-end="1924" vertical-scroll-proportion="1.1710037" vertical-offset="0" max-vertical-offset="735">
+        <state line="42" column="0" selection-start="1924" selection-end="1924" vertical-scroll-proportion="-26.25" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/trips/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/trips/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="0" selection-start="2341" selection-end="2341" vertical-scroll-proportion="0.70780396" vertical-offset="855" max-vertical-offset="1920">
           <folding />
         </state>
       </provider>
