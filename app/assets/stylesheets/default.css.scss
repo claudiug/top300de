@@ -1023,6 +1023,21 @@ label.styled {
   margin-top: -40px;
   padding: 50px 0 40px;
 
+  #how & {
+    background: none;
+    text-align: center;
+
+    li {
+      .tut-top {
+        font-size: 16px;
+        font-family: $regular;
+      }
+      .tut-text {
+        padding: 20px 10px 0;
+      }
+    }
+  }
+
   .submit-go {
     &.rsmaller {
       &.faded {
@@ -1059,7 +1074,6 @@ label.styled {
     }
     .tut-text {
       margin-top: -4px;
-      padding-top: 15px;
       padding: 20px 50px 0;
     }
     img {

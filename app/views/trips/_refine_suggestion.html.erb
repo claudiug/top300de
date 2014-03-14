@@ -1,11 +1,10 @@
 <section class="filter-col fly-left">
   <%= form_tag trips_path, method: :get do %>
-  <div class="head">Refine search</div>
+  <div class="head"><%= t "default.search_results.refine_search" %></div>
   <div class="box leftcol-break">
-    <div class="title">Leaving from:</div>
+    <div class="title"><%= t "default.search_results.leaving_from" %></div>
 
     <div class="box-content location-from">
-      <!-- <input type="text" class="input size2 map" id="wat-from-location" value= <%= params[:location] %> /> -->
       <%= text_field_tag("location", params[:location], :autocomplete => :off, value:params[:location], class:"input size2 map", placeholder:"your city name here") %>
 
     </div> <!-- .box-content -->
@@ -14,12 +13,11 @@
     <div class="wat-modal no-location-modal" id="wat-no-location">
 
       <div class="title">
-        Tip!
+        <%= t "default.search_results.location_pop_title" %>
         <div class="icons fui-cross close"></div>
       </div>
 
-      <p>Type in your departure location (ex: Berlin) and you will get travel distances and duration.
-      </p>
+      <p><%= t "default.search_results.location_pop_content" %></p>
 
     </div> <!-- .wat-modal no-location-modal -->
 
@@ -28,24 +26,24 @@
       <div class="trip-with trip-type options">
         <label class="styled styled-on" id="by_car">
           <input id="by_car" name="by_car" type="checkbox" checked="checked" disabled>
-          <i></i><span>By car</span>
+          <i></i><span><%= t "default.search_results.by_car" %></span>
         </label>
 
         <label class="styled disabled" id="by_bike">
           <input id="by_bike" name="by_bike" type="checkbox" disabled="disabled">
-          <i></i><span>By bicycle</span>
+          <i></i><span><%= t "default.search_results.by_bike" %></span>
         </label>
 
         <label class="styled disabled" id="by_train">
           <input id="by_train" name="by_train" disabled="disabled" type="checkbox">
-          <i></i><span>By train</span>
+          <i></i><span><%= t "default.search_results.by_train" %></span>
         </label>
 
 
       </div>
     </div> <!-- .box-content -->
 
-    <div class="title">Distance from home:</div>
+    <div class="title"><i></i><span><%= t "default.search_results.distance_from_home" %></span></div>
 
     <div class="box-content">
       <div class="trip-with trip-type options">
@@ -81,61 +79,61 @@
 
       </div>
 
-      <input class="submit-go rsmaller faded" name="filter" type="submit" value="Filter">
+      <input class="submit-go rsmaller faded" name="filter" type="submit" value="<%= t "default.search_results.filter" %>">
 
     </div> <!-- .box-content -->
   </div> <!-- .box -->
 
 
   <div class="box">
-    <div class="title">Refine destination</div>
+    <div class="title"><%= t "default.search_results.select_activities" %></div>
     <div class="box-content trip-refine">
       <div class="trip-type options">
         <% a = params[:category] ? params[:category].keys : "" %>
         <% hike_check = (a.include?'hiking') ? true : false %>
        <label class= "styled" id="go_hike">
           <%= check_box_tag("category[hiking]", (params[:category] ? params[:category]["hiking"] : params[:category]), hike_check, id:"go_hike") %>
-          <i></i><span>Hiking</span>
+          <i></i><span><%= t "default.general.hiking" %></span>
         </label>
 
         <label class="styled" id="go_mountain">
           <% mountain_check = (a.include?'mountains') ? true : false %>
           <%= check_box_tag("category[mountains]", (params[:category] ? params[:category]["mountains"] : params[:category]), mountain_check, id:"go_mountain") %>
-          <i></i><span>Mountains</span>
+          <i></i><span><%= t "default.general.mountains" %></span>
         </label>
 
         <label class="styled" id="go_lake">
           <% lake_check = (a.include?'waters') ? true : false %>
           <%= check_box_tag("category[waters]", (params[:category] ? params[:category]["waters"] : params[:category]), lake_check, id:"go_lake") %>
 
-          <i></i><span>Lakes, sea, waterfalls</span>
+          <i></i><span><%= t "default.general.waters" %></span>
         </label>
 
         <label class="styled" id="go_castle">
           <% castle_check = (a.include?'castles') ? true : false %>
           <%= check_box_tag("category[castles]", (params[:category] ? params[:category]["castles"] : params[:category]), castle_check, id:"go_castle") %>
 
-          <i></i><span>Castles</span>
+          <i></i><span><%= t "default.general.castles" %></span>
         </label>
 
         <label class="styled" id="go_events">
           <% event_check = (a.include?'events') ? true : false %>
           <%= check_box_tag("category[events]", (params[:category] ? params[:category]["events"] : params[:category]), event_check, id:"go_events") %>
 
-          <i></i><span>Festivals and Events</span>
+          <i></i><span><%= t "default.general.events" %></span>
         </label>
 
         <label class="styled" id="go_city">
           <% city_check = (a.include?'cities') ? true : false %>
           <%= check_box_tag("category[cities]", (params[:category] ? params[:category]["cities"] : params[:category]), city_check, id:"go_city") %>
-          <i></i><span>Cities</span>
+          <i></i><span><%= t "default.general.cities" %></span>
         </label>
       </div>
-      <input class="submit-go rsmaller faded" name="filter" type="submit" value="Filter">
+      <input class="submit-go rsmaller faded" name="filter" type="submit" value="<%= t "default.search_results.filter" %>">
     </div>
   </div> <!-- .box -->
   
-  <%= render 'suggestions' %>
+  <% # = render 'suggestions' %>
   <% end %>
 </section>
 
