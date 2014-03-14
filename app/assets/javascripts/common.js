@@ -139,12 +139,12 @@ $(document).ready(function() {
 
     });
 
-    /* Animate modals */
+    /* Animate modals
     $('#show-feedback').click(function() {
         showModals(this, $('#wat-feedback'), true);
         return false;
     });
-
+     */
     $('#show-menu').click(function() {
         showModals(this, $('#wat-menu'), false);
         if($(this).hasClass('fui-cross')) {

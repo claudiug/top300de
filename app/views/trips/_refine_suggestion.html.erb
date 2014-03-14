@@ -2,9 +2,9 @@
   <%= form_tag trips_path, method: :get do %>
   <div class="head">Refine search</div>
   <div class="box leftcol-break">
-    <div class="title">From</div>
+    <div class="title">Leaving from:</div>
 
-    <div class="box-content">
+    <div class="box-content location-from">
       <!-- <input type="text" class="input size2 map" id="wat-from-location" value= <%= params[:location] %> /> -->
       <%= text_field_tag("location", params[:location], :autocomplete => :off, value:params[:location], class:"input size2 map", placeholder:"your city name here") %>
 
@@ -138,7 +138,7 @@
     </div>
   </div> <!-- .box -->
 
-  <%= render 'suggestions' %>
+  <% #= render 'suggestions' %>
 
   <% end %>
 </section>
