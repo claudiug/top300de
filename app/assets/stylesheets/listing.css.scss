@@ -67,13 +67,6 @@
   .trip-image {
     height: 325px;
     display: block;
-    /* @include background-image(linear-gradient(to bottom, #000, rgba(0,0,0,0)));
-    background-color: rgba(0,0,0,0);
-    background-image: -webkit-linear-gradient(top, #000, rgba(0,0,0,0));
-    background-image: -moz-linear-gradient(top, #000, rgba(0,0,0,0));
-    background-image: -o-linear-gradient(top, #000, rgba(0,0,0,0));
-    background-image: linear-gradient(to bottom, #000, rgba(0,0,0,0));
-     */
     position: relative;
     z-index: 90;
 
@@ -191,8 +184,8 @@
     }
 
     &.styled-on {
-      border-radius: 5px;
-        position: relative;
+      @include border-radius(5px);
+      position: relative;
       margin-left: -10px;
       margin-right: -10px;
       padding-left: 10px;
@@ -215,7 +208,7 @@
         width: 18px;
         height: 18px;
         left: -13px;
-        border-radius: 50%;
+        @include border-radius(50%);
         padding: 5px;
 
       }
@@ -308,12 +301,12 @@
   }
 
   .ui-widget-header {
-    border-radius: 0;
+    @include border-radius(0px);
     background: #fff;
   }
 
   .ui-slider-handle {
-    border-radius: 50%;
+    @include border-radius(50%);
     padding: 0;
     background: #7F8C8D;
     text-align: center;
@@ -330,7 +323,7 @@
       content: " ";
       width: 9px;
       height: 9px;
-      border-radius: 50%;
+      @include border-radius(50%);
       background: white;
       display: block;
       position: absolute;

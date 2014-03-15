@@ -6,26 +6,26 @@
                 <a href="/" title="Wantatrip">want<span>a</span>trip</a>
             </div>
 
-          <nav id="topLeftNav" class="point-left">
+            <nav id="topLeftNav" class="point-left">
             <a href="javascript:;" title="More" id="show-menu" class="wi wi-bars"></a>
 
             <div class="popup-menu wat-modal" id="wat-menu">
               <ul>
-                <li class="wi wi-info"><a href="/about" title="<%= t "default.home.about_link" %>"><%= t "default.home.about_link" %></a></li>
-                <li class="wi wi-star"><a href="#" title="<%= t "default.home.bookmark_link" %>"><%= t "default.home.bookmark_link" %></a></li>
+                <li class="wi wi-rocket"><a href="/about" title="<%= t "default.home.about_link" %>"><%= t "default.home.about_link" %></a></li>
+                <li class="wi wi-bookmark-o"><a href="#" title="<%= t "default.home.bookmark_link" %>"><%= t "default.home.bookmark_link" %></a></li>
                 <li class="wat-separator"><%= t "default.home.language_label" %></li>
-                <li class=""><%= link_to_unless_current "Deutsch", locale: "de" %></li>
-                <li class=""><%= link_to_unless_current "English", locale: "en" %></li>
+                <li class="flag deutsche-flag"><%= link_to_unless_current "Deutsch", locale: "de" %></li>
+                <li class="flag english-flag"><%= link_to_unless_current "English", locale: "en" %></li>
               </ul>
             </div>
 
-          </nav>
+            </nav>
 
-                <nav id="topRightNav">
+            <nav id="topRightNav">
 
-                    <a href="javascript:;" title="Feedback" class="wi wi-heart" id="show-feedback">&nbsp;&nbsp;<%= t "default.home.feedback" %></a>
+                <a href="javascript:;" title="Feedback" class="wi wi-heart" id="show-feedback">&nbsp;&nbsp;<%= t "default.home.feedback" %></a>
 
-                </nav>
+            </nav>
 
         </div>
 

@@ -206,14 +206,21 @@ en:
 
   default:
     home:
-      slogan: "Cool destinations, close by!"
-      subslogan: "Select what you'll like to do and click go"
+      slogan: "Visit amazing places in Germany!"
+      subslogan: "Select what you want to do and start planning your trip"
       feedback: "Feedback"
       about_link: "About"
       terms_link: "Terms of use"
       privacy_link: "Privacy policy"
       bookmark_link: "Bookmark"
       language_label: "Change language"
+    form:
+      go_hike: "Go hiking"
+      go_mountain: "Climb mountains"
+      go_lake: "Visit lakes or the sea"
+      go_castle: "Visit castles"
+      go_events: "Visit cultural places"
+      go_city: "Visit cities"
     general:
     # filter names
       hiking: "Hiking"

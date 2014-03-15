@@ -204,14 +204,21 @@ de:
 
   default:
     home:
-      slogan: "Das is ein sehr gut website"
-      subslogan: "Click hier und click go bitte"
+      slogan: "Besuchen Sie erstaunliche Orte in der Nähe"
+      subslogan: "Wählen Sie, was Sie tun möchten und planen Sie Ihre Reise"
       feedback: "Rückkopplung"
       about_link: "Wir über uns"
       terms_link: "Nutzungsbedingungen"
       privacy_link: "Datenschutz"
       bookmark_link: "Bookmark"
       language_label: "Sprache ändern"
+    form:
+      go_hike: "Gehen Sie wandern"
+      go_mountain: "Berge besteigen"
+      go_lake: "Besuchen Seen oder das Meer"
+      go_castle: "Besuchen Sie Burgen"
+      go_events: "Besuchen Sie kulturelle Orte"
+      go_city: "Besuchen Sie Städte"
     general:
     # filter names
       hiking: "Hiking"

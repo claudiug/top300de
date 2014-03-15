@@ -76,6 +76,11 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
     });
+    $("a[href='#remove']").click(function() {
+        $(".tutorialBlock").animate({ height: 0 }, "slow");
+
+        return false;
+    });
 
     /* changes the slide height on resize
     $(window).resize(function() {

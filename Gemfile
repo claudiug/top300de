@@ -19,7 +19,9 @@ gem 'rails_12factor'
 gem 'forecast_io'
 gem 'chosen-rails'
 gem 'httparty'
-gem 'compass-rails', github: 'Compass/compass-rails'
+group :assets do
+  gem 'compass-rails', github: 'Compass/compass-rails'
+end
 group :development, :test do
   gem "rspec-rails", "~> 2.14.0"
   gem "factory_girl_rails", "~> 4.2.1"

@@ -91,39 +91,39 @@
       <div class="trip-type options">
         <% a = params[:category] ? params[:category].keys : "" %>
         <% hike_check = (a.include?'hiking') ? true : false %>
-       <label class= "styled" id="go_hike">
+       <label class= "styled" id="go_hike" title="<%= t "default.form.go_hike" %>">
           <%= check_box_tag("category[hiking]", (params[:category] ? params[:category]["hiking"] : params[:category]), hike_check, id:"go_hike") %>
           <i></i><span><%= t "default.general.hiking" %></span>
         </label>
 
-        <label class="styled" id="go_mountain">
+        <label class="styled" id="go_mountain" title="<%= t "default.form.go_mountain" %>">
           <% mountain_check = (a.include?'mountains') ? true : false %>
           <%= check_box_tag("category[mountains]", (params[:category] ? params[:category]["mountains"] : params[:category]), mountain_check, id:"go_mountain") %>
           <i></i><span><%= t "default.general.mountains" %></span>
         </label>
 
-        <label class="styled" id="go_lake">
+        <label class="styled" id="go_lake" title="<%= t "default.form.go_lake" %>">
           <% lake_check = (a.include?'waters') ? true : false %>
           <%= check_box_tag("category[waters]", (params[:category] ? params[:category]["waters"] : params[:category]), lake_check, id:"go_lake") %>
 
           <i></i><span><%= t "default.general.waters" %></span>
         </label>
 
-        <label class="styled" id="go_castle">
+        <label class="styled" id="go_castle" title="<%= t "default.form.go_castle" %>">
           <% castle_check = (a.include?'castles') ? true : false %>
           <%= check_box_tag("category[castles]", (params[:category] ? params[:category]["castles"] : params[:category]), castle_check, id:"go_castle") %>
 
           <i></i><span><%= t "default.general.castles" %></span>
         </label>
 
-        <label class="styled" id="go_events">
+        <label class="styled" id="go_events" title="<%= t "default.form.go_events" %>">
           <% event_check = (a.include?'events') ? true : false %>
           <%= check_box_tag("category[events]", (params[:category] ? params[:category]["events"] : params[:category]), event_check, id:"go_events") %>
 
           <i></i><span><%= t "default.general.events" %></span>
         </label>
 
-        <label class="styled" id="go_city">
+        <label class="styled" id="go_city" title="<%= t "default.form.go_city" %>">
           <% city_check = (a.include?'cities') ? true : false %>
           <%= check_box_tag("category[cities]", (params[:category] ? params[:category]["cities"] : params[:category]), city_check, id:"go_city") %>
           <i></i><span><%= t "default.general.cities" %></span>
