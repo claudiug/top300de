@@ -1,6 +1,8 @@
 /* @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700,800); */
 
-/* Color pallete  */
+@import "fonts";
+
+/* Color pallete
 TURQUOISE { color: #1ABC9C }
 GREEN SEA { color: #16A085 }
 EMERALD { color: #2ECC71 }
@@ -21,6 +23,7 @@ CLOUDS { color: #ECF0F1 }
 SILVER { color: #BDC3C7 }
 CONCRETE { color: #95A5A6 }
 ASBESTOS { color: #7F8C8D }
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -106,11 +109,6 @@ $sightseeing: #cfc8c0;
   $sightseeing_rgba: rgba(207,200,192,1);
 
 /* Fonts */
-
-$regular: 'bariol_regularregular';
-$bold: 'bariol_boldbold';
-$thin: 'bariolthin';
-$light: 'bariol_lightlight';
 
 .trip-sprite {
   background-image: image-url("var/trip-types.png");

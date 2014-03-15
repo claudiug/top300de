@@ -295,7 +295,7 @@ body.wat-static {
      text-align: left;
      background: image-url("map-pin.png") 10px 44% no-repeat transparent;
      border-bottom-color: white;
-     font: 23px/1 "bariol_regularregular";
+     font: 23px/1 $regular;
      padding: 12px 10px 12px 35px;
      color: white;
      border: 1px solid white;
@@ -449,7 +449,6 @@ label.styled {
       text-align: left;
     }
     &.danke:after {
-      font-family: 'Flat-UI-Icons';
       color: white;
       font-size: 11px;
       content: "\e00a";
@@ -583,7 +582,6 @@ label.styled {
       }
 
       .icons:after {
-        content: "\e024";
         padding-left: 8px;
         font-size: 14px;
         position: relative;
