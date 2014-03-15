@@ -7,15 +7,15 @@
             </div>
 
           <nav id="topLeftNav" class="point-left">
-            <a href="javascript:;" title="More" id="show-menu" class="icons fui-list"></a>
+            <a href="javascript:;" title="More" id="show-menu" class="wi wi-bars"></a>
 
             <div class="popup-menu wat-modal" id="wat-menu">
               <ul>
-                <li><a href="/about" title="<%= t "default.home.about_link" %>"><%= t "default.home.about_link" %></a></li>
-                <li><a href="#" title="<%= t "default.home.bookmark_link" %>"><%= t "default.home.bookmark_link" %></a></li>
+                <li class="wi wi-info"><a href="/about" title="<%= t "default.home.about_link" %>"><%= t "default.home.about_link" %></a></li>
+                <li class="wi wi-star"><a href="#" title="<%= t "default.home.bookmark_link" %>"><%= t "default.home.bookmark_link" %></a></li>
                 <li class="wat-separator"><%= t "default.home.language_label" %></li>
-                <li><%= link_to_unless_current "Deutsch", locale: "de" %></li>
-                <li><%= link_to_unless_current "English", locale: "en" %></li>
+                <li class=""><%= link_to_unless_current "Deutsch", locale: "de" %></li>
+                <li class=""><%= link_to_unless_current "English", locale: "en" %></li>
               </ul>
             </div>
 

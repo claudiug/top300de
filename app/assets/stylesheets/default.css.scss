@@ -264,27 +264,17 @@ body.wat-static {
       -o-transition: background-color 0.2s ease-out;
       transition: background-color 0.2s ease-out;
       border-color: $hike;
+      position: relative;
 
-      &#go_hike {
-        background-color: $hike;
-      }
-      &#go_mountain {
-        background-color: $hike;
-      }
-      &#go_lake {
-        background-color: $hike;
-      }
-      &#go_events {
-        background-color: $hike;
-      }
-      &#go_castle {
-        background-color: $hike;
-      }
-      &#go_city {
-        background-color: $hike;
-      }
-      &#go_landscape {
-        background-color: $hike;
+      background-color: $hike;
+
+      &:after {
+        font-family: FontAwesome;
+        content: $fa-var-check;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        color: white;
       }
 
     }

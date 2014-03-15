@@ -2,28 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f1705e-f9e0-4d73-ae1d-520bc8d183fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/fontawesome-webfont.svg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.dev.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/fonts/Flat-UI-Icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/icon-font.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/date.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/date.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/file.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/file.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/form-test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/jquery.form-validator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/jquery.form-validator.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/location.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/location.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/qunit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/security.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/security.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/sweden.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/sweden.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/uk.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/form-validator/uk.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/admin/admin.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/admin/admin.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/common.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/fonts.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/fonts.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/top300de.iml" afterPath="$PROJECT_DIR$/.idea/top300de.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="top300de.iws" />
@@ -55,16 +59,16 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="2" selection-start="934" selection-end="934" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="780">
+            <state line="2" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="780">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constants.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="constants.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="14" selection-start="110" selection-end="110" vertical-scroll-proportion="290.625" vertical-offset="7005" max-vertical-offset="14820">
+            <state line="557" column="58" selection-start="11337" selection-end="11337" vertical-scroll-proportion="0.3669903" vertical-offset="8166" max-vertical-offset="14985">
               <folding />
             </state>
           </provider>
@@ -79,21 +83,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <file leaf-file-name="listing.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="121" selection-end="213" vertical-scroll-proportion="0.13586956" vertical-offset="0" max-vertical-offset="552">
-              <folding>
-                <marker date="1394889315000" expanded="true" signature="121:406" placeholder="development:" />
-              </folding>
+            <state line="192" column="6" selection-start="3321" selection-end="3321" vertical-scroll-proportion="-8.041667" vertical-offset="2687" max-vertical-offset="5265">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/admin/admin.css.scss">
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="165">
+            <state line="5" column="0" selection-start="120" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
@@ -102,25 +104,7 @@
       <file leaf-file-name="fonts.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/fonts.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="7" selection-start="2248" selection-end="2248" vertical-scroll-proportion="-10.625" vertical-offset="675" max-vertical-offset="13020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="660">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+            <state line="475" column="56" selection-start="14207" selection-end="14220" vertical-scroll-proportion="-8.041667" vertical-offset="6932" max-vertical-offset="13170">
               <folding />
             </state>
           </provider>
@@ -129,7 +113,25 @@
       <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="16" selection-start="951" selection-end="951" vertical-scroll-proportion="-5.625" vertical-offset="180" max-vertical-offset="840">
+            <state line="17" column="27" selection-start="886" selection-end="886" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="840">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="166" column="35" selection-start="4337" selection-end="4337" vertical-scroll-proportion="0.0" vertical-offset="2080" max-vertical-offset="3615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
               <folding />
             </state>
           </provider>
@@ -138,7 +140,7 @@
       <file leaf-file-name="default.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="583" column="7" selection-start="10198" selection-end="10198" vertical-scroll-proportion="-8.375" vertical-offset="8544" max-vertical-offset="16290">
+            <state line="269" column="0" selection-start="5088" selection-end="5088" vertical-scroll-proportion="-3.0416667" vertical-offset="3962" max-vertical-offset="16140">
               <folding />
             </state>
           </provider>
@@ -169,12 +171,10 @@
         <option value="$PROJECT_DIR$/app/controllers/trips_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/static.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/homepage.html.erb" />
         <option value="$PROJECT_DIR$/app/views/trips/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/default/_popular_destination.html.erb" />
         <option value="$PROJECT_DIR$/config/deploy/shelly/before_migrate" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/common.js" />
         <option value="$PROJECT_DIR$/app/views/default/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/views/default/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/default/_form.html.erb" />
@@ -189,17 +189,19 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/font-awesome.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/fonts/_variables.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/fonts/_path.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/fonts/_icons.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/admin/admin.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/fonts.css.scss" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/fonts.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/default.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/common.js" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss" />
       </list>
     </option>
   </component>
@@ -674,6 +676,28 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="top300de" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="top300de" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1020,14 +1044,11 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4425" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435" />
-      </provider>
-    </entry>
     <entry file="file:///Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_view/helpers/url_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="380" column="20" selection-start="18077" selection-end="18077" vertical-scroll-proportion="0.0" vertical-offset="5212" max-vertical-offset="9600" />
+        <state line="380" column="20" selection-start="18077" selection-end="18077" vertical-scroll-proportion="0.0" vertical-offset="5212" max-vertical-offset="9600">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs20/proc.rb">
@@ -1087,13 +1108,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/paintings_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="4" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="7" selection-start="3747" selection-end="3747" vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="3900">
           <folding />
         </state>
       </provider>
@@ -1227,13 +1241,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="27" selection-start="275" selection-end="275" vertical-scroll-proportion="185.79167" vertical-offset="4714" max-vertical-offset="5265">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/admin/admin.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575">
@@ -1241,23 +1248,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="583" column="7" selection-start="10198" selection-end="10198" vertical-scroll-proportion="-8.375" vertical-offset="8544" max-vertical-offset="16290">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="16" selection-start="951" selection-end="951" vertical-scroll-proportion="-5.625" vertical-offset="180" max-vertical-offset="840">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/fonts.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="7" selection-start="2248" selection-end="2248" vertical-scroll-proportion="-10.625" vertical-offset="675" max-vertical-offset="13020">
+        <state line="2" column="0" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="780">
           <folding />
         </state>
       </provider>
@@ -1269,23 +1262,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="120" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="660">
+        <state line="13" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="0.19130434" vertical-offset="85" max-vertical-offset="660">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="2" selection-start="934" selection-end="934" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="780">
+        <state line="17" column="27" selection-start="886" selection-end="886" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/fonts.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="110" selection-end="110" vertical-scroll-proportion="290.625" vertical-offset="7005" max-vertical-offset="14820">
+        <state line="475" column="56" selection-start="14207" selection-end="14220" vertical-scroll-proportion="-8.041667" vertical-offset="6932" max-vertical-offset="13170">
           <folding />
         </state>
       </provider>
@@ -1297,12 +1297,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/listing.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="121" selection-end="213" vertical-scroll-proportion="0.13586956" vertical-offset="0" max-vertical-offset="552">
-          <folding>
-            <marker date="1394889315000" expanded="true" signature="121:406" placeholder="development:" />
-          </folding>
+        <state line="192" column="6" selection-start="3321" selection-end="3321" vertical-scroll-proportion="-8.041667" vertical-offset="2687" max-vertical-offset="5265">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/default.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="269" column="0" selection-start="5088" selection-end="5088" vertical-scroll-proportion="-3.0416667" vertical-offset="3962" max-vertical-offset="16140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/gallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="35" selection-start="4337" selection-end="4337" vertical-scroll-proportion="0.0" vertical-offset="2080" max-vertical-offset="3615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/constants.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="557" column="58" selection-start="11337" selection-end="11337" vertical-scroll-proportion="0.3669903" vertical-offset="8166" max-vertical-offset="14985">
+          <folding />
         </state>
       </provider>
     </entry>

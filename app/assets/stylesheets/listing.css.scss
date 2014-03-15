@@ -203,12 +203,12 @@
       }
 
       &:before {
-        @extend .icons;
+        font-family: FontAwesome;
         /* background: rgba(0, 0, 0, 0.2); */
         background: #47D9BF /* #2ECC71 */;
         top: 9px;
         position: absolute;
-        content: "\e00a";
+        content: $fa-var-check;
         color: #fff;
         font-size: 8px;
         display: block;
@@ -221,7 +221,7 @@
       }
 
       &:hover:before {
-        content: "\e00b";
+        content: $fa-var-times;
       }
 
       &#go_hike {

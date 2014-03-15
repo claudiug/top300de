@@ -81,6 +81,16 @@ $fa-border-color:     #eee !default;
 $fa-inverse:          #fff !default;
 $fa-li-width:        (30em / 14) !default;
 
+.#{$fa-css-prefix} {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 $fa-var-glass: "\f000";
 $fa-var-music: "\f001";
 $fa-var-search: "\f002";
