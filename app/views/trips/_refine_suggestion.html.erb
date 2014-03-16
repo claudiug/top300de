@@ -110,9 +110,9 @@
           <i></i><span><%= t "default.general.castles" %></span>
         </label>
 
-        <label class="styled" id="go_events" title="<%= t "default.form.go_culture" %>">
-          <% event_check = (a.include?'events') ? true : false %>
-          <%= check_box_tag("category[events]", (params[:category] ? params[:category]["events"] : params[:category]), event_check, id:"go_events") %>
+        <label class="styled" id="go_culture" title="<%= t "default.form.go_culture" %>">
+          <% event_check = (a.include?'culture') ? true : false %>
+          <%= check_box_tag("category[culture]", (params[:category] ? params[:category]["culture"] : params[:category]), event_check, id:"go_culture") %>
 
           <i></i><span><%= t "default.general.culture" %></span>
         </label>
