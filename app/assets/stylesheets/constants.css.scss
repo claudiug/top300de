@@ -128,11 +128,7 @@ h1 {
 }
 
 body {
-  background: rgba(101, 150, 212, 0.05) !important;
-  background: transparent;
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#0C6596D4,endColorstr=#0C6596D4)";
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0C6596D4,endColorstr=#0C6596D4);
-  zoom: 1;
+  background: #f7fafc;
   -webkit-font-smoothing: antialiased;
   padding-top: 54px;
   font-family: $regular;
