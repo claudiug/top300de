@@ -142,7 +142,7 @@ body.wat-static {
   label.styled {
     border-radius: 5px;
     display: inline-block;
-    background-color: rgba(255,255,255, 0.2) !important;
+    background-color: rgba(255,255,255, 0.1) !important;
     background: transparent;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF)"; /* IE8 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);   /* IE6 & 7 */
@@ -151,11 +151,10 @@ body.wat-static {
     background-repeat: no-repeat;
     width: 110px;
     height: 110px;
-    opacity: .9;
     margin: 0 10px 35px;
     position: relative;
     overflow: visible;
-    border: 1px solid rgba(255,255,255, 0);
+    border: 2px solid rgba(255,255,255, 0);
     font-family: $light;
     @include single-transition(background-color, 0.2s, ease-in-out);
 
@@ -184,11 +183,13 @@ body.wat-static {
     }
 
     &#go_hike {
-      background-image: image-url("var/hike.svg");
+      background-image: image-url("var/hiking.png")\9;
+      background-image: image-url("var/hiking@2x.png");
       background-size: 60px;
     }
     &#go_mountain {
-      background-image: image-url("var/mountain.svg");
+      background-image: image-url("var/mountains.png")\9;
+      background-image: image-url("var/mountains@2x.png");
       background-size: 60px;
 
       i {
@@ -203,23 +204,23 @@ body.wat-static {
 
     }
     &#go_lake {
-      background-image: image-url("var/water.svg");
+      background-image: image-url("var/water.png")\9;
+      background-image: image-url("var/water@2x.png");
       background-size: 60px;
     }
     &#go_events {
-      background-image: image-url("var/party.svg");
+      background-image: image-url("var/culture.png")\9;
+      background-image: image-url("var/culture@2x.png");
       background-size: 60px;
     }
     &#go_castle {
-      background-image: image-url("var/castles.svg");
+      background-image: image-url("var/castles.png")\9;
+      background-image: image-url("var/castles@2x.png");
       background-size: 60px;
     }
     &#go_city {
-      background-image: image-url("var/city.svg");
-      background-size: 60px;
-    }
-    &#go_landscape {
-      background-image: image-url("var/landscape.svg");
+      background-image: image-url("var/cities.png")\9;
+      background-image: image-url("var/cities@2x.png");
       background-size: 60px;
     }
 
@@ -229,15 +230,16 @@ body.wat-static {
       border-color: $hike;
       position: relative;
 
-      background-color: $hike;
-
       &:after {
         font-family: FontAwesome;
         content: $fa-var-check;
+        background-color: $hike;
         position: absolute;
-        right: 8px;
-        top: 8px;
+        right: 5px;
+        top: 5px;
         color: white;
+        padding: 5px;
+        @include border-radius(50%);
       }
 
     }
@@ -246,7 +248,6 @@ body.wat-static {
    .tinput {
      width: 265px;
      text-align: left;
-     background: image-url("map-pin.png") 10px 44% no-repeat transparent;
      border-bottom-color: white;
      font: 23px/1 $regular;
      padding: 12px 10px 12px 35px;
@@ -476,18 +477,18 @@ label.styled {
 
       &.distance {
         span {
-          background-position: 0 -233px;
+          background-position: -45px 0;
 
         }
       }
       &.time {
         span {
-          background-position: 0 -393px;
+          background-position: -91px 0;
         }
       }
       &.weather {
         span {
-          background-position: 0 -608px;
+          background-position: -92px -114px;
         }
       }
     }
@@ -522,17 +523,17 @@ label.styled {
           }
 
           &.capital:before {
-            background-position: 0 -568px;
+            background-position: -95px -97px;
           }
           &.area:before {
-            background-position: 0 -436px;
+            background-position: -95px -48px;
             top: -2px;
           }
           &.population:before {
-            background-position: 0 -482px;
+            background-position: -95px -72px;
           }
           &.local-time:before {
-            background-position: 0 -522px;
+            background-position: -95px -24px;
           }
         }
       }

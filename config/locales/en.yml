@@ -219,7 +219,7 @@ en:
       go_mountain: "Climb mountains"
       go_lake: "Visit lakes or the sea"
       go_castle: "Visit castles"
-      go_events: "Visit cultural places"
+      go_culture: "Visit cultural places"
       go_city: "Visit cities"
     general:
     # filter names
@@ -227,7 +227,7 @@ en:
       mountains: "Mountains"
       waters: "Waters"
       castles: "Castles"
-      events: "Events"
+      culture: "Culture"
       cities: "Cities"
     tutorial:
     # tutorial

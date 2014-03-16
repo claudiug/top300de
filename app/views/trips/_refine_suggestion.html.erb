@@ -34,12 +34,6 @@
           <i></i><span><%= t "default.search_results.by_bike" %></span>
         </label>
 
-        <label class="styled disabled" id="by_train">
-          <input id="by_train" name="by_train" disabled="disabled" type="checkbox">
-          <i></i><span><%= t "default.search_results.by_train" %></span>
-        </label>
-
-
       </div>
     </div> <!-- .box-content -->
 
@@ -116,11 +110,11 @@
           <i></i><span><%= t "default.general.castles" %></span>
         </label>
 
-        <label class="styled" id="go_events" title="<%= t "default.form.go_events" %>">
+        <label class="styled" id="go_events" title="<%= t "default.form.go_culture" %>">
           <% event_check = (a.include?'events') ? true : false %>
           <%= check_box_tag("category[events]", (params[:category] ? params[:category]["events"] : params[:category]), event_check, id:"go_events") %>
 
-          <i></i><span><%= t "default.general.events" %></span>
+          <i></i><span><%= t "default.general.culture" %></span>
         </label>
 
         <label class="styled" id="go_city" title="<%= t "default.form.go_city" %>">

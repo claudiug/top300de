@@ -133,6 +133,7 @@
 
     > i {
       @extend .trip-sprite;
+      @include opacity(0.6);
     }
     i + span {
       vertical-align: middle;
@@ -141,36 +142,35 @@
       display: inline-block;
       color: #666;
       font-size: 14px;
-
     }
 
     &#go_hike i {
       background-position: 0 3px;
     }
     &#go_mountain i {
-      background-position: 0 -29px;
+      background-position: 0 -24px;
     }
     &#go_lake i {
-      background-position: 0 -59px;
+      background-position: 0 -46px;
     }
     &#go_events i {
-      background-position: 0 -156px;
+      background-position: 0 -91px;
     }
     &#go_castle i {
-      background-position: 0 -89px;
+      background-position: 0 -68px;
     }
     &#go_city i {
-      background-position: 0 -123px;
+      background-position: 0 -115px;
     }
     &#go_landscape i {
       background-position: 0 -193px;
     }
 
     &#by_car i {
-      background-position: 0 -233px;
+      background-position: -46px 2px;
     }
     &#by_bike i {
-      background-position: 0 -270px;
+      background-position: -46px -22px;
     }
     &#by_train i {
       background-position: 0 -307px;
@@ -180,7 +180,7 @@
     }
 
     &.disabled {
-      opacity: .4;
+      @include opacity(0.4);
     }
 
     &.styled-on {
@@ -216,68 +216,8 @@
       &:hover:before {
         content: $fa-var-times;
       }
-
-      &#go_hike {
-        /* background: $hike_rgba; */
-        &:before {
-          /* background: $hike; */
-        }
-        i { background-position: -25px 3px; }
-      }
-      &#go_mountain {
-        /* background: $mountain_rgba; */
-        &:before {
-          /* background: $mountain; */
-        }
-        i { background-position: -25px -29px; }
-      }
-      &#go_lake {
-        /* background: $lakes_rgba; */
-        &:before {
-          /* background: $lakes; */
-        }
-        i { background-position: -25px -59px; }
-      }
-      &#go_events {
-        /* background: $festivals_rgba; */
-        &:before {
-          /* background: $festivals; */
-        }
-        i { background-position: -25px -156px; }
-      }
-      &#go_castle {
-        /* background: $castles_rgba; */
-        &:before {
-          /* background: $castles; */
-        }
-        i { background-position: -25px -89px; }
-      }
-      &#go_city {
-        /* background: $cities_rgba; */
-        &:before {
-          /* background: $cities; */
-        }
-        i { background-position: -25px -123px; }
-      }
-      &#go_landscape {
-        /* background: $sightseeing_rgba; */
-        &:before {
-          /* background: $sightseeing; */
-        }
-        i { background-position: -25px -193px; }
-      }
-
-      &#by_car i {
-        background-position: -25px -233px;
-      }
-      &#by_bike i {
-        background-position: -25px -270px;
-      }
-      &#by_train i {
-        background-position: -25px -307px;
-      }
-      &#by_bus i {
-        background-position: -25px -347px;
+      i {
+        @include opacity(1);
       }
 
     }

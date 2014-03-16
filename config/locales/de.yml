@@ -217,7 +217,7 @@ de:
       go_mountain: "Berge besteigen"
       go_lake: "Besuchen Seen oder das Meer"
       go_castle: "Besuchen Sie Burgen"
-      go_events: "Besuchen Sie kulturelle Orte"
+      go_culture: "Besuchen Sie kulturelle Orte"
       go_city: "Besuchen Sie Städte"
     general:
     # filter names
@@ -225,7 +225,7 @@ de:
       mountains: "Gebirge"
       waters: "Fluten"
       castles: "Schloss"
-      events: "Geschehen"
+      culture: "Bildung"
       cities: "Städte"
     tutorial:
     # tutorial
