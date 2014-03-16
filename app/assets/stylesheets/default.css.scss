@@ -142,7 +142,7 @@ body.wat-static {
   label.styled {
     border-radius: 5px;
     display: inline-block;
-    background-color: rgba(255,255,255, 0.2);
+    background-color: rgba(255,255,255, 0.2) !important;
     background: transparent;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF)"; /* IE8 */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);   /* IE6 & 7 */
