@@ -1,5 +1,11 @@
 <%= form_for [:admin, @trip], html: {class: "form-horizontal"} do |f| %>
 
+<ul class="tab-switch" id="tab-switch" style="position: relative; text-align: left; padding-left: 60px;">
+  <li class="active" style="text-align: center"><a href="#en_add" title="English">English</a></li>
+  <li><a href="#de_add" title="Deutsch" style="text-align: center">Deutsch</a></li>
+</ul>
+<div class="english-add-form tab-content" style="background: white; padding: 30px 0" id="en_add">
+
     <%= render "admin/trips/error" %>
     <div class="form-group">
       <%= f.label :name, class: 'col-lg-1 control-label' %>
@@ -21,16 +27,28 @@
     </div>
     <div class="form-group">
       <%= f.label :description, class: 'col-lg-1 control-label' %>
-      <div class="col-lg-2">
-        <%= f.text_field :description, class: 'form-control' %>
+      <div class="col-lg-6">
+        <%= f.cktext_area :description, class: 'form-control' %>
       </div>
     </div>
-    <div class="form-group">
-      <%= f.label :is_active, class: 'col-lg-1 control-label' %>
-      <div class="col-lg-2">
-        <%= f.check_box :is_active, class: 'form-control' %>
-      </div>
+
+  <div class="page-header">
+    <h2>Extra fields</h2>
+  </div>
+
+
+
+  <div class="page-header">
+    <h2>Active & Popular</h2>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :is_active, class: 'col-lg-1 control-label' %>
+    <div class="col-lg-2">
+      <%= f.check_box :is_active, class: 'form-control' %>
     </div>
+  </div>
+
     <div class="form-group">
       <%= f.label :popular, class: 'col-lg-1 control-label' %>
       <div class="col-lg-2">
@@ -38,7 +56,9 @@
       </div>
     </div>
     <div>
-      <h3>Trip Type:</h3>
+      <div class="page-header">
+        <h2>Trip type</h2>
+      </div>
       <div class="form-group">
         <div class="col-lg-offset-1 col-lg-10">
           <% Category.all.each do |category| %>
@@ -55,28 +75,20 @@
       </div>
     </div>
 
+</div>
+
+    <div class="deutsche-add-form tab-content" style="background: white; padding: 30px 0" id="de_add">
+            Form add in Deutsch
+      </div>
+
+
+    <div class="page-header">
+      <h2>Images</h2>
+    </div>
 
     <%= f.fields_for :paintings do |i| %>
 
 
-        <div class="form-group">
-          <%= i.label :name, class: 'col-lg-1 control-label' %>
-          <div class="col-lg-2">
-            <%= i.text_field :name, class: 'form-control' %>
-          </div>
-        </div>
-        <div class="form-group">
-          <%= i.label :is_feature, class: 'col-lg-1 control-label'%>
-          <div class="col-lg-2">
-            <%= i.check_box :is_feature, class: 'form-control' %>
-          </div>
-        </div>
-        <div class="form-group">
-          <%= i.label :is_active, class: 'col-lg-1 control-label' %>
-          <div class="col-lg-2">
-            <%= i.check_box :is_active, class: 'form-control' %>
-          </div>
-        </div>
         <div class="form-group">
           <%= i.label :image, class: 'col-lg-1 control-label' %>
           <div class="col-lg-2">
@@ -86,9 +98,41 @@
 
         <% end %>
 
+
+
     <div class="form-group">
       <div class="col-lg-offset-1 col-lg-10">
         <%= f.submit("Add a new trip", class: 'btn btn-primary') %>
       </div>
     </div>
 <% end%>
+<style type="text/css">
+    .tab-switch li a {
+        background: transparent;
+        color: #333;
+    }
+    .tab-switch li a:hover {
+        color: #000;
+    }
+    .tab-switch li.active a {
+      background: white;
+      color: #333
+  }
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+
+
+    $(".tab-content").not(":first").hide();
+    $("#tab-switch li:first").addClass("active").show();
+
+    $("#tab-switch li").click(function() {
+    $("#tab-switch li.active").removeClass("active");
+    $(this).addClass("active");
+    $(".tab-content").hide();
+    $($('a',this).attr("href")).show();
+
+    return false;
+    });
+});
+</script>

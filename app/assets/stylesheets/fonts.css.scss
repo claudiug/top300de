@@ -66,8 +66,14 @@ $light: 'bariol_lightlight';
 }
 
 @font-face {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   src: font-url('fontawesome-webfont.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
   src: font-url('fontawesome-webfont.eot') format('embedded-opentype'),
   font-url('fontawesome-webfont.woff') format('woff'),
   font-url('fontawesome-webfont.ttf') format('truetype'),
@@ -75,6 +81,7 @@ $light: 'bariol_lightlight';
   font-weight: normal;
   font-style: normal;
 }
+
 
 $fa-css-prefix:       wi !default;
 $fa-border-color:     #eee !default;

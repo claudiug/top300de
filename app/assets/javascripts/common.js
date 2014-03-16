@@ -78,7 +78,6 @@ $(document).ready(function() {
     });
     $("a[href='#remove']").click(function() {
         $(".tutorialBlock").animate({ height: 0 }, "slow");
-
         return false;
     });
 
