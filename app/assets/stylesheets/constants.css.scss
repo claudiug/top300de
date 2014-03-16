@@ -131,7 +131,6 @@ h1 {
 body {
   background: #f7fafc;
   -webkit-font-smoothing: antialiased;
-  padding-top: 54px;
   font-family: $regular;
   line-height: 1.4;
   font-size: $textSize;
@@ -227,12 +226,10 @@ body:before {
 /* Header */
 header {
   background: #2c3e50; /* #47D9BF #F2D03B #00A1D9 #003056 */
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 985;
   height: 43px;
+  margin-bottom: 10px;
 
   * {
     display: inline;
@@ -274,7 +271,7 @@ header {
       float: left;
 
       .wat-modal {
-        left: 103px;
+        left: 117px;
         right: auto;
 
         &:after {
@@ -341,7 +338,7 @@ header {
   }
   &.flashy {
     @include border-radius(4px);
-    @include box-shadow(0 1px 3px rgba(224, 224, 224, 0.3));
+    @include box-shadow(0 1px 3px rgba(0,0,0, .5));
     padding: 8px 14px;
     color: #333;
     border: 1px solid #E0E0E0;
@@ -605,7 +602,7 @@ header {
 
       &.car-distance {
         i {
-          background-position: -68px -1px;
+          background-position: -68px -2px;
         }
       }
       &.time {

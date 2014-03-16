@@ -16,8 +16,8 @@
         <span class="time">
            <span></span><%= calculate_distance('CAR', session[:location], @trip.city).first unless session[:location].blank? %>
         </span>
-        <span class="weather">
-           <span></span>Now: <%= @weather[:currently][:summary] unless @weather.nil? %>
+        <span class="capital">
+           <span></span>Capital of Germany
         </span>
     </div>
   </div> <!-- .title -->
@@ -32,24 +32,26 @@
       <div class="box leftcol-break">
 
         <div class="box-content side_nav">
-          <a href="javascript:;" title="About" class="selected" rel="about"><span><%= t "default.product_page.menu_about" %></span></a>
-          <a href="javascript:;" title="Gallery" rel="activities"><span><%= t "default.product_page.menu_gallery" %></span></a>
-          <a href="javascript:;" title="Map" rel="directions"><span><%= t "default.product_page.menu_map" %></span></a>
+          <a href="javascript:;" title="About" class="selected wi wi-info-circle" rel="about"><span><%= t "default.product_page.menu_about" %></span></a>
+          <a href="javascript:;" title="Gallery" rel="gallery" class="wi wi-camera-retro"><span><%= t "default.product_page.menu_gallery" %></span></a>
+          <a href="javascript:;" title="Map" rel="directions" class="wi wi-map-marker"><span><%= t "default.product_page.menu_map" %></span></a>
         </div> <!-- .box-content -->
       </div> <!-- .box -->
 
+      <!--
+    <div class="about-city">
+      <span class="capital">Capital of Germany</span>
 
-      <div class="about-city">
-        <span class="capital">Capital of Germany</span>
-        <span class="area"> 891.8 km²</span>
-        <span class="population"> 3.502 million</span>
-        <span class="local-time"> Now: 8:35 PM</span>
+      <span class="area"> 891.8 km²</span>
+      <span class="population"> 3.502 million</span>
+
       </div>
-
+        -->
     </section>
 
     <section class="trip-block stand-by" id="trip-holder">
       <div class="scroller">
+
       <div class="trip-section" id="about">
         <h2><%= t "default.product_page.menu_about" %></h2>
             <div class="section-content">
@@ -58,9 +60,32 @@
               </p>
             </div>
 
-      </div>
+        <div class="trip-special">
+            <div class="trip-special-block special-coordinates wi wi-location-arrow">
+                  <h3>Location</h3>
+                  <span><%=@trip.city%>, <%=@trip.zip_code%></span>
+                  <span>Lat:</span>
+                  <span>Long:</span>
 
-        <div class="trip-section" id="photo-gallery">
+            </div>
+
+          <div class="trip-special-block special-opening wi wi-clock-o">
+            <h3>Opening hours</h3>
+            <span>Monday - Friday:</span>
+            <span>Sunday:</span>
+            <span>Saturday:</span>
+          </div>
+          <div class="trip-special-block special-weahter wi wi-cloud">
+            <h3>Weather now</h3>
+            <span><%= @weather[:currently][:summary] unless @weather.nil? %></span>
+          </div>
+
+        </div>
+
+
+      </div> <!-- #about -->
+
+        <div class="trip-section" id="gallery">
           <h2><%= t "default.product_page.menu_gallery" %></h2>
           <div class="section-content">
             <ul>
@@ -78,7 +103,7 @@
 
         <div class="trip-section" id="directions">
 
-          <!-- <h2>Map</h2> -->
+          <h2><%= t "default.product_page.menu_map" %></h2>
           <div id="map-canvas"></div>
 
         </div>

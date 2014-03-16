@@ -344,10 +344,18 @@ label.styled {
 #Footer {
   clear: both;
   /* background: #eef1f3; */
-  background: #fff;
+  background: #2c3e50;
   padding: 40px 20px;
   overflow: hidden;
   font-size: 14px;
+  color: white;
+  a {
+    color: white;
+    &:hover {
+      text-decoration: none;
+      color: #2980b9;
+    }
+  }
 
   h3 {
     font-family: $bold;
@@ -486,9 +494,9 @@ label.styled {
           background-position: -91px 0;
         }
       }
-      &.weather {
+      &.capital {
         span {
-          background-position: -92px -114px;
+          background-position: -92px -92px;
         }
       }
     }
@@ -546,7 +554,7 @@ label.styled {
       a {
         margin: 0 -15px;
         display: block;
-        font-size: 14px;
+        font-size: 15px;
         padding: 10px 15px;
         position: relative;
         font-family: $regular;
@@ -554,20 +562,21 @@ label.styled {
         &:hover {
           text-decoration: none;
         }
-        &:after {
-          position: absolute;
-          content: " ";
-          right: 15px;
+        &:before {
+          width: 23px;
+          display: inline-block;
+          text-align: center;
+          margin-right: 5px;
         }
         &.selected {
           background: #fff;
-          color: #333;
+          color: #428bca;
           border-radius: 0;
           font-family: $bold;
+          &:before {
 
-          &:after {
-            content: ">";
           }
+
         }
 
       }
@@ -615,9 +624,47 @@ label.styled {
         font-family: $light;
         font-size: 32px;
       }
+      h3 {
+        font-family: $light;
+        font-size: 18px;
+        padding-bottom: 10px;
+      }
       &#directions {
         position: relative;
       }
+
+      .trip-special {
+        display: table;
+        width: 100%;
+        padding-bottom: 15px;
+        .trip-special-block {
+          display: table-cell;
+          width: 33%;
+          position: relative;
+          padding-bottom: 0px;
+          &:before {
+            width: 40px;
+            color: #2c3e50;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            font-size: 22px;
+            @include opacity(0.3);
+          }
+          span {
+            display: block;
+            font-size: 14px;
+            padding-left: 45px;
+            padding-bottom: 8px;
+          }
+          h3 {
+            padding-left: 44px;
+          }
+        }
+
+      }
+
     }
 
   }

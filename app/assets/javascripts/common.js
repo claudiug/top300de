@@ -96,7 +96,7 @@ $(document).ready(function() {
             $('.side_nav a').removeClass('selected');
             $(this).addClass('selected');
 
-            $('html,body').animate({scrollTop: $("#" + target).offset().top - 80},'slow');
+            $('html,body').animate({scrollTop: $("#" + target).offset().top - 10},'slow');
             return false;
         });
     });
