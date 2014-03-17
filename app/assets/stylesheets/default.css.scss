@@ -147,10 +147,10 @@ body.wat-static {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF)";
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);
     zoom: 1;
-    background-position: 50% 26%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     margin: 0 15px 35px;
     position: relative;
     overflow: visible;
@@ -175,7 +175,7 @@ body.wat-static {
         top: 0;
         position: relative;
         display: table-cell;
-        width: 110px;
+        width: 90px;
         height: 28px;
         vertical-align: middle;
       }
@@ -233,6 +233,7 @@ body.wat-static {
       zoom: 1;
       border-color: $hike;
       position: relative;
+      background-position: 50% 50%;
 
       &:after {
         font-family: FontAwesome;
