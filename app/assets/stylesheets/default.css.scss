@@ -94,7 +94,7 @@ body.wat-static {
 #Search {
   position: relative;
   text-align: center;
-  top: 30px;
+  top: 0;
   padding: 50px 0;
   width: 100%;
 
@@ -107,7 +107,7 @@ body.wat-static {
   }
 
   .searchBlock {
-    padding: 10px 40px;
+    padding: 10px 40px 20px;
 
     .sbTitle {
       font-size: 12px;
@@ -140,18 +140,18 @@ body.wat-static {
   }
 
   label.styled {
-    border-radius: 5px;
+    @include border-radius(50%);
     display: inline-block;
-    background-color: rgba(255,255,255, 0.1) !important;
+    background-color: rgba(255,255,255, 0.15) !important;
     background: transparent;
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF)"; /* IE8 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);   /* IE6 & 7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF)";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);
     zoom: 1;
     background-position: 50% 26%;
     background-repeat: no-repeat;
-    width: 110px;
-    height: 110px;
-    margin: 0 10px 35px;
+    width: 80px;
+    height: 80px;
+    margin: 0 15px 35px;
     position: relative;
     overflow: visible;
     border: 2px solid rgba(255,255,255, 0);
@@ -161,12 +161,12 @@ body.wat-static {
     span {
       line-height: 1.3;
       text-align: center;
-      width: 110px;
+      width: 90px;
       color: white;
       display: block;
       font-size: 18px;
       position: absolute;
-      top: 75px;
+      top: 90px;
       height: 28px;
       text-indent: -3px;
 
@@ -197,8 +197,8 @@ body.wat-static {
         width: 8px;
         height: 21px;
         background: image-url("point-right.png");
-        left: -15px;
-        top: 46px;
+        left: -22px;
+        top: 29px;
         display: none;
       }
 
@@ -235,13 +235,16 @@ body.wat-static {
         content: $fa-var-check;
         background-color: $hike;
         position: absolute;
-        right: 5px;
-        top: 5px;
+        right: 0;
+        top: 0;
         color: white;
         padding: 5px;
         @include border-radius(50%);
       }
 
+      span {
+        font-family: $bold;
+      }
     }
   }
 
