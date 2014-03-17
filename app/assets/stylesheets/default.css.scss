@@ -148,9 +148,9 @@ body.wat-static {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);
     zoom: 1;
     background-position: 50% 50%;
-    background-repeat: no-repeat;
-    width: 90px;
-    height: 90px;
+    background-repeat: no-repeat !important;
+    width: 100px;
+    height: 100px;
     margin: 0 15px 35px;
     position: relative;
     overflow: visible;
@@ -161,12 +161,12 @@ body.wat-static {
     span {
       line-height: 1.3;
       text-align: center;
-      width: 90px;
+      width: 100px;
       color: white;
       display: block;
       font-size: 18px;
       position: absolute;
-      top: 90px;
+      top: 10px;
       height: 28px;
       text-indent: -3px;
 
@@ -175,7 +175,7 @@ body.wat-static {
         top: 0;
         position: relative;
         display: table-cell;
-        width: 90px;
+        width: 100px;
         height: 28px;
         vertical-align: middle;
       }
@@ -197,8 +197,8 @@ body.wat-static {
         width: 8px;
         height: 21px;
         background: image-url("point-right.png");
-        left: -17px;
-        top: 34px;
+        left: -22px;
+        top: 40px;
         display: none;
       }
 
