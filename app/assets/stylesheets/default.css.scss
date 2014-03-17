@@ -226,7 +226,11 @@ body.wat-static {
 
     &.styled-on {
       opacity: 1;
-
+      background-color: rgba(26, 188, 156, .2) !important;
+      background: transparent;
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#331ABC9C,endColorstr=#331ABC9C)"; /* IE8 */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#331ABC9C,endColorstr=#331ABC9C);   /* IE6 & 7 */
+      zoom: 1;
       border-color: $hike;
       position: relative;
 
