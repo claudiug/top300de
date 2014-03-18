@@ -206,3 +206,9 @@ de:
     home:
       slogan: "Das is ein sehr gut website"
       subslogan: "Click hier und click go bitte"
+      hiking_label: "Wandern"
+      mountain_label: "Gebirge"
+      water_label: "Fluten"
+      castle_label: "Burgen und Schlösser"
+      event_label: "Geschehen"
+      city_label: "Städte"

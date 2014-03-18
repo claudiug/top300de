@@ -208,3 +208,9 @@ en:
     home:
       slogan: "Cool destinations, close by!"
       subslogan: "Select what you'll like to do and click go"
+      hiking_label: "Hiking"
+      mountain_label: "Mountain"
+      water_label: "Waters"
+      castle_label: "Castles"
+      event_label: "Events"
+      city_label: "Cities"

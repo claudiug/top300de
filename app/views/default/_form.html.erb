@@ -8,7 +8,7 @@
           <div class="searchBlock options">
             <label class="styled" id="go_hike">
               <%= check_box_tag("category[hiking]", (params[:category]), false, id:"go_hike") %>
-              <span><span>Hikingss</span></span>
+              <span><span> <%= t "default.home.hiking_label" %> </span></span>
             </label>
 
             <label class="styled" id="go_mountain">
@@ -16,34 +16,34 @@
               <!--<input type="checkbox" name="hike">-->
               <%= check_box_tag("category[mountains]", (params[:category]), false, id:"go_mountain") %>
 
-              <span><span>Mountains</span></span>
+              <span><span> <%= t "default.home.moutain_label" %> </span></span>
             </label>
 
             <label class="styled" id="go_lake">
               <!--<input type="checkbox" name="beach">-->
               <%= check_box_tag("category[waters]", (params[:category]), false, id:"go_lake") %>
 
-              <span><span>Waters</span></span>
+              <span><span><%= t "default.home.water_label" %></span></span>
             </label>
 
             <label class="styled" id="go_castle">
               <!--<input type="checkbox" name="castles">-->
               <%= check_box_tag("category[castles]",(params[:category]), false, id:"go_castle") %>
 
-              <span><span>Castles</span></span>
+              <span><span><%= t "default.home.castle_label" %></span></span>
             </label>
 
             <label class="styled" id="go_events">
               <!--<input type="checkbox" name="lake">-->
               <%= check_box_tag("category[events]", (params[:category]), false, id:"go_events") %>
 
-              <span><span>Events</span></span>
+              <span><span><%= t "default.home.event_label" %></span></span>
             </label>
 
             <label class="styled" id="go_city">
               <!--<input type="checkbox" name="fun">-->
               <%= check_box_tag("category[cities]", (params[:category]), false, id:"go_city") %>
-              <span><span>Cities</span></span>
+              <span><span><%= t "default.home.city_label" %></span></span>
             </label>
 
           </div> <!-- .searchBlock -->
