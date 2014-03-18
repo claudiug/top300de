@@ -1,27 +1,29 @@
+<% body_class "on-trip" %>
 <div class="trip-page">
 
-<div id="galleries">
+<div id="galleries" style="background-image: url(<%= @trip.paintings.first.image.url() %> ); background-size: cover; background-position: 50% 50%; background-position: fixed;">
 
   <div class="title">
     <div class="wrapBlock">
 
+      <!--
       <div class="avatar">
         <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
         <div class="more-images">+ 10</div>
       </div>
-
+        -->
       <h1><%=@trip.name %></h1>
         <span class="distance">
-          <span></span><%= calculate_distance('CAR', session[:location], @trip.city).last unless session[:location].blank? %></span>
-        <span class="time">
-           <span></span><%= calculate_distance('CAR', session[:location], @trip.city).first unless session[:location].blank? %>
+          <span></span><%= calculate_distance('CAR', session[:location], @trip.city).first unless session[:location].blank? %></span>
+        <span class="km">
+           <span></span><%= calculate_distance('CAR', session[:location], @trip.city).last unless session[:location].blank? %>
         </span>
         <span class="capital">
            <span></span>Capital of Germany
         </span>
     </div>
   </div> <!-- .title -->
-
+  <div class="adpic-cover"></div>
 </div>
 
   <div class="trip-wrap">
@@ -32,9 +34,9 @@
       <div class="box leftcol-break">
 
         <div class="box-content side_nav">
-          <a href="javascript:;" title="About" class="selected wi wi-info-circle" rel="about"><span><%= t "default.product_page.menu_about" %></span></a>
-          <a href="javascript:;" title="Gallery" rel="gallery" class="wi wi-camera-retro"><span><%= t "default.product_page.menu_gallery" %></span></a>
-          <a href="javascript:;" title="Map" rel="directions" class="wi wi-map-marker"><span><%= t "default.product_page.menu_map" %></span></a>
+          <a href="javascript:;" title="About" class="selected" rel="about"><span><%= t "default.product_page.menu_about" %></span></a>
+          <a href="javascript:;" title="Gallery" rel="gallery"><span><%= t "default.product_page.menu_gallery" %></span></a>
+          <a href="javascript:;" title="Map" rel="directions"><span><%= t "default.product_page.menu_map" %></span></a>
         </div> <!-- .box-content -->
       </div> <!-- .box -->
 
@@ -56,7 +58,7 @@
         <h2><%= t "default.product_page.menu_about" %></h2>
             <div class="section-content">
               <p>
-                <%=@trip.description%>
+                <%=@trip.description.html_safe%>
               </p>
             </div>
 
@@ -64,8 +66,8 @@
             <div class="trip-special-block special-coordinates wi wi-location-arrow">
                   <h3>Location</h3>
                   <span><%=@trip.city%>, <%=@trip.zip_code%></span>
-                  <span>Lat:</span>
-                  <span>Long:</span>
+                  <span>Lat: <%=@trip.latitude%></span>
+                  <span>Long: <%=@trip.longitude%></span>
 
             </div>
 

@@ -152,6 +152,8 @@ p {
   width: $wideBlock;
   display: block;
   position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 /* Fix it */
 html, body {
@@ -230,6 +232,21 @@ header {
   z-index: 985;
   height: 43px;
   margin-bottom: 10px;
+
+  .on-trip & {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent !important;
+
+
+    .wrapBlock {
+      padding: 5px 0;
+      /*
+      width: 100%;
+      */
+    }
+  }
 
   * {
     display: inline;
@@ -605,9 +622,9 @@ header {
           background-position: -68px -2px;
         }
       }
-      &.time {
+      &.km {
         i {
-          background-position: -116px -1px;
+          background-position: -116px -48px;
         }
       }
     }
