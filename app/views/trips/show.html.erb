@@ -5,12 +5,10 @@
   <div class="title">
     <div class="wrapBlock">
 
-
       <div class="avatar">
         <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
         <div class="more-images">+ 10</div>
       </div>
-
 
       <h1><%=@trip.name %></h1>
         <span class="distance">
@@ -24,23 +22,9 @@
     </div>
   </div> <!-- .title -->
 
-  <!--
-  <ul>
-  <% @trip.paintings.each do |paint| %>
-
-        <li>
-          <%= image_tag paint.image.url %>
-        </li>
-
-  <% end %>
-  </ul>
-  -->
 </div>
 
-
   <div class="trip-wrap">
-
-
 
   <div class="trip-data wrapBlock">
 
@@ -48,9 +32,9 @@
       <div class="box leftcol-break">
 
         <div class="box-content side_nav">
-          <a href="javascript:;" title="About" class="selected" rel="about"><span>About</span></a>
-          <a href="javascript:;" title="Gallery" rel="activities"><span>Gallery</span></a>
-          <a href="javascript:;" title="Map" rel="directions"><span>Map</span></a>
+          <a href="javascript:;" title="About" class="selected" rel="about"><span><%= t "default.product_page.menu_about" %></span></a>
+          <a href="javascript:;" title="Gallery" rel="activities"><span><%= t "default.product_page.menu_gallery" %></span></a>
+          <a href="javascript:;" title="Map" rel="directions"><span><%= t "default.product_page.menu_map" %></span></a>
         </div> <!-- .box-content -->
       </div> <!-- .box -->
 
@@ -67,15 +51,37 @@
     <section class="trip-block stand-by" id="trip-holder">
       <div class="scroller">
       <div class="trip-section" id="about">
-        <h2>About</h2>
+        <h2><%= t "default.product_page.menu_about" %></h2>
             <div class="section-content">
               <p>
                 <%=@trip.description%>
               </p>
             </div>
 
-
       </div>
+
+        <div class="trip-section" id="photo-gallery">
+          <h2><%= t "default.product_page.menu_gallery" %></h2>
+          <div class="section-content">
+            <ul>
+              <% @trip.paintings.each do |paint| %>
+
+                  <li>
+                    <%= image_tag paint.image.url %>
+                  </li>
+
+              <% end %>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="trip-section" id="directions">
+
+          <!-- <h2>Map</h2> -->
+          <div id="map-canvas"></div>
+
+        </div>
 
       </div> <!-- .scroller -->
     </section>
@@ -83,35 +89,37 @@
   </div> <!-- .trip-data -->
 
   </div> <!-- .wrapBlock -->
-  <div class="trip-section" id="directions">
 
-    <!-- <h2>Map</h2> -->
-    <div id="map-canvas"></div>
-
-  </div>
 </div> <!-- .trip-page -->
 
 <input id="start" value="Weingarten" style="display: none" />
 <input id="end" value="Berlin" style="display: none" />
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-
 <script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
 
-    var directionsDisplay;
-    var directionsService = new google.maps.DirectionsService();
-
-    function initialize() {
-        directionsDisplay = new google.maps.DirectionsRenderer();
+    function init() {
+        // Basic options for a simple Google Map
+        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
         var mapOptions = {
-            zoom: 7,
-            center: new google.maps.LatLng(41.850033, -87.6500523)
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-                mapOptions);
-        directionsDisplay.setMap(map);
-        directionsDisplay.setPanel(document.getElementById('directions-panel'));
+            // How zoomed in you want the map to start at (always required)
+            zoom: 11,
 
+            // The latitude and longitude to center the map (always required)
+            center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+            // How you would like to style the map.
+            // This is where you would paste any style found on Snazzy Maps.
+            styles: [{"stylers":[{"hue":"#baf4c4"},{"saturation":10}]},{"featureType":"water","stylers":[{"color":"#f6fafc"}]},{"featureType":"all","elementType":"labels","stylers":[{"visibility":"off"}]},{featureType:"administrative",elementType:"labels",stylers:[{visibility:"on"}]},{featureType:"road",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"transit",elementType:"all",stylers:[{visibility:"off"}]}]
+        };
+
+        // Get the HTML DOM element that will contain your map
+        // We are using a div with id="map" seen below in the <body>
+        var mapElement = document.getElementById('map-canvas');
+
+        // Create the Google Map using out element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
     }
 
-    google.maps.event.addDomListener(window, 'load', initialize);
 </script>

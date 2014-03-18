@@ -1,6 +1,9 @@
 /* @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700,800); */
 
-/* Color pallete  */
+@import "fonts";
+@import "compass";
+
+/* Color pallete
 TURQUOISE { color: #1ABC9C }
 GREEN SEA { color: #16A085 }
 EMERALD { color: #2ECC71 }
@@ -21,6 +24,7 @@ CLOUDS { color: #ECF0F1 }
 SILVER { color: #BDC3C7 }
 CONCRETE { color: #95A5A6 }
 ASBESTOS { color: #7F8C8D }
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -107,16 +111,12 @@ $sightseeing: #cfc8c0;
 
 /* Fonts */
 
-$regular: 'bariol_regularregular';
-$bold: 'bariol_boldbold';
-$thin: 'bariolthin';
-$light: 'bariol_lightlight';
-
 .trip-sprite {
-  background-image: image-url("var/trip-types.png");
+  background-image: image-url("var/trip-sprite.png");
+  background-size: 600%;
   background-repeat: no-repeat;
   width: 23px;
-  height: 20px;
+  height: 23px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -127,18 +127,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 h1 {
   font-size: $h1;
 }
-.icons {
-  font-family: 'Flat-UI-Icons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-}
 
 body {
-  background: rgba(101, 150, 212, 0.05);
+  background: #f7fafc;
   -webkit-font-smoothing: antialiased;
   padding-top: 54px;
   font-family: $regular;
@@ -235,7 +226,6 @@ body:before {
 }
 /* Header */
 header {
-  /* background: image-url("tr.png"); */
   background: #2c3e50; /* #47D9BF #F2D03B #00A1D9 #003056 */
   position: fixed;
   top: 0;
@@ -250,19 +240,27 @@ header {
 
   .Logo {
     font-size: 24px;
-    /* background: rgba(255, 255, 255, .1); */
     float: left;
     margin-top: 0;
 
     a {
       display: block;
       font-family: $bold;
-      padding: 5px 11px 5px 0;
+      padding: 2px 0 5px;
       color: $linkOnBlackHover;
       text-decoration: none;
 
       span {
-        color: #2ECC71;
+        border-radius: 50%;
+        background: #1abc9c;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        display: inline-block;
+        margin: 0 3px;
+        color: #fff;
+        vertical-align: middle;
+        line-height: 1.1;
       }
 
     }
@@ -270,7 +268,7 @@ header {
 
   nav {
     float: right;
-    margin-top: 14px;
+    margin-top: 10px;
 
     &#topLeftNav {
       float: left;
@@ -281,7 +279,7 @@ header {
 
         &:after {
           right: auto;
-          left: 22px;
+          left: 8px;
         }
       }
 
@@ -316,7 +314,7 @@ header {
   font-family: $regular;
   font-size: $tileTitle;
   color: $titleGrey;
-  border-radius: 3px;
+  @include border-radius(3px);
 
   &:focus {
     border-color: #2ECC71;
@@ -329,9 +327,8 @@ header {
     width: 99%;
   }
   &.map {
-
-    background: image-url("map-pin.svg") 0 50% no-repeat transparent;
-    text-indent: 13px;
+    text-indent: 0;
+    padding: 0;
     color: #B6B6B6;
     border: 1px solid white;
     cursor: pointer;
@@ -343,8 +340,8 @@ header {
 
   }
   &.flashy {
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(224, 224, 224, 0.3);
+    @include border-radius(4px);
+    @include box-shadow(0 1px 3px rgba(224, 224, 224, 0.3));
     padding: 8px 14px;
     color: #333;
     border: 1px solid #E0E0E0;
@@ -354,9 +351,10 @@ header {
 .button {
   border: 0;
   padding: 4px 10px;
-  border-radius: 4px;
+  @include border-radius(4px);
   color: white;
   outline: none;
+  font-family: $bold;
 
   &.lg {
     background: #47d9bf;
@@ -369,44 +367,22 @@ header {
 
 .submit-go {
   outline: none;
-  border: 0;
   border-bottom: 1px solid #030300;
-  border-radius: 3px;
+  border: 0;
+  @include border-radius(3px);
   font-size: 20px;
   background: #1abc9c;
   padding: 13px 40px;
-  border: 0;
   margin: 30px 0 0;
   color: white;
   font-family: $bold;
   min-width: 280px;
   min-height: 50px;
-  -webkit-box-shadow: 0 5px #0EA284;
-  -moz-box-shadow: 0 5px #0EA284;
-  box-shadow: 0 5px #0EA284;
+  @include box-shadow(0 5px #0EA284);
 
-  /*
-  outline: none;
-  border-bottom: 1px solid #030300;
-  border-radius: 3px;
-  font-size: 20px;
-  background: rgba(255,255,255, .25);
-  padding: 13px 40px;
-  border: 2px solid white;
-  margin: 30px 0 0;
-  color: white;
-  font-family: "bariol_boldbold";
-  min-width: 280px;
-  min-height: 50px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: 0 5px #0EA284;
-  box-shadow: none;
-  */
   &:active {
     margin-top: 34px;
-    -webkit-box-shadow: 0 2px #115a93;
-    -moz-box-shadow: 0 2px #115a93;
-    box-shadow: 0 2px #115a93;
+    @include box-shadow(0 2px #0EA284);
   }
 
   &.loading {
@@ -420,11 +396,9 @@ header {
     font-size: 15px;
     min-height: 0;
     background: transparent;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     border: 1px solid #bbb;
     margin-top: 0;
+    @include box-shadow(none);
 
     &:hover {
     }
@@ -433,9 +407,7 @@ header {
       position: relative;
       top: 1px;
       border-color: #333;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none;
+      @include box-shadow(none);
     }
 
   }
@@ -463,9 +435,7 @@ header {
       color: rgb(83, 83, 83);
       background: #fff;
       border: 1px solid #ddd;
-      box-shadow: none;
-      -moz-box-shadow: none;
-      -webkit-box-shadow: none;
+      @include box-shadow(none);
 
       &:active {
         border: 1px solid #ccc;
@@ -487,8 +457,7 @@ header {
 }
 .trip-box {
   background-color: #fff;
-  box-shadow: 0 2px 3px rgba(90,90,90,.2);
-  /* @include box-shadow(0 2px 5px rgba(90,90,90,.2)); */
+  @include box-shadow(0 2px 3px rgba(90,90,90,.2));
   margin-bottom: 10px;
   border-radius: 3px;
   overflow: hidden;
@@ -498,15 +467,11 @@ header {
   width: 820px;
   margin: 0 auto;
   padding-left: 15px;
+  position: relative;
 
   .trip-tent {
     padding-right: 20px;
   }
-  /*
-  .trip-item {
-    width: 325px;
-  }
-  */
 }
 
 .trip-item {
@@ -514,27 +479,26 @@ header {
   background: #f8f8f8;
 
   * {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 10.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    @include single-transition(all, 0.3s, ease-in-out);
   }
 
   a {
     padding-bottom: 110px;
 
     .more {
-      background: rgba(23, 194, 119, 0.7);
-      background-image: image-url("observe.svg");
-      background-position: 50% 30px;
-      background-repeat: no-repeat;
+      background: rgba(23, 194, 119, 0.7) image-url("observe.svg") 50% 30% no-repeat !important;
+
+      background: transparent;
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B217C277,endColorstr=#B217C277)"; /* IE8 */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B217C277,endColorstr=#B217C277);   /* IE6 & 7 */
+      zoom: 1;
+
       padding-top: 60px;
       color: #fff;
       width: 100px;
       height: 100px;
       opacity: 0;
-      border-radius: 50% 50%;
+      @include border-radius(50%);
       display: block;
 
       font-size: 11px;
@@ -549,19 +513,12 @@ header {
     }
 
     .fader {
-      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjc5Ii8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc2JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-      background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.79) 60%, rgba(255,255,255,1) 76%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(60%,rgba(255,255,255,0.79)), color-stop(76%,rgba(255,255,255,1)));
-      background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.79) 60%,rgba(255,255,255,1) 76%);
-      background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.79) 60%,rgba(255,255,255,1) 76%);
-      background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.79) 60%,rgba(255,255,255,1) 76%);
-      background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.79) 60%,rgba(255,255,255,1) 76%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+      @include background-image(linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.79) 60%,rgba(255,255,255,1) 76%));
       height: 30px;
       position: absolute;
       z-index: 900;
       width: 100%;
-      bottom: 43px;
+      bottom: 46px;
       left: 0;
       opacity: 1;
     }
@@ -572,11 +529,7 @@ header {
     .desc {
       height: 36px;
       overflow: hidden;
-      -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;
-      -ms-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out;
+      @include single-transition(all, 0.2s, ease-in-out);
     }
     img {
       margin: 0 auto;
@@ -607,8 +560,6 @@ header {
 
   }
 
-
-
   img, a {
     display: block;
   }
@@ -628,14 +579,6 @@ header {
 
     font-family: $bold;
     font-size: $head;
-
-    /* @include background-image(linear-gradient(to top, #000, rgba(0,0,0,0)));
-    background-color: rgba(16,19,22,0);
-    background-image: -webkit-linear-gradient(bottom, #181818, rgba(0,0,0,0));
-    background-image: -moz-linear-gradient(bottom, #181818, rgba(0,0,0,0));
-    background-image: -o-linear-gradient(bottom, #181818, rgba(0,0,0,0));
-    background-image: linear-gradient(to top, #181818, rgba(0,0,0,0));
-    */
   }
 
   .meta {
@@ -656,23 +599,18 @@ header {
       padding-right: 25px;
 
       i {
-        background-image: image-url("var/trip-types.png");
-        background-repeat: no-repeat;
-        width: 23px;
-        height: 20px;
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0 auto 3px;
+        @extend .trip-sprite;
+        @include opacity(0.5);
       }
 
       &.car-distance {
         i {
-          background-position: -50px 1px;
+          background-position: -68px -1px;
         }
       }
       &.time {
         i {
-          background-position: -50px -20px;
+          background-position: -116px -1px;
         }
       }
     }
@@ -686,11 +624,11 @@ header {
 
 .leftcol-break {
   position: relative;
-  border-radius: 5px;
   margin: 0 -15px 15px;
   padding: 15px 15px 0;
   background: #fff;
-  box-shadow: 0 1px 2px rgba(90, 90, 90, 0.1);
+  @include border-radius(5px);
+  @include box-shadow(0 1px 2px rgba(90, 90, 90, 0.1));
 
   .box-content {
     padding-bottom: 15px;
@@ -714,53 +652,16 @@ header {
 
 /* Socials */
 .socials a {
-  margin: 0 5px 0 0;
+  margin: 0 5px;
   vertical-align: middle;
-  text-indent: -9999px;
-  background: url(/assets/socials.png);
+  text-indent: 0;
   display: inline-block;
-  width: 28px;
   height: 31px;
-
-  &.fb {
-
-    &:hover {
-      background-position: -28px 0;
-    }
-
+  font-size: 24px;
+  &:hover {
+    text-decoration: none;
   }
-  &.tw {
-    background-position: 0 -32px;
 
-    &:hover {
-      background-position: -28px -32px;
-    }
-
-  }
-  &.g {
-    background-position: 0 -64px;
-
-    &:hover {
-      background-position: -28px -64px;
-    }
-
-  }
-  &.pin {
-    background-position: 0 -95px;
-
-    &:hover {
-      background-position: -28px -95px;
-    }
-
-  }
-  &.rss {
-    background-position: 0 -127px;
-
-    &:hover {
-      background-position: -28px -127px;
-    }
-
-  }
 }
 .wat-modal {
   opacity: 0;
@@ -771,13 +672,9 @@ header {
   position: absolute;
   width: 290px;
   padding: 15px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
   background-color: #fff;
-  -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.14);
-  -moz-box-shadow: 0 5px 5px rgba(0,0,0,.14);
-  box-shadow: 0 5px 5px rgba(0,0,0,.14);
+  @include border-radius(3px);
+  @include box-shadow(0 5px 5px rgba(0,0,0,.14));
   font-size: 12px;
 
    &#wat-menu {
@@ -786,10 +683,21 @@ header {
 
      li {
        display: block;
-       padding: 5px 10px;
+       padding: 5px 20px;
+       position: relative;
+
+        &:before {
+          width: 15px;
+          position: absolute;
+          left: -5px;
+          top: 7px;
+          text-align: center;
+          color: #ccc;
+        }
 
        &.wat-separator {
-        padding: 12px 10px;
+         padding: 12px 0;
+         text-indent: -5px;
          color: #999;
        }
 
@@ -797,7 +705,7 @@ header {
          color: #333;
          font-size: 14px;
          display:  block;
-          padding: 0;
+         padding: 0;
          margin: 0
        }
 
@@ -826,15 +734,15 @@ header {
       margin: 0;
       opacity: 1;
       top: 89px;
-      background: #2ECC71;
+      background: #1abc9c;
       left: 0;
       width: 190px;
-      box-shadow: 0 1px 2px rgba(90, 90, 90, 0.1);
+      @include box-shadow(0 1px 2px rgba(90, 90, 90, 0.1));
       padding-bottom: 10px;
       color: white;
 
       &:after {
-        border-bottom-color: #2ECC71;
+        border-bottom-color: #1abc9c;
         right: auto;
         left: 50%;
         margin-left: -8px;
@@ -889,12 +797,6 @@ header {
   z-index: 9800000;
 }
 
-
-
-
-
-
-
 /* Debug console - to be removed */
 
 .debug-console {
@@ -910,11 +812,8 @@ header {
   top: 100px;
   left: -180px;
   z-index: 980800000;
-  border-radius: 0 5px 5px 0;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  @include border-radius(0 5px 5px 0);
+  @include single-transition(all, 0.2s, ease-in-out);
 
   pre {
     background: none;
@@ -938,13 +837,6 @@ header {
   opacity: .8;
   left: 0;
   top: 0;
-  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
 /* Pagination */
@@ -955,8 +847,8 @@ header {
 
   * {
     padding: 7px 15px;
-    box-shadow: 0 2px 3px rgba(90, 90, 90, 0.2);
-    border-radius: 2px;
+    @include box-shadow(0 2px 3px rgba(90, 90, 90, 0.2));
+    @include border-radius(2px);
     display: inline-block;
     margin-right: 5px;
     color: #999;
@@ -981,4 +873,24 @@ header {
   left: 20px;
 }
 
+/* Flags */
+.flag {
 
+  &:before {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -4px;
+    top: 7px;
+    text-align: center;
+    content: " ";
+  }
+}
+.deutsche-flag:before {
+    background-image: image-url("de_flag.svg");
+    background-size: 15px 15px;
+}
+.english-flag:before {
+    background-image: image-url("uk_flag.svg");
+    background-size: 15px 15px;
+}

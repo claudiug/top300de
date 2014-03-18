@@ -5,7 +5,7 @@
     <a href="<%=trip_path(trip)%>" title="<%=trip.name%>" class="trip-card">
       <span class="trip-image">
 
-        <span class="more">More</span>
+        <span class="more"><%= t "default.search_results.more" %></span>
         <%= image_tag(trip.paintings.first.image.url(:resized).to_s) unless trip.paintings.first.blank? %>
       </span>  <!-- .trip-mage -->
 

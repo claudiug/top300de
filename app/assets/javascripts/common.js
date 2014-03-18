@@ -30,13 +30,6 @@ $(document).ready(function() {
         return false;
     });
 
-    /* Animate description in card */
-
-
-    $.validate({
-        form : '#feedback-form',
-    });
-
     /* let's make the input elements nicer :) */
     setupLabel();
 
@@ -83,6 +76,10 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
     });
+    $("a[href='#remove']").click(function() {
+        $(".tutorialBlock").animate({ height: 0 }, "slow");
+        return false;
+    });
 
     /* changes the slide height on resize
     $(window).resize(function() {
@@ -108,20 +105,17 @@ $(document).ready(function() {
         containerSelector: ".trip-data"
     });
 
-    /* suggestion engine */
+    /* suggestion engine
     $('.addSugg span').click(function() {
        $(this).toggleClass('danke');
         return false;
     });
+
     $('#add-new-dest').click(function() {
-       $('#new-dest').fadeToggle(50).find('input').focus();
+        $('#new-dest').fadeToggle(50).find('input').focus();
     });
     $('#sd').click(function() {
         $('#new-dest').fadeOut(50);
-    });
-
-    $('input#location').keyup(function() {
-        $('#wat-no-location').fadeOut(80);
     });
 
     $('#get-suggestion').click(function() {
@@ -138,6 +132,11 @@ $(document).ready(function() {
         }
 
     });
+     */
+
+    $('input#location').keyup(function() {
+        $('#wat-no-location').fadeOut(80);
+    });
 
     /* Animate modals
     $('#show-feedback').click(function() {
@@ -147,12 +146,16 @@ $(document).ready(function() {
      */
     $('#show-menu').click(function() {
         showModals(this, $('#wat-menu'), false);
-        if($(this).hasClass('fui-cross')) {
-            $(this).removeClass('fui-cross');
-            $(this).addClass('fui-list');
+
+        var close_icon = "wi-times"
+        var list_icon  = "wi-bars"
+
+        if($(this).hasClass(close_icon)) {
+            $(this).removeClass(close_icon);
+            $(this).addClass(list_icon);
         } else {
-            $(this).removeClass('fui-list');
-            $(this).addClass('fui-cross');
+            $(this).removeClass(list_icon);
+            $(this).addClass(close_icon);
         }
         return false;
     });
@@ -161,6 +164,13 @@ $(document).ready(function() {
     $('div.close').click(function() {
         hideModals($(this).parent('div').parent('.wat-modal'));
     })
+
+
+    /* Change button value on submit */
+    $('.submit-go').click(function() {
+        $(this).val('Searching...');
+    })
+
 
 
     //I'm not doing anything else, so just leave
@@ -203,31 +213,6 @@ function setupLabel() {
         });
     };
 };
-
-$(function() {
-
-    $(".pnav").on("click", function() {
-
-        var $button = $(this);
-        var oldValue = $button.parent().find("input").val();
-
-        if ($button.text() == "+") {
-            var newVal = parseFloat(oldValue) + 1;
-        } else {
-            // Don't allow decrementing below zero
-            if (oldValue > 1) {
-                var newVal = parseFloat(oldValue) - 1;
-            } else {
-                newVal = 1;
-            }
-        }
-
-        $button.parent().find("input").val(newVal);
-        $button.parent().find(".number span").html(newVal);
-
-    });
-
-});
 
 function showModals(el, target, overlay) {
     /* Animate modals */
