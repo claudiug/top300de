@@ -77,6 +77,7 @@ $(document).ready(function() {
         return false;
     });
     $("a[href='#remove']").click(function() {
+        $.cookie('tour_over', 'Wantatrip tour cookie with milk', { expires: 365 });
         $(".tutorialBlock").animate({ height: 0 }, "slow");
         return false;
     });

@@ -16,6 +16,7 @@
 //= require jquery.ui.slider
 
 //= require twitter/bootstrap
+//= require jquery.cookie.js
 //= require common
 //= require ckeditor/init
 
