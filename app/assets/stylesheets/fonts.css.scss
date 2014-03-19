@@ -96,6 +96,9 @@ $fa-li-width:        (30em / 14) !default;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  &:before {
+    font-family: FontAwesome;
+  }
 }
 
 $fa-var-glass: "\f000";

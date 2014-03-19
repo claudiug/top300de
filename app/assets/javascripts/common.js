@@ -77,6 +77,7 @@ $(document).ready(function() {
         return false;
     });
     $("a[href='#remove']").click(function() {
+        $.cookie('tour_over', 'Wantatrip tour cookie with milk', { expires: 365 });
         $(".tutorialBlock").animate({ height: 0 }, "slow");
         return false;
     });
@@ -96,7 +97,7 @@ $(document).ready(function() {
             $('.side_nav a').removeClass('selected');
             $(this).addClass('selected');
 
-            $('html,body').animate({scrollTop: $("#" + target).offset().top - 80},'slow');
+            $('html,body').animate({scrollTop: $("#" + target).offset().top - 10},'slow');
             return false;
         });
     });

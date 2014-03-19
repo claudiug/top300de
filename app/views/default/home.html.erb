@@ -1,5 +1,5 @@
 <%= render "default/form" %>
-
+<% if cookies['tour_over'].nil? %>
 <section class="wideBlock hpFooterBlock tutorialBlock">
   <div class="wat-tutorial-holder">
     <div class="wat-title"><%= t "default.tutorial.tutorial_title" %></div>
@@ -40,7 +40,7 @@
     </p>
   </div> <!-- .wrapBlock -->
 </section>
-
+<% end %>
 
 
 <section class="wideBlock hpFooterBlock popular-destinations">
