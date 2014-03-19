@@ -24,12 +24,12 @@
       <span class="meta">
           <span class="distance car-distance">
             <i></i>
-            <%= calculate_distance('CAR', params[:location], trip.city).last unless params[:location].blank? %>
+            <%= calculate_distance('CAR', params[:location], trip.city).first unless params[:location].blank? %>
           </span>
 
-          <span class="distance time">
+          <span class="distance km">
             <i></i>
-            <%= calculate_distance('CAR', params[:location], trip.city).first unless params[:location].blank? %>
+            <%= calculate_distance('CAR', params[:location], trip.city).last unless params[:location].blank? %>
           </span>
 
       </span> <!-- .meta stand-by -->

@@ -131,7 +131,6 @@ h1 {
 body {
   background: #f7fafc;
   -webkit-font-smoothing: antialiased;
-  padding-top: 54px;
   font-family: $regular;
   line-height: 1.4;
   font-size: $textSize;
@@ -153,6 +152,8 @@ p {
   width: $wideBlock;
   display: block;
   position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 /* Fix it */
 html, body {
@@ -227,12 +228,25 @@ body:before {
 /* Header */
 header {
   background: #2c3e50; /* #47D9BF #F2D03B #00A1D9 #003056 */
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 985;
   height: 43px;
+  margin-bottom: 10px;
+
+  .on-trip & {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent !important;
+
+
+    .wrapBlock {
+      padding: 5px 0;
+      /*
+      width: 100%;
+      */
+    }
+  }
 
   * {
     display: inline;
@@ -274,7 +288,7 @@ header {
       float: left;
 
       .wat-modal {
-        left: 103px;
+        left: 117px;
         right: auto;
 
         &:after {
@@ -341,7 +355,7 @@ header {
   }
   &.flashy {
     @include border-radius(4px);
-    @include box-shadow(0 1px 3px rgba(224, 224, 224, 0.3));
+    @include box-shadow(0 1px 3px rgba(0,0,0, .5));
     padding: 8px 14px;
     color: #333;
     border: 1px solid #E0E0E0;
@@ -605,12 +619,12 @@ header {
 
       &.car-distance {
         i {
-          background-position: -68px -1px;
+          background-position: -68px -2px;
         }
       }
-      &.time {
+      &.km {
         i {
-          background-position: -116px -1px;
+          background-position: -116px -48px;
         }
       }
     }
