@@ -19,9 +19,11 @@
         <span class="km">
            <span></span><%= calculate_distance('CAR', session[:location], @trip.city).last unless session[:location].blank? %>
         </span>
+      <% if @trip.country.present? %>
         <span class="capital">
-           <span></span>Capital of Germany
+           <span></span><%= (params[:locale].eql?"en") ? @trip.country : @trip.ger_country %>
         </span>
+      <% end %>
     </div>
   </div> <!-- .title -->
   <div class="adpic-cover"></div>
@@ -84,23 +86,14 @@
                   <span><%=@trip.city%>, <%=@trip.zip_code%></span>
                   <span>Lat: <%=@trip.latitude%></span>
                   <span>Long: <%=@trip.longitude%></span>
-                  <% if @trip.country.present? %>
-                    <span>Country: <%= @trip.country %> </span>
-                    <span>Population: <%= @trip.population %> </span>
-                    <span>Time: <%= Time.now.strftime("%H:%M") %></span>
-		  <% elsif @trip.ger_country.present? %> 
-		    <span>Country: <%= @trip.ger_country %> </span>
-                    <span>Population: <%= @trip.population %> </span>
-                    <span>Time: <%= Time.now.strftime("%H:%M") %></span>
-                  <% end %>
+                  <span>Local time: <%= Time.now.strftime("%H:%M") %></span>
+
 
             </div>
 
           <div class="trip-special-block special-opening wi wi-clock-o">
             <h3>Opening hours</h3>
-            <span>Monday - Friday:</span>
-            <span>Sunday:</span>
-            <span>Saturday:</span>
+            <%= @trip.population %>
           </div>
           <div class="trip-special-block special-weahter wi wi-cloud">
             <h3>Weather now</h3>
@@ -159,7 +152,7 @@
             zoom: 11,
 
             // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(40.6700, -73.9400), // New York
+            center: new google.maps.LatLng(<%=@trip.latitude%>, <%=@trip.longitude%>),
 
             // How you would like to style the map.
             // This is where you would paste any style found on Snazzy Maps.

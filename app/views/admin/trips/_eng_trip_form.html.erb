@@ -6,7 +6,14 @@
         <%= f1.text_field :name, class: 'form-control' %>
       </div>
     </div>
-    
+
+  <div class="form-group">
+    <%= f1.label :name_de, class: 'col-lg-1 control-label' %>
+    <div class="col-lg-2">
+      <%= f1.text_field :ger_name, class: 'form-control' %>
+    </div>
+  </div>
+
     <div class="form-group">
       <%= f1.label :city, class: 'col-lg-1 control-label' %>
       <div class="col-lg-2">
@@ -27,7 +34,16 @@
         <%= f1.cktext_area :description, class: 'form-control' %>
       </div>
     </div>
-  
+
+
+  <div class="form-group">
+    <%= f1.label :description_de, class: 'col-lg-1 control-label' %>
+    <div class="col-lg-6">
+      <%= f1.cktext_area :ger_description, class: 'form-control' %>
+    </div>
+  </div>
+
+
     <div class="page-header">
       <h2>Extra fields</h2>
     </div> 
@@ -38,27 +54,43 @@
           <%= f1.text_field :country, class: 'form-control' %>
         </div>
     </div>
-  
+
+  <!-- German START -->
+  <div class="form-group">
+    <%= f1.label :country_de, class: 'col-lg-1 control-label' %>
+    <div class="col-lg-2">
+      <%= f1.text_field :ger_country, class: 'form-control' %>
+    </div>
+  </div>
+
     <div class="form-group">
        <%= f1.label :population, class: 'col-lg-1 control-label' %>
          <div class="col-lg-2">
           <%= f1.text_field :population, class: 'form-control' %>
         </div>
     </div>
-    
-    <div class="form-group">
-       <%= f1.label :latitude, class: 'col-lg-1 control-label' %>
-         <div class="col-lg-2">
-          <%= f1.text_field :latitude, class: 'form-control' %>
-        </div>
+<!-- German START -->
+   <div class="form-group">
+    <%= f1.label :population_de, class: 'col-lg-1 control-label' %>
+    <div class="col-lg-2">
+      <%= f1.text_field :population, class: 'form-control ger_population' %>
     </div>
-    
-    <div class="form-group">
-       <%= f1.label :longitude, class: 'col-lg-1 control-label' %>
-         <div class="col-lg-2">
-          <%= f1.text_field :longitude, class: 'form-control' %>
-        </div>
+  </div>
+
+  <!-- German START -->
+  <div class="form-group">
+    <%= f1.label :latitude, class: 'col-lg-1 control-label' %>
+    <div class="col-lg-2">
+      <%= f1.text_field :latitude, class: 'form-control ger_latitude' %>
     </div>
+  </div>
+
+  <div class="form-group">
+    <%= f1.label :longitude, class: 'col-lg-1 control-label' %>
+    <div class="col-lg-2">
+      <%= f1.text_field :longitude, class: 'form-control ger_longitude' %>
+    </div>
+  </div>
 
     <div class="page-header">
       <h2>Active & Popular</h2>

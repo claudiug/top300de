@@ -20,7 +20,7 @@
       </span> <!-- .trip-title -->
 
       <span class="desc trip-desc-card">
-        <%=h truncate(trip.description, :length => 170) %>
+        <%=h truncate((params[:locale].eql?"en") ? trip.eng_description : trip.german_description, :length => 170) %>
       </span> <!-- .desc -->
 
       <div class="fader"></div>
