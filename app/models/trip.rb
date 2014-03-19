@@ -16,7 +16,7 @@ class Trip < ActiveRecord::Base
   validates :zip_code, presence: true
   validates :description, presence: true
   validates :ger_description, presence: true
-  #validates :ger_country, presence: true
+  validates :ger_country, presence: true
   validates :is_active, presence: true
 
   before_validation :generate_slug
