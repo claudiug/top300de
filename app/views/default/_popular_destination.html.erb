@@ -15,7 +15,8 @@
     <span class="trip-tent">
 
       <span class="trip-title">
-        <%= trip.name %>
+        <%#= trip.name %>
+        <%= (params[:locale].eql?"en") ? trip.eng_name : trip.german_name %>
       </span> <!-- .trip-title -->
 
       <span class="desc trip-desc-card">

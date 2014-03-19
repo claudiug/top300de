@@ -70,7 +70,7 @@ $(document).ready(function() {
         var y = $(window).scrollTop();
         $('html, body').animate({ scrollTop: y + slideHeight - 90 }, 600);
 
-    })
+    });
 
     $("a[href='#top']").click(function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -168,8 +168,82 @@ $(document).ready(function() {
 
     /* Change button value on submit */
     $('.submit-go').click(function() {
-        $(this).val('Searching...');
-    })
+        if($("#find_place").val() == "en") 
+            $(this).val('Searching...');
+        else
+            $(this).val('Suchen...');
+    });
+
+    $(document).on('change', '#trip_zip_code', function(){
+        zip_val = $(this).val();
+        $(".ger_zip_code").val(zip_val);
+    });
+
+    $(document).on('change', '#trip_population', function(){
+        pop_val = $(this).val();
+        $(".ger_population").val(pop_val);
+    });
+
+    $(document).on('change', '#trip_latitude', function(){
+        lat_val = $(this).val();
+        $(".ger_latitude").val(lat_val);
+    });
+
+    $(document).on('change', '#trip_longitude', function(){
+        long_val = $(this).val();
+        $(".ger_longitude").val(long_val);
+    });
+
+    $(document).on('change', '#trip_is_active', function(){
+        act_val = $(this).is(':checked')
+        if(act_val == true) {
+          $(".ger_active").prop('checked', true);
+        }
+    });
+
+    $(document).on('change', '#trip_popular', function(){
+        popular_val = $(this).is(':checked')
+        if(popular_val == true) {
+          $(".ger_popular").prop('checked', true);
+        }
+    });
+
+  
+    
+    // $(document).on('change', '#category_10', function(){
+    //     long_val = $(this).val();
+    //     $(".ger_longitude").val(long_val);
+    // });
+
+    // $(document).on('change', '#category_11', function(){
+    //     long_val = $(this).val();
+    //     $(".ger_longitude").val(long_val);
+    // });
+
+    // $(document).on('change', '#category_12', function(){
+    //     long_val = $(this).val();
+    //     $(".ger_longitude").val(long_val);
+    // });
+
+    // $(document).on('change', '#category_13', function(){
+    //     long_val = $(this).val();
+    //     $(".ger_longitude").val(long_val);
+    // });
+
+    // $(document).on('change', '#category_14', function(){
+    //     long_val = $(this).val();
+    //     $(".ger_longitude").val(long_val);
+    // });
+
+    // $(document).on('change', '#category_15', function(){
+    //     long_val = $(this).val();
+    //     $(".ger_longitude").val(long_val);
+    // });
+
+    $(document).on('change', '#trip_paintings_attributes_0_image', function(){
+        img = $(this).val();
+        $(".ger_image").val(img);
+    });
 
 
 

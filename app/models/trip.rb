@@ -10,9 +10,13 @@ class Trip < ActiveRecord::Base
 
   validates :slug, presence: true, uniqueness: true
   validates :name, presence: true
+  validates :ger_name, presence: true
   validates :city, presence: true
+  validates :ger_city, presence: true
   validates :zip_code, presence: true
   validates :description, presence: true
+  validates :ger_description, presence: true
+  validates :ger_country, presence: true
   validates :is_active, presence: true
 
   before_validation :generate_slug
@@ -70,5 +74,37 @@ class Trip < ActiveRecord::Base
 
   def self.popular_trips
     order("RANDOM()").where(popular: true).limit(9)
+  end
+
+  def eng_name
+    self.name ? self.name : " "
+  end
+
+  def german_name
+    self.ger_name ? self.ger_name : " "
+  end
+
+  def eng_city
+    self.city ? self.city : " "
+  end
+
+  def german_city
+    self.ger_city ? self.ger_city : " "
+  end
+
+  def eng_description
+    self.description ? self.description : " "
+  end
+
+  def german_description
+    self.ger_description ? self.ger_description : " "
+  end
+
+  def eng_country
+    self.country ? self.country : " "
+  end
+
+  def german_country
+    self.ger_country ? self.ger_country : " "
   end
 end

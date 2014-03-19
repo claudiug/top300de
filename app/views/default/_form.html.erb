@@ -42,6 +42,7 @@
           <div style="position: fixed; left: -9999px; top: -9999px;"> <%= text_field_tag("location", params[:location], class:"tinput", placeholder:"your city name here") %></div>
 
           <div class="searchBlock submit">
+            <%= hidden_field_tag :find_place, params[:locale] %>
             <%= submit_tag("Find places", class: "submit-go") %>
                 <!-- <div class="determined-location">Determined location: <em id="det-location"></em></div> -->
           </div> <!-- .searchBlock -->

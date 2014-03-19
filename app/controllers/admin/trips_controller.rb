@@ -5,7 +5,7 @@ class Admin::TripsController < ApplicationController
   helper_method :sort_direction, :sort_column
 
   def index
-      @trips = Trip.order(sort_column + ' ' + sort_direction).page(params[:page]).per_page(5)
+    @trips = Trip.order(sort_column + ' ' + sort_direction).page(params[:page]).per_page(5)
   end
 
   def new
@@ -45,7 +45,7 @@ class Admin::TripsController < ApplicationController
 
   #category_ids[] is used for get all category ids when submiting a form
   def trip_params
-    params.require(:trip).permit(:name,:city,:zip_code, :description, :is_active, :popular, :population, :latitude, :longitude, :country,
+     params.require(:trip).permit(:name,:city,:zip_code, :description, :is_active, :popular, :population, :latitude, :longitude, :country, :ger_name,:ger_city, :ger_description, :ger_country,
                                  {category_ids: []},
                                  paintings_attributes: [:name, :is_feature, :is_active, :image])
   end
