@@ -8,7 +8,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'active_model_serializers'
 gem 'meta-tags', :require => 'meta_tags'
 gem 'bootstrap-sass-rails'
-#gem 'rmagick', '2.13.2'
+gem 'rmagick', '2.13.2'
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'will_paginate'

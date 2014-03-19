@@ -20,7 +20,7 @@ class MapsGoogleDistance
     destination = BASE_CITY if destination.nil?
     response = HTTParty.get(BASE_URL +
                                 from +
-                                '&destinations='+ destination +
+                                '&destinations='+ destination.gsub(/\W/, '') +
                                 '&mode=' + DISTANCE_BY_CAR +
                                 '&sensor='+SENSOR )
     if response.code == 200
