@@ -232,12 +232,12 @@ en:
     tutorial:
     # tutorial
       tutorial_title: "Learn how to find the best trip suggestions"
-      title_1: "1. Select what you would like to do"
+      title_1: "1. Tell us what you would like to do"
       title_2: "2. Pick the destinations you like the most"
       title_3: "3. Explore your destination"
-      desc_1: "Click the icons and select what you would like to do. You can select as many activities you want and then click “Find places”. "
-      desc_2: "We will suggest the best destinations based on your selections. Make sure to fill in your location to see how fast you can get there."
-      desc_3: "Check out your destination, see its history, what is worth seeing and how to get there."
+      desc_1: "Select what you would like to do by clicking the icons. You can select as many activities you want and then click the “Find the best places” button. We will suggest the best destinations according to your selections."
+      desc_2: "Choose the destinations you prefer. Make sure to fill in your location, so that you can see how fast you can get there. You can always add or change the activities you want to do, in order to find the perfect destinations for you. "
+      desc_3: "Check out the destinations you like: see their history and what you don’t have to miss, the opening hours and how to get there. Found eye-catching destinations? Start planning your trip, pack your luggage and go! Bon voyage!"
       button_try: "Start searching"
     newsletter:
       newsletter_title: "Sign-up for news. No spam, no ads, only travel tips."
