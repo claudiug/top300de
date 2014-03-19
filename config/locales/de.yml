@@ -204,6 +204,8 @@ de:
 
   default:
     home:
+      slogan: "Das is ein sehr gut website"
+      subslogan: "Click hier und click go bitte"
       slogan: "Besuchen Sie erstaunliche Orte in der Nähe"
       subslogan: "Wählen Sie, was Sie tun möchten und planen Sie Ihre Reise"
       feedback: "Rückkopplung"
@@ -270,3 +272,7 @@ de:
       static_about_tab_2_content: ""
       static_about_tab_3_title: "Wie können Sie dazu beitragen?"
       static_about_tab_3_content: ""
+    pagination:
+      previous: "Früher"
+      next: "Nächste"    
+

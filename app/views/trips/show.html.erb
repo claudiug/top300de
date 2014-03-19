@@ -11,8 +11,9 @@
         <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
         <div class="more-images">+ 10</div>
       </div>
-
+        -->
       <h1> <%= (params[:locale].eql?"en") ? @trip.eng_name : @trip.german_name %> </h1>
+
         <span class="distance">
           <span></span><%= calculate_distance('CAR', session[:location], @trip.city).first unless session[:location].blank? %></span>
         <span class="km">
@@ -40,6 +41,10 @@
         </div> <!-- .box-content -->
       </div> <!-- .box -->
 
+      <!--
+    <div class="about-city">
+      <span class="capital">Capital of Germany</span>
+
 
       <div class="about-city">
         <% if @trip.country.present? %>
@@ -52,6 +57,12 @@
            <span class="population"> <%= @trip.population %> </span>
            <span class="local-time"> <%= Time.now.strftime("%H:%M") %></span>
         <% end %>
+      </div>
+
+
+      <span class="area"> 891.8 km²</span>
+      <span class="population"> 3.502 million</span>
+
       </div>
         -->
     </section>
@@ -73,6 +84,15 @@
                   <span><%=@trip.city%>, <%=@trip.zip_code%></span>
                   <span>Lat: <%=@trip.latitude%></span>
                   <span>Long: <%=@trip.longitude%></span>
+                  <% if @trip.country.present? %>
+                    <span>Country: <%= @trip.country %> </span>
+                    <span>Population: <%= @trip.population %> </span>
+                    <span>Time: <%= Time.now.strftime("%H:%M") %></span>
+		  <% elsif @trip.ger_country.present? %> 
+		    <span>Country: <%= @trip.ger_country %> </span>
+                    <span>Population: <%= @trip.population %> </span>
+                    <span>Time: <%= Time.now.strftime("%H:%M") %></span>
+                  <% end %>
 
             </div>
 
