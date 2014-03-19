@@ -1,111 +1,24 @@
-<%= form_for [:admin, @trip], html: {class: "form-horizontal"} do |f| %>
-
 <ul class="tab-switch" id="tab-switch" style="position: relative; text-align: left; padding-left: 60px;">
-  <li class="active" style="text-align: center"><a href="#en_add" title="English">English</a></li>
-  <li><a href="#de_add" title="Deutsch" style="text-align: center">Deutsch</a></li>
+  <li class="active" style="text-align: center"><a href="#en_add" id="eng_tab" title="English">English</a></li>
+  <li><a href="#de_add" id="ger_tab" title="Deutsch" style="text-align: center">Deutsch</a></li>
 </ul>
-<div class="english-add-form tab-content" style="background: white; padding: 30px 0" id="en_add">
 
-    <%= render "admin/trips/error" %>
-    <div class="form-group">
-      <%= f.label :name, class: 'col-lg-1 control-label' %>
-      <div class="col-lg-2">
-        <%= f.text_field :name, class: 'form-control' %>
-      </div>
-    </div>
-    <div class="form-group">
-      <%= f.label :city, class: 'col-lg-1 control-label' %>
-      <div class="col-lg-2">
-        <%= f.text_field :city, class: 'form-control' %>
-      </div>
-    </div>
-    <div class="form-group">
-      <%= f.label :zip_code, class: 'col-lg-1 control-label' %>
-      <div class="col-lg-2">
-        <%= f.text_field :zip_code, class: 'form-control' %>
-      </div>
-    </div>
-    <div class="form-group">
-      <%= f.label :description, class: 'col-lg-1 control-label' %>
-      <div class="col-lg-6">
-        <%= f.cktext_area :description, class: 'form-control' %>
-      </div>
-    </div>
-
-  <div class="page-header">
-    <h2>Extra fields</h2>
-  </div>
-
-
-
-  <div class="page-header">
-    <h2>Active & Popular</h2>
-  </div>
-
-  <div class="form-group">
-    <%= f.label :is_active, class: 'col-lg-1 control-label' %>
-    <div class="col-lg-2">
-      <%= f.check_box :is_active, class: 'form-control' %>
-    </div>
-  </div>
-
-    <div class="form-group">
-      <%= f.label :popular, class: 'col-lg-1 control-label' %>
-      <div class="col-lg-2">
-        <%= f.check_box :popular, class: 'form-control' %>
-      </div>
-    </div>
-    <div>
-      <div class="page-header">
-        <h2>Trip type</h2>
-      </div>
-      <div class="form-group">
-        <div class="col-lg-offset-1 col-lg-10">
-          <% Category.all.each do |category| %>
-              <div class="checkbox">
-                <%= hidden_field_tag("trip[category_ids][]", nil) %>
-                <%= check_box_tag "trip[category_ids][]",
-                                  category.id,
-                                  @trip.category_ids.include?(category.id),
-                                  id: dom_id(category) %>
-                <%= label_tag dom_id(category), category.name %>
-              </div>
-          <% end %>
-        </div>
-      </div>
-    </div>
-
+<%= form_for [:admin, @trip], html: {class: "form-horizontal"} do |f| %>
+<%= render "admin/trips/error" %>
+<div class="english-add-form tab-content" style="background: white; padding: 30px 0" id="en_add">    
+    <%= render "admin/trips/eng_trip_form", f1: f %>
 </div>
 
-    <div class="deutsche-add-form tab-content" style="background: white; padding: 30px 0" id="de_add">
-            Form add in Deutsch
-      </div>
-
-
-    <div class="page-header">
-      <h2>Images</h2>
+<div class="deutsche-add-form tab-content" style="background: white; padding: 30px 0" id="de_add">
+      <%= render "admin/trips/ger_trip_form", f1: f %>
+</div>
+<div class="form-group">
+    <div class="col-lg-offset-1 col-lg-10">
+      <%= f.submit("Add a new trip", class: 'btn btn-primary') %>
     </div>
+</div>
+<% end %>
 
-    <%= f.fields_for :paintings do |i| %>
-
-
-        <div class="form-group">
-          <%= i.label :image, class: 'col-lg-1 control-label' %>
-          <div class="col-lg-2">
-            <%= i.file_field :image, class: 'btn btn-primary' %>
-          </div>
-        </div>
-
-        <% end %>
-
-
-
-    <div class="form-group">
-      <div class="col-lg-offset-1 col-lg-10">
-        <%= f.submit("Add a new trip", class: 'btn btn-primary') %>
-      </div>
-    </div>
-<% end%>
 <style type="text/css">
     .tab-switch li a {
         background: transparent;

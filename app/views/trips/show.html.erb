@@ -11,8 +11,8 @@
         <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
         <div class="more-images">+ 10</div>
       </div>
-        -->
-      <h1><%=@trip.name %></h1>
+
+      <h1> <%= (params[:locale].eql?"en") ? @trip.eng_name : @trip.german_name %> </h1>
         <span class="distance">
           <span></span><%= calculate_distance('CAR', session[:location], @trip.city).first unless session[:location].blank? %></span>
         <span class="km">
@@ -40,13 +40,18 @@
         </div> <!-- .box-content -->
       </div> <!-- .box -->
 
-      <!--
-    <div class="about-city">
-      <span class="capital">Capital of Germany</span>
 
-      <span class="area"> 891.8 km²</span>
-      <span class="population"> 3.502 million</span>
-
+      <div class="about-city">
+        <% if @trip.country.present? %>
+           <span class="capital"> <%= @trip.country %> </span>
+           <span class="population"> <%= @trip.population %> </span>
+           <span class="local-time"> <%= Time.now.strftime("%H:%M") %></span>
+        
+        <% elsif @trip.ger_country.present? %>   
+           <span class="capital"> <%= @trip.ger_country %> </span>
+           <span class="population"> <%= @trip.population %> </span>
+           <span class="local-time"> <%= Time.now.strftime("%H:%M") %></span>
+        <% end %>
       </div>
         -->
     </section>
@@ -58,7 +63,7 @@
         <h2><%= t "default.product_page.menu_about" %></h2>
             <div class="section-content">
               <p>
-                <%=@trip.description.html_safe%>
+              <%= (params[:locale].eql?"en") ? @trip.eng_description.html_safe : @trip.german_description.html_safe %>
               </p>
             </div>
 
@@ -94,7 +99,7 @@
               <% @trip.paintings.each do |paint| %>
 
                   <li>
-                    <%= image_tag paint.image.url %>
+                    <%= link_to image_tag(paint.image_url(:thumb).to_s), paint.image_url, :target=>"_blank" %>
                   </li>
 
               <% end %>
