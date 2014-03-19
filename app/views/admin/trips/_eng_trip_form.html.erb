@@ -1,0 +1,119 @@
+<%= form_for [:admin, @trip], html: {class: "form-horizontal"} do |f| %>
+
+    <div class="form-group">
+      <%= f.label :name, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-2">
+        <%= f.text_field :name, class: 'form-control' %>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <%= f.label :city, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-2">
+        <%= f.text_field :city, class: 'form-control' %>
+      </div>
+    </div>
+   
+    <div class="form-group">
+      <%= f.label :zip_code, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-2">
+        <%= f.text_field :zip_code, class: 'form-control' %>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <%= f.label :description, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-6">
+        <%= f.cktext_area :description, class: 'form-control' %>
+      </div>
+    </div>
+  
+    <div class="page-header">
+      <h2>Extra fields</h2>
+    </div> 
+  
+    <div class="form-group">
+       <%= f.label :country, class: 'col-lg-1 control-label' %>
+         <div class="col-lg-2">
+          <%= f.text_field :country, class: 'form-control' %>
+        </div>
+    </div>
+  
+    <div class="form-group">
+       <%= f.label :population, class: 'col-lg-1 control-label' %>
+         <div class="col-lg-2">
+          <%= f.text_field :population, class: 'form-control' %>
+        </div>
+    </div>
+    
+    <div class="form-group">
+       <%= f.label :latitude, class: 'col-lg-1 control-label' %>
+         <div class="col-lg-2">
+          <%= f.text_field :latitude, class: 'form-control' %>
+        </div>
+    </div>
+    
+    <div class="form-group">
+       <%= f.label :longitude, class: 'col-lg-1 control-label' %>
+         <div class="col-lg-2">
+          <%= f.text_field :longitude, class: 'form-control' %>
+        </div>
+    </div>
+
+    <div class="page-header">
+      <h2>Active & Popular</h2>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :is_active, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-2">
+        <%= f.check_box :is_active, class: 'form-control' %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :popular, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-2">
+        <%= f.check_box :popular, class: 'form-control' %>
+      </div>
+    </div>
+
+    <div>
+      <div class="page-header">
+        <h2>Trip type</h2>
+      </div>
+      <div class="form-group">
+        <div class="col-lg-offset-1 col-lg-10">
+          <% Category.all.each do |category| %>
+              <div class="checkbox">
+                <%= hidden_field_tag("trip[category_ids][]", nil) %>
+                <%= check_box_tag "trip[category_ids][]",
+                                  category.id,
+                                  @trip.category_ids.include?(category.id),
+                                  id: dom_id(category) %>
+                <%= label_tag dom_id(category), category.name %>
+              </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-header">
+      <h2>Images</h2>
+    </div>
+
+    <%= f.fields_for :paintings do |i| %>
+        <div class="form-group">
+          <%= i.label :image, class: 'col-lg-1 control-label' %>
+          <div class="col-lg-2">
+            <%= i.file_field :image, class: 'btn btn-primary' %>
+          </div>
+        </div>
+    <% end %>
+
+    <div class="form-group">
+      <div class="col-lg-offset-1 col-lg-10">
+        <%= f.submit("Add a new trip", class: 'btn btn-primary') %>
+      </div>
+    </div>
+<% end %>

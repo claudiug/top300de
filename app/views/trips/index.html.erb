@@ -3,7 +3,13 @@
 
   <section class="content-col stand-by push-right">
     <div class="head"><%= t "default.search_results.results" %>
-      <h1>Trips to Berlin, Bastei Bridge and Munchen by car and train</h1>
+      <% trip_name = @trips.map(&:name).first(3) %>
+      <% count_trip = trip_name.count - 1 %>
+      <% if count_trip == 0 %>
+          <h1> Trip to <%= "#{trip_name.join('')}" %> by car 
+      <% else %>
+          <h1>Trips to <%= "#{trip_name.first(count_trip).join(', ')}" %> and <%= "#{trip_name[count_trip]}" %> by car </h1>
+      <% end %>
     </div>
 
     <div class="box">

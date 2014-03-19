@@ -206,8 +206,6 @@ en:
 
   default:
     home:
-      slogan: "Cool destinations, close by!"
-      subslogan: "Select what you'll like to do and click go"
       slogan: "Visit amazing places in Germany!"
       subslogan: "Select what you want to do and start planning your trip"
       feedback: "Feedback"

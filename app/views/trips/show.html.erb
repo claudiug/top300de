@@ -40,10 +40,12 @@
 
 
       <div class="about-city">
-        <span class="capital">Capital of Germany</span>
-        <span class="area"> 891.8 km²</span>
-        <span class="population"> 3.502 million</span>
-        <span class="local-time"> Now: 8:35 PM</span>
+        <% if @trip.country.present? %>
+           <span class="capital"> <%= @trip.country %> </span>
+           <span class="population"> <%= @trip.population %> </span>
+           <span class="local-time"> <%= Time.now.strftime("%H:%M") %></span>
+        <% end %>
+        <!-- <span class="area"> 891.8 km²</span> -->
       </div>
 
     </section>
@@ -67,7 +69,7 @@
               <% @trip.paintings.each do |paint| %>
 
                   <li>
-                    <%= image_tag paint.image.url %>
+                    <%= link_to image_tag(paint.image_url(:thumb).to_s), paint.image_url, :target=>"_blank" %>
                   </li>
 
               <% end %>
