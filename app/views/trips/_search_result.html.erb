@@ -1,4 +1,3 @@
-<!-- <div class="title">Other destinations</div> -->
 <% if @trips.present? %>
 <% @trips.each do |trip| %>
   <article class="trip-item trip-box">
@@ -16,7 +15,7 @@
       </span> <!-- .trip-title -->
 
       <span class="desc trip-desc-card">
-        <%= (params[:locale].eql?"en") ? truncate(trip.eng_description, length: 170).html_safe : truncate(trip.german_description, length: 170).html_safe %>
+        <%=h (params[:locale].eql?"en") ? truncate(trip.eng_description, length: 170) : truncate(trip.german_description, length: 170) %>
       </span> <!-- .desc .fly-left -->
 
       <div class="fader"></div>

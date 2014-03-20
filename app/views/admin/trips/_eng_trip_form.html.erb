@@ -34,29 +34,29 @@
   
     <div class="form-group">
        <%= f1.label :country, class: 'col-lg-1 control-label' %>
-      <div class="col-lg-2">
-        <%= f1.text_field :country, class: 'form-control' %>
-      </div>
+         <div class="col-lg-2">
+          <%= f1.text_field :country, class: 'form-control' %>
+        </div>
     </div>
 
     <div class="form-group">
        <%= f1.label :population, class: 'col-lg-1 control-label' %>
-      <div class="col-lg-2">
-          <%= f1.cktext_area :population, class: 'form-control' %>
-      </div>
+         <div class="col-lg-2">
+          <%= f1.text_field :population, class: 'form-control' %>
+        </div>
     </div>
 
     <div class="form-group">
-        <%= f1.label :latitude, class: 'col-lg-1 control-label' %>
+       <%= f1.label :latitude, class: 'col-lg-1 control-label' %>
       <div class="col-lg-2">
-        <%= f1.text_field :latitude, class: 'form-control ger_latitude' %>
+          <%= f1.text_field :latitude, class: 'form-control' %>
       </div>
     </div>
   
     <div class="form-group">
        <%= f1.label :longitude, class: 'col-lg-1 control-label' %>
       <div class="col-lg-2">
-       <%= f1.text_field :longitude, class: 'form-control ger_longitude' %>
+        <%= f1.text_field :longitude, class: 'form-control' %>
       </div>
     </div>
    
@@ -65,7 +65,7 @@
     </div>
 
     <div class="form-group">
-        <%= f1.label :is_active, class: 'col-lg-1 control-label' %>
+      <%= f1.label :is_active, class: 'col-lg-1 control-label' %>
       <div class="col-lg-2">
         <%= f1.check_box :is_active, class: 'form-control' %>
       </div>
@@ -110,6 +110,4 @@
           </div>
         </div>
     <% end %>
-
 </div>
-

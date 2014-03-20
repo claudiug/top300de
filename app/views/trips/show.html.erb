@@ -36,6 +36,30 @@
       </div> <!-- .box -->
 
    </section>
+      <!--
+    <div class="about-city">
+      <span class="capital">Capital of Germany</span>
+
+
+      <div class="about-city">
+        <% if @trip.country.present? %>
+           <span class="capital"> <%= @trip.country %> </span>
+           <span class="population"> <%= @trip.population %> </span>
+           <span class="local-time"> <%= Time.now.strftime("%H:%M") %></span>
+        
+        <% elsif @trip.ger_country.present? %>   
+           <span class="capital"> <%= @trip.ger_country %> </span>
+           <span class="population"> <%= @trip.population %> </span>
+           <span class="local-time"> <%= Time.now.strftime("%H:%M") %></span>
+        <% end %>
+      </div>
+
+
+      <span class="area"> 891.8 km²</span>
+      <span class="population"> 3.502 million</span>
+
+      </div>
+        -->
 
     <section class="trip-block stand-by" id="trip-holder">
       <div class="scroller">
@@ -57,6 +81,10 @@
 
                   <% if @trip.country.present? %>
                     <span>Country: <%= @trip.country %> </span>
+                    <span>Population: <%= @trip.population %> </span>
+                    <span>Local time: <%= Time.now.strftime("%H:%M") %></span>
+		              <% elsif @trip.ger_country.present? %> 
+		                <span>Country: <%= @trip.ger_country %> </span>
                     <span>Population: <%= @trip.population %> </span>
                     <span>Local time: <%= Time.now.strftime("%H:%M") %></span>
                   <% end %>
