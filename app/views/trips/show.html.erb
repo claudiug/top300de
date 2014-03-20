@@ -43,30 +43,6 @@
         </div> <!-- .box-content -->
       </div> <!-- .box -->
 
-      <!--
-    <div class="about-city">
-      <span class="capital">Capital of Germany</span>
-
-
-      <div class="about-city">
-        <% if @trip.country.present? %>
-           <span class="capital"> <%= @trip.country %> </span>
-           <span class="population"> <%= @trip.population %> </span>
-           <span class="local-time"> <%= Time.now.strftime("%H:%M") %></span>
-        
-        <% elsif @trip.ger_country.present? %>   
-           <span class="capital"> <%= @trip.ger_country %> </span>
-           <span class="population"> <%= @trip.population %> </span>
-           <span class="local-time"> <%= Time.now.strftime("%H:%M") %></span>
-        <% end %>
-      </div>
-
-
-      <span class="area"> 891.8 km²</span>
-      <span class="population"> 3.502 million</span>
-
-      </div>
-        -->
     </section>
 
     <section class="trip-block stand-by" id="trip-holder">
@@ -125,7 +101,7 @@
 
           <h2><%= t "default.product_page.menu_map" %></h2>
           <div id="map-canvas"></div>
-
+          <div id="pano" style="position:relative; width: 740px; height: 500px; display: block"></div>
         </div>
 
       </div> <!-- .scroller -->
@@ -139,7 +115,7 @@
 
 <input id="start" value="Weingarten" style="display: none" />
 <input id="end" value="Berlin" style="display: none" />
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script type="text/javascript">
     // When the window has finished loading create our google map below
     google.maps.event.addDomListener(window, 'load', init);
@@ -147,12 +123,14 @@
     function init() {
         // Basic options for a simple Google Map
         // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        //var current_location = new google.maps.LatLng(<%=@trip.latitude%>, <%=@trip.longitude%>);
+
+        var current_location = new google.maps.LatLng(50.941282, 6.95695);
         var mapOptions = {
             // How zoomed in you want the map to start at (always required)
-            zoom: 15,
+            zoom: 3,
             mapTypeId: google.maps.MapTypeId.SATELLITE,
-            // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(<%=@trip.latitude%>, <%=@trip.longitude%>),
+            center: current_location,
 
             // How you would like to style the map.
             // This is where you would paste any style found on Snazzy Maps.
@@ -165,6 +143,15 @@
 
         // Create the Google Map using out element and options defined above
         var map = new google.maps.Map(mapElement, mapOptions);
+
+        var panoramaOptions = {
+            position: current_location,
+            pov: {
+                heading: -60,
+                pitch: 35
+            }
+        };
+        var panorama = new  google.maps.StreetViewPanorama(document.getElementById('pano'),panoramaOptions);
     }
 
 </script>
