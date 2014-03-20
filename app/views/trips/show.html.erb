@@ -1,3 +1,4 @@
+<%= page_heading "Visit #{(params[:locale].eql?"en") ? @trip.eng_name : @trip.german_name}"  %>
 <% body_class "on-trip" %>
 <div class="trip-page">
 
@@ -57,11 +58,12 @@
                     <span>Local time: <%= Time.now.strftime("%H:%M") %></span>
 
             </div>
-
-          <div class="trip-special-block special-opening wi wi-clock-o">
-            <h3>Opening hours</h3>
-            <%= @trip.population.html_safe %>
-          </div>
+          <% if @trip.population.present? %>
+              <div class="trip-special-block special-opening wi wi-clock-o">
+                <h3>Opening hours</h3>
+                <%= @trip.population.html_safe %>
+              </div>
+          <% end %>
           <div class="trip-special-block special-weahter wi wi-cloud">
             <h3>Weather now</h3>
             <span><%= @weather[:currently][:summary] unless @weather.nil? %></span>

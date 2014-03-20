@@ -7,7 +7,7 @@ class DefaultController < ApplicationController
   def sitemap
   end
 
-  def term
+  def terms
   end
 
   def privacy
