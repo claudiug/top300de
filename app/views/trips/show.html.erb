@@ -50,7 +50,7 @@
         <div class="trip-special">
             <div class="trip-special-block special-coordinates wi wi-location-arrow">
                   <h3>Location</h3>
-                  <span><%= (params[:locale].eql?"en") ? @trip.city : @trip.ger_city %>, <%=@trip.zip_code%></span>
+                  <span><%=@trip.city%>, <%=@trip.zip_code%></span>
                   <span>Lat: <%=@trip.latitude%></span>
                   <span>Long: <%=@trip.longitude%></span>
 
