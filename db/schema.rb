@@ -157,7 +157,11 @@ ActiveRecord::Schema.define(version: 20140318132428) do
     t.boolean  "is_feature",      default: false
     t.boolean  "popular"
     t.string   "country"
+<<<<<<< HEAD
     t.float    "population"
+=======
+    t.integer  "population"
+>>>>>>> a53fd873a68dd1df5fe21370be0202b96674dbd9
     t.string   "ger_name"
     t.string   "ger_city"
     t.text     "ger_description"

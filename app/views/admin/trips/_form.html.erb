@@ -10,8 +10,14 @@
 </div>
 
 <div class="deutsche-add-form tab-content" style="background: white; padding: 30px 0" id="de_add">
+<<<<<<< HEAD
+    <%= render "admin/trips/trip_form_content" %>
+</div>
+
+=======
       <%= render "admin/trips/ger_trip_form", f1: f %>
 </div>
+>>>>>>> filter_trip
 <div class="form-group">
     <div class="col-lg-offset-1 col-lg-10">
       <%= f.submit("Add a new trip", class: 'btn btn-primary') %>
@@ -32,20 +38,21 @@
       color: #333
   }
 </style>
-<script type="text/javascript">
-$(document).ready(function() {
+  <script type="text/javascript">
+  $(document).ready(function() {
 
 
-    $(".tab-content").not(":first").hide();
-    $("#tab-switch li:first").addClass("active").show();
+      $(".tab-content").not(":first").hide();
+      $("#tab-switch li:first").addClass("active").show();
 
-    $("#tab-switch li").click(function() {
-    $("#tab-switch li.active").removeClass("active");
-    $(this).addClass("active");
-    $(".tab-content").hide();
-    $($('a',this).attr("href")).show();
+      $("#tab-switch li").click(function() {
+      $("#tab-switch li.active").removeClass("active");
+      $(this).addClass("active");
+      $(".tab-content").hide();
+      $($('a',this).attr("href")).show();
 
-    return false;
-    });
-});
-</script>
+      return false;
+      });
+  });
+  </script>
+
