@@ -1,6 +1,6 @@
 <%= form_for [:admin, @trip], html: {class: "form-horizontal"} do |f| %>
   <%= render "admin/trips/error" %>
-  <%= render "admin/trips/trip_form" %>
+  <%= render "admin/trips/trip_form", f1: f %>
 <% end %>
 
 <style type="text/css">
