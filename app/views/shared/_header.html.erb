@@ -3,7 +3,8 @@
         <div class="wrapBlock">
 
             <div class="Logo">
-                <a href="/" title="Wantatrip">want<span>a</span>trip</a>
+                <%= link_to "Wantatrip", "/#{params[:locale]}", title: "#{t("default.website.title")}", class: "wat-logo" %>
+
             </div>
 
             <nav id="topLeftNav" class="point-left">
@@ -39,7 +40,7 @@
         accent_color: '#47d9bf',
         trigger_color: 'white',
         trigger_background_color: '#448dd6',
-        screenshot_enabled: false,
+        screenshot_enabled: false
     }]);
     UserVoice.push(['identify', {
         email:      'john.doe@example.com'

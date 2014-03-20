@@ -54,16 +54,7 @@
                   <span><%= (params[:locale].eql?"en") ? @trip.city : @trip.ger_city %>, <%=@trip.zip_code%></span>
                   <span>Lat: <%=@trip.latitude%></span>
                   <span>Long: <%=@trip.longitude%></span>
-
-                  <% if @trip.country.present? %>
-                    <span>Country: <%= @trip.country %> </span>
-                    <span>Population: <%= @trip.population %> </span>
                     <span>Local time: <%= Time.now.strftime("%H:%M") %></span>
-		              <% elsif @trip.ger_country.present? %> 
-		                <span>Country: <%= @trip.ger_country %> </span>
-                    <span>Population: <%= @trip.population %> </span>
-                    <span>Local time: <%= Time.now.strftime("%H:%M") %></span>
-                  <% end %>
             </div>
 
           <div class="trip-special-block special-opening wi wi-clock-o">
@@ -87,7 +78,9 @@
               <% @trip.paintings.each do |paint| %>
 
                   <li>
-                    <%= link_to image_tag(paint.image_url(:thumb).to_s), paint.image_url, :target=>"_blank" %>
+                    <a href="<%=paint.image_url%>" title="">
+                      <%= image_tag(paint.image_url(:thumb).to_s) %>
+                    </a>
                   </li>
 
               <% end %>
