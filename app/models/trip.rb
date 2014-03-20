@@ -105,4 +105,5 @@ class Trip < ActiveRecord::Base
   def german_country
     self.ger_country ? self.ger_country : " "
   end
+
 end
