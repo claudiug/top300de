@@ -39,7 +39,7 @@ group :production do
   gem 'pg'
 end
 gem 'jquery-rails'
-# gem 'turbolinks'
+gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'foreman'
