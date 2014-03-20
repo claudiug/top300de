@@ -5,15 +5,7 @@
 
   <div class="title">
     <div class="wrapBlock">
-
-      <!--
-      <div class="avatar">
-        <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
-        <div class="more-images">+ 10</div>
-      </div>
-        -->
       <h1> <%= (params[:locale].eql?"en") ? @trip.eng_name : @trip.german_name %> </h1>
-
         <span class="distance">
           <span></span><%= calculate_distance('CAR', session[:location], @trip.city).first unless session[:location].blank? %></span>
         <span class="km">
@@ -88,12 +80,11 @@
                     <span>Country: <%= @trip.country %> </span>
                     <span>Population: <%= @trip.population %> </span>
                     <span>Time: <%= Time.now.strftime("%H:%M") %></span>
-		  <% elsif @trip.ger_country.present? %> 
-		    <span>Country: <%= @trip.ger_country %> </span>
+		              <% elsif @trip.ger_country.present? %> 
+		                <span>Country: <%= @trip.ger_country %> </span>
                     <span>Population: <%= @trip.population %> </span>
                     <span>Time: <%= Time.now.strftime("%H:%M") %></span>
                   <% end %>
-
             </div>
 
           <div class="trip-special-block special-opening wi wi-clock-o">
