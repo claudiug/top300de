@@ -1,9 +1,14 @@
-<div id="eng_form_details">
-
     <div class="form-group">
       <%= f1.label :name, class: 'col-lg-1 control-label' %>
       <div class="col-lg-2">
         <%= f1.text_field :name, class: 'form-control' %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f1.label :name_de, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-2">
+        <%= f1.text_field :ger_name, class: 'form-control' %>
       </div>
     </div>
 
@@ -28,6 +33,13 @@
       </div>
     </div>
 
+    <div class="form-group">
+      <%= f1.label :description_de, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-6">
+        <%= f1.cktext_area :ger_description, class: 'form-control' %>
+      </div>
+    </div>
+
     <div class="page-header">
       <h2>Extra fields</h2>
     </div> 
@@ -40,6 +52,13 @@
     </div>
 
     <div class="form-group">
+       <%= f1.label :country_de, class: 'col-lg-1 control-label' %>
+         <div class="col-lg-2">
+          <%= f1.text_field :ger_country, class: 'form-control' %>
+        </div>
+    </div>
+
+    <div class="form-group">
        <%= f1.label :population, class: 'col-lg-1 control-label' %>
          <div class="col-lg-2">
           <%= f1.text_field :population, class: 'form-control' %>
@@ -47,16 +66,24 @@
     </div>
 
     <div class="form-group">
+       <%= f1.label :population_de, class: 'col-lg-1 control-label' %>
+         <div class="col-lg-2">
+          <%= f1.text_field :ger_population, class: 'form-control' %>
+        </div>
+    </div>
+
+
+    <div class="form-group">
        <%= f1.label :latitude, class: 'col-lg-1 control-label' %>
       <div class="col-lg-2">
-          <%= f1.text_field :latitude, class: 'form-control' %>
+          <%= f1.text_field :option_1, class: 'form-control' %>
       </div>
     </div>
   
     <div class="form-group">
        <%= f1.label :longitude, class: 'col-lg-1 control-label' %>
       <div class="col-lg-2">
-        <%= f1.text_field :longitude, class: 'form-control' %>
+        <%= f1.text_field :option_2, class: 'form-control' %>
       </div>
     </div>
    
@@ -110,4 +137,9 @@
           </div>
         </div>
     <% end %>
-</div>
+
+    <div class="form-group">
+      <div class="col-lg-offset-1 col-lg-10">
+        <%= f1.submit("Add a new trip", class: 'btn btn-primary') %>
+      </div>
+    </div>
