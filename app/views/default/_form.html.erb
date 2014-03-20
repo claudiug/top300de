@@ -14,19 +14,16 @@
             <label class="styled" id="go_mountain" title="<%= t "default.form.go_mountain" %>">
               <i id="linked"></i>
               <%= check_box_tag("category[mountains]", (params[:category]), false, id:"go_mountain") %>
-
               <span><span><%= t "default.general.mountains" %></span></span>
             </label>
 
             <label class="styled" id="go_lake" title="<%= t "default.form.go_lake" %>">
               <%= check_box_tag("category[waters]", (params[:category]), false, id:"go_lake") %>
-
               <span><span><%= t "default.general.waters" %></span></span>
             </label>
 
             <label class="styled" id="go_castle" title="<%= t "default.form.go_castle" %>">
               <%= check_box_tag("category[castles]",(params[:category]), false, id:"go_castle") %>
-
               <span><span><%= t "default.general.castles" %></span></span>
             </label>
 
@@ -34,12 +31,12 @@
               <%= check_box_tag("category[culture]", (params[:category]), false, id:"go_culture") %>
 
               <span><span><%= t "default.general.culture" %></span></span>
+
             </label>
 
             <label class="styled" id="go_city" title="<%= t "default.form.go_city" %>">
               <%= check_box_tag("category[cities]", (params[:category]), false, id:"go_city") %>
-
-              <span><span><%= t "default.general.cities" %></span></span>
+               <span><span><%= t "default.general.cities" %></span></span>
             </label>
 
           </div> <!-- .searchBlock -->

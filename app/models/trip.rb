@@ -12,7 +12,6 @@ class Trip < ActiveRecord::Base
   validates :name, presence: true
   validates :ger_name, presence: true
   validates :city, presence: true
-  #validates :ger_city, presence: true
   validates :zip_code, presence: true
   validates :description, presence: true
   validates :ger_description, presence: true

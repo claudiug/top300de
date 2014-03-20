@@ -2,18 +2,22 @@ Top300de::Application.routes.draw do
   get '/register', to: 'sessions#new'
   post '/login', to: 'sessions#create'
 
-  get '/about', to: 'default#about'
-  get '/privacy', to: 'default#privacy'
-  get '/terms', to: 'default#term'
-  get '/sitemap', to: 'default#sitemap'
+  # get '/about/:locale', to: 'default#about'
+  # get '/privacy', to: 'default#privacy'
+  # get '/terms', to: 'default#term'
+  # get '/sitemap', to: 'default#sitemap'
 
   scope ":locale", locale: /en|de/ do
     root "default#home"
     resources :users, only:[:new, :create]
     resources :trips, only:[:index, :show]
+      get :about, to: 'default#about' 
+      get :privacy, to: 'default#privacy'
+      get :term, to: 'default#term'
+      get :sitemap, to: 'default#sitemap'
   end
 
-  get '', to: redirect("/#{I18n.default_locale}")
+  get '', to: redirect("/#{I18n.locale}")
 
     namespace :admin do
       get 'dashboard', to: "dashboard#index"
