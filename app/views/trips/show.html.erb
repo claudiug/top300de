@@ -11,13 +11,9 @@
         <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
         <div class="more-images">+ 10</div>
       </div>
-<<<<<<< HEAD
-
-      <h1> <%= (params[:locale].eql?"en") ? @trip.eng_name : @trip.german_name %> </h1>
-=======
         -->
-      <h1><%=@trip.name %></h1>
->>>>>>> master
+      <h1> <%= (params[:locale].eql?"en") ? @trip.eng_name : @trip.german_name %> </h1>
+
         <span class="distance">
           <span></span><%= calculate_distance('CAR', session[:location], @trip.city).first unless session[:location].blank? %></span>
         <span class="km">
@@ -49,7 +45,7 @@
     <div class="about-city">
       <span class="capital">Capital of Germany</span>
 
-<<<<<<< HEAD
+
       <div class="about-city">
         <% if @trip.country.present? %>
            <span class="capital"> <%= @trip.country %> </span>
@@ -62,8 +58,7 @@
            <span class="local-time"> <%= Time.now.strftime("%H:%M") %></span>
         <% end %>
       </div>
-=======
->>>>>>> master
+
 
       <span class="area"> 891.8 km²</span>
       <span class="population"> 3.502 million</span>
@@ -79,8 +74,7 @@
         <h2><%= t "default.product_page.menu_about" %></h2>
             <div class="section-content">
               <p>
-
-              <%= (params[:locale].eql?"en") ? @trip.eng_description : @trip.german_description %>
+              <%= (params[:locale].eql?"en") ? @trip.eng_description.html_safe : @trip.german_description.html_safe %>
               </p>
             </div>
 
@@ -92,6 +86,10 @@
                   <span>Long: <%=@trip.longitude%></span>
                   <% if @trip.country.present? %>
                     <span>Country: <%= @trip.country %> </span>
+                    <span>Population: <%= @trip.population %> </span>
+                    <span>Time: <%= Time.now.strftime("%H:%M") %></span>
+		  <% elsif @trip.ger_country.present? %> 
+		    <span>Country: <%= @trip.ger_country %> </span>
                     <span>Population: <%= @trip.population %> </span>
                     <span>Time: <%= Time.now.strftime("%H:%M") %></span>
                   <% end %>
