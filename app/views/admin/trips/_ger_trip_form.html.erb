@@ -1,30 +1,30 @@
-<%= form_for [:admin, @trip], html: {class: "form-horizontal"} do |f| %>
-
+<div id="ger_form_details">
+   
     <div class="form-group">
-      <%= f.label :ger_name, class: 'col-lg-1 control-label' %>
+         <%= f1.label :name, class: 'col-lg-1 control-label' %>
       <div class="col-lg-2">
-        <%= f.text_field :ger_name, class: 'form-control' %>
-      </div>
+         <%= f1.text_field :ger_name, class: 'form-control' %>
+      </div>   
     </div>
     
     <div class="form-group">
-      <%= f.label :ger_city, class: 'col-lg-1 control-label' %>
+       <%= f1.label :city, class: 'col-lg-1 control-label' %>
       <div class="col-lg-2">
-        <%= f.text_field :ger_city, class: 'form-control' %>
+        <%= f1.text_field :ger_city, class: 'form-control' %>
       </div>
     </div>
    
     <div class="form-group">
-      <%= f.label :zip_code, class: 'col-lg-1 control-label' %>
+        <%= f1.label :zip_code, class: 'col-lg-1 control-label' %>
       <div class="col-lg-2">
-        <%= f.text_field :zip_code, class: 'form-control' %>
+        <%= f1.text_field :zip_code, class: 'form-control ger_zip_code' %>
       </div>
     </div>
     
     <div class="form-group">
-      <%= f.label :ger_description, class: 'col-lg-1 control-label' %>
+         <%= f1.label :description, class: 'col-lg-1 control-label' %>
       <div class="col-lg-6">
-        <%= f.cktext_area :ger_description, class: 'form-control' %>
+         <%= f1.cktext_area :ger_description, class: 'form-control' %>
       </div>
     </div>
   
@@ -33,30 +33,30 @@
     </div> 
   
     <div class="form-group">
-       <%= f.label :ger_country, class: 'col-lg-1 control-label' %>
-         <div class="col-lg-2">
-          <%= f.text_field :ger_country, class: 'form-control' %>
-        </div>
+       <%= f1.label :country, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-2">
+        <%= f1.text_field :ger_country, class: 'form-control' %>
+      </div>
     </div>
   
     <div class="form-group">
-       <%= f.label :population, class: 'col-lg-1 control-label' %>
-         <div class="col-lg-2">
-          <%= f.text_field :population, class: 'form-control' %>
-        </div>
+       <%= f1.label :population, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-2">
+        <%= f1.text_field :population, class: 'form-control ger_population' %>
+      </div>
     </div>
     
     <div class="form-group">
-       <%= f.label :latitude, class: 'col-lg-1 control-label' %>
-         <div class="col-lg-2">
-          <%= f.text_field :latitude, class: 'form-control' %>
-        </div>
+       <%= f1.label :latitude, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-2">
+        <%= f1.text_field :latitude, class: 'form-control ger_latitude' %>
+      </div>
     </div>
     
     <div class="form-group">
-       <%= f.label :longitude, class: 'col-lg-1 control-label' %>
-         <div class="col-lg-2">
-          <%= f.text_field :longitude, class: 'form-control' %>
+       <%= f1.label :longitude, class: 'col-lg-1 control-label' %>
+      <div class="col-lg-2">
+        <%= f1.text_field :longitude, class: 'form-control ger_longitude' %>
         </div>
     </div>
 
@@ -65,16 +65,16 @@
     </div>
 
     <div class="form-group">
-      <%= f.label :is_active, class: 'col-lg-1 control-label' %>
+        <%= f1.label :is_active, class: 'col-lg-1 control-label' %>
       <div class="col-lg-2">
-        <%= f.check_box :is_active, class: 'form-control' %>
+        <%= f1.check_box :is_active, class: 'form-control ger_active' %>
       </div>
     </div>
 
     <div class="form-group">
-      <%= f.label :popular, class: 'col-lg-1 control-label' %>
+        <%= f1.label :popular, class: 'col-lg-1 control-label' %>
       <div class="col-lg-2">
-        <%= f.check_box :popular, class: 'form-control' %>
+        <%= f1.check_box :popular, class: 'form-control ger_popular' %>
       </div>
     </div>
 
@@ -102,18 +102,13 @@
       <h2>Images</h2>
     </div>
 
-    <%= f.fields_for :paintings do |i| %>
+    <%= f1.fields_for :paintings do |i| %>
         <div class="form-group">
           <%= i.label :image, class: 'col-lg-1 control-label' %>
           <div class="col-lg-2">
-            <%= i.file_field :image, class: 'btn btn-primary' %>
+            <%= i.file_field :image, class: 'btn btn-primary ger_image' %>
           </div>
         </div>
     <% end %>
 
-    <div class="form-group">
-      <div class="col-lg-offset-1 col-lg-10">
-        <%= f.submit("Add a new trip", class: 'btn btn-primary') %>
-      </div>
-    </div>
-<% end %>
+</div>

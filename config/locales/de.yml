@@ -272,4 +272,8 @@ de:
       static_about_tab_2_content: ""
       static_about_tab_3_title: "Wie können Sie dazu beitragen?"
       static_about_tab_3_content: ""
+    pagination:
+      previous: "Früher"
+      next: "Nächste"    
+
 

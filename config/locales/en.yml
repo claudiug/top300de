@@ -231,14 +231,14 @@ en:
       cities: "Cities"
     tutorial:
     # tutorial
-      tutorial_title: "How it works?"
-      title_1: "1. Select what you would like to do"
-      title_2: "2. Pick a destination from the list"
-      title_3: "3. Take a look at the destination details"
-      desc_1: "Make a selection clicking the icons that indicate activities. When you're ready click Find places."
-      desc_2: "Now you have some suggestions. You can pick one from the list or you can change the activity type and restart the search."
-      desc_3: "Check out the details of destination, take a look at the route you have to take and get on the road. Have fun!"
-      button_try: "Give it a try"
+      tutorial_title: "Learn how to find the best trip suggestions"
+      title_1: "1. Tell us what you would like to do"
+      title_2: "2. Pick the destinations you like the most"
+      title_3: "3. Explore your destination"
+      desc_1: "Select what you would like to do by clicking the icons. You can select as many activities you want and then click the “Find the best places” button. We will suggest the best destinations according to your selections."
+      desc_2: "Choose the destinations you prefer. Make sure to fill in your location, so that you can see how fast you can get there. You can always add or change the activities you want to do, in order to find the perfect destinations for you. "
+      desc_3: "Check out the destinations you like: see their history and what you don’t have to miss, the opening hours and how to get there. Found eye-catching destinations? Start planning your trip, pack your luggage and go! Bon voyage!"
+      button_try: "Start searching"
     newsletter:
       newsletter_title: "Sign-up for news. No spam, no ads, only travel tips."
       newsletter_button: "Subscribe"
@@ -264,7 +264,7 @@ en:
       map_close: "Disable map"
     misc:
       popular_title: "Popular destinations"
-      all_rights: "All rights reserved."
+      all_rights: "All rights reserved"
       static_about_subtitle: "Everything there is to know about wantatrip.com"
       static_about_tab_1_title: "What is wantatrip?"
       static_about_tab_1_content: ""
@@ -272,4 +272,7 @@ en:
       static_about_tab_2_content: ""
       static_about_tab_3_title: "How can you contribute?"
       static_about_tab_3_content: ""
+    pagination:
+      previous: "Previous"
+      next: "Next"  
 

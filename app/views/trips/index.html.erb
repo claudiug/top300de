@@ -3,7 +3,7 @@
 
   <section class="content-col stand-by push-right">
     <div class="head"><%= t "default.search_results.results" %>
-      <% trip_name = @trips.map(&:name).first(3) %>
+      <% trip_name = (params[:locale].eql?"en") ? @trips.map(&:name).first(3) : @trips.map(&:ger_name).first(3) %>
       <% count_trip = trip_name.count - 1 %>
       <% if count_trip == 0 %>
           <h1> Trip to <%= "#{trip_name.join('')}" %> by car 
@@ -20,7 +20,7 @@
             <%= render 'search_result' %>
         </div> <!-- trip-list -->
       <div class="trips-pagination" >
-        <%= will_paginate @trips, container: false %>
+        <%= will_paginate @trips, container: false, :next_label => "#{t('default.pagination.next')}", :previous_label => "#{t('default.pagination.previous')}" %>
        </div>
       </div> <!-- .box-content -->
     </div> <!-- .box -->

@@ -12,12 +12,11 @@
     <span class="trip-tent">
 
       <span class="trip-title">
-        <%=trip.name %>
-
+        <%= (params[:locale].eql?"en") ? trip.eng_name : trip.german_name %>
       </span> <!-- .trip-title -->
 
       <span class="desc trip-desc-card">
-        <%=h truncate(trip.description, :length => 170) %>
+        <%= (params[:locale].eql?"en") ? truncate(trip.eng_description, length: 170).html_safe : truncate(trip.german_description, length: 170).html_safe %>
       </span> <!-- .desc .fly-left -->
 
       <div class="fader"></div>

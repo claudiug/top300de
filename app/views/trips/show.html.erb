@@ -5,22 +5,17 @@
 
   <div class="title">
     <div class="wrapBlock">
-
-      <!--
-      <div class="avatar">
-        <%= image_tag(@trip.paintings.first.image.url(:resized).to_s) unless @trip.paintings.first.blank? %>
-        <div class="more-images">+ 10</div>
-      </div>
-        -->
-      <h1><%=@trip.name %></h1>
+      <h1> <%= (params[:locale].eql?"en") ? @trip.eng_name : @trip.german_name %> </h1>
         <span class="distance">
           <span></span><%= calculate_distance('CAR', session[:location], @trip.city).first unless session[:location].blank? %></span>
         <span class="km">
            <span></span><%= calculate_distance('CAR', session[:location], @trip.city).last unless session[:location].blank? %>
         </span>
+      <% if @trip.country.present? %>
         <span class="capital">
-           <span></span>Capital of Germany
+           <span></span><%= (params[:locale].eql?"en") ? @trip.country : @trip.ger_country %>
         </span>
+      <% end %>
     </div>
   </div> <!-- .title -->
   <div class="adpic-cover"></div>
@@ -40,17 +35,7 @@
         </div> <!-- .box-content -->
       </div> <!-- .box -->
 
-      <!--
-    <div class="about-city">
-      <span class="capital">Capital of Germany</span>
-
-
-      <span class="area"> 891.8 km²</span>
-      <span class="population"> 3.502 million</span>
-
-      </div>
-        -->
-    </section>
+   </section>
 
     <section class="trip-block stand-by" id="trip-holder">
       <div class="scroller">
@@ -59,29 +44,27 @@
         <h2><%= t "default.product_page.menu_about" %></h2>
             <div class="section-content">
               <p>
-                <%=@trip.description.html_safe%>
+              <%= (params[:locale].eql?"en") ? @trip.eng_description.html_safe : @trip.german_description.html_safe %>
               </p>
             </div>
 
         <div class="trip-special">
             <div class="trip-special-block special-coordinates wi wi-location-arrow">
                   <h3>Location</h3>
-                  <span><%=@trip.city%>, <%=@trip.zip_code%></span>
+                  <span><%= (params[:locale].eql?"en") ? @trip.city : @trip.ger_city %>, <%=@trip.zip_code%></span>
                   <span>Lat: <%=@trip.latitude%></span>
                   <span>Long: <%=@trip.longitude%></span>
+
                   <% if @trip.country.present? %>
                     <span>Country: <%= @trip.country %> </span>
                     <span>Population: <%= @trip.population %> </span>
-                    <span>Time: <%= Time.now.strftime("%H:%M") %></span>
+                    <span>Local time: <%= Time.now.strftime("%H:%M") %></span>
                   <% end %>
-
             </div>
 
           <div class="trip-special-block special-opening wi wi-clock-o">
             <h3>Opening hours</h3>
-            <span>Monday - Friday:</span>
-            <span>Sunday:</span>
-            <span>Saturday:</span>
+            <%= @trip.population %>
           </div>
           <div class="trip-special-block special-weahter wi wi-cloud">
             <h3>Weather now</h3>
@@ -137,10 +120,10 @@
         // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
         var mapOptions = {
             // How zoomed in you want the map to start at (always required)
-            zoom: 11,
-
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.SATELLITE,
             // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(40.6700, -73.9400), // New York
+            center: new google.maps.LatLng(<%=@trip.latitude%>, <%=@trip.longitude%>),
 
             // How you would like to style the map.
             // This is where you would paste any style found on Snazzy Maps.
