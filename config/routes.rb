@@ -8,7 +8,7 @@ Top300de::Application.routes.draw do
     resources :trips, only:[:index, :show]
       get :about, to: 'default#about' 
       get :privacy, to: 'default#privacy'
-      get :term, to: 'default#term'
+      get :terms, to: 'default#term'
       get :sitemap, to: 'default#sitemap'
   end
 
