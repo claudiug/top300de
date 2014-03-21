@@ -14,6 +14,13 @@
         <%= (params[:locale].eql?"en") ? trip.eng_name : trip.german_name %>
       </span> <!-- .trip-title -->
 
+       <span class="trip-category">
+        <h2>  <%= t("default.home.category") %>: </h2>
+          <% trip.categories.each do |cat| %>
+              <%= cat.name %> &nbsp;
+          <% end %>
+      </span> 
+
       <span class="desc trip-desc-card">
         <%= (params[:locale].eql?"en") ? truncate(trip.eng_description, length: 170).html_safe : truncate(trip.german_description, length: 170).html_safe %>
       </span> <!-- .desc .fly-left -->

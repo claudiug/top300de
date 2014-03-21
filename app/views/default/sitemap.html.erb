@@ -2,19 +2,17 @@
 <section class="wideBlock collage staticHead">
   <div class="wrapBlock">
     <h1>Sitemap</h1>
-
   </div> <!-- .wrapBlock -->
-
 </section>
 
 <section class="wideBlock static-content">
   <div class="wrapBlock">
     <h2>General access</h2>
     <ul>
-      <li><a href="{language}/" title="Homepage">Homepage</a></li>
-      <li><a href="{language}/terms" title="Terms of use">Terms of use</a></li>
-      <li><a href="{language}/privacy" title="Privacy">Privacy</a></li>
-      <li><a href="{language}/sitemap" title="Sitemap">Sitemap</a></li>
+      <li> <%= link_to "#{t("default.sitemap.homepage_link")}", root_path, title: "#{t("default.sitemap.homepage_link")}" %> </li>
+      <li> <%= link_to "#{t("default.home.terms_link")}", "/#{params[:locale]}/term", title: "#{t("default.home.terms_link")}" %> </li>
+      <li><%= link_to "#{t("default.sitemap.privacy_link")}", "/#{params[:locale]}/privacy", title: "#{t("default.home.privacy_link")}" %> </li>
+      <li> <%= link_to "Sitemap", "/#{params[:locale]}/sitemap", title: "Sitemap" %></li>
     </ul>
   </div> <!-- .wrapBlock -->
 </section>
@@ -23,16 +21,14 @@
   <div class="wrapBlock">
     <h2>Trips</h2>
     <ul>
-      <li class="capital-letter">A</li>
-      <li><a href="{language}/trip-name" title="Trip name">Trip name</a></li>
-    </ul>
-    <ul>
-      <li class="capital-letter">B</li>
-      <li><a href="{language}/trip-name" title="Trip name">Trip name</a></li>
-    </ul>
-    <ul>
-      <li class="capital-letter">C</li>
-      <li><a href="{language}/trip-name" title="Trip name">Trip name</a></li>
-    </ul>
+    <% @trips.each do |trip| %>
+       <li> <% if params[:locale] == "en" %>
+               <%= link_to trip.eng_name, trip_path(trip), title: trip.eng_name %>
+            <% else %>
+               <%= link_to trip.german_name, trip_path(trip), title: trip.german_name %>
+            <% end %>   
+         </li>
+    <% end %>    
+  </ul>
   </div> <!-- .wrapBlock -->
 </section>

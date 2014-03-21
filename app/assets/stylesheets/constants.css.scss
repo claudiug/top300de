@@ -603,6 +603,19 @@ header {
     font-size: $head;
   }
 
+  .trip-category h2 {
+    color: black;
+    line-height: 1.0;
+    font-family: $bold;
+    font-size: 14px;
+  }
+
+  .trip-category {
+    color: black;
+    line-height: 1.8;
+    font-size: 12px;
+  }
+
   .meta {
     margin: 0;
     padding: 12px 15px 0;

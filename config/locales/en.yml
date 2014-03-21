@@ -216,6 +216,7 @@ en:
       privacy_link: "Privacy policy"
       bookmark_link: "Bookmark"
       language_label: "Change language"
+      category: "Categories"
     form:
       go_hike: "Go hiking"
       go_mountain: "Climb mountains"
@@ -277,4 +278,8 @@ en:
     pagination:
       previous: "Previous"
       next: "Next"  
+    sitemap:
+      homepage_link: "Homepage"  
+      privacy_link: "Privacy" 
+
 

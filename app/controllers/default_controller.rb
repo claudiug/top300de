@@ -14,6 +14,7 @@ class DefaultController < ApplicationController
   end
 
   def sitemap
+    @trips = Trip.order('name')
   end
 
   def contribute
