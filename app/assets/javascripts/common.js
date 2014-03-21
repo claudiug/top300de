@@ -239,3 +239,4 @@ function hideModals(target) {
         $('.overlay').fadeOut(60);
         $(target).animate({top:'35px', opacity:'0'}, 80).hide();
 }
+

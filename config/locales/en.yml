@@ -205,6 +205,8 @@ en:
       <<: *errors
 
   default:
+    website:
+      title: "Wantatrip.com - Explore amazing places in Germany"
     home:
       slogan: "Explore amazing places in Germany!"
       subslogan: "Select what you want to do and start planning your trip"

@@ -26,13 +26,27 @@
 }
 .filter-col {
   width: 190px;
-  padding: 0 15px;
+  padding: 0 15px 0 0;
   margin-bottom: 20px;
 
   .head {
     padding-bottom: 15px;
-    margin-left: -15px;
   }
+
+  .leftcol-break {
+    position: relative;
+    margin: 0 0 15px;
+    padding: 0 15px 0 0;
+
+    .box-content {
+      padding-bottom: 15px;
+      &.location-from {
+         margin-bottom: 15px;
+        padding-bottom: 0;
+      }
+    }
+  }
+
   .addSugg {
     span {
       margin: 5px 2px 0 0;
@@ -231,8 +245,8 @@
   margin-top: 10px;
 }
 .ui-widget-content {
-  background: #CED4D5;
-  border: 1px solid #fff;
+  background: #BDCCDB;
+  border: 0;
 
   .ui-state-default,
   .ui-widget-content .ui-state-default,
@@ -242,22 +256,22 @@
 
   .ui-widget-header {
     @include border-radius(0px);
-    background: #F0F0F0;
+    background: #fff;
   }
 
   .ui-slider-handle {
     @include border-radius(50%);
     padding: 0;
-    background: #7F8C8D;
+    background: #2c3e50;
     text-align: center;
-    margin-top: -2px;
+    margin-top: -1px;
     outline: none;
     margin-left: -14px;
     text-decoration: none;
     font-size: 12px;
     width: 21px;
     height: 21px;
-    border: 2px solid white;
+    border: 2px solid transparent;
 
     &:before {
       content: " ";
@@ -276,4 +290,5 @@
 .distance-filter {
   border: 0;
   color: #666;
+  background: transparent;
 }

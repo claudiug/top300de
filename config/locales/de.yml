@@ -203,6 +203,8 @@ de:
       <<: *errors
 
   default:
+    website:
+      title: "Wantatrip.com - Explore Deutschland"
     home:
       slogan: "Das is ein sehr gut website"
       subslogan: "Click hier und click go bitte"

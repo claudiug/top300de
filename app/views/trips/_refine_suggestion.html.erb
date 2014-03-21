@@ -2,7 +2,7 @@
   <%= form_tag trips_path, method: :get do %>
   <div class="head"><%= t "default.search_results.refine_search" %></div>
   <div class="box leftcol-break">
-    <div class="title"><%= t "default.search_results.leaving_from" %></div>
+    <!-- <div class="title"><%= t "default.search_results.leaving_from" %></div> -->
 
     <div class="box-content location-from">
       <%= text_field_tag("location", params[:location], :autocomplete => :off, value:params[:location], class:"input size2 map", placeholder:"your city name here") %>
@@ -14,7 +14,7 @@
 
       <div class="title">
         <%= t "default.search_results.location_pop_title" %>
-        <div class="icons fui-cross close"></div>
+        <div class="wi wi-times close"></div>
       </div>
 
       <p><%= t "default.search_results.location_pop_content" %></p>

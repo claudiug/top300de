@@ -342,10 +342,13 @@ header {
   }
   &.map {
     text-indent: 0;
-    padding: 0;
+    padding: 6px 10px;
+    @include box-shadow(0 1px 2px rgba(90, 90, 90, 0.1));
     color: #B6B6B6;
-    border: 1px solid white;
     cursor: pointer;
+    background: rgba(255,255,255, .8);
+    border: 0;
+    border-radius: 4px;
 
     &:focus {
       color: #6a6a6a;
@@ -369,6 +372,7 @@ header {
   color: white;
   outline: none;
   font-family: $bold;
+
 
   &.lg {
     background: #47d9bf;
@@ -447,19 +451,19 @@ header {
       margin-bottom: 3px;
       margin-top: 10px;
       color: rgb(83, 83, 83);
-      background: #fff;
-      border: 1px solid #ddd;
-      @include box-shadow(none);
+      background: rgba(255,255,255,.8);
+      @include border-radius(3px);
+      @include box-shadow(0 1px 2px rgba(90, 90, 90, 0.1));
 
       &:active {
-        border: 1px solid #ccc;
+
       }
 
     }
 
     &:active {
       position: relative;
-      top: 3px;
+      top: 1px;
     }
 
   }
@@ -485,6 +489,7 @@ header {
 
   .trip-tent {
     padding-right: 20px;
+    text-align: left;
   }
 }
 
@@ -524,6 +529,9 @@ header {
       margin-left: -50px;
       z-index: 90;
 
+      .popular-destinations & {
+        margin-top: -73px;
+      }
     }
 
     .fader {
@@ -636,24 +644,6 @@ header {
   }
 }
 
-.leftcol-break {
-  position: relative;
-  margin: 0 -15px 15px;
-  padding: 15px 15px 0;
-  background: #fff;
-  @include border-radius(5px);
-  @include box-shadow(0 1px 2px rgba(90, 90, 90, 0.1));
-
-  .box-content {
-    padding-bottom: 15px;
-    &.location-from {
-      border-bottom: 1px solid #eee;
-      margin-bottom: 15px;
-      padding-bottom: 10px;
-    }
-  }
-}
-
 .table {
   display: table;
   width: 100%;
@@ -747,7 +737,7 @@ header {
     &.no-location-modal {
       margin: 0;
       opacity: 1;
-      top: 89px;
+      top: 51px;
       background: #1abc9c;
       left: 0;
       width: 190px;
@@ -758,8 +748,7 @@ header {
       &:after {
         border-bottom-color: #1abc9c;
         right: auto;
-        left: 50%;
-        margin-left: -8px;
+        left: 20px;
       }
 
       .title {

@@ -1,3 +1,4 @@
+
 <div class="wrapBlock search-results">
 <%= render 'refine_suggestion' %>
 
@@ -6,9 +7,11 @@
       <% trip_name = (params[:locale].eql?"en") ? @trips.map(&:name).first(3) : @trips.map(&:ger_name).first(3) %>
       <% count_trip = trip_name.count - 1 %>
       <% if count_trip < 1 %>
-          <h1> Trip to <%= "#{trip_name.join('')}" %> by car 
+          <%= page_heading "Popular trips"  %>
       <% else %>
-          <h1>Trips to <%= "#{trip_name.first(count_trip).join(', ')}" %> and <%= "#{trip_name[count_trip]}" %> by car </h1>
+          <h1>Travel to <%= "#{trip_name.first(count_trip).join(', ')}" %> and <%= "#{trip_name[count_trip]}" %> by car </h1>
+          <%= page_heading "Travel to #{trip_name.first(count_trip).join(', ')}, #{trip_name[count_trip]} and #{trip_name.count} other destinations"  %>
+
       <% end %>
     </div>
 
