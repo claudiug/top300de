@@ -216,6 +216,7 @@ de:
       privacy_link: "Datenschutz"
       bookmark_link: "Bookmark"
       language_label: "Sprache ändern"
+      category: "Kategorien"
     form:
       go_hike: "Gehen Sie wandern"
       go_mountain: "Berge besteigen"
@@ -277,6 +278,9 @@ de:
     pagination:
       previous: "Früher"
       next: "Nächste" 
+    sitemap:
+      homepage_link: "Startseite"  
+      privacy_link: "Ruhe"   
 
 
 

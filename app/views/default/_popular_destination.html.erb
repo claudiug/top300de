@@ -16,15 +16,20 @@
 
       <span class="trip-title">
         <%#= trip.name %>
-        <%= (params[:locale].eql?"en") ? trip.eng_name : trip.german_name %>
+         <%= (params[:locale].eql?"en") ? trip.eng_name : trip.german_name %>
       </span> <!-- .trip-title -->
+
+        <span class="trip-category">
+        <h2>  <%= t("default.home.category") %>: </h2>
+           <% trip.categories.each do |cat| %>
+              <%= cat.name %> &nbsp;
+          <% end %>
+      </span> 
 
       <span class="desc trip-desc-card">
         <%=h truncate((params[:locale].eql?"en") ? trip.eng_description : trip.german_description, :length => 170) %>
       </span> <!-- .desc -->
-
       <div class="fader"></div>
-
     </span> <!-- .trip-tent -->
     </a>
   </article>  <!-- .trip-item -->

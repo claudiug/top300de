@@ -75,35 +75,34 @@ class Trip < ActiveRecord::Base
   end
 
   def eng_name
-    self.name ? self.name : " "
+    self.name ? self.name : "-"
   end
 
   def german_name
-    self.ger_name ? self.ger_name : " "
+    self.ger_name ? self.ger_name : "-"
   end
 
   def eng_city
-    self.city ? self.city : " "
+    self.city ? self.city : "-"
   end
 
   def german_city
-    self.ger_city ? self.ger_city : " "
+    self.ger_city ? self.ger_city : "-"
   end
 
   def eng_description
-    self.description ? self.description : " "
+    self.description ? self.description : "-"
   end
 
   def german_description
-    self.ger_description ? self.ger_description : " "
+    self.ger_description ? self.ger_description : "-"
   end
 
   def eng_country
-    self.country ? self.country : " "
+    self.country ? self.country : "-"
   end
 
   def german_country
-    self.ger_country ? self.ger_country : " "
+    self.ger_country ? self.ger_country : "-"
   end
-
 end
