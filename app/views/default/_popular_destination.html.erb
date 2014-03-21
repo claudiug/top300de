@@ -20,11 +20,10 @@
       </span> <!-- .trip-title -->
 
         <span class="trip-category">
-        <h2>  <%= t("default.home.category") %>: </h2>
            <% trip.categories.each do |cat| %>
-              <div class="in_category <%= cat.name.downcase %>"> <%= cat.name %> </div>
+              <span class="in_category <%= cat.name.downcase %>"> <%= cat.name %> </span>
           <% end %>
-      </span> 
+        </span>
 
       <span class="desc trip-desc-card">
         <%=h truncate((params[:locale].eql?"en") ? trip.eng_description : trip.german_description, :length => 170) %>

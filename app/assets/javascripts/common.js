@@ -11,6 +11,13 @@ $(window).load( function() {
         blockElement: 'article'
     });
 
+    $('#trip-list-b').BlocksIt({
+        numOfCol: 4,
+        offsetX: 8,
+        offsetY: 8,
+        blockElement: 'article'
+    });
+
     initialize();
 
 });

@@ -14,13 +14,6 @@
         <%= (params[:locale].eql?"en") ? trip.eng_name : trip.german_name %>
       </span> <!-- .trip-title -->
 
-       <span class="trip-category">
-        <h2>  <%= t("default.home.category") %>: </h2>
-        <% trip.categories.each do |cat| %>
-         <div class="in_category <%= cat.name.downcase %>"> <%= cat.name %> </div>
-        <% end %>
-      </span> 
-
       <span class="desc trip-desc-card">
         <%= (params[:locale].eql?"en") ? truncate(trip.eng_description, length: 170).html_safe : truncate(trip.german_description, length: 170).html_safe %>
       </span> <!-- .desc .fly-left -->
@@ -38,6 +31,14 @@
             <%= calculate_distance('CAR', params[:location], trip.city).last unless params[:location].blank? %>
           </span>
 
+        <!--
+          <span class="trip-category">
+            <% trip.categories.each do |cat| %>
+             <span class="in_category <%= cat.name.downcase %>"> <%= cat.name %> </span>
+            <% end %>
+          </span>
+        -->
+
       </span> <!-- .meta stand-by -->
 
     </span> <!-- .trip-tent -->
@@ -51,4 +52,3 @@
     <%= render "default/popular_destination" %>
 
 <% end %>
-

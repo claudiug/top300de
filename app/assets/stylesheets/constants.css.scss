@@ -221,6 +221,9 @@ body:before {
 .iblock {
   display: inline-block;
 }
+.itable {
+  display: table-cell;
+}
 .stand-by {
   float: none;
   margin-left: 190px;
@@ -502,7 +505,7 @@ header {
   }
 
   a {
-    padding-bottom: 110px;
+    padding-bottom: 135px;
 
     .more {
       background: rgba(23, 194, 119, 0.7) image-url("observe.svg") 50% 30% no-repeat !important;
@@ -603,17 +606,15 @@ header {
     font-size: $head;
   }
 
-  .trip-category h2 {
-    color: black;
-    line-height: 1.0;
-    font-family: $bold;
-    font-size: 14px;
-  }
-
   .trip-category {
     color: black;
     line-height: 1.8;
     font-size: 12px;
+    padding-top: 15px;
+    span {
+
+      display: inline-block;
+    }
   }
 
   .meta {
