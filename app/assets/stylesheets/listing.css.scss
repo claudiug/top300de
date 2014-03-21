@@ -36,6 +36,10 @@
   &.horizontal-filter-col {
     width: 100%;
     padding: 0px 0 0;
+    background: rgba(255,255,255,.8);
+    @include border-radius(3px);
+    @include box-shadow(0 1px 2px rgba(90, 90, 90, 0.1));
+
     .iblock {
       vertical-align: middle;
     }
@@ -43,6 +47,27 @@
       position: relative;
       padding: 0 15px;
       vertical-align: middle;
+
+      .title {
+        position: absolute;
+        width: auto;
+        text-align: center;
+        top: -31px;
+        font-size: 13px;
+        background: #FFFFFF;
+        padding: 5px 20px;
+        left: 50%;
+        white-space: nowrap;
+        margin-left: -55px;
+        border-radius: 5px;
+        opacity: 0;
+        .itable & {
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
     }
     .trip-type{
       label {
@@ -81,37 +106,16 @@
     }
 
     .box {
-      background: rgba(255,255,255,.8);
-      @include border-radius(3px);
-      @include box-shadow(0 1px 2px rgba(90, 90, 90, 0.1));
       padding: 10px 15px;
-
-      .title {
-        position: absolute;
-        width: auto;
-        text-align: center;
-        top: -31px;
-        font-size: 13px;
-        background: #FFFFFF;
-        padding: 5px 20px;
-        left: 50%;
-        white-space: nowrap;
-        margin-left: -55px;
-        border-radius: 5px;
-        opacity: 0;
-        .itable & {
-          &:hover {
-            opacity: 1;
-          }
-        }
-      }
+      display: table;
+      margin: 0;
     }
 
     .wi {
       font-size: 20px;
       padding-bottom: 0;
       vertical-align: middle;
-      padding: 0 10px 0 0;
+      padding: 0;
       color: #2c3e50;
       width: auto;
     }
