@@ -22,7 +22,7 @@
         <span class="trip-category">
         <h2>  <%= t("default.home.category") %>: </h2>
            <% trip.categories.each do |cat| %>
-              <%= cat.name %> &nbsp;
+              <div class="in_category <%= cat.name.downcase %>"> <%= cat.name %> </div>
           <% end %>
       </span> 
 
