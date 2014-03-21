@@ -2,11 +2,6 @@ Top300de::Application.routes.draw do
   get '/register', to: 'sessions#new'
   post '/login', to: 'sessions#create'
 
-  # get '/about/:locale', to: 'default#about'
-  # get '/privacy', to: 'default#privacy'
-  # get '/terms', to: 'default#term'
-  # get '/sitemap', to: 'default#sitemap'
-
   scope ":locale", locale: /en|de/ do
     root "default#home"
     resources :users, only:[:new, :create]
