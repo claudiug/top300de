@@ -2,35 +2,3 @@
   <%= render "admin/trips/error" %>
   <%= render "admin/trips/trip_form", f1: f %>
 <% end %>
-
-<style type="text/css">
-    .tab-switch li a {
-        background: transparent;
-        color: #333;
-    }
-    .tab-switch li a:hover {
-        color: #000;
-    }
-    .tab-switch li.active a {
-      background: white;
-      color: #333
-  }
-</style>
-  <script type="text/javascript">
-  $(document).ready(function() {
-
-
-      $(".tab-content").not(":first").hide();
-      $("#tab-switch li:first").addClass("active").show();
-
-      $("#tab-switch li").click(function() {
-      $("#tab-switch li.active").removeClass("active");
-      $(this).addClass("active");
-      $(".tab-content").hide();
-      $($('a',this).attr("href")).show();
-
-      return false;
-      });
-  });
-  </script>
-
