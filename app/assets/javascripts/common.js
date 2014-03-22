@@ -6,15 +6,15 @@
 $(window).load( function() {
     $('#trip-list, #trip-list-second').BlocksIt({
         numOfCol: 3,
-        offsetX: 8,
-        offsetY: 8,
+        offsetX: 12,
+        offsetY: 12,
         blockElement: 'article'
     });
 
     $('#trip-list-b').BlocksIt({
-        numOfCol: 4,
-        offsetX: 8,
-        offsetY: 8,
+        numOfCol: 3,
+        offsetX: 12,
+        offsetY: 12,
         blockElement: 'article'
     });
 
@@ -109,9 +109,7 @@ $(document).ready(function() {
         });
     });
 
-    $("#left-trip-filters").pin({
-        containerSelector: ".trip-data"
-    });
+    $('.horizontal-filter-col').scrollToFixed();
 
     /* suggestion engine
     $('.addSugg span').click(function() {

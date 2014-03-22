@@ -1,4 +1,5 @@
 <section class="filter-col horizontal-filter-col">
+<div class="wrapBlock">
   <%= form_tag trips_path, method: :get do %>
 
   <div class="box filter-box">
@@ -7,19 +8,19 @@
       <div class="title iblock">Departure from: </div>
       <%= text_field_tag("location", params[:location], :autocomplete => :off, value:params[:location], class:"input size2 map iblock", placeholder:"your city name here") %>
 
+      <!-- if no departure location selected -->
+      <div class="wat-modal no-location-modal" id="wat-no-location">
+
+        <div class="modal-title">
+          <%= t "default.search_results.location_pop_title" %>
+          <div class="wi wi-times close"></div>
+        </div>
+
+        <p><%= t "default.search_results.location_pop_content" %></p>
+
+      </div> <!-- .wat-modal no-location-modal -->
+
     </div> <!-- .box-content -->
-
-    <!-- if no departure location selected -->
-    <div class="wat-modal no-location-modal" id="wat-no-location">
-
-      <div class="title">
-        <%= t "default.search_results.location_pop_title" %>
-        <div class="wi wi-times close"></div>
-      </div>
-
-      <p><%= t "default.search_results.location_pop_content" %></p>
-
-    </div> <!-- .wat-modal no-location-modal -->
 
     <div class="box-content itable" id="wat-transport">
       <div class="title iblock">Travel with: </div>
@@ -37,14 +38,15 @@
       </div>
     </div> <!-- .box-content -->
 
-    <div class="box-content itable">
+    <div class="box-content distance-from itable" id="wat-distance-limit">
       <div class="title iblock">Max distance: </div>
       <div class="trip-with trip-type options">
 
-
+        <div class="box-content distance-km iblock"></div>
         <div id="distance-slider" class="iblock">
 
         </div>
+
         <div class="iblock" id="distance-filter"></div> <div class="iblock">Km</div>
         <input id="distance-input" name="distance-filter" size="10" hidden="hidden" readonly="readonly" />
 
@@ -116,19 +118,21 @@
           <i></i><span><%= t "default.general.cities" %></span>
         </label>
       </div>
+    <!--
       <input class="submit-go rsmaller faded" name="filter" type="submit" value="&raquo;">
+      -->
     </div>
 
   
   <% # = render 'suggestions' %>
   <% end %>
+</div>
 </section>
 
 <script type="text/javascript">
 $(document).ready(function() {
     if( !$('#location').val() ) {
         $(this).focus();
-        $('#wat-transport').hide();
         $('#wat-no-location').show();
     }
 })

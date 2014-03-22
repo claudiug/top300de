@@ -37,16 +37,17 @@
     width: 100%;
     padding: 0;
     margin-bottom: 10px;
+    background: white;
+    @include border-radius(3px);
+    @include box-shadow(0 1px 2px rgba(90, 90, 90, 0.1));
+    margin-top: 0;
 
-    .location-from {
-      white-space: nowrap;
-    }
     .wi:before {
       font-size: 20px;
       padding-bottom: 0;
       vertical-align: middle;
       padding: 0;
-      color: #2c3e50;
+      color: #7f8a96;
       width: auto;
       display: inline-block;
     }
@@ -59,12 +60,19 @@
     }
     .itable {
       position: relative;
-      padding: 0 15px;
+      padding: 0;
       vertical-align: middle;
-      background: rgba(255,255,255,.8);
-      @include border-radius(3px);
-      @include box-shadow(0 1px 2px rgba(90, 90, 90, 0.1));
+      text-align: center;
 
+      &.location-from {
+        white-space: nowrap;
+        padding-left: 10px;
+        padding-right: 20px;
+      }
+      &.distance-from {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
       .title {
         position: absolute;
         width: auto;
@@ -74,6 +82,12 @@
         left: 0;
         white-space: nowrap;
         border-radius: 5px;
+        display: none;
+      }
+      .distance-km {
+        @extend .trip-sprite;
+        background-position: -116px -48px;
+        @include opacity(0.5);
       }
 
     }
@@ -88,7 +102,7 @@
     }
     #distance-slider {
       width: 120px;
-      margin: 0 10px 0 0;
+      margin: 0 10px;
       .ui-widget-header {
         background: #f7fafc;
       }
@@ -99,24 +113,24 @@
     }
     .trip-type {
       label.styled-on {
+        background-color: rgba(158, 243, 226, 0.2) !important;
+
         &:before {
-          left: 0;
           text-align: center;
           line-height: 18px;
           padding: 0;
-          width: 100%;
-          height: 5px;
-          top: -1px;
-          @include border-radius(0);
+          top: 5px;
+          left: auto;
+          right: 5px;
         }
       }
     }
 
     .box {
-      padding: 10px 0;
+      padding: 0;
       display: table;
       margin: 0 -10px;
-      border-spacing: 10px;
+      border-spacing: 0;
       width: 100%;
     }
 
@@ -131,7 +145,8 @@
     .styled {
       display: inline-block;
       margin: 0;
-      padding: 10px 15px;
+      padding: 20px;
+      @include border-radius(0);
       span {
         display: none;
       }
@@ -386,4 +401,14 @@
   border: 0;
   color: #666;
   background: transparent;
+}
+
+#trip-list-b {
+  .trip-item {
+    a {
+      img {
+        width: 318px;
+      }
+    }
+  }
 }

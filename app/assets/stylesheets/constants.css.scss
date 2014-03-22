@@ -230,11 +230,11 @@ body:before {
 }
 /* Header */
 header {
-  background: #2c3e50; /* #47D9BF #F2D03B #00A1D9 #003056 */
+  background: #1abc9c; /* #47D9BF #F2D03B #00A1D9 #003056 */
   width: 100%;
   z-index: 985;
   height: 43px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 
   .on-trip & {
     position: absolute;
@@ -345,7 +345,7 @@ header {
   }
   &.map {
     text-indent: 0;
-    padding: 6px 10px;
+    padding: 6px 10px 0;
     @include box-shadow(0 1px 2px rgba(90, 90, 90, 0.1));
     color: #B6B6B6;
     cursor: pointer;
@@ -485,7 +485,7 @@ header {
 }
 #hp-trips {
   padding-top: 40px;
-  width: 820px;
+  width: 1000px;
   margin: 0 auto;
   padding-left: 15px;
   position: relative;
@@ -752,18 +752,20 @@ header {
     &.no-location-modal {
       margin: 0;
       opacity: 1;
-      top: 91px;
+      top: 43px;
       background: #1abc9c;
-      left: 41px;
-      width: 190px;
+      left: 0px;
+      width: 215px;
       @include box-shadow(0 1px 2px rgba(90, 90, 90, 0.1));
       padding-bottom: 10px;
       color: white;
-
+      p {
+        white-space: normal;
+      }
       &:after {
         border-bottom-color: #1abc9c;
         right: auto;
-        left: 20px;
+        left: 12px;
       }
 
       .title {
@@ -772,7 +774,7 @@ header {
 
     }
 
-  .title {
+  .modal-title {
     font-family: $bold;
     display: block;
     font-size: 14px;

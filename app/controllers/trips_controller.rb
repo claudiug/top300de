@@ -10,9 +10,9 @@ class TripsController < ApplicationController
    if params[:category].present?
         categories = Category.where(name: params[:category].keys.map(&:humanize))
         trip_ids = categories.map{|cat| cat.trips.map(&:id)}.flatten.uniq
-        @trips  = Trip.find(trip_ids).paginate(:page => params[:page], :per_page => 5)
+        @trips  = Trip.find(trip_ids).paginate(:page => params[:page], :per_page => 12)
       else
-        @trips = Trip.top_ten.page(params[:page]).per_page(5)
+        @trips = Trip.top_ten.page(params[:page]).per_page(12)
       end
    end
 
