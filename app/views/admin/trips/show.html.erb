@@ -4,7 +4,7 @@
     <h1>trip page for: <strong><%= @trip.name %></strong></h1>
     <h2>Is active?: <%= @trip.is_active %></h2>
     <h3>City: <%= @trip.city %></h3>
-    <p>Description: <%= @trip.description %></p>
+    <p>Description: <%= @trip.description.html_safe %></p>
     <strong>Type size:<%= @trip.categories.size %></strong>
   </div>
   <% @trip.categories.each do |cate| %>
