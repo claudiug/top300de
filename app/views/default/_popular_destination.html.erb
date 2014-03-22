@@ -18,15 +18,15 @@
         <%#= trip.name %>
          <%= (params[:locale].eql?"en") ? trip.eng_name : trip.german_name %>
       </span> <!-- .trip-title -->
-
+        <!--
         <span class="trip-category">
            <% trip.categories.each do |cat| %>
               <span class="in_category <%= cat.name.downcase %>"> <%= cat.name %> </span>
           <% end %>
         </span>
-
+        -->
       <span class="desc trip-desc-card">
-        <%=h truncate((params[:locale].eql?"en") ? trip.eng_description : trip.german_description, :length => 170) %>
+        <%= (params[:locale].eql?"en") ? truncate(trip.eng_description.html_safe, length:170, escape: false) : truncate(trip.german_description, length: 170, escape: false) %>
       </span> <!-- .desc -->
       <div class="fader"></div>
     </span> <!-- .trip-tent -->

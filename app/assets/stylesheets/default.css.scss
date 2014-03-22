@@ -369,7 +369,7 @@ label.styled {
     padding-bottom: 10px;
   }
   .fcol {
-    padding-bottom: 25px;
+    padding-bottom: 5px;
 
     h3 {
       font-size: 14px;
@@ -556,10 +556,10 @@ label.styled {
       }
 
       a {
-        margin: 0 -10px;
+        margin: 0;
         display: block;
         font-size: 18px;
-        padding: 10px 15px;
+        padding: 10px 25px;
         position: relative;
         font-family: $light;
 
@@ -596,7 +596,7 @@ label.styled {
     /* box-shadow: 0 1px 2px rgba(90, 90, 90, 0.1); */
     min-height: 340px;
 
-    padding: 13px 10px;
+    padding: 13px 0;
     border-radius: 3px;
     margin-bottom: 30px;
 
@@ -618,8 +618,19 @@ label.styled {
     }
 
     .trip-section {
-      padding: 15px 25px;
+      float: left;
+      width: 750px;
+      padding: 15px 25px 15px 0;
 
+      &#about + #gallery {
+        float: none;
+        width: auto;
+        margin-left: 780px;
+      }
+      &#directions {
+        clear: both;
+        width: 100%;
+      }
       .section-content {
         padding-bottom: 40px;
       }
@@ -637,45 +648,42 @@ label.styled {
         position: relative;
       }
 
-      .trip-special {
-        display: table;
-        width: 100%;
-        padding-bottom: 15px;
-        .trip-special-block {
-          display: table-cell;
-          width: 33%;
-          position: relative;
-          padding-bottom: 0px;
-          &:before {
-            width: 40px;
-            color: #2c3e50;
-            position: absolute;
-            left: 0;
-            top: 0;
-            text-align: center;
-            font-size: 22px;
-            @include opacity(0.3);
-          }
-          span {
-            display: block;
-            font-size: 15px;
-            padding-left: 45px;
-            padding-bottom: 10px;
-            font-family: $light;
-          }
-          h3 {
-            padding-left: 44px;
-          }
-        }
-
-      }
-
     }
 
   }
 
+}
 
-
+.trip-special {
+  display: table;
+  width: 100%;
+  padding-bottom: 15px;
+  .trip-special-block {
+    display: table-cell;
+    width: 33%;
+    position: relative;
+    padding-bottom: 0px;
+    &:before {
+      width: 40px;
+      color: #2c3e50;
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-align: center;
+      font-size: 22px;
+      @include opacity(0.3);
+    }
+    span {
+      display: block;
+      font-size: 15px;
+      padding-left: 45px;
+      padding-bottom: 10px;
+      font-family: $light;
+    }
+    h3 {
+      padding-left: 44px;
+    }
+  }
 
 }
 
