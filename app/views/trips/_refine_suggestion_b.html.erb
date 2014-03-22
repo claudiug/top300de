@@ -76,7 +76,7 @@
     </div> <!-- .box-content -->
 
 
-      <div class="trip-type options itable">
+      <div class="trip-type options itable trip-categories">
         <div class="title iblock">Your interests: </div>
         <% a = params[:category] ? params[:category].keys : "" %>
         <% hike_check = (a.include?'hiking') ? true : false %>
@@ -118,9 +118,9 @@
           <i></i><span><%= t "default.general.cities" %></span>
         </label>
       </div>
-    <!--
+
       <input class="submit-go rsmaller faded" name="filter" type="submit" value="&raquo;">
-      -->
+
     </div>
 
   
@@ -133,6 +133,8 @@
 $(document).ready(function() {
     if( !$('#location').val() ) {
         $(this).focus();
+        $('.trip-card').addClass('no-travel-distance');
+        $('.trip-card .meta').remove();
         $('#wat-no-location').show();
     }
 })

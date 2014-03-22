@@ -24,7 +24,6 @@ $(window).load( function() {
 
 $(document).ready(function() {
 
-
     $(".tab-content").not(":first").hide();
     $("#tab-switch li:first").addClass("active").show();
 
@@ -109,7 +108,9 @@ $(document).ready(function() {
         });
     });
 
-    $('.horizontal-filter-col').scrollToFixed();
+    $('.horizontal-filter-col').scrollToFixed({
+        preFixed: function() { $(this).addClass('sticked'); }
+    });
 
     /* suggestion engine
     $('.addSugg span').click(function() {
