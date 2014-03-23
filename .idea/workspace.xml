@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f1705e-f9e0-4d73-ae1d-520bc8d183fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" afterPath="$PROJECT_DIR$/app/views/trips/_refine_suggestion.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trips/_refine_suggestion_b.html.erb" afterPath="$PROJECT_DIR$/app/views/trips/_refine_suggestion_b.html.erb" />
     </list>
     <ignored path="top300de.iws" />
@@ -91,7 +90,7 @@
       <file leaf-file-name="_refine_suggestion_b.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/trips/_refine_suggestion_b.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="15" selection-start="516" selection-end="516" vertical-scroll-proportion="0.3200569" vertical-offset="0" max-vertical-offset="2235">
+            <state line="12" column="41" selection-start="443" selection-end="443" vertical-scroll-proportion="0.25604552" vertical-offset="0" max-vertical-offset="2235">
               <folding />
             </state>
           </provider>
@@ -1072,7 +1071,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trips/_refine_suggestion_b.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="15" selection-start="516" selection-end="516" vertical-scroll-proportion="0.3200569" vertical-offset="0" max-vertical-offset="2235">
+        <state line="12" column="41" selection-start="443" selection-end="443" vertical-scroll-proportion="0.25604552" vertical-offset="0" max-vertical-offset="2235">
           <folding />
         </state>
       </provider>
