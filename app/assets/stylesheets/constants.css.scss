@@ -510,21 +510,21 @@ header {
     padding-bottom: 135px;
 
     .more {
-      background: rgba(23, 194, 119, 0.7) image-url("observe.svg") 50% 30% no-repeat !important;
+      background: rgba(23, 194, 119, 0.7) image-url("observe.svg") 50% 50% no-repeat !important;
 
       background: transparent;
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B217C277,endColorstr=#B217C277)"; /* IE8 */
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B217C277,endColorstr=#B217C277);   /* IE6 & 7 */
       zoom: 1;
 
-      padding-top: 60px;
+      padding-top: 0;
       color: #fff;
       width: 100px;
       height: 100px;
       opacity: 0;
       @include border-radius(50%);
       display: block;
-
+      line-height: 145px;
       font-size: 11px;
       text-align: center;
       position: absolute;

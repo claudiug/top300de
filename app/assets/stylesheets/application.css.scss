@@ -9,14 +9,12 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- #*= require twitter/bootstrap
  *= require jquery.ui.slider
+  *= require twitter/bootstrap
  *= require constants
  *= require fonts
  *= require default
  *= require listing
- *= require chosen
- *= require_tree .
  */
 
 

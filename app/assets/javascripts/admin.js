@@ -11,8 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery.ui.slider.js
-//= require jquery.cookie.js
-//= require scrolltofixed-min.js
-//= require gallery.js
-//= require common
+//= require jquery_ujs
+//= require jquery.ui.autocomplete
+//= require jquery.ui.slider
+//= require twitter/bootstrap
+//= require ckeditor/init
+//= require chosen-jquery
