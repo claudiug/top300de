@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= page_title %></title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= yield :view_specific_css %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="wat-wrap">
+  <div id="wat-main">
+    <%= render 'shared/header' %>
+    <%= yield %>
+  </div>
+</div>
+
+<div id="wat-footer">
+  <%= render 'shared/mini_footer' %>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<footer id="Footer">
+  <div class="wrapBlock">
+
+    <div class="fcol center">
+      &copy; 2013 - 2014 Wantatrip - <%= t "default.misc.all_rights" %> &nbsp;-&nbsp;
+      <%= link_to "#{t("default.home.about_link")}", "/#{params[:locale]}/about", title: "#{t("default.home.about_link")}" %> &nbsp;&bull;&nbsp;
+
+      <%= link_to "#{t("default.home.terms_link")}", "/#{params[:locale]}/terms", title: "#{t("default.home.terms_link")}" %> &nbsp;&bull;&nbsp;
+
+      <%= link_to "#{t("default.home.privacy_link")}", "/#{params[:locale]}/privacy", title: "#{t("default.home.privacy_link")}" %> &nbsp;&bull;&nbsp;
+
+      <%= link_to "Sitemap", "/#{params[:locale]}/sitemap", title: "Sitemap" %>
+    </div>
+
+  </div> <!-- .wrapBlock -->
+
+</footer>
+<div class="overlay"></div>
+<div class="debug-console">
+  <%= debug(params) if Rails.env.development? %>
+</div>

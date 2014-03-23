@@ -34,4 +34,9 @@ Top300de::Application.routes.draw do
       resources :categories, only: [:index]
     end
   end
+
+  unless Rails.application.config.consider_all_requests_local
+    get '*not_found', to: 'errors#error_404'
+  end
+
 end

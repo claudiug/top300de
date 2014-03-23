@@ -1,0 +1,57 @@
+@import "constants";
+body {
+  background: #1abc9c;
+}
+.error-page {
+  font-size: 115px;
+  text-align: center;
+  width: 100%;
+  color: #f5deb3;
+  background: #1abc9c;
+  padding: 100px 0;
+
+  div {
+    font-family: $light;
+    color: white;
+    font-size: 72px;
+    padding-top: 15px;
+
+    & + div {
+      font-family: $regular;
+      font-size: 24px;
+    }
+  }
+  .submit-go {
+    &.rsmaller {
+      &.faded {
+        position: relative;
+        width: auto;
+        font-size: 16px;
+        background: rgba(255,255,255, .1);
+        border: 1px solid white;
+        padding: 13px 35px;
+        color: white;
+        font-family: $bold;
+        &:hover {
+          background: rgba(255,255,255, .2);
+        }
+      }
+    }
+  }
+}
+#Header {
+  .wrapBlock {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+#Footer {
+  color: white;
+  .wrapBlock {
+    border-top-color: #15A88B;
+    padding-top: 20px;
+  }
+  a {
+    color: white;
+  }
+}

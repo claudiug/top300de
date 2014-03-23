@@ -1,0 +1,11 @@
+<%= page_heading "Wait... what?" %>
+
+<% content_for :view_specific_css do %>
+    <%= stylesheet_link_tag "errors", "data-turbolinks-track" => true %>
+<% end %>
+<div class="error-page error-404 wi wi-bolt">
+    <div class="title">Ouch!</div>
+    <div class="subtitle">This is embarrassing... we can't find this page</div>
+
+    <%= link_to "Make a new search", "/#{params[:locale]}", title: "#{t("default.website.title")}", class: "submit-go rsmaller faded" %>
+</div>

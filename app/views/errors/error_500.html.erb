@@ -1,0 +1,11 @@
+<%= page_heading "The server messed up!" %>
+
+<% content_for :view_specific_css do %>
+    <%= stylesheet_link_tag "errors", "data-turbolinks-track" => true %>
+<% end %>
+<div class="error-page error-404 wi wi-terminal">
+  <div class="title">This looks like a server error...</div>
+  <div class="subtitle">We're working on it right now.</div>
+
+  <%= link_to "Go back to homepage", "/#{params[:locale]}", title: "#{t("default.website.title")}", class: "submit-go rsmaller faded" %>
+</div>
