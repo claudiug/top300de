@@ -7,7 +7,15 @@
     <div class="box-content location-from itable wi wi-map-marker">
       <div class="title iblock">Departure from: </div>
 
-        <% if cookies['is_from'] %>
+      <% if params[:location] %>
+          <script type="text/javascript">
+              if($.cookie('is_from') === null) {
+                  $.cookie('is_from', city, { expires: 365 });
+              }
+          </script>
+      <% end %>
+
+      <% if cookies['is_from'] %>
             <%= text_field_tag("location", params[:location], :autocomplete => :off, value:cookies['is_from'], class:"input size2 map") %>
         <% elsif cookies['is_from'].nil? %>
             <%= text_field_tag("location", params[:location], :autocomplete => :off, value:params[:location], class:"input size2 map", placeholder:"your city name here") %>

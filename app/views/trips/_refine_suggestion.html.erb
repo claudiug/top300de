@@ -4,6 +4,14 @@
   <div class="box leftcol-break">
     <!-- <div class="title"><%= t "default.search_results.leaving_from" %></div> -->
 
+    <% if params[:location] %>
+        <script type="text/javascript">
+            if($.cookie('is_from') === null) {
+                $.cookie('is_from', city, { expires: 365 });
+            }
+        </script>
+    <% end %>
+
     <div class="box-content location-from">
       <% if cookies['is_from'] %>
         <%= text_field_tag("location", params[:location], :autocomplete => :off, value:cookies['is_from'], class:"input size2 map") %>
