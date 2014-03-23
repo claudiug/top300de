@@ -9,7 +9,7 @@
 
       <% if params[:location] %>
           <script type="text/javascript">
-              if($.cookie('is_from') === null) {
+              if($.cookie('is_from') == undefined) {
                   $.cookie('is_from', '<%= params[:location] %>', { expires: 365 });
               }
           </script>
