@@ -205,7 +205,7 @@ $(document).ready(function() {
                 if(city != '' && state != '') {
                     $("#location").val(city);
                     $("#det-location").text(city);
-                    if($.cookie('query') === null) {
+                    if($.cookie('is_from') === null) {
                         $.cookie('is_from', city, { expires: 365 });
                     }
                 }
