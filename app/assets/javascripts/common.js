@@ -183,7 +183,7 @@ $(document).ready(function() {
             $(this).val('Suchen...');
     });
 
-    //I'm not doing anything else, so just leave
+    /*
     if(!navigator.geolocation) return;
 
     navigator.geolocation.getCurrentPosition(function(pos) {
@@ -191,9 +191,9 @@ $(document).ready(function() {
         var latlng = new google.maps.LatLng(pos.coords.latitude,pos.coords.longitude);
         geocoder.geocode({'latLng': latlng}, function(results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
-                //Check result 0
+
                 var result = results[0];
-                //look for locality tag and administrative_area_level_1
+
                 var city = "";
                 var state = "";
                 for(var i=0, len=result.address_components.length; i<len; i++) {
@@ -201,18 +201,21 @@ $(document).ready(function() {
                     if(ac.types.indexOf("locality") >= 0) city = ac.long_name;
                     if(ac.types.indexOf("administrative_area_level_1") >= 0) state = ac.long_name;
                 }
-                //only report if we got Good Stuff
+
                 if(city != '' && state != '') {
                     $("#location").val(city);
                     $("#det-location").text(city);
-                    if($.cookie('is_from') === null) {
-                        $.cookie('is_from', city, { expires: 365 });
-                    }
+                    $.removeCookie('is_from', { path: '/' });
+                    $.removeCookie('is_from', { path: '/en' });
+                    $.removeCookie('is_from', { path: '/de' });
+                    $.cookie('is_from', ''+ city +'', { expires: 365 });
+                    $('#filter-form').submit();
                 }
             }
         });
 
     });
+    */
 
     $('.horizontal-filter-col').scrollToFixed({
         preFixed: function() { $(this).addClass('sticked'); }

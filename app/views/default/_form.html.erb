@@ -41,7 +41,13 @@
 
           </div> <!-- .searchBlock -->
 
-          <div style="position: fixed; left: -9999px; top: -9999px;"> <%= text_field_tag("location", params[:location], class:"tinput", placeholder:"your city name here") %></div>
+          <div style="position: fixed; left: -9999px; top: -9999px;">
+            <% if cookies['is_from'] %>
+                <%= text_field_tag("location", params[:location], class:"tinput", value: cookies['is_from']) %>
+            <% elsif cookies['is_from'].nil? %>
+                <%= text_field_tag("location", params[:location], class:"tinput", placeholder:"your city name here") %>
+            <% end %>
+          </div>
 
           <div class="searchBlock submit">
             <%= hidden_field_tag :find_place, params[:locale] %>

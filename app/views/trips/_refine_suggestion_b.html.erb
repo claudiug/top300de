@@ -1,6 +1,6 @@
 <section class="filter-col horizontal-filter-col">
 <div class="wrapBlock">
-  <%= form_tag trips_path, method: :get do %>
+  <%= form_tag trips_path, id: "filter-form",  method: :get do %>
 
   <div class="box filter-box">
 
@@ -14,6 +14,15 @@
               }
           </script>
       <% end %>
+
+      <script type="text/javascript">
+          $('#filter-form').submit(function() {
+              $.removeCookie('is_from', { path: '/' });
+              $.removeCookie('is_from', { path: '/en' });
+              $.removeCookie('is_from', { path: '/de' });
+              $.cookie('is_from', $('input#location').val(), { expires: 365 });
+          });
+      </script>
 
       <% if cookies['is_from'] %>
             <%= text_field_tag("location", params[:location], :autocomplete => :off, value:cookies['is_from'], class:"input size2 map") %>
