@@ -485,18 +485,6 @@ header {
   border-radius: 3px;
   overflow: hidden;
 }
-#hp-trips {
-  padding-top: 40px;
-  width: 1000px;
-  margin: 0 auto;
-  padding-left: 15px;
-  position: relative;
-
-  .trip-tent {
-    padding-right: 20px;
-    text-align: left;
-  }
-}
 
 .trip-item {
   width: 255px;
@@ -735,8 +723,6 @@ header {
          margin: 0
        }
 
-
-
      }
 
    }
@@ -805,6 +791,9 @@ header {
     position: absolute;
     top: -5px;
     right: -5px;
+    &:before {
+      color: #fff !important;
+    }
   }
 
 }
@@ -921,4 +910,53 @@ header {
 .english-flag:before {
     background-image: image-url("uk_flag.svg");
     background-size: 15px 15px;
+}
+
+
+#trip-list-b {
+  .trip-item {
+    a {
+      img {
+        width: 320px;
+      }
+    }
+  }
+}
+.trip-item {
+  .no-travel-distance {
+    padding-bottom: 95px;
+
+    .trip-tent {
+      padding: 15px;
+    }
+    .fader {
+      bottom: 3px;
+    }
+  }
+}
+.trip-tent {
+  position: absolute;
+  padding: 15px 15px 55px;
+  font-size: $textSize;
+  line-height: 1.5;
+  color: $textColor;
+  overflow: hidden;
+  bottom: 0;
+  width: 91%;
+  z-index: 99;
+  background: white;
+}
+
+.popular-destinations {
+  .trip-item {
+    a {
+      padding-bottom: 95px;
+    }
+    .trip-tent {
+      padding: 15px;
+    }
+    .fader {
+      bottom: 3px;
+    }
+  }
 }

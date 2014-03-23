@@ -11,8 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery.ui.slider.js
 //= require jquery.cookie.js
-//= require scrolltofixed-min.js
 //= require gallery.js
 //= require common
