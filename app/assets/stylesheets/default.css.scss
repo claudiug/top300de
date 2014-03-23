@@ -568,7 +568,7 @@ label.styled {
 
       .box {
         background: none;
-        box-shadow: none;
+        @include box-shadow(none);
       }
 
       a {
@@ -1005,5 +1005,47 @@ label.styled {
   .trip-tent {
     padding-right: 20px;
     text-align: left;
+  }
+}
+
+/* Sitemap */
+.sitemap-table {
+  display: table;
+  li {
+    padding: 0 100px 20px 0;
+    overflow: hidden;
+    .image {
+      @include border-radius(50%);
+      overflow: hidden;
+      float: left;
+      vertical-align: middle;
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+    }
+    .title {
+      font-size: 15px;
+      font-family: $bold;
+      padding-top: 9px;
+      display: inline-block;
+    }
+    .trip-category {
+      float: none;
+      margin-left: 70px;
+      font-size: 11px;
+      display: block;
+      a {
+        color: #666;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.regular-links {
+  li {
+    font-size: 15px;
+    padding-bottom: 10px;
   }
 }

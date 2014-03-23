@@ -7,28 +7,58 @@
 
 <section class="wideBlock static-content">
   <div class="wrapBlock">
-    <h2>General access</h2>
-    <ul>
-      <li> <%= link_to "#{t("default.sitemap.homepage_link")}", root_path, title: "#{t("default.sitemap.homepage_link")}" %> </li>
-      <li> <%= link_to "#{t("default.home.terms_link")}", "/#{params[:locale]}/terms", title: "#{t("default.home.terms_link")}" %> </li>
-      <li><%= link_to "#{t("default.sitemap.privacy_link")}", "/#{params[:locale]}/privacy", title: "#{t("default.home.privacy_link")}" %> </li>
-      <li> <%= link_to "Sitemap", "/#{params[:locale]}/sitemap", title: "Sitemap" %></li>
-    </ul>
+    <h2>Destinations</h2>
+
+    <div class="sitemap-table">
+      <% @trips.in_groups_of(5, false).each_with_index do |trip, index| %>
+            <ul class="itable">
+            <% trip.each_with_index do |trip, index| %>
+                <li>
+
+                  <% if params[:locale] == "en" %>
+                      <a href="<%= trip_path(trip)%>" title="<%= trip.eng_name%>" class="image">
+                        <img src="<%= trip.paintings.first.image.url(:small).to_s %>" alt="<%= trip.eng_name%>" />
+                      </a>
+                      <a href="<%= trip_path(trip)%>" title="<%= trip.eng_name%>" class="title"><%= trip.eng_name%></a>
+                          <span class="trip-category">
+                            In:
+                            <% trip.categories.each do |cat| %>
+                                <a href="/<%= params[:locale] %>/trips?utf8=✓<% if cookies['is_from'] %>&location=<%= cookies['is_from']%><% end %>&category%5B<%= cat.name.downcase %>%5D=on" class="in_category <%= cat.name.downcase %>"> <%= cat.name %></a>
+                            <% end %>
+                          </span>
+
+
+                  <% else %>
+                      <a href="<%= trip_path(trip)%>" title="<%= trip.german_name%>" class="image">
+                        <img src="<%= trip.paintings.first.image.url(:small).to_s %>" alt="<%= trip.german_name%>" />
+                      </a>
+                      <a href="<%= trip_path(trip)%>" title="<%= trip.german_name%>" class="title"><%= trip.german_name%></a>
+                          <span class="trip-category">
+                            In:
+                            <% trip.categories.each do |cat| %>
+                                <a href="/<%= params[:locale] %>/trips?utf8=✓<% if cookies['is_from'] %>&location=<%= cookies['is_from']%><% end %>&category%5B<%= cat.name.downcase %>%5D=on" class="in_category <%= cat.name.downcase %>"> <%= cat.name %></a>
+                            <% end %>
+                          </span>
+
+
+                  <% end %>
+                </li>
+            <% end %>
+            </ul>
+      <% end %>
+    </div>
+
   </div> <!-- .wrapBlock -->
 </section>
 
 <section class="wideBlock static-content">
   <div class="wrapBlock">
-    <h2>Trips</h2>
-    <ul>
-    <% @trips.each do |trip| %>
-       <li> <% if params[:locale] == "en" %>
-               <%= link_to trip.eng_name, trip_path(trip), title: trip.eng_name %>
-            <% else %>
-               <%= link_to trip.german_name, trip_path(trip), title: trip.german_name %>
-            <% end %>   
-         </li>
-    <% end %>    
-  </ul>
+    <h2>Our website</h2>
+    <ul class="regular-links">
+      <li> <%= link_to "#{t("default.sitemap.homepage_link")}", root_path, title: "#{t("default.sitemap.homepage_link")}" %> </li>
+      <li> <%= link_to "#{t("default.home.terms_link")}", "/#{params[:locale]}/terms", title: "#{t("default.home.terms_link")}" %> </li>
+      <li><%= link_to "#{t("default.sitemap.privacy_link")}", "/#{params[:locale]}/privacy", title: "#{t("default.home.privacy_link")}" %> </li>
+      <li> <%= link_to "Sitemap", "/#{params[:locale]}/sitemap", title: "Sitemap" %></li>
+    </ul>
   </div> <!-- .wrapBlock -->
 </section>

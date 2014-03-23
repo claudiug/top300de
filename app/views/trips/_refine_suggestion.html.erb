@@ -5,8 +5,11 @@
     <!-- <div class="title"><%= t "default.search_results.leaving_from" %></div> -->
 
     <div class="box-content location-from">
-      <%= text_field_tag("location", params[:location], :autocomplete => :off, value:params[:location], class:"input size2 map", placeholder:"your city name here") %>
-
+      <% if cookies['is_from'] %>
+        <%= text_field_tag("location", params[:location], :autocomplete => :off, value:cookies['is_from'], class:"input size2 map") %>
+      <% elsif cookies['is_from'].nil? %>
+          <%= text_field_tag("location", params[:location], :autocomplete => :off, value:params[:location], class:"input size2 map", placeholder:"your city name here") %>
+      <% end %>
     </div> <!-- .box-content -->
 
     <!-- if no departure location selected -->

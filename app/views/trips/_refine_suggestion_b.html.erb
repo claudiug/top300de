@@ -128,14 +128,3 @@
   <% end %>
 </div>
 </section>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    if( !$('#location').val() ) {
-        $(this).focus();
-        $('.trip-card').addClass('no-travel-distance');
-        $('.trip-card .meta').remove();
-        $('#wat-no-location').show();
-    }
-})
-</script>

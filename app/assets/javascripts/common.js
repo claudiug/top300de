@@ -108,10 +108,6 @@ $(document).ready(function() {
         });
     });
 
-    $('.horizontal-filter-col').scrollToFixed({
-        preFixed: function() { $(this).addClass('sticked'); }
-    });
-
     /* suggestion engine
     $('.addSugg span').click(function() {
        $(this).toggleClass('danke');
@@ -140,6 +136,13 @@ $(document).ready(function() {
 
     });
      */
+
+    if( !$('#location').val() ) {
+        $(this).focus();
+        $('.trip-card').addClass('no-travel-distance');
+        $('.trip-card .meta').remove();
+        $('#wat-no-location').show();
+    }
 
     $('input#location').keyup(function() {
         $('#wat-no-location').fadeOut(80);
@@ -202,11 +205,19 @@ $(document).ready(function() {
                 if(city != '' && state != '') {
                     $("#location").val(city);
                     $("#det-location").text(city);
+                    if($.cookie('query') === null) {
+                        $.cookie('is_from', city, { expires: 365 });
+                    }
                 }
             }
         });
 
     });
+
+    $('.horizontal-filter-col').scrollToFixed({
+        preFixed: function() { $(this).addClass('sticked'); }
+    });
+
 });
 
 

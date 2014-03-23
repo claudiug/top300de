@@ -10,8 +10,6 @@ class ImageUploader < CarrierWave::Uploader::Base
   storage :file
   # storage :fog
 
-
-
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
@@ -43,13 +41,13 @@ class ImageUploader < CarrierWave::Uploader::Base
   # end
 
   # Create different versions of your uploaded files:
+  version :small do
+   process :resize_to_fill => [60, 60]
+  end
+
   version :thumb do
     process :resize_to_limit => [200, 200]
   end
-  # version :small do
-  #   process :resize_to_limit => [50, 50]
-  # end
-
   version :resized do
     # returns an image with a maximum width of 100px
     # while maintaining the aspect ratio
@@ -63,7 +61,6 @@ class ImageUploader < CarrierWave::Uploader::Base
   def extension_white_list
      %w(jpg jpeg gif png)
   end
-
 
   # Override the filename of the uploaded files:
   # Avoid using model.id or version_name here, see uploader/store.rb for details.
