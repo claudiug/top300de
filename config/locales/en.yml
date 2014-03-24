@@ -261,7 +261,7 @@ en:
       no_results: "No trip found for the selected category. Have a look at the popular destinations instead or try another search."
     product_page:
       menu_about: "About"
-      menu_gallery: "Gallery"
+      menu_gallery: "More images"
       menu_map: "Map"
       map_show: "Show map"
       map_close: "Disable map"
