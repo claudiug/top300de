@@ -7,9 +7,10 @@
   <%= csrf_meta_tags %>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9Yk1VrFYv4_9JggispuEg4jRvp_eLCv8&sensor=true">
   </script>
-
+  <%= render 'shared/analytics' %>
 </head>
 <body class="wat-static">
+<%#= render_breadcrumbs :separator => ' / ' %>
 <div id="wat-wrap">
   <div id="wat-main">
   <%= render 'shared/header' %>

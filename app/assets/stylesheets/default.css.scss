@@ -473,6 +473,7 @@ label.styled {
     padding-bottom: 0;
     margin-top: 10px;
     float: left;
+    overflow: visible;
     .trip-image {
       height: 180px;
       display: block;
@@ -492,10 +493,70 @@ label.styled {
         height: auto;
       }
     }
+    .wat-devices {
+      display: table;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0 15px;
+      a {
+        position: relative;
+        &:hover {
+          color: #1abc9c;
+          img {
+            @include opacity(1);
+          }
+        }
+      }
+      .img {
+        @include border-radius(50%);
+        overflow: hidden;
+
+        padding: 0;
+        width: 87px;
+        height: 87px;
+        display: inline-block;
+        background: #f7fafc;
+        img {
+          width: 87px;
+          height: 87px;
+        }
+      }
+      .selected {
+        &:after {
+          font-family: FontAwesome;
+          font-size: 13px;
+          content: "\f00c";
+          background-color: #1abc9c;
+          position: absolute;
+          right: 8px;
+          top: 0;
+          color: white;
+          padding: 5px;
+          @include border-radius(50%);
+        }
+        .img {
+
+          background: #f7fafc;
+        }
+        span {
+          color: #1abc9c;
+        }
+      }
+
+      div {
+        display: table-cell;
+        width: 50%;
+        span + span {
+          font-family: $regular;
+          padding: 8px 0;
+        }
+      }
+    }
     .trip-tent {
       position: relative;
       display: block;
       padding: 0 15px 15px;
+      overflow: visible;
     }
   }
 
@@ -642,7 +703,7 @@ label.styled {
     /* box-shadow: 0 1px 2px rgba(90, 90, 90, 0.1); */
     min-height: 340px;
 
-    padding: 13px 30px;
+    padding: 13px 0 13px 30px;
     border-radius: 3px;
     margin-bottom: 30px;
 
@@ -731,11 +792,11 @@ label.styled {
     }
   }
   ul {
-    padding: 15px 0 0;
-    margin: 0 -15px -3px;
+    padding: 15px 15px 0;
+    margin: 0 0 -3px;
     overflow: hidden;
     position: relative;
-    text-align: center;
+    text-align: left;
     left: -3px;
     li {
       display: inline-block;
@@ -839,8 +900,8 @@ label.styled {
   display: none;
 }
 #map-canvas {
-  width: 259px;
-  height: 250px;
+  width: 265px;
+  height: 150px;
   margin: 25px -14px 0;
   padding: 0px;
 }
@@ -1050,5 +1111,71 @@ label.styled {
   li {
     font-size: 15px;
     padding-bottom: 10px;
+  }
+}
+
+.wat-quotes {
+  font-size: 30px;
+  font-family: $light;
+  line-height: 1.2;
+  padding-bottom: 40px;
+  &:before {
+    font-size: 100px;
+    content: "“";
+    position: absolute;
+    left: -30px;
+    top: -20px;
+  }
+  &:after {
+    line-height: 0;
+    font-size: 100px;
+    content: "”";
+    vertical-align: bottom;
+  }
+}
+.wat-sendto {
+  position: relative;
+  padding: 0 12px 5px;
+  .wi-question {
+    position: absolute;
+    right: 13px;
+    bottom: 65px;
+    padding: 5px 12px;
+    color: #ccc;
+    background: #fff;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    border-left: 1px solid #eee;
+    &:before {
+      line-height: 20px;
+      cursor: pointer;
+    }
+  }
+  #wat-send-location {
+    opacity: 1;
+    display: none;
+    right: auto;
+    left: 240px;
+    top: 135px;
+    padding: 20px;
+    p {
+      padding-bottom: 0;
+    }
+    &:after {
+      border: 0;
+    }
+  }
+  .submit-go {
+    min-width: 10px;
+    min-height: 10px;
+    font-size: 16px;
+    font-family: $regular;
+    width: 214px;
+    margin-top: 10px;
+  }
+  .input {
+    width: 152px;
+    margin-top: 5px;
+    padding-right: 50px;
   }
 }

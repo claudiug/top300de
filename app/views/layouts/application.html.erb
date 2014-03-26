@@ -9,10 +9,10 @@
 
   <%= yield :view_specific_js %>
   <%= csrf_meta_tags %>
-
+  <%= render 'shared/analytics' %>
 </head>
 <body class="<%= yield (:body_class) %>">
-
+<%#= render_breadcrumbs :separator => ' / ' %>
 <%= render 'shared/header' %>
 <%= yield %>
 <%= render 'shared/footer' %>

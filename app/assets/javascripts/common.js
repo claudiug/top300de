@@ -216,6 +216,21 @@ $(document).ready(function() {
 
     });
     */
+    $().mouseover(function() {
+        $('#wat-send-location').fadeIn(50);
+    });
+    $('.mobile-device').click(function() {
+        $(this).toggleClass('selected');
+        $('#your-email').focus();
+        return false;
+    });
+    $("#what-s-this")
+        .mouseenter(function() {
+            $('#wat-send-location').show();
+        })
+        .mouseleave(function() {
+            $('#wat-send-location').hide();
+    });
 
     $('.horizontal-filter-col').scrollToFixed({
         preFixed: function() { $(this).addClass('sticked'); }
