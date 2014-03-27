@@ -36,7 +36,11 @@ class TripsController < ApplicationController
   end
 
   def send_link
-    SendDirection.new(params).deliver
+    contact = Contact.new(params)
+    contact.remote_ip = request.remote_ip
+    if contact.save
+      SendDirection.new(contact).deliver
+    end
   end
 
 end
