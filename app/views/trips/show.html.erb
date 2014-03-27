@@ -53,6 +53,7 @@
           <div class="trip-special-block special-weahter wi wi-cloud">
             <h3>Weather now</h3>
             <span><%= @weather[:currently][:summary] unless @weather.nil? %></span>
+            <span><%= @weather[:currently][:icon] unless @weather.nil? %></span>
           </div>
 
         </div>
