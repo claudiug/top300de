@@ -19,6 +19,7 @@ gem 'rails_12factor'
 gem 'forecast_io'
 gem 'chosen-rails'
 gem 'httparty'
+gem 'newrelic_rpm'
 # gem 'geokit-rails', '~> 2.0.0.rc1'
 # gem 'geokit'
 group :assets do

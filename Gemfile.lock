@@ -149,6 +149,7 @@ GEM
     multi_json (1.8.4)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    newrelic_rpm (3.6.6.147)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     nokogiri (1.6.1-x86-mingw32)
@@ -276,6 +277,7 @@ DEPENDENCIES
   launchy (~> 2.3.0)
   meta-tags
   mini_magick
+  newrelic_rpm
   pg
   puma
   quiet_assets
