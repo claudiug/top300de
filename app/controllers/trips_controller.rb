@@ -1,4 +1,4 @@
-require 'will_paginate/array' 
+require 'will_paginate/array'
 class TripsController < ApplicationController
   helper_method :calculate_distance
 
@@ -33,6 +33,10 @@ class TripsController < ApplicationController
       else
          MapsGoogleDistance.get_distance_by_car(from, where)
     end
+  end
+
+  def send_link
+    SendDirection.new(params).deliver
   end
 
 end
