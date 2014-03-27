@@ -115,10 +115,9 @@
                 <%= @trip.population.html_safe %>
               </div>
           <% end %>
-          <div class="trip-special-block special-weahter wi wi-cloud">
+          <div class="trip-special-block special-weather meteo <%= @weather[:currently][:icon] unless @weather.nil? %>">
             <h3>Weather now</h3>
             <span><%= @weather[:currently][:summary] unless @weather.nil? %></span>
-            <span><%= @weather[:currently][:icon] unless @weather.nil? %></span>
           </div>
 
         </div>

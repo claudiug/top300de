@@ -783,6 +783,13 @@ label.styled {
       font-size: 18px;
       @include opacity(0.3);
     }
+    &.meteo {
+      line-height: 1;
+      &:before {
+        font-size: 35px;
+        top: 17px;
+      }
+    }
     span {
       display: block;
       font-size: 13px;
