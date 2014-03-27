@@ -44,9 +44,24 @@
 
             <div class="wat-sendto">
 
+
+              <div class="wat-over wat-loading">
+                <div class="in">
+                Sending...
+                </div>
+              </div>
+
+              <!--
+              <div class="wat-over wat-done">
+                <div class="in">
+                <div class="wi wi-check"></div>
+                Sent
+                </div>
+              </div>
+                -->
               <div class="wi wi-question" id="what-s-this"></div>
 
-
+              <%= form_tag method: :get do %>
               <div class="wat-devices">
                 <div class="wat-iphone">
                   <a href="#" class="mobile-device" title="Android Devices">
@@ -65,7 +80,7 @@
               <input type="text" class="input" placeholder="@you" id="your-email" />
 
               <%= submit_tag("Send me directions", class: "submit-go") %>
-
+                <% end %>
               <!-- if no departure location selected -->
               <div class="wat-modal" id="wat-send-location">
 
