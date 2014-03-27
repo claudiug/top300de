@@ -1167,7 +1167,6 @@ label.styled {
     text-align: center;
     background: rgba(255,255,255, 0.9);
     z-index: 980;
-    border: 1px dashed #ddd;
     @include border-radius(5px);
     .in {
       display: inline-block;

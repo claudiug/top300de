@@ -3,7 +3,9 @@
         <div class="wrapBlock">
 
             <div class="Logo">
-                <%= link_to "Wantatrip", "/#{params[:locale]}", title: "#{t("default.website.title")}", class: "wat-logo" %>
+              <a href="/<%= params[:locale] %>" title="<%= t "default.website.title" %>" class="wat-logo">
+                <%= image_tag('wat-logo.png', height: '29', width: '114') %>
+              </a>
 
             </div>
 
