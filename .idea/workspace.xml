@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82f1705e-f9e0-4d73-ae1d-520bc8d183fe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140327142714_create_contacts.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/contact.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/contact_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/factories/contacts.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/newrelic.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/mailers/send_direction.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/mailers/send_direction_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/trips/send_link.js.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/send_direction/send_link_with_direction.text.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/fixtures/send_direction/send_link_with_direction" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/default/home.html.erb" afterPath="$PROJECT_DIR$/app/views/default/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/trips/index.html.erb" afterPath="$PROJECT_DIR$/app/views/trips/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/static.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/static.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/top300de.iml" afterPath="$PROJECT_DIR$/.idea/top300de.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/contact_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/contact_mailer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/trips_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/trips_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -45,7 +51,16 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="21" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+            <state line="23" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile.lock" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="225" column="0" selection-start="5656" selection-end="5656" vertical-scroll-proportion="3.5010374" vertical-offset="0" max-vertical-offset="4575">
               <folding />
             </state>
           </provider>
@@ -95,10 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="9" selection-start="336" selection-end="336" vertical-scroll-proportion="0.12158055" vertical-offset="0" max-vertical-offset="987">
+            <state line="8" column="9" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
@@ -107,7 +122,7 @@
       <file leaf-file-name="trips_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/trips_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+            <state line="22" column="0" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -149,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/default_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/default/privacy.html.erb" />
         <option value="$PROJECT_DIR$/app/views/default/about.html.erb" />
@@ -194,12 +208,13 @@
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/views/trips/index.html.erb" />
         <option value="$PROJECT_DIR$/config/breadcrumbs.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/default/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/static.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/trips_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
       </list>
     </option>
   </component>
@@ -1093,13 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trips/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="675">
@@ -1159,14 +1167,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/trips_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+        <state line="22" column="0" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="9" selection-start="336" selection-end="336" vertical-scroll-proportion="0.12158055" vertical-offset="0" max-vertical-offset="987">
+        <state line="8" column="9" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="225" column="0" selection-start="5656" selection-end="5656" vertical-scroll-proportion="3.5010374" vertical-offset="0" max-vertical-offset="4575">
           <folding />
         </state>
       </provider>

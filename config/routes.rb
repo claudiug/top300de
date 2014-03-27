@@ -5,11 +5,15 @@ Top300de::Application.routes.draw do
   scope ":locale", locale: /en|de/ do
     root "default#home"
     resources :users, only:[:new, :create]
-    resources :trips, only:[:index, :show]
-      get :about, to: 'default#about' 
-      get :privacy, to: 'default#privacy'
-      get :terms, to: 'default#terms'
-      get :sitemap, to: 'default#sitemap'
+    resources :trips, only:[:index, :show] do
+      member do
+        get 'send_link'
+      end
+    end
+    get :about, to: 'default#about'
+    get :privacy, to: 'default#privacy'
+    get :terms, to: 'default#terms'
+    get :sitemap, to: 'default#sitemap'
   end
 
   get '', to: redirect("/#{I18n.locale}")
