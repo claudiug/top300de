@@ -10,10 +10,11 @@
   <%= render 'shared/analytics' %>
 </head>
 <body class="wat-static">
-<%#= render_breadcrumbs :separator => ' / ' %>
+
 <div id="wat-wrap">
   <div id="wat-main">
   <%= render 'shared/header' %>
+    <%= render_crumbs %>
   <%= yield %>
   </div>
 </div>

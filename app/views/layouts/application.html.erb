@@ -12,8 +12,9 @@
   <%= render 'shared/analytics' %>
 </head>
 <body class="<%= yield (:body_class) %>">
-<%#= render_breadcrumbs :separator => ' / ' %>
+
 <%= render 'shared/header' %>
+<%= render_crumbs %>
 <%= yield %>
 <%= render 'shared/footer' %>
 </body>

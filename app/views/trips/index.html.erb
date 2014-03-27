@@ -5,6 +5,7 @@
     <%= javascript_include_tag "scrolltofixed-min.js", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "jquery.ui.slider.js", "data-turbolinks-track" => true %>
 <% end %>
+
 <div class="wrapBlock search-results">
   <% trip_name = (params[:locale].eql?"en") ? @trips.map(&:name).first(3) : @trips.map(&:ger_name).first(3) %>
   <div class="head"><%= @trips.size %> <%= t "default.search_results.results" %>

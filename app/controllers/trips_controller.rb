@@ -3,6 +3,7 @@ class TripsController < ApplicationController
   helper_method :calculate_distance
 
   def index
+
     if params[:location].present?
       #cookies[:is_from_ror] = { value: params[:location], expires: 24.hour.from_now }
       @location = session[:location] = params[:location] if params[:location]
