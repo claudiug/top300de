@@ -39,7 +39,7 @@
     width: 100%;
     padding: 0;
     margin-bottom: 10px;
-    background: white;
+    background: #fff;
     @include border-radius(3px);
     @include box-shadow(0 1px 2px rgba(90, 90, 90, 0.1));
     margin-top: 0;
@@ -94,7 +94,7 @@
         background: #1abc9c;
         display: none;
         padding: 3px 15px;
-        color: white;
+        color: #fff;
         line-height: 1;
         margin-left: -51px;
       }
@@ -187,30 +187,6 @@
       }
     }
   }
-/*
-  .addSugg {
-    span {
-      margin: 5px 2px 0 0;
-      text-align: center;
-    }
-
-    .add-new {
-      margin: 9px 0 0;
-      display:  block;
-    }
-    .new-dest {
-      margin: 0;
-      left: 0;
-
-      input {
-        width: 105px;
-      }
-      .fui-plus:before {
-        padding: 0;
-      }
-    }
-  }
-  */
   .trip-refine {
     .trip-type {
       padding-bottom: 5px;
@@ -329,7 +305,6 @@
 
       &:before {
         font-family: FontAwesome;
-        /* background: rgba(0, 0, 0, 0.2); */
         background: #47D9BF /* #2ECC71 */;
         top: 9px;
         position: absolute;
@@ -342,7 +317,6 @@
         left: -13px;
         @include border-radius(50%);
         padding: 5px;
-
       }
 
       &:hover:before {
